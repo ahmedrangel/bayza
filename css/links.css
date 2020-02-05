@@ -1,0 +1,58 @@
+html {
+    height: 100%;
+}
+
+.card {
+  border: none;
+}
+
+.bg-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-dark {
+  background-color: #292929!important;
+}
+
+.text-dark{
+  color: #292929!important;
+}
+
+.links:hover {
+  background-color: #313131!important;
+}
+
+.links {
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: #404040;
+}
+
+.socials li a:hover {
+  color: #f8f9fc;
+  text-decoration: none;
+}
+
+.socials .icons a {
+  color: #fff;
+}
+
+.website a {
+  color: #fff;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="robots" content="index,follow"/>
+    <meta name="keywords" content="bayza,fanlinks,music,deep,house,electronic"/>
+    <meta name="description" content="{{ page.description }}"/>
+    <!-- Protocolo Open Graph -->
+    <meta property="og:url" content="{{ site.url }}/{{ page.link }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:site_name" content="Dimatis"/>
+    <meta property="og:image" content="{{ page.image }}"/>
+    <meta property="og:image:secure_url" content="{{ page.image_secure }}"/>
+    <meta property="og:image:alt" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.description }}"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" content="{{ page.image_secure }}"/>
+    <meta name="twitter:title" content="{{ page.title }}"/>
+    <meta name="twitter:description" content="{{ page.description }}"/>
+    <meta name="twitter:site" content="@bayzamusic"/>
+    <!-- Recursos -->
+    <link rel="icon" type="image/png" href="/images/logomt.jpg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logomt.jpg"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/emoji.css"/> <!-- https://afeld.github.io/emoji-css/ -->
+    <link rel="stylesheet" href="/css/links.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="bg-image" style="background-image: url('https://dimatis.yizack.com/images/cover.jpg')"></div>
+    <div class="container text-white">
+      <div class="row">{% assign sorted = site.pages | sort: 'date' | reverse %}{% for item in sorted %}{% if item.artists %}
+        <div class="mx-auto col-lg-4">
+          <div class="card o-hidden my-3 p-0 border-dark bg-dark">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- cover -->
+                <img class="img-fluid mx-auto d-block" src="{{ item.image_secure }}" width="100%">
+                <!-- titulo -->
+                <div class="p-3">
+                  <div class="text-center">
+                    <h5><b>{{ item.title }}</b></h5>
+                    <h6 class="mb-0">{{ item.artists }}</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <a href="/{{ item.link }}" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0" target="_blank" title="View Fanlink">View</a>
+              </div>
+            </div>
+          </div>
+        </div>{% endif %}{% endfor %}
+        <div class="mx-auto col-lg-12 socials text-center h4">
+          <ul class="icons my-2">
+            <li>
+              <a href="https://open.spotify.com/artist/0UFz5jBFwlNKaq1JwESYnX" target="_blank"><i class="fab fa-spotify{% if page.dark == true %} text-dark{% endif %}"></i></a>
+            </li>
+            <li>
+              <a href="https://soundcloud.com/bayza" target="_blank"><i class="fab fa-soundcloud{% if page.dark == true %} text-dark{% endif %}"></i></a>
+            </li>
+            <li>
+              <a href="https://youtube.com/bayza" target="_blank"><i class="fab fa-youtube{% if page.dark == true %} text-dark{% endif %}"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/bayzamusic" target="_blank"><i class="fab fa-twitter{% if page.dark == true %} text-dark{% endif %}"></i></a>
+            </li>
+            <li>
+              <a href="https://facebook.com/bayzamusic" target="_blank"><i class="fab fa-facebook{% if page.dark == true %} text-dark{% endif %}"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/bayzamusic" target="_blank"><i class="fab fa-instagram{% if page.dark == true %} text-dark{% endif %}"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mx-auto col-lg-12 website text-center h5">
+        <a href="https://dimatis.yizack.com" target="_blank" title="Website">dimatis.yizack.com</a>
+      </div>
+    </div>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/js/tema.js"></script>
+  </body>
+</html>
+
