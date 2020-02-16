@@ -29,9 +29,10 @@
     <link rel="stylesheet" type="text/css" href="/css/skel.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style-xlarge.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min-for-header.css"/>
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/fontello-codes.css">
-    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">  
     <script src="/js/jquery.min.js"></script>
     <script src="/js/skel.min.js"></script>
     <script src="/js/skel-layers.min.js"></script>
@@ -53,19 +54,19 @@
   </head>
   <body id="top">
     <!-- Cabecera -->
-      <header id="header" class="skel-layers-fixed">
-        <h1>
-            <a target="_blank" title="Bayza's Spotify" href="https://open.spotify.com/artist/0UFz5jBFwlNKaq1JwESYnX?si=v8o8YvcnTQOEjbBcEQuxKw"><img style="max-height: 100%;vertical-align:top;" src="/images/bayza_spotify_artist.png" alt="Bayza Spotify Code" ></a>
-            <a style="vertical-align: bottom;padding-left: 13px;" href="/"><i style="color:#b8b8b8" class="icon-bayza"></i></a>
-        </h1>
-        <nav id="nav">
-          <ul>
-            <li><a href="#top" class="active">Home</a></li>
-            <li><a href="#music">Music</a></li>
-            <li><a href="#bio">Biography</a></li>
-            <li><a href="#contact" class="button special">Contact</a></li>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+      <div class="container"><a class="navbar-brand logo" href="#">Brand</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse"
+            id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#top">Home</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#music">Music</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#bio">Biography</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
-        </nav>
+        </div>
+      </div>
+    </nav>
       </header>
 
     <!-- Portada -->
