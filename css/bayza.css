@@ -38,6 +38,17 @@ h1 {
     border-color: #282828;
 }
 
+.btn-outline-soundcloud{
+    color: #282828;
+    border-color: #b8b8b8;
+}
+
+.btn-outline-soundcloud:hover{
+    color: #282828;
+    border-color: #b8b8b8;
+    background-color: #ff7700;
+}
+
 .text-secondary {
     color: #b8b8b8;
 }
@@ -65,5 +76,13 @@ h1 {
 }
 
 .soundcloud {
-    background: #ff8800;
+    background: #ff7700;
+}
+
+.font-weight-sc {
+    color: #b8b8b8;
+}
+
+#toggle_0 {
+    cursor: pointer;
 }
