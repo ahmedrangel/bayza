@@ -95,3 +95,7 @@ iframe {
     border:none;
     overflow:hidden;
 }
+
+body {
+    font-size: 1.3em;
+}
