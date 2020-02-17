@@ -1,0 +1,69 @@
+.bg-dark{
+    background: #282828!important;
+}
+
+.nav-item{
+    padding-right: 2rem;
+    font-weight: 700;
+}
+
+.icon-bayza {
+    color: #b8b8b8;
+    font-size: 1.3rem;
+}
+
+h1 {
+    letter-spacing: 0.125em;
+}
+
+.cabecera {
+    background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)),url(../images/ahmed_bannerweb.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.text-dark {
+    color: #282828!important;
+}
+
+.btn-outline-dark {
+    color: #282828;
+    border-color: #282828!important;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #282828;
+    border-color: #282828;
+}
+
+.text-secondary {
+    color: #b8b8b8;
+}
+
+.bg-darkest {
+    background: #1d1d1d
+}
+.panel {
+    font-size: 2em;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    line-height: 90px!important;
+    border: 5px solid!important;
+}
+
+.spotify {
+    background: #1db954;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.soundcloud {
+    background: #ff8800;
+}
