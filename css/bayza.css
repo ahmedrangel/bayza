@@ -60,22 +60,22 @@ h1 {
     font-size: 2em;
 }
 
-.icon {
+.icon_card {
     width: 100px;
     height: 100px;
     line-height: 90px!important;
     border: 5px solid!important;
 }
 
-.spotify {
+.spotify_card {
     background: #1db954;
 }
 
-.youtube {
+.youtube_card {
     background: #ff0000;
 }
 
-.soundcloud {
+.soundcloud_card {
     background: #ff7700;
 }
 
@@ -98,4 +98,83 @@ iframe {
 
 p {
     font-size: 1.3em;
+}
+
+ul.alt li {
+    border-bottom: solid 1px rgba(144, 144, 144, 0.25);
+    padding: 0.5em 0;
+}
+
+footer li a {
+    color: #b8b8b8;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+ul.alt {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.contact li {
+    padding: 0.5em 0;
+}
+
+ul.contact {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+}
+
+ul.icons li .icon:before {
+    font-size: 1.3em;
+}
+
+footer .icons a {
+    color: #bbb;
+}
+  
+footer .spotify a:hover {
+    color: #1db954;
+    text-decoration: none;
+}
+  
+footer .soundcloud a:hover {
+    color: #F26E23;
+    text-decoration: none;
+}
+  
+footer .youtube a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+  
+footer .twitter a:hover {
+    color: #1da1f2;
+    text-decoration: none;
+}
+  
+footer .facebook a:hover {
+    color: #3b5998;
+    text-decoration: none;
+}
+  
+footer .instagram a:hover {
+    color: #833ab4;
+    text-decoration: none;
+}
+
+.page-footer a {
+    margin: 0 10px;
+    font-size: 18px;
 }
