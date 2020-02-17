@@ -83,6 +83,15 @@ h1 {
     color: #b8b8b8;
 }
 
-#toggle_0 {
+#button1 {
     cursor: pointer;
+}
+
+#soundcloud_tracks{
+    display: none;
+}
+
+iframe {
+    border:none;
+    overflow:hidden;
 }
