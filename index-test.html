@@ -44,7 +44,7 @@
 
     <section class="bg-dark text-secondary text-center py-5">
       <div class="container">
-        <h3 class="mt-3 text-uppercase">Music</h3>
+        <h3 class="mt-3 text-uppercase text-white">Music</h3>
         <h4 class="font-weight-light">Follow me to listen to my latest tracks</h4>
         <div class="row text-white">
           <div class="col-lg-4">
@@ -69,6 +69,25 @@
                 </a>
               </div>
               <h5 class="mt-3 text-uppercase font-weight-light">SoundCloud</h5>
+              <script>
+                $(document).ready(function(){
+                  $("#toggle_0").click(function(){
+                    $("#soundcloud_tracks").slideToggle("slow");
+                  });
+                });
+                var htmlString1 = '<p onclick="hide();"><a type="button" class="btn btn-outline-soundcloud px-4 py-1"><h5 class="font-weight-sc m-0">Hide Tracks</h5></a>';
+                var htmlString2 = '<p onclick="show();"><a type="button" class="btn btn-outline-soundcloud px-4 py-1"><h5 class="font-weight-sc m-0">Hide Tracks</h5></a>';
+                function show(){
+                    document.getElementById("toggle_0").innerHTML= htmlString1;
+                }
+                function hide(){
+                    document.getElementById("toggle_0").innerHTML= htmlString2;
+                }
+              </script>
+              <div id="soundcloud_tracks">
+                <p onclick="show();"><iframe width="85%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/38787166&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=false"></iframe>
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-lg-4">
@@ -89,6 +108,7 @@
         </div>
       </div>
     </section>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
     <script src="https://apis.google.com/js/platform.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
