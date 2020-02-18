@@ -130,6 +130,12 @@
                 <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0UFz5jBFwlNKaq1JwESYnX&size=detail&theme=dark" width="210" height="56"></iframe>
               </div>
               <br/>
+              <div id="button1">
+                <button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="text-secondary font-weight-normal m-0">Top Tracks</h5></button>
+              </div>
+              <div id="spotify_tracks" class="mt-2">
+                <iframe src="https://open.spotify.com/embed/artist/0UFz5jBFwlNKaq1JwESYnX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
             </div>
           </div>
           <div class="col-lg-4">
@@ -140,8 +146,8 @@
                 </a>
               </div>
               <h5 class="mt-3 text-uppercase font-weight-light">SoundCloud</h5>
-              <div id="button1">
-                <button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show()";><h5 class="font-weight-sc m-0">Show Tracks</h5></button>
+              <div id="button2">
+                <button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="text-secondary font-weight-normal m-0">Tracks</h5></button>
               </div>
               <div id="soundcloud_tracks" class="mt-2">
                 <iframe width="85%" height="500" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/38787166&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=false"></iframe>
@@ -161,6 +167,12 @@
                 </div>
               </div>
               <br/>
+              <div id="button3">
+                <button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="text-secondary font-weight-normal m-0">Uploads</h5></button>
+              </div>
+              <div id="youtube_videos" class="mt-2">
+                <iframe width="300" height="169" src="https://www.youtube.com/embed/videoseries?list=UUl4DogCwQJKLh_dmYbfk9Mg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -250,15 +262,43 @@
     <script>
       $(document).ready(function(){
         $("#button1").click(function(){
+          $("#spotify_tracks").slideToggle("slow");
+        });
+      });
+
+      function show1(){
+          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="hide1()";><h5 class="text-secondary font-weight-normal m-0">Hide Top Tracks</h5></button>';
+      }
+      function hide1(){
+          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="text-secondary font-weight-normal m-0">Top Tracks</h5></button>';
+      }
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#button2").click(function(){
           $("#soundcloud_tracks").slideToggle("slow");
         });
       });
 
-      function show(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="hide()";><h5 class="font-weight-sc m-0">Hide Tracks</h5></button>';
+      function show2(){
+          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="hide2()";><h5 class="text-secondary font-weight-normal m-0">Hide Tracks</h5></button>';
       }
-      function hide(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show()";><h5 class="font-weight-sc m-0">Show Tracks</h5></button>';
+      function hide2(){
+          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="text-secondary font-weight-normal m-0">Tracks</h5></button>';
+      }
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#button3").click(function(){
+          $("#youtube_videos").slideToggle("slow");
+        });
+      });
+
+      function show3(){
+          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="hide3()";><h5 class="text-secondary font-weight-normal m-0">Hide Uploads</h5></button>';
+      }
+      function hide3(){
+          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="text-secondary font-weight-normal m-0">Uploads</h5></button>';
       }
     </script>
   </body>
