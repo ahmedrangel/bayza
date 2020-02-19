@@ -9,12 +9,12 @@
 {%- assign sorted = site.data.releases | sort: 'date' | reverse -%}
 <html lang="en">
   <head>
-    <title>Music</title>
+    <title>{{ release.artists }} - {{ release.title }}</title>
     <!-- Metadatos -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
-    <meta name="keywords" content="{{ release.artists }}, {{ release.title }}, {{ release.genre }}, {{ release.year }}, electronic, EDM, music" />
+    <meta name="keywords" content="{{ release.artists }}, {{ release.title }}, {{ release.genre }}, {{ release.year }}, electro, EDM, music" />
     <meta name="description" content="{{ release.artists }} - {{ release.title }}."/>
 
     <!-- Protocolo Open Graph -->
@@ -22,13 +22,13 @@
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ release.artists }} - {{ release.title }}"/>
     <meta property="og:site_name" content="Bayza"/>
-    <meta property="og:image" content="http://bayzamusic.com/images/logomt.jpg"/>
-    <meta property="og:image:alt" content="Bayza cover image"/>
+    <meta property="og:image" content="http://bayzamusic.com/images/{{ release.cover }}.jpg"/>
+    <meta property="og:image:alt" content="{{ release.title }} cover image"/>
     <meta property="og:description" content="{{ release.description }}"/>
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image" content="https://bayzamusic.com/images/logomt.jpg"/>
+    <meta name="twitter:image" content="https://bayzamusic.com/images/{{ release.cover }}.jpg"/>
     <meta name="twitter:title" content="{{ release.artists }} - {{ release.title }}">
     <meta name="twitter:description" content="{{ release.description }}">
     <meta name="twitter:site" content="@bayzamusic"/>
