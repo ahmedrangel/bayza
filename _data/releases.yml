@@ -5,6 +5,7 @@
   genre: Deep House
   year: 2020
   description: A track in collaboration with Dimatis
+  label: Dimatis
   video: https://www.youtube.com/embed/OMfdAwpKIsc
   date: 2020-01-24 00:00:00
 
@@ -14,6 +15,18 @@
   cover: blossom
   genre: Deep House
   year: 2019
-  description: Bayza - Blossom [DeepShine Records]
+  description: Bayza - Blossom
+  label: DeepShine Records
   video: https://www.youtube.com/embed/oNvLKifFX20
   date: 2019-12-13 00:00:00
+
+- release: astral 
+  artists: Bayza
+  title: Astral
+  cover: astral
+  genre: Deep House
+  year: 2019
+  description: Bayza - Astral
+  label: PalmTherapySounds Records
+  video: https://www.youtube.com/embed/japf2Vj4Ohw
+  date: 2019-12-11 00:00:00
