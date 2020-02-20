@@ -1,6 +1,6 @@
 ---
 layout: releases-year
 year: 2020
-type: Releases
-link: 
+type: Bootlegs/Remixes
+link: -bootlegs
 ---

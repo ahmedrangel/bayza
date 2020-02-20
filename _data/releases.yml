@@ -8,6 +8,7 @@
   label: Dimatis
   video: OMfdAwpKIsc
   date: 2020-01-24 00:00:00
+  type: Releases
 
 - release: blossom 
   artists: Bayza
@@ -19,6 +20,7 @@
   label: DeepShine Records
   video: oNvLKifFX20
   date: 2019-12-13 00:00:00
+  type: Releases
 
 - release: astral 
   artists: Bayza
@@ -30,6 +32,7 @@
   label: PalmTherapySounds Records
   video: japf2Vj4Ohw
   date: 2019-12-11 00:00:00
+  type: Releases
 
 - release: mirage
   artists: Bayza
@@ -41,6 +44,7 @@
   label: Bounce United
   video: PgVybJcDXTA
   date: 2019-10-25 00:00:00
+  type: Releases
 
 - release: genuine
   artists: Bayza
@@ -52,6 +56,7 @@
   label: Bayza
   video: CjtFVqtpBVI
   date: 2019-9-02 00:00:13
+  type: Releases
 
 - release: delirio
   artists: Bayza
@@ -63,6 +68,7 @@
   label: Bayza
   video: fc2jg7iYBdw
   date: 2019-9-02 00:00:12
+  type: Releases
 
 - release: romance
   artists: Bayza
@@ -74,6 +80,7 @@
   label: Bayza
   video: uZ3JR7YBLPM
   date: 2019-9-02 00:00:11
+  type: Releases
 
 - release: prisma
   artists: Bayza
@@ -85,6 +92,7 @@
   label: Bayza
   video: dZi-BEdfM8M
   date: 2019-9-02 00:00:10
+  type: Releases
 
 - release: love
   artists: Bayza
@@ -96,6 +104,7 @@
   label: Bayza
   video: ufP4BtJzNxY
   date: 2019-9-02 00:00:09
+  type: Releases
 
 - release: nada
   artists: Bayza
@@ -107,6 +116,7 @@
   label: Bayza
   video: Np8ToFBCmS8
   date: 2019-9-02 00:00:08
+  type: Releases
   
 - release: fell
   artists: Bayza
@@ -118,6 +128,7 @@
   label: Bayza
   video: 1_5Gmo63J3o
   date: 2019-9-02 00:00:07
+  type: Releases
 
 - release: crescent
   artists: Bayza
@@ -129,6 +140,7 @@
   label: Bayza
   video: GCum26Y36j0
   date: 2019-9-02 00:00:06
+  type: Releases
 
 - release: praise
   artists: Bayza
@@ -140,6 +152,7 @@
   label: Bayza
   video: fErm4Re2Nkw
   date: 2019-9-02 00:00:05
+  type: Releases
 
 - release: dive
   artists: Dimatis & Bayza
@@ -151,6 +164,7 @@
   label: Bayza
   video: 0XBB7YWvHYw
   date: 2019-9-02 00:00:04
+  type: Releases
 
 - release: arousal
   artists: Bayza
@@ -162,6 +176,7 @@
   label: Bayza
   video: HFu3uiyun7Y
   date: 2019-9-02 00:00:03
+  type: Releases
 
 - release: over-you
   artists: Bayza
@@ -173,6 +188,7 @@
   label: Bayza
   video: qOc0mwJ8KrA
   date: 2019-9-02 00:00:02
+  type: Releases
 
 - release: zephyr
   artists: Bayza
@@ -184,6 +200,7 @@
   label: Bayza
   video: grVCfUkqjLs
   date: 2019-9-02 00:00:02
+  type: Releases
 
 - release: majestic
   artists: Bayza
@@ -195,6 +212,7 @@
   label: Nelation
   video: Tfphg1sn1jQ
   date: 2019-8-02 00:00:00
+  type: Releases
 
 - release: oasis-remix
   artists: Lionis
@@ -206,6 +224,7 @@
   label: FREE WAV
   video: uDlypkh80z0
   date: 2019-4-19 00:00:00
+  type: Releases
 
 - release: remorse
   artists: Bayza
@@ -217,6 +236,7 @@
   label: Nelation
   video: w83ephnGcf0
   date: 2019-4-11 00:00:00
+  type: Releases
 
 - release: wisdom
   artists: Bayza
@@ -228,5 +248,18 @@
   label: Nelation
   video: lyZyYVHYYC4
   date: 2019-2-13 00:00:00
+  type: Releases
+
+- release: still-learning
+  artists: Halsey
+  title: Still Learning (Bayza Bootleg)
+  cover: halsey-remix
+  genre: Deep House
+  year: 2020
+  description: Halsey - Still Learning (Bayza Bootleg)
+  label: 
+  video: AY-P_38wdfM
+  date: 2020-2-4 00:00:00
+  type: Bootlegs/Remixes
 
 
