@@ -1,6 +1,6 @@
 ---
 layout: releases-post
-release: still-learning
+release: strawberry-shortcake-bootleg
 year: 2020
 type: Bootlegs/Remixes
 link: -bootlegs

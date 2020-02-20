@@ -250,7 +250,7 @@
   date: 2019-2-13 00:00:00
   type: Releases
 
-- release: still-learning
+- release: still-learning-bootleg
   artists: Halsey
   title: Still Learning (Bayza Bootleg)
   cover: halsey-remix
@@ -259,7 +259,18 @@
   description: Halsey - Still Learning (Bayza Bootleg)
   label: 
   video: AY-P_38wdfM
-  date: 2020-2-4 00:00:00
+  date: 2020-2-04 00:00:00
   type: Bootlegs/Remixes
 
+  - release: strawberry-shortcake-bootleg
+  artists: Melanie Martinez
+  title: Strawberry Shortcake (Bayza Bootleg)
+  cover: melanie-martinez-remix
+  genre: Deep House
+  year: 2020
+  description: Melanie Martinez - Strawberry Shortcake (Bayza Bootleg)
+  label: 
+  video: xQHVa1Z6CjI
+  date: 2020-1-01 00:00:00
+  type: Bootlegs/Remixes
 
