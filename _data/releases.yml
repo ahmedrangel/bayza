@@ -250,7 +250,7 @@
   date: 2019-2-13 00:00:00
   type: Releases
 
-- release: still-learning-bootleg
+- release: still-learning
   artists: Halsey
   title: Still Learning (Bayza Bootleg)
   cover: halsey-remix
@@ -262,7 +262,7 @@
   date: 2020-2-04 00:00:00
   type: Bootlegs/Remixes
 
-- release: strawberry-shortcake-bootleg
+- release: strawberry-shortcake
   artists: Melanie Martinez
   title: Strawberry Shortcake (Bayza Bootleg)
   cover: melanie-martinez-remix
@@ -274,7 +274,7 @@
   date: 2020-1-01 00:00:00
   type: Bootlegs/Remixes
 
-- release: everything-i-wanted-bootleg
+- release: everything-i-wanted
   artists: Billie Eilish
   title: Everything I Wanted (Bayza Bootleg)
   cover: billie-eilish-remix
@@ -286,7 +286,7 @@
   date: 2019-11-30 00:00:00
   type: Bootlegs/Remixes
 
-- release: look-at-her-now-bootleg
+- release: look-at-her-now
   artists: Selena Gomez
   title: Look At Her Now (Bayza Bootleg)
   cover: selena-gomez-remix
@@ -296,4 +296,76 @@
   label: 
   video: qnGaaOWdnVk
   date: 2019-10-25 00:00:00
+  type: Bootlegs/Remixes
+
+- release: why-do-you-love-me
+  artists: Charlotte Lawrence
+  title: Why Do You Love Me (Bayza Bootleg)
+  cover: charlotte-remix
+  genre: Deep House
+  year: 2019
+  description: Charlotte Lawrence - Why Do You Love Me (Bayza Bootleg)
+  label: 
+  video: kKDNhycASXw
+  date: 2019-09-28 00:00:00
+  type: Bootlegs/Remixes
+
+- release: senorita
+  artists: Shawn Mendes, Camila Cabello
+  title: Señorita (Bayza Bootleg)
+  cover: shawn-camila-remix
+  genre: Deep House
+  year: 2019
+  description: Shawn Mendes, Camila Cabello - Señorita (Bayza Bootleg)
+  label: 
+  video: siGFaPVbS3A
+  date: 2019-08-03 00:00:00
+  type: Bootlegs/Remixes
+
+- release: i-fell-in-love-with-the-devil
+  artists: Avril Lavigne
+  title: I Fell In Love With The Devil (Bayza Bootleg)
+  cover: avril-remix
+  genre: Deep House
+  year: 2019
+  description: Avril Lavigne - I Fell In Love With The Devil (Bayza Bootleg)
+  label: 
+  video: BWc4wJ7_1dA
+  date: 2019-07-24 00:00:00
+  type: Bootlegs/Remixes
+
+- release: no-pasa-nada
+  artists: Ronna Riva
+  title: No Pasa Nada (Bayza Bootleg)
+  cover: ronna-riva-remix
+  genre: Deep House
+  year: 2019
+  description: Ronna Riva - No Pasa Nada (Bayza Bootleg)
+  label: 
+  video: _qiQqMCPhj8
+  date: 2019-07-16 00:00:00
+  type: Bootlegs/Remixes
+
+- release: left-me-yet
+  artists: Daya
+  title: Left Me Yet (Bayza Bootleg)
+  cover: daya-remix
+  genre: Deep House
+  year: 2019
+  description: Daya - Left Me Yet (Bayza Bootleg)
+  label: 
+  video: HlBlfV3bvYI
+  date: 2019-06-22 00:00:00
+  type: Bootlegs/Remixes
+
+- release: mad-love
+  artists: Mabel
+  title: Mad Love (Bayza Bootleg)
+  cover: mabel-remix
+  genre: Deep House
+  year: 2019
+  description: Mabel - Mad Love (Bayza Bootleg)
+  label: 
+  video: h5k9VCF-WDA
+  date: 2019-06-12 00:00:00
   type: Bootlegs/Remixes
