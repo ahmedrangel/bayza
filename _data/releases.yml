@@ -261,6 +261,7 @@
   video: AY-P_38wdfM
   date: 2020-2-04 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: strawberry-shortcake
   artists: Melanie Martinez
@@ -273,6 +274,7 @@
   video: xQHVa1Z6CjI
   date: 2020-1-01 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: everything-i-wanted
   artists: Billie Eilish
@@ -285,6 +287,7 @@
   video: 3qsnIMkX3n4
   date: 2019-11-30 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: look-at-her-now
   artists: Selena Gomez
@@ -297,6 +300,7 @@
   video: qnGaaOWdnVk
   date: 2019-10-25 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: why-do-you-love-me
   artists: Charlotte Lawrence
@@ -309,6 +313,7 @@
   video: kKDNhycASXw
   date: 2019-09-28 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: senorita
   artists: Shawn Mendes, Camila Cabello
@@ -321,6 +326,7 @@
   video: siGFaPVbS3A
   date: 2019-08-03 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: i-fell-in-love-with-the-devil
   artists: Avril Lavigne
@@ -333,6 +339,7 @@
   video: BWc4wJ7_1dA
   date: 2019-07-24 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: no-pasa-nada
   artists: Ronna Riva
@@ -345,6 +352,7 @@
   video: _qiQqMCPhj8
   date: 2019-07-16 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: left-me-yet
   artists: Daya
@@ -357,6 +365,7 @@
   video: HlBlfV3bvYI
   date: 2019-06-22 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs
 
 - release: mad-love
   artists: Mabel
@@ -369,3 +378,4 @@
   video: h5k9VCF-WDA
   date: 2019-06-12 00:00:00
   type: Bootlegs/Remixes
+  link: -bootlegs

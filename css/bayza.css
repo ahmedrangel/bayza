@@ -38,8 +38,8 @@ h1 {
     border-color: #282828;
 }
 
-.btn-outline-soundcloud, .btn-outline-spotify, .btn-outline-youtube {
-    color: #282828;
+.btn-outline-soundcloud, .btn-outline-spotify, .btn-outline-youtube, .btn-outline-releases {
+    color: #b8b8b8;
     border-color: #b8b8b8;
 }
 
@@ -59,6 +59,12 @@ h1 {
     color: #282828;
     border-color: #b8b8b8;
     background-color: #ff0000;
+}
+
+.btn-outline-releases:hover{
+    color: #1d1d1d;
+    border-color: #c8c8c8;
+    background-color: #c8c8c8;
 }
 
 .text-secondary {
