@@ -224,5 +224,9 @@ footer .instagram a:hover {
 }
 
 .bg-darkest-est {
-    background: #151515!important
+    background: #151515!important;
+}
+
+.yt-thumb {
+    background: transparent;
 }
