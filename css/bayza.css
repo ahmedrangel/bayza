@@ -44,20 +44,20 @@ h1 {
 }
 
 .btn-outline-soundcloud:hover{
-    color: #282828;
-    border-color: #b8b8b8;
+    color: #fff;
+    border-color: #fff;
     background-color: #ff7700;
 }
 
 .btn-outline-spotify:hover{
-    color: #282828;
-    border-color: #b8b8b8;
-    background-color: #1db954;
+    color: #fff;
+    border-color: #fff;
+    background-color: #2ebd59;
 }
 
 .btn-outline-youtube:hover{
-    color: #282828;
-    border-color: #b8b8b8;
+    color: #fff;
+    border-color: #fff;
     background-color: #ff0000;
 }
 
