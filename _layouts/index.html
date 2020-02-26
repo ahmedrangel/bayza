@@ -158,11 +158,11 @@
               <br/>
               <div>
                 <span id="button1">
-                <button type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="text-secondary font-weight-normal m-0">Top Tracks</h5></button>
+                <button type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="font-weight-normal m-0">Top Tracks</h5></button>
                 </span>
               </div>
               <div id="spotify_tracks" class="mt-2">
-                <iframe src="https://open.spotify.com/embed/artist/0UFz5jBFwlNKaq1JwESYnX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/artist/0UFz5jBFwlNKaq1JwESYnX" style="width: 95%;" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               </div>
             </div>
           </div>
@@ -176,7 +176,7 @@
               <h5 class="mt-3 text-uppercase font-weight-light">SoundCloud</h5>
               <div>
                 <span id="button2">
-                <button type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="text-secondary font-weight-normal m-0">Tracks</h5></button>
+                <button type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="font-weight-normal m-0">Tracks</h5></button>
                 </span>
               </div>
               <div id="soundcloud_tracks" class="mt-2">
@@ -199,7 +199,7 @@
               <br/>
               <div>
                 <span id="button3">
-                <button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="text-secondary font-weight-normal m-0">Uploads</h5></button>
+                <button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="font-weight-normal m-0">Uploads</h5></button>
                 </span>
               </div>
               <div id="youtube_videos" class="mt-2">
@@ -234,10 +234,10 @@
       });
 
       function show1(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="hide1()";><h5 class="text-secondary font-weight-normal m-0">Hide Top Tracks</h5></button>';
+          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="hide1()";><h5 class="font-weight-normal m-0">Hide Top Tracks</h5></button>';
       }
       function hide1(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="text-secondary font-weight-normal m-0">Top Tracks</h5></button>';
+          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="font-weight-normal m-0">Top Tracks</h5></button>';
       }
     </script>
     <script>
@@ -248,10 +248,10 @@
       });
 
       function show2(){
-          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="hide2()";><h5 class="text-secondary font-weight-normal m-0">Hide Tracks</h5></button>';
+          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="hide2()";><h5 class="font-weight-normal m-0">Hide Tracks</h5></button>';
       }
       function hide2(){
-          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="text-secondary font-weight-normal m-0">Tracks</h5></button>';
+          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="font-weight-normal m-0">Tracks</h5></button>';
       }
     </script>
     <script>
@@ -262,10 +262,10 @@
       });
 
       function show3(){
-          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="hide3()";><h5 class="text-secondary font-weight-normal m-0">Hide Uploads</h5></button>';
+          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="hide3()";><h5 class="font-weight-normal m-0">Hide Uploads</h5></button>';
       }
       function hide3(){
-          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="text-secondary font-weight-normal m-0">Uploads</h5></button>';
+          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class=" font-weight-normal m-0">Uploads</h5></button>';
       }
     </script>
   </body>
