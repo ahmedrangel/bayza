@@ -1,7 +1,7 @@
 {%- assign sorted = site.data.releases | sort: 'date' | reverse | where: "year", page.year | where: "type", page.type -%}
 <html lang="en">
   <head>  
-    <title>Music</title>
+    <title>{{ page.year }} {{ page.type }} | Bayza</title>
     <!-- Metadatos -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
