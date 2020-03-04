@@ -6,11 +6,12 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>http://bayzamusic.com/</loc>
-  <lastmod>2018-04-14T07:00:11+00:00</lastmod>
+<loc>https://bayzamusic.com/</loc>
+<lastmod>2020-03-03T02:02:02+00:00</lastmod>
+<priority>1.00</priority>
 </url>
+
 
 
 </urlset>
