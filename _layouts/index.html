@@ -62,23 +62,32 @@
             "description": "Bayza is a Panamanian musician and producer."
           },
           {
-            "@type" : "MusicGroup",
+            "@type" : ["Person","MusicGroup"],
+            "@id":"https://musicbrainz.org/artist/7b200a18-08d4-4d29-b0ce-ba6cd0a9b5e4",
             "name" : "Bayza",
-            "url" : "https://bayzamusic.com",
-            "image" : "http://bayzamusic.com/images/logomt.jpg",
-            "member":[
-              {
-                "@type": "Person",
-                "name": "Ahmed Rangel",
-                "birthDate": "1998-06-15"
-              }
-            ],
+            "alternateName": "Ahmed Rangel",
+            "url" : "{{ site.url }}",
+            "image" : "{{ site.url }}/images/logomt.jpg",
             "description": "Bayza is a Panamanian musician and producer.",
-            "sameAs" : [ 
-              "https://youtube.com/c/bayza",
+            "birthDate": "1998-06-15",
+            "birthPlace":
+            {
+              "@type":"AdministrativeArea",
+              "@id":"https://musicbrainz.org/artist/7b200a18-08d4-4d29-b0ce-ba6cd0a9b5e4",
+              "name":"Panamá",
+              "containedIn":
+                {
+                  "@type":"Country",
+                  "@id":"https://musicbrainz.org/artist/7b200a18-08d4-4d29-b0ce-ba6cd0a9b5e4",
+                  "name":"Panama"
+                }
+            },
+            "sameAs" :[
+              "https://youtube.com/bayza",
               "https://soundcloud.com/bayza",
-              "https://instagram.com/bayzamusic",
-              "https://facebook.com/bayzamusic"
+              "https://facebook.com/bayzamusic",
+              "https://twitter.com/bayzamusic",
+              "https://instagram.com/bayzamusic"
             ]
           }
         ]
