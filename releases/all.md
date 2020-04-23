@@ -1,6 +1,6 @@
 ---
 layout: releases-year
-year: 
+year: All
 type: Releases
 link: 
 ---
