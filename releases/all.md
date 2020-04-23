@@ -1,6 +1,7 @@
 ---
 layout: releases-year
-year: All
+year: 
 type: Releases
 link: 
+extra: All
 ---
