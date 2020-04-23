@@ -228,5 +228,5 @@ footer .instagram a:hover {
 }
 
 a img:hover {
-    filter: brightness(125%);
+    filter: contrast(70%) brightness(125%);
 }
