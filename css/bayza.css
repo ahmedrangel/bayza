@@ -227,7 +227,7 @@ footer .instagram a:hover {
     background: #151515!important
 }
 
-img:hover {
+a img:hover {
     filter: alpha(opacity=80);
     opacity: 0.8;
 }
