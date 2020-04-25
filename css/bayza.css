@@ -234,9 +234,10 @@ a img:hover {
 
 b {
     font-weight: bolder;
-    color: #fff
+    color: #fff;
 }
 
 b a:hover{
-    color: #fff  
+    color: #fff;
+    text-decoration: none;
 }
