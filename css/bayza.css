@@ -232,7 +232,7 @@ a img:hover {
     filter: contrast(105%) brightness(120%) drop-shadow(7px 7px 5px #00000088);
 }
 
-b {
+b a {
     font-weight: bolder;
     color: #fff;
 }
