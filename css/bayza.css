@@ -237,7 +237,7 @@ b {
     color: #fff;
 }
 
-b a:hover{
+a b {
     color: #fff;
     text-decoration: none;
 }
