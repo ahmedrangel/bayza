@@ -230,3 +230,7 @@ footer .instagram a:hover {
 a img:hover {
     filter: contrast(105%) brightness(120%) drop-shadow(7px 7px 5px #00000088);
 }
+
+b {
+    font-weight: bold;
+}
