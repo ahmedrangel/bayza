@@ -233,11 +233,11 @@ a img:hover {
 }
 
 b {
-    font-weight: bold;
+    font-weight: bolder;
     color: #fff
 }
 
 b:hover{
-    font-weight: bold;
+    font-weight: bolder;
     color: #fff  
 }
