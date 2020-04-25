@@ -237,7 +237,6 @@ b {
     color: #fff
 }
 
-b:hover{
-    font-weight: bolder;
+b a:hover{
     color: #fff  
 }
