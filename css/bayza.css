@@ -238,7 +238,7 @@ b a {
 }
 
 b a:hover {
-    color: #fff
+    color: #fff;
 }
 
 .smart-scroll{
@@ -247,10 +247,12 @@ b a:hover {
     right: 0;
     left: 0;
     z-index: 1030;
-  }
-  .scrolled-down{
-     transform:translateY(-100%); transition: all 0.3s ease-in-out;
-  }
-  .scrolled-up{
-     transform:translateY(0); transition: all 0.3s ease-in-out;
-  }
+}
+
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
