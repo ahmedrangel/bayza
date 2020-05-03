@@ -256,3 +256,9 @@ b a:hover {
 .scrolled-up{
     transform:translateY(0); transition: all 0.3s ease-in-out;
 }
+
+@media only screen and (max-width: 640px){
+    #reproductor{
+        margin:0px!important;
+    }
+}
