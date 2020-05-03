@@ -4,3 +4,19 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
+<script>
+  $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+  if ($('.smart-scroll').length > 0) { // check if element exists
+      var last_scroll_top = 0;
+      $(window).on('scroll', function() {
+          scroll_top = $(this).scrollTop();
+          if(scroll_top < last_scroll_top) {
+              $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+          }
+          else {
+              $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+          }
+          last_scroll_top = scroll_top;
+      });
+  }
+</script>
