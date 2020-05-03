@@ -260,5 +260,6 @@ b a:hover {
 @media only screen and (max-width: 640px){
     #reproductor{
         margin:0px!important;
+        padding:0px!important;
     }
 }
