@@ -257,7 +257,7 @@ b a:hover {
 }
 
 @media only screen and (max-width: 767px){
-    #reproductor{
+    #reproductor, #track-info{
         margin:0px!important;
         padding:0px!important;
     }
@@ -266,3 +266,4 @@ b a:hover {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: 300!important;
 }
+
