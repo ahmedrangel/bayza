@@ -7,7 +7,7 @@
   {%- assign cover = release.release -%}
 {%- endif -%}
 {%- assign sorted = site.data.releases | sort: 'date' | reverse -%}
-{% assign day = page.date | date: "%-d"  %}
+{% assign day = release.date | date: "%-d"  %}
 {% case day %}
   {% when '1' or '21' or '31' %}{{ day }}st
   {% when '2' or '22' %}{{ day }}nd
