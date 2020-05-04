@@ -256,10 +256,11 @@ b a:hover {
     transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 
-.track-info{
+#track-info {
     margin-left: 85px;
     margin-right: 85px;
 }
+
 @media only screen and (max-width: 767px){
     #reproductor, #track-info{
         margin:0px!important;
