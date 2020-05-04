@@ -7,13 +7,13 @@
   {%- assign cover = release.release -%}
 {%- endif -%}
 {%- assign sorted = site.data.releases | sort: 'date' | reverse -%}
-{% assign day = release.date | date: "%-d"  %}
-{% case day %}
-  {% when '1' or '21' or '31' %}{{ day }}st
-  {% when '2' or '22' %}{{ day }}nd
-  {% when '3' or '23' %}{{ day }}rd
-  {% else %}{{ day }}th
-{% endcase %}
+{%- assign day = release.date | date: "%-d"  -%}
+{%- case day -%}
+  {%- when '1' or '21' or '31' -%}{{ day }}st
+  {%- when '2' or '22' -%}{{ day }}nd
+  {%- when '3' or '23' -%}{{ day }}rd
+  {%- else -%}{{ day }}th
+{%- endcase -%}
 <html lang="en">
   <head>
     <title>{{ release.artists }} - {{ release.title }} | Bayza</title>
