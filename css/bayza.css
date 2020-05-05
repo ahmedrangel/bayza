@@ -274,3 +274,7 @@ b a:hover {
 .tag:hover {
     color: #fff;
 }
+
+.count-num, .yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal {
+    color: #1d1d1d!important;
+}
