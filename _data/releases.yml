@@ -9,6 +9,7 @@
   video: OMfdAwpKIsc
   date: 2020-01-24 00:00:00
   type: Releases
+  duration: 3:17
 
 - release: blossom 
   artists: Bayza
@@ -21,6 +22,7 @@
   video: oNvLKifFX20
   date: 2019-12-13 00:00:00
   type: Releases
+  duration: 4:13
 
 - release: astral 
   artists: Bayza
@@ -33,6 +35,7 @@
   video: japf2Vj4Ohw
   date: 2019-12-11 00:00:00
   type: Releases
+  duration: 4:20
 
 - release: mirage
   artists: Bayza
@@ -45,6 +48,7 @@
   video: PgVybJcDXTA
   date: 2019-10-25 00:00:00
   type: Releases
+  duration: 4:03
 
 - release: genuine
   artists: Bayza
@@ -57,6 +61,8 @@
   video: CjtFVqtpBVI
   date: 2019-9-02 00:00:13
   type: Releases
+  album: Genuine
+  duration: 3:38
 
 - release: delirio
   artists: Bayza
@@ -69,6 +75,8 @@
   video: fc2jg7iYBdw
   date: 2019-9-02 00:00:12
   type: Releases
+  album: Genuine
+  duration: 3:30
 
 - release: romance
   artists: Bayza
@@ -81,6 +89,8 @@
   video: uZ3JR7YBLPM
   date: 2019-9-02 00:00:11
   type: Releases
+  album: Genuine
+  duration: 3:52
 
 - release: prisma
   artists: Bayza
@@ -93,6 +103,8 @@
   video: dZi-BEdfM8M
   date: 2019-9-02 00:00:10
   type: Releases
+  album: Genuine
+  duration: 3:21
 
 - release: love
   artists: Bayza
@@ -105,6 +117,8 @@
   video: ufP4BtJzNxY
   date: 2019-9-02 00:00:09
   type: Releases
+  album: Genuine
+  duration: 2:57
 
 - release: nada
   artists: Bayza
@@ -117,6 +131,8 @@
   video: Np8ToFBCmS8
   date: 2019-9-02 00:00:08
   type: Releases
+  album: Genuine
+  duration: 3:44
   
 - release: fell
   artists: Bayza
@@ -129,6 +145,8 @@
   video: 1_5Gmo63J3o
   date: 2019-9-02 00:00:07
   type: Releases
+  album: Genuine
+  duration: 4:05
 
 - release: crescent
   artists: Bayza
@@ -141,6 +159,8 @@
   video: GCum26Y36j0
   date: 2019-9-02 00:00:06
   type: Releases
+  album: Genuine
+  duration: 3:42
 
 - release: praise
   artists: Bayza
@@ -153,6 +173,8 @@
   video: fErm4Re2Nkw
   date: 2019-9-02 00:00:05
   type: Releases
+  album: Genuine
+  duration: 3:55
 
 - release: dive
   artists: Dimatis & Bayza
@@ -165,6 +187,8 @@
   video: 0XBB7YWvHYw
   date: 2019-9-02 00:00:04
   type: Releases
+  album: Genuine
+  duration: 3:47
 
 - release: arousal
   artists: Bayza
@@ -177,6 +201,8 @@
   video: HFu3uiyun7Y
   date: 2019-9-02 00:00:03
   type: Releases
+  album: Genuine
+  duration: 3:53
 
 - release: over-you
   artists: Bayza
@@ -189,6 +215,8 @@
   video: qOc0mwJ8KrA
   date: 2019-9-02 00:00:02
   type: Releases
+  album: Genuine
+  duration: 3:53
 
 - release: zephyr
   artists: Bayza
@@ -201,6 +229,8 @@
   video: grVCfUkqjLs
   date: 2019-9-02 00:00:02
   type: Releases
+  album: Genuine
+  duration: 3:32
 
 - release: majestic
   artists: Bayza
@@ -213,6 +243,7 @@
   video: Tfphg1sn1jQ
   date: 2019-8-02 00:00:00
   type: Releases
+  duration: 4:05
 
 - release: oasis-remix
   artists: Lionis
@@ -225,6 +256,7 @@
   video: uDlypkh80z0
   date: 2019-4-19 00:00:00
   type: Releases
+  duration: 3:27
 
 - release: remorse
   artists: Bayza
@@ -237,6 +269,7 @@
   video: w83ephnGcf0
   date: 2019-4-11 00:00:00
   type: Releases
+  duration: 4:26
 
 - release: wisdom
   artists: Bayza
@@ -249,6 +282,7 @@
   video: lyZyYVHYYC4
   date: 2019-2-13 00:00:00
   type: Releases
+  duration: 4:09
 
 - release: still-learning
   artists: Halsey
@@ -262,6 +296,7 @@
   date: 2020-2-04 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 3:55
 
 - release: strawberry-shortcake
   artists: Melanie Martinez
@@ -275,6 +310,7 @@
   date: 2020-1-01 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 3:15
 
 - release: everything-i-wanted
   artists: Billie Eilish
@@ -288,6 +324,7 @@
   date: 2019-11-30 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 5:05
 
 - release: look-at-her-now
   artists: Selena Gomez
@@ -301,6 +338,7 @@
   date: 2019-10-25 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 3:21
 
 - release: why-do-you-love-me
   artists: Charlotte Lawrence
@@ -314,6 +352,7 @@
   date: 2019-09-28 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 3:13
 
 - release: senorita
   artists: Shawn Mendes, Camila Cabello
@@ -327,6 +366,7 @@
   date: 2019-08-03 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 4:32
 
 - release: i-fell-in-love-with-the-devil
   artists: Avril Lavigne
@@ -340,6 +380,7 @@
   date: 2019-07-24 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 5:13
 
 - release: no-pasa-nada
   artists: Ronna Riva
@@ -353,6 +394,7 @@
   date: 2019-07-16 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 3:43
 
 - release: left-me-yet
   artists: Daya
@@ -366,6 +408,7 @@
   date: 2019-06-22 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 3:56
 
 - release: mad-love
   artists: Mabel
@@ -379,6 +422,7 @@
   date: 2019-06-12 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 2:56
 
 - release: not-the-end
   artists: Bayza
@@ -391,6 +435,7 @@
   video: 8t4YBIYjIJQ
   date: 2018-12-21 00:00:00
   type: Releases
+  duration: 4:24
 
 - release: tavern
   artists: Bayza
@@ -403,6 +448,7 @@
   video: XM8pl7a9qjc
   date: 2018-11-30 00:00:00
   type: Releases
+  duration: 4:41
 
 - release: delight
   artists: Bayza
@@ -415,6 +461,7 @@
   video: vPfMCIzlH-Q
   date: 2018-09-05 00:00:00
   type: Releases
+  duration: 3:58
 
 - release: abyss
   artists: Bayza
@@ -427,6 +474,7 @@
   video: Bnqo9sTgrNA
   date: 2018-06-19 00:00:00
   type: Releases
+  duration: 3:55
 
 - release: timeline-remix
   artists: Dimatis
@@ -439,6 +487,7 @@
   video: gueXauiEUkM
   date: 2018-06-13 00:00:00
   type: Releases
+  duration: 4:56
 
 - release: aether
   artists: Bayza
@@ -451,6 +500,7 @@
   video: ihtWiAPXhYY
   date: 2018-05-24 00:00:00
   type: Releases
+  duration: 4:26
 
 - release: endurance
   artists: Bayza
@@ -463,6 +513,7 @@
   video: ZzcCuoYjC6Q
   date: 2018-05-16 00:00:00
   type: Releases
+  duration: 4:56
 
 - release: convergence
   artists: Bayza
@@ -475,6 +526,7 @@
   video: QYLnqujS8Uk
   date: 2018-04-23 00:00:00
   type: Releases
+  duration: 4:30
 
 - release: unchained
   artists: Bayza
@@ -487,6 +539,7 @@
   video: 89-GLf29wiw
   date: 2018-03-13 00:00:00
   type: Releases
+  duration: 4:30
 
 - release: exaltation
   artists: Bayza
@@ -499,6 +552,7 @@
   video: yV5G9v3DooE
   date: 2020-03-20 00:00:00
   type: Releases
+  duration: 4:21
 
 - release: desires
   artists: Bayza
@@ -511,6 +565,7 @@
   video: 9y9Ja8OCfe4
   date: 2020-03-27 00:00:00
   type: Releases
+  duration: 3:17
 
 - release: not-my-baby
   artists: INNA
@@ -524,6 +579,7 @@
   date: 2020-04-22 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 3:23
 
 - release: desert-rose-enta-omri
   artists: Noel Kharman
@@ -537,3 +593,4 @@
   date: 2020-05-02 00:00:00
   type: Bootlegs/Remixes
   link: -bootlegs
+  duration: 4:29
