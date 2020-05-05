@@ -65,19 +65,19 @@
             <div class="col-12 col-md-4 meta text-justify">
               <div class="tags">
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Genre</span></h5>
-                <h6 class="mb-2">{{ release.genre }}</h6>
+                <h6 class="mb-2"><span class="tag">{{ release.genre }}</span></h6>
                 {% if release.album %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Album</span></h5>
-                <h6 class="mb-2">{{ release.album }}</h6>
+                <h6 class="mb-2"><span class="tag">{{ release.album }}</span></h6>
                 {% endif %}
                 {% if release.label %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Label</span></h5>
-                <h6 class="mb-2">{{ release.label }}</h6>
+                <h6 class="mb-2"><span class="tag">{{ release.label }}</span></h6>
                 {% endif %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Release date</span></h5>
-                <h6 class="mb-2">{{ release.date | date_to_string: "ordinal", "US" }}</h6>
+                <h6 class="mb-2"><span class="tag">{{ release.date | date_to_string: "ordinal", "US" }}</span></h6>
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Duration</span></h5>
-                <h6 class="mb-2">{{ release.duration }}</h6>
+                <h6 class="mb-2"><span class="tag">{{ release.duration }}</span></h6>
               </div>
             </div>
           </div>
