@@ -68,7 +68,7 @@ h1 {
 }
 
 .text-secondary {
-    color: #a2a2a2!important;
+    color: #a8a8a8!important;
 }
 
 .bg-darkest {
@@ -232,7 +232,6 @@ a img:hover {
 }
 
 b a {
-    font-weight: bold;
     color: #fff;
 }
 
