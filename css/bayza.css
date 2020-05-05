@@ -272,6 +272,6 @@ b a:hover {
     font-weight: 300!important;
 }
 
-.tag :hover {
+.tag:hover {
     color: #fff;
 }
