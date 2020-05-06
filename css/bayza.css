@@ -271,6 +271,9 @@ b a:hover {
     font-weight: 400!important;
 }
 
+.tag {
+    color: #a8a8a8;
+}
 .tag:hover {
     color: #fff;
 }
