@@ -67,6 +67,7 @@
   type: Releases
   album: Genuine
   duration: "3:38"
+  fanlink: bayza.fanlink.to/genuine
 
 - release: delirio
   artists: Bayza
@@ -81,6 +82,7 @@
   type: Releases
   album: Genuine
   duration: "3:30"
+  fanlink: bayza.fanlink.to/delirio
 
 - release: romance
   artists: Bayza
@@ -95,6 +97,7 @@
   type: Releases
   album: Genuine
   duration: "3:52"
+  fanlink: bayza.fanlink.to/romance
 
 - release: prisma
   artists: Bayza
@@ -109,6 +112,7 @@
   type: Releases
   album: Genuine
   duration: "3:21"
+  fanlink: bayza.fanlink.to/prisma
 
 - release: love
   artists: Bayza
@@ -123,6 +127,7 @@
   type: Releases
   album: Genuine
   duration: "2:57"
+  fanlink: bayza.fanlink.to/love
 
 - release: nada
   artists: Bayza
@@ -137,6 +142,7 @@
   type: Releases
   album: Genuine
   duration: "3:44"
+  fanlink: bayza.fanlink.to/nada
   
 - release: fell
   artists: Bayza
@@ -151,6 +157,7 @@
   type: Releases
   album: Genuine
   duration: "4:05"
+  fanlink: bayza.fanlink.to/fell
 
 - release: crescent
   artists: Bayza
@@ -165,6 +172,7 @@
   type: Releases
   album: Genuine
   duration: "3:42"
+  fanlink: bayza.fanlink.to/crescent
 
 - release: praise
   artists: Bayza
@@ -179,6 +187,7 @@
   type: Releases
   album: Genuine
   duration: "3:55"
+  fanlink: bayza.fanlink.to/praise
 
 - release: dive
   artists: Dimatis & Bayza
@@ -193,6 +202,7 @@
   type: Releases
   album: Genuine
   duration: "3:47"
+  fanlink: bayza.fanlink.to/dive
 
 - release: arousal
   artists: Bayza
@@ -207,6 +217,7 @@
   type: Releases
   album: Genuine
   duration: "3:53"
+  fanlink: bayza.fanlink.to/arousal
 
 - release: over-you
   artists: Bayza
@@ -221,6 +232,7 @@
   type: Releases
   album: Genuine
   duration: "3:53"
+  fanlink: bayza.fanlink.to/over-you
 
 - release: zephyr
   artists: Bayza
@@ -235,6 +247,7 @@
   type: Releases
   album: Genuine
   duration: "3:32"
+  fanlink: soundcloud.com/bayza/bayza-zephyr
 
 - release: majestic
   artists: Bayza
@@ -248,6 +261,7 @@
   date: 2019-8-02 00:00:00
   type: Releases
   duration: "4:05"
+  fanlink: bayza.fanlink.to/majestic
 
 - release: oasis-remix
   artists: Lionis
@@ -274,6 +288,7 @@
   date: 2019-4-11 00:00:00
   type: Releases
   duration: "4:26"
+  fanlink: nelation.lnk.to/remorse
 
 - release: wisdom
   artists: Bayza
@@ -287,6 +302,7 @@
   date: 2019-2-13 00:00:00
   type: Releases
   duration: "4:09"
+  fanlink: nelation.lnk.to/wisdom
 
 - release: still-learning
   artists: Halsey
@@ -440,6 +456,7 @@
   date: 2018-12-21 00:00:00
   type: Releases
   duration: "4:24"
+  fanlink: bayza.fanlink.to/nottheend
 
 - release: tavern
   artists: Bayza
@@ -453,6 +470,7 @@
   date: 2018-11-30 00:00:00
   type: Releases
   duration: "4:41"
+  fanlink: bayza.fanlink.to/tavern
 
 - release: delight
   artists: Bayza
@@ -466,6 +484,7 @@
   date: 2018-09-05 00:00:00
   type: Releases
   duration: "3:58"
+  fanlink: nelation.lnk.to/delight
 
 - release: abyss
   artists: Bayza
@@ -479,6 +498,7 @@
   date: 2018-06-19 00:00:00
   type: Releases
   duration: "3:55"
+  fanlink: nelation.lnk.to/abyss
 
 - release: timeline-remix
   artists: Dimatis
@@ -492,6 +512,7 @@
   date: 2018-06-13 00:00:00
   type: Releases
   duration: "4:56"
+  fanlink: dimatis.fanlink.to/timelinebayza
 
 - release: aether
   artists: Bayza
@@ -505,6 +526,7 @@
   date: 2018-05-24 00:00:00
   type: Releases
   duration: "4:26"
+  fanlink: nelation.lnk.to/aether
 
 - release: endurance
   artists: Bayza
@@ -518,6 +540,7 @@
   date: 2018-05-16 00:00:00
   type: Releases
   duration: "4:56"
+  fanlink: nelation.lnk.to/endurance
 
 - release: convergence
   artists: Bayza
@@ -531,6 +554,7 @@
   date: 2018-04-23 00:00:00
   type: Releases
   duration: "4:30"
+  fanlink: nelation.lnk.to/convergence
 
 - release: unchained
   artists: Bayza
