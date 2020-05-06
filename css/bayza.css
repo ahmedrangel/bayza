@@ -67,7 +67,7 @@ h1 {
     background-color: #c8c8c8;
 }
 
-.text-secondary {
+.text-secondary, .tag {
     color: #a8a8a8!important;
 }
 
