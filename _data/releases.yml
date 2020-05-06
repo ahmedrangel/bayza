@@ -553,6 +553,7 @@
   date: 2020-03-20 00:00:00
   type: Releases
   duration: "4:21"
+  fanlink: fanlink.to/MDS104
 
 - release: desires
   artists: Bayza
@@ -566,6 +567,7 @@
   date: 2020-03-27 00:00:00
   type: Releases
   duration: "3:17"
+  fanlink: fanlink.to/MDS105
 
 - release: not-my-baby
   artists: INNA
@@ -594,4 +596,3 @@
   type: Bootlegs/Remixes
   link: -bootlegs
   duration: "4:29"
-  fanlink: https://soundcloud.com/bayza-bootlegs/desert-rose-enta-omri-mashup-bayza-remix
