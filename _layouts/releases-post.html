@@ -78,6 +78,10 @@
                 <h6 class="mb-2"><span class="tag">{{ release.date | date_to_string: "ordinal", "US" }}</span></h6>
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Duration:</span></h5>
                 <h6 class="mb-2"><span class="tag">{{ release.duration }}</span></h6>
+                {% if release.fanlink %}
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Stream/Download:</span></h5>
+                <h6 class="mb-2"><span class="tag">{{ release.fanlink }}</span></h6>
+                {% endif %}
               </div>
             </div>
           </div>
