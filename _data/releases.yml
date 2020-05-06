@@ -10,6 +10,7 @@
   date: 2020-01-24 00:00:00
   type: Releases
   duration: "3:17"
+  fanlink: dimatis.fanlink.to/serenity
 
 - release: blossom 
   artists: Bayza
@@ -23,6 +24,7 @@
   date: 2019-12-13 00:00:00
   type: Releases
   duration: "4:13"
+  fanlink: fanlink.to/MDS060
 
 - release: astral 
   artists: Bayza
@@ -36,6 +38,7 @@
   date: 2019-12-11 00:00:00
   type: Releases
   duration: "4:20"
+  fanlink: bayza.ml/astral
 
 - release: mirage
   artists: Bayza
@@ -49,6 +52,7 @@
   date: 2019-10-25 00:00:00
   type: Releases
   duration: "4:03"
+  fanlink: bayza.ml/mirage
 
 - release: genuine
   artists: Bayza
