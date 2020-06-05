@@ -3,7 +3,7 @@ layout: fanlink
 
 title: Everything I Wanted
 artists: Bayza
-link: everything-i-wanted
+link: everythingiwanted
 date: 2020-06-05 00:00:00
 
 image: http://bayzamusic.com/images/releases/2020/everythingiwanted.jpg
