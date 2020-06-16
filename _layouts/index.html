@@ -1,4 +1,4 @@
-{%- assign sorted = site.data.releases | sort: 'date' | reverse | where: "type", Releases -%}
+{%- assign sorted = site.data.releases | sort: 'date' | reverse -%}
 <html lang="en">
   <head>
     <title>Bayza</title>
@@ -149,7 +149,7 @@
                 <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
                   <img class="img-fluid scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
                   <h5 class="mb-0"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
-                  <small><p class="mb-4">{{ item.artists }}</p></small> 
+                  <small><p class="mb-4">{{ item.artists }}</p></small>
                 </a>
               </div>
             </div>
