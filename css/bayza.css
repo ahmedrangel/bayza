@@ -228,6 +228,18 @@ footer .instagram a:hover {
     background: #151515!important
 }
 
+a img{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 a img:hover {
     filter: contrast(105%) brightness(120%) drop-shadow(7px 7px 5px #00000088);
 }
@@ -280,7 +292,17 @@ b a:hover {
 }
 
 .upcoming {
-    filter: contrast(100%) brightness(30%)
+    filter: contrast(100%) brightness(30%);
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }
 
 .centered {
@@ -294,4 +316,8 @@ b a:hover {
     position: relative;
     text-align: center;
     color: white;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
 }
