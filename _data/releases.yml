@@ -649,6 +649,7 @@
   label: DeepShine Records
   video: 
   date: 2020-06-24 00:00:00
-  type: Upcoming
+  type: Releases
   duration: "4:24"
-  fanlink: 
+  fanlink:
+  upcoming: 1
