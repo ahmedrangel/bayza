@@ -12,6 +12,7 @@ image_secure: https://bayzamusic.com/images/releases/2020/everythingiwanted.jpg
 spotify: https://open.spotify.com/album/7u9f8veDrtAZWJDdNKzMiK
 soundcloud: https://soundcloud.com/bayza/everything-i-wanted
 youtube: https://youtu.be/IX2VJo9E_Sw
+beatport: https://www.beatport.com/track/everything-i-wanted-original-mix/13602423
 itunes: https://music.apple.com/us/album/everything-i-wanted-single/1512929117?app=itunes
 apple: https://music.apple.com/us/album/everything-i-wanted-single/1512929117?app=music
 deezer: https://www.deezer.com/en/album/147809492
