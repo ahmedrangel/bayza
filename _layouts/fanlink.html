@@ -97,7 +97,7 @@
               </a>{% endif %}{% if page.youtube %}
               <!-- youtube -->
               <a class="row links text-white" href="{{ page.youtube }}" target="_blank" title="Stream on Youtube">
-                <div class="col-6 pl-5 py-4">
+                <div class="col-6 pl-5 py-4"> 
                   <img class="mx-auto d-block" src="/images/youtube.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
@@ -112,15 +112,6 @@
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
                 </div>
-              </a>{% endif %}{% if page.itunes %}
-              <!-- itunes -->
-              <a class="row links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
-                <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/images/itunes.png" width="100%"/>
-                </div>
-                <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Buy</span>
-                </div>
               </a>{% endif %}{% if page.apple %}
               <!-- apple music -->
               <a class="row links text-white" href="{{ page.apple }}" target="_blank" title="Stream on Apple Music">
@@ -129,6 +120,15 @@
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
+                </div>
+              </a>{% endif %}{% if page.itunes %}
+              <!-- itunes -->
+              <a class="row links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/images/itunes.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">Buy</span>
                 </div>
               </a>{% endif %}{% if page.bandcamp %}
               <!-- bandcamp-->
