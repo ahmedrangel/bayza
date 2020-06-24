@@ -103,6 +103,15 @@
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
                 </div>
+              </a>{% endif %}{% if page.beatport %}
+              <!-- beatport -->
+              <a class="row links text-white" href="{{ page.beatport }}" target="_blank" title="Buy on Beatport">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/images/beatport.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">Buy</span>
+                </div>
               </a>{% endif %}{% if page.itunes %}
               <!-- itunes -->
               <a class="row links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
