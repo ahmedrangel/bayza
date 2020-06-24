@@ -2,7 +2,7 @@
 layout: fanlink
 
 title: Alone
-artists: Bayza
+artists: DJ SK & Bayza
 link: alone
 date: 2020-06-24 00:00:00
 
