@@ -4,7 +4,7 @@ layout: fanlink
 title: Alone
 artists: Bayza
 link: alone
-date: 2020-06-05 00:00:00
+date: 2020-06-24 00:00:00
 
 image: http://bayzamusic.com/images/releases/2020/alone.jpg
 image_secure: https://bayzamusic.com/images/releases/2020/alone.jpg
