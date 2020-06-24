@@ -12,7 +12,7 @@ image_secure: https://bayzamusic.com/images/releases/2020/alone.jpg
 spotify: https://open.spotify.com/album/1bpVJxbwqSu9vJ2drvTdpg
 soundcloud: https://soundcloud.com/miss-deepshine/dj-sk-bayza-alone-original-mix
 youtube: https://youtu.be/FKTMZBDzgD8
-beatport: 
+beatport: https://www.beatport.com/release/alone/2981881
 itunes: 
 apple: https://music.apple.com/us/album/alone-single/1515190787
 deezer: https://www.deezer.com/en/album/150568762
