@@ -43,6 +43,24 @@
     <link rel="stylesheet" href="/css/bayza.css"/>
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="canonical" href="https://bayzamusic.com/releases/{{ release.year }}/{{ release.release }}"/>
+    <script type="application/ld+json">
+      {   
+        "@context" : "http://schema.org",
+        "@type" : "MusicRecording",
+        "name" : "{{ release.title }}",
+        "url" : "https://bayzamusic.com/releases/{{ release.year }}/{{ release.release }}",
+        "image" : "https://bayzamusic.com/images/releases/{{ release.year }}/{{ release.cover }}.jpg",
+        "genre" : "{{ release.genre }}",
+        "duration" : "{{ release.duration }}",
+        "datePublished": "{{ release.date }}",
+        "byArtist": [
+          {
+            "@type": "MusicGroup",
+            "name": "{{ release.artist }}"
+          }
+        ]
+      }
+    </script>
   </head>
 
   </body>
