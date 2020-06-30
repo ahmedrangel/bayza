@@ -147,6 +147,21 @@
             <div class="item">
               <div class="cover">
                 <div class="upcoming-container" >
+                  <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2020/hold-on-to-me.jpg">
+                  <div class="centered">
+                    <h4>Upcoming</h4>
+                    <small><h5>Jul 31, 2020</h5></small>
+                  </div>
+                </div>
+                  <h5 class="mb-0"><small><p class="mb-0 mt-2">Hold On To Me</p></small></h5>
+                  <small><p class="mb-4">Dimatis & Bayza</p></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="item">
+              <div class="cover">
+                <div class="upcoming-container" >
                   <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2020/miracle.jpg">
                   <div class="centered">
                     <h4>Upcoming</h4>
@@ -170,7 +185,7 @@
                 <small><p class="mb-4">{{ item.date | date: "%b %-d, %Y" }}</p></small>
               </div>
             </div>
-          </div>{% if forloop.index0 == 10 %}{% break %}{% endif %}{% endfor %}
+          </div>{% if forloop.index0 == 9 %}{% break %}{% endif %}{% endfor %}
         </div>  
         <a class="btn btn-outline-releases px-4 py-1" href="/releases">See more</a>
       </div>
