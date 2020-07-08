@@ -17,7 +17,8 @@ itunes: https://music.apple.com/us/album/everything-i-wanted-single/1512929117?a
 apple: https://music.apple.com/us/album/everything-i-wanted-single/1512929117?app=music
 deezer: https://www.deezer.com/en/album/147809492
 amazon: https://www.amazon.com/-/es/Bayza/dp/B088HJ2LNZ
-download: 
+download:
+tiktok: https://vm.tiktok.com/J8Xxgfb 
 
 dark: false
 ---
