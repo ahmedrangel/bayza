@@ -18,6 +18,7 @@ apple: https://music.apple.com/us/album/alone-single/1515190787
 deezer: https://www.deezer.com/en/album/150568762
 amazon: https://www.amazon.com/Alone-DJ-SK-MA-Bayza/dp/B089597J6Q
 download: 
+tiktok: https://vm.tiktok.com/J8XyVFk
 
 dark: false
 ---
