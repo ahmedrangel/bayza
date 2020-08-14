@@ -16,7 +16,7 @@ beatport:
 itunes: 
 apple: https://music.apple.com/us/album/1523752558?i=1523752560
 deezer: https://www.deezer.com/en/track/1022970892
-amazon: 
+amazon: https://www.amazon.com/dp/B08D5X9L9P/
 download: 
 tiktok: https://vm.tiktok.com/ZMJMVFvQA
 
