@@ -1,8 +1,8 @@
 ---
 layout: fanlink
 
-title: Make Believe
-artists: Bayza
+title: Make Believe (Bayza Remix)
+artists: Eress
 link: make-believe
 date: 2020-08-01 00:00:00
 
