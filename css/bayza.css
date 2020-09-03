@@ -321,3 +321,9 @@ b a:hover {
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */      
 }
+
+@media only screen and (max-width: 767px){
+    #cabecera{
+        background: linear-gradient(rgb(160 153 160), rgb(160 153 160)),url(../images/ahmed_bannerweb3.jpg);
+    }
+}
