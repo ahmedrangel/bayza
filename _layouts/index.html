@@ -140,7 +140,7 @@
       </div>
     </section>
 
-    <section id="latest releases" class="bg-darkest" data-aos="zoom-in">
+    <section id="latest releases" class="bg-darkest">
       <div class="container text-secondary py-5 text-center">
         <h3 class="mt-3 text-uppercase text-white" data-aos="fade-right">Latest Music</h3>
         <div class="row my-4 text-left">
@@ -164,7 +164,7 @@
             <div class="item">
               <div class="cover">
                 <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
-                  <img class="img-fluid scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                  <img data-aos="zoom-in" class="img-fluid scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
                   <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
                 </a>
                 <small><p class="mb-0">{{ item.artists }}</p></small>
