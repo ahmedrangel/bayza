@@ -323,7 +323,10 @@ b a:hover {
 }
 
 @media only screen and (max-width: 767px){
-    #cabecera{
+    .cabecera{
         background: linear-gradient(rgb(160 153 160), rgb(160 153 160)),url(../images/ahmed_bannerweb3.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 }
