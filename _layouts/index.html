@@ -168,7 +168,7 @@
                   <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
                 </a>
                 <small><p class="mb-0">{{ item.artists }}</p></small>
-                <small><p class="mb-4" data-aos="fade-right">{{ item.date | date: "%b %-d, %Y" }}</p></small>
+                <small><p class="mb-4">{{ item.date | date: "%b %-d, %Y" }}</p></small>
               </div>
             </div>
           </div>{% if forloop.index0 == 10 %}{% break %}{% endif %}{% endfor %}
