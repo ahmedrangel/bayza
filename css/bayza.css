@@ -28,13 +28,14 @@ h1 {
 }
 
 .btn-outline-dark {
-    color: #282828;
+    color: #fff;
     border-color: #282828!important;
+    background-color: #111111ab;
 }
 
 .btn-outline-dark:hover {
     color: #fff;
-    background-color: #282828;
+    background-color: #424242ab;
     border-color: #282828;
 }
 
