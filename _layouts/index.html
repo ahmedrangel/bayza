@@ -130,7 +130,7 @@
           </div>
           <div class="col-12 col-md-4 d-none d-md-block mt-1">
             <div class="portfolio-block block-intro">
-              <div class="avatar border border-1" style="background-image:url('images/bayza-avatar.jpg');"></div>
+              <div data-aos="zoom-in" class="avatar border border-1" style="background-image:url('images/bayza-avatar.jpg');"></div>
             </div>
           </div>
           <div class="col-12 col-md-7 text-center d-block d-md-none">
@@ -143,7 +143,7 @@
               <h5 data-aos="zoom-in">Latest Release:</h1>
               <a target="_blank" class="text-dark" href="/releases/{{ releases.last.year }}{{ releases.last.link }}/{{ releases.last.release }}">
               <small><h5 class="font-weight-light" data-aos="fade-left">{{ releases.last.title }} <i class="fas fa-external-link-alt"></i></h5></a></small>
-              <small class="mb-4" data-aos="fade-right">by {{ releases.last.artists }}</small>
+              <div data-aos="fade-left"><small class="mb-4" >by {{ releases.last.artists }}</small></div>
               <small><p class="mb-4 mt-1" data-aos="fade-right">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
             </div>
             <div class="col-12 col-md-5 d-none d-md-block">
