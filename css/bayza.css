@@ -365,3 +365,7 @@ b a:hover {
 .page-footer a {
     color: #b8b8b8;
 }
+
+.page-footer {
+    border-top: 0px;
+}
