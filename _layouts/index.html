@@ -139,14 +139,15 @@
             <small><p class="mb-4" data-aos="fade-right"><span>Contact: </span><a class="text-dark" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></p></small>
           </div>
           <div class="col-12 col-md-4 row mt-5 text-right">
-            <div class="col-12 col-md-9 d-none d-md-block">
+            <div class="col-12 col-md-7 d-none d-md-block">
               <h5 data-aos="zoom-in">Latest Release:</h1>
               <a class="text-dark" href="/releases/{{ releases.last.year }}{{ releases.last.link }}/{{ releases.last.release }}">
-              <h5 class="font-weight-light" data-aos="fade-left">{{ releases.last.artists }} - {{ releases.last.title }} <i class="fas fa-external-link-alt"></i></h5></a>
+              <small><h5 class="font-weight-light" data-aos="fade-left">{{ releases.last.title }} <i class="fas fa-external-link-alt"></i></h5></a></small>
+              <small class="mb-4" data-aos="fade-right">by {{ releases.last.artists }}</small>
               <small><p class="mb-4" data-aos="fade-right">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
             </div>
-            <div class="col-12 col-md-3 d-none d-md-block">
-              <img width="100px" height=" 100px" data-aos="zoom-in" class="scale-on-hover" src="https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg" alt="{{ releases.last.artists }} - {{ releases.last.title }}">
+            <div class="col-12 col-md-5 d-none d-md-block">
+              <img data-aos="zoom-in" widht="100px" height="100px" src="https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg" alt="{{ releases.last.artists }} - {{ releases.last.title }}">
             </div>
             
             </a>
@@ -194,7 +195,7 @@
             <div class="item">
               <div class="cover">
                 <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
-                  <img data-aos="zoom-in" class="img-fluid scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                  <img data-aos="zoom-in" class="img-fx img-fluid scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
                   <h5 class="mb-0" style="font-size: 1.25rem;" data-aos="fade-left"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
                 </a>
                 <small><p class="mb-0" data-aos="fade-left">{{ item.artists }}</p></small>
