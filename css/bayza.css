@@ -360,3 +360,7 @@ b a:hover {
 .border {
     border: 0px!important;
 }
+
+.page-footer a {
+    color: #b8b8b8;
+}
