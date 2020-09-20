@@ -369,3 +369,7 @@ b a:hover {
 .page-footer {
     border-top: 0px;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #a8a8a8;
+}
