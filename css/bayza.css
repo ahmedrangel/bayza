@@ -345,3 +345,18 @@ b a:hover {
         margin-top: 4rem;
     }
 }
+
+.portfolio-block {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.portfolio-block.block-intro .avatar {
+    margin-bottom: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+.border {
+    border: 0px!important;
+}
