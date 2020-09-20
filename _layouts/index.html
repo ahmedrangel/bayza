@@ -1,4 +1,5 @@
 {%- assign sorted = site.data.releases | sort: 'date' | reverse -%}
+{%- assign releases = site.data.releases | where: "type", "Releases" -%}
 <html lang="en">
   <head>
     <title>Bayza</title>
@@ -119,22 +120,34 @@
         </ul>
       </div>  
     </nav>
-    <section id="dark" class="cabecera text-center text-dark py-5">
+    <section id="dark" class="cabecera text-dark py-5">
       <div class="container pt-4 cabecera-adjust" style="overflow-x: hidden;">
-        <h1 class="display-4 mt-3 text-uppercase" data-aos="zoom-in">Bayza</h1>
-        <h4 class="my-3 font-weight-light" data-aos="fade-left">Panamanian musician and producer</h4>
         <div class="row">
-          <div class="col-12 mb-2 justify-content-center">
-            <span>
-              <a data-aos="flip-right" href="#music" type="button" class="btn btn-outline-dark px-5 py-2 mb-2">
-                <h5 class="font-weight-light m-0 text-uppercase">Music</h5>
-              </a>
-            </span>
-            <span>
-              <a data-aos="flip-right" href="#contact" type="button" class="btn btn-outline-dark px-5 py-2 mb-2">
-                <h5 class="font-weight-light m-0 text-uppercase">Contact</h5>
-              </a>
-            </span>
+          <div class="col-12 col-md-7 text-center">
+            <h1 class="display-4 mt-3 text-uppercase" data-aos="zoom-in">Bayza</h1>
+            <h4 class="my-3 font-weight-light" data-aos="fade-left">Panamanian musician and producer</h4>
+            <div class="row">
+              <div class="col-12 mb-2 justify-content-center">
+                <span>
+                  <a data-aos="flip-right" href="#contact" type="button" class="btn btn-outline-dark px-5 py-2 mb-2">
+                    <h5 class="font-weight-light m-0 text-uppercase">Contact</h5>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 row mt-5 text-right">
+            <div class="col-12 col-md-9 d-none d-md-block">
+              <h5 data-aos="zoom-in">Latest Official Release:</h1>
+              <a class="text-dark" href="/releases/{{ releases.last.year }}{{ releases.last.link }}/{{ releases.last.release }}">
+              <h5 class="font-weight-light" data-aos="fade-left">{{ releases.last.artists }} - {{ releases.last.title }} <i class="fas fa-external-link-alt"></i></h5></a>
+              <small><p class="mb-4" data-aos="fade-right">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
+            </div>
+            <div class="col-12 col-md-3 d-none d-md-block">
+              <img width="100px" height=" 100px" data-aos="zoom-in" class="img-fluid scale-on-hover" src="https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg" alt="{{ releases.last.artists }} - {{ releases.last.title }}">
+            </div>
+            
+            </a>
           </div>
         </div>
       </div>
