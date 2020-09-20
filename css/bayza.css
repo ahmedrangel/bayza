@@ -335,13 +335,13 @@ b a:hover {
 
 .cabecera-adjust{
     padding-bottom: .5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     margin-top: 6rem;
 }
 @media only screen and (max-width: 767px){
     .cabecera-adjust{
         padding-bottom: 0;
-        margin-bottom: 0;
+        margin-bottom: -1rem;
         margin-top: 4rem;
     }
 }
