@@ -17,6 +17,7 @@ apple: https://music.apple.com/us/album/hold-on-to-me-single/1526294383
 deezer: https://www.deezer.com/en/album/165690312
 amazon: https://www.amazon.com/Hold-Me-Dimatis-Bayza/dp/B08FFMF4L3
 download: 
+tiktok: https://vm.tiktok.com/ZSmq7e54
 
 dark: false
 ---
