@@ -6,7 +6,7 @@ artists: Bayza
 link: hold-on-to-me
 date: 2020-09-25 00:00:00
 
-image: http://bayzamusic.com/images/hold-on-to-me.jpg
+image: http://bayzamusic.com/images/releases/2020/hold-on-to-me.jpg
 image_secure: https://bayzamusic.com/images/hold-on-to-me.jpg
 
 spotify: https://open.spotify.com/track/0U9BPZn0nvkUYFfuPteBmE
