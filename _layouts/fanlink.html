@@ -141,6 +141,15 @@
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
                 </div>
+              </a>{% endif %}{% if page.deezer %}
+              <!-- deezer -->
+              <a class="row links text-white" href="{{ page.deezer }}" target="_blank" title="Stream on Deezer">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/images/deezer.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">Stream</span>
+                </div>
               </a>{% endif %}{% if page.amazon-music %}
               <!-- amazon music -->
               <a class="row links text-white" href="{{ page.amazon-music }}" target="_blank" title="Stream on Amazon Music">
@@ -158,15 +167,6 @@
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
-                </div>
-              </a>{% endif %}{% if page.deezer %}
-              <!-- deezer -->
-              <a class="row links text-white" href="{{ page.deezer }}" target="_blank" title="Stream on Deezer">
-                <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/images/deezer.png" width="100%"/>
-                </div>
-                <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
                 </div>
               </a>{% endif %}{% if page.tidal %}
               <!-- tidal -->
