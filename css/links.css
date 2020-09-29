@@ -6,13 +6,28 @@ html {
   border: none;
 }
 
-.bg-image {
+.bg-image-list {
   position: fixed;
   left: 0;
   right: 0;
 
   filter: saturate(3) blur(10px);
   -webkit-filter: saturate(3) blur(10px);
+  
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
   
   height: 100%; 
   
