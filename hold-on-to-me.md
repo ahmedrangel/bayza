@@ -2,7 +2,7 @@
 layout: fanlink
 
 title: Hold On To Me
-artists: Bayza
+artists: Dimatis & Bayza
 link: hold-on-to-me
 date: 2020-09-25 00:00:00
 
