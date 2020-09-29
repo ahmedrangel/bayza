@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="/css/links.css" />
   </head>
   <body class="bg-dark">
-    <div class="bg-image" style="background-image: url('{{ page.background }}')"></div>
+    <div class="bg-image-list" style="background-image: url('{{ page.background }}')"></div>
     <div class="container text-white">
       <div class="row">{% assign sorted = site.pages | sort: 'date' | reverse %}{% for item in sorted %}{% if item.artists %}
         <div class="mx-auto col-lg-4">
