@@ -10,7 +10,7 @@ image: http://bayzamusic.com/images/releases/2020/solace.jpg
 image_secure: http://bayzamusic.com/images/releases/2020/solace.jpg
 
 spotify: https://open.spotify.com/album/22i8HksJAROoLVOqKzzsMX
-apple: https://music.apple.com/album/solace-single/1527771223s
+apple: https://music.apple.com/album/solace-single/1527771223
 soundcloud: https://soundcloud.com/palmtherapysounds/bayza-solace
 youtube: https://youtu.be/oYqe05-Aha0
 itunes:
