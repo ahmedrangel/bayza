@@ -87,6 +87,15 @@
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
                 </div>
+              </a>{% endif %}{% if page.apple %}
+              <!-- apple music -->
+              <a class="row links text-white" href="{{ page.apple }}" target="_blank" title="Stream on Apple Music">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/images/apple-music.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">Stream</span>
+                </div>
               </a>{% endif %}{% if page.soundcloud %}
               <!-- soundcloud -->
               <a class="row links text-white" href="{{ page.soundcloud }}" target="_blank" title="Stream on Soundcloud">
@@ -114,15 +123,6 @@
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
                 </div>
-              </a>{% endif %}{% if page.apple %}
-              <!-- apple music -->
-              <a class="row links text-white" href="{{ page.apple }}" target="_blank" title="Stream on Apple Music">
-                <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/images/apple-music.png" width="100%"/>
-                </div>
-                <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
-                </div>
               </a>{% endif %}{% if page.itunes %}
               <!-- itunes -->
               <a class="row links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
@@ -137,6 +137,24 @@
               <a class="row links text-white" href="{{ page.bandcamp }}" target="_blank" title="Buy on Bandcamp">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/bandcamp.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">Buy</span>
+                </div>
+              </a>{% endif %}{% if page.amazon-music %}
+              <!-- amazon music -->
+              <a class="row links text-white" href="{{ page.amazon-music }}" target="_blank" title="Stream on Amazon Music">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/images/amazon-music.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">Stream</span>
+                </div>
+              </a>{% endif %}{% if page.amazon %}
+              <!-- amazon -->
+              <a class="row links text-white" href="{{ page.amazon }}" target="_blank" title="Buy on Amazon">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/images/amazon.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
@@ -158,15 +176,6 @@
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
-                </div>
-              </a>{% endif %}{% if page.amazon %}
-              <!-- amazon -->
-              <a class="row links text-white" href="{{ page.amazon }}" target="_blank" title="Buy on Amazon">
-                <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/images/amazon.png" width="100%"/>
-                </div>
-                <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Buy</span>
                 </div>
               </a>{% endif %}{% if page.tiktok %}
               <!-- tiktok -->
