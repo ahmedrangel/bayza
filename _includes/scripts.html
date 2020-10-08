@@ -1,26 +1,26 @@
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
-<script src="/js/jquery-3.4.1.min.js"></script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
-<script>
-    AOS.init();
-</script>
-<script>
-  $('body').css('padding-top', 0 + 'px')
-  if ($('.smart-scroll').length > 0) { // check if element exists
-      var last_scroll_top = 0;
-      $(window).on('scroll', function() {
-          scroll_top = $(this).scrollTop();
-          if(scroll_top < last_scroll_top) {
-              $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-          }
-          else {
-              $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-          }
-          last_scroll_top = scroll_top;
-      });
-  }
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $('body').css('padding-top', 0 + 'px')
+      if ($('.smart-scroll').length > 0) { // check if element exists
+          var last_scroll_top = 0;
+          $(window).on('scroll', function() {
+              scroll_top = $(this).scrollTop();
+              if(scroll_top < last_scroll_top) {
+                  $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+              }
+              else {
+                  $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+              }
+              last_scroll_top = scroll_top;
+          });
+      }
+    </script>
