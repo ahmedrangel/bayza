@@ -105,8 +105,8 @@
             <h4 class="my-3 font-weight-light">Panamanian music producer</h4>
             <small><p class="mb-4"><span>Contact: </span><a class="text-white" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></p></small>
           </div>
-          <div class="col-12 col-md-6 row mt-4 text-right" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
-            <div class="col-12 col-md-8 d-none d-md-block mt-2">
+          <div class="col-12 col-md-6 row mt-4 text-right px-0" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+            <div class="col-12 col-md-8 d-none d-md-block mt-2 pr-0">
               <h3>Latest Release:</h3>
               <a target="_blank" class="text-white" href="/releases/{{ releases.last.year }}{{ releases.last.link }}/{{ releases.last.release }}">
               <h5 class="font-weight-light">{{ releases.last.title }} <i class="fas fa-external-link-alt"></i></h5></a>
@@ -114,7 +114,7 @@
               <small><p class="mb-4 mt-1">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
             </div>
             <div class="col-12 col-md-4 d-none d-md-block portfolio-block block-intro mt-2">
-              <div class="avatar mt-1" style="background-image:url('https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg'); width:120px; height:120px; border-radius:0px"></div>
+              <div class="avatar mt-1 mr-0" style="background-image:url('https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg'); width:120px; height:120px; border-radius:0px"></div>
             </div>
           </div>
         </div>
