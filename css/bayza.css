@@ -325,7 +325,7 @@ b a:hover {
     user-select: none;          /* Likely future */      
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 767px){
     .cabecera{
         background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(../images/bayza-background.jpg);
         background-repeat: no-repeat;
@@ -339,7 +339,7 @@ b a:hover {
     margin-bottom: 19rem;
     margin-top: 20rem;
 }
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 767px){
     .cabecera-adjust{
         padding-bottom: 0;
         margin-bottom: 5rem;
