@@ -17,7 +17,7 @@ h1 {
 }
 
 .cabecera {
-    background: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)),url(../images/ahmed_bannerweb3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/bayza-background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -327,7 +327,7 @@ b a:hover {
 
 @media only screen and (max-width: 767px){
     .cabecera{
-        background: linear-gradient(rgb(0, 0, 0, 0.16), rgb(0, 0, 0, 0.16)),url(../images/ahmed_bannerweb3-mobile.jpg);
+        background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(../images/bayza-background.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -336,14 +336,14 @@ b a:hover {
 
 .cabecera-adjust{
     padding-bottom: .5rem;
-    margin-bottom: 5rem;
-    margin-top: 6rem;
+    margin-bottom: 19rem;
+    margin-top: 20rem;
 }
 @media only screen and (max-width: 767px){
     .cabecera-adjust{
         padding-bottom: 0;
-        margin-bottom: -1rem;
-        margin-top: 4rem;
+        margin-bottom: 5rem;
+        margin-top: 10rem;
     }
 }
 

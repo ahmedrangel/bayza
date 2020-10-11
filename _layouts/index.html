@@ -92,34 +92,29 @@
   </head>
   <body>
 {% include navbar.html %}
-    <section id="dark" class="cabecera text-dark py-5">
+    <section id="dark" class="cabecera text-white py-5">
       <div class="container pt-4 cabecera-adjust" style="overflow-x: hidden;">
         <div class="row">
-          <div class="col-12 col-md-4 text-left d-none d-md-block">
-            <h1 class="display-4 mt-3 text-uppercase" data-aos="zoom-in">Bayza</h1>
-            <h4 class="my-3 font-weight-light" data-aos="fade-left">Panamanian music producer</h4>
-            <small><p class="mb-4" data-aos="fade-right"><span>Contact: </span><a class="text-dark" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></p></small>
-          </div>
-          <div class="col-12 col-md-4 d-none d-md-block mt-1">
-            <div class="portfolio-block block-intro">
-              <div data-aos="zoom-in" class="avatar border border-1" style="background-image:url('images/bayza-avatar.jpg');"></div>
-            </div>
+          <div class="col-12 col-md-6 text-left d-none d-md-block" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+            <h1 class="display-4 mt-3 text-uppercase">Bayza</h1>
+            <h4 class="my-3 font-weight-light">Panamanian music producer</h4>
+            <small><p class="mb-4"><span>Contact: </span><a class="text-white" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></p></small>
           </div>
           <div class="col-12 col-md-7 text-center d-block d-md-none">
             <h1 class="display-4 mt-3 text-uppercase " data-aos="zoom-in">Bayza</h1>
             <h4 class="my-3 font-weight-light" data-aos="fade-left">Panamanian music producer</h4>
-            <small><p class="mb-4" data-aos="fade-right"><span>Contact: </span><a class="text-dark" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></p></small>
+            <small><p class="mb-4" data-aos="fade-right"><span>Contact: </span><a class="text-white" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></p></small>
           </div>
-          <div class="col-12 col-md-4 row mt-5 text-right">
-            <div class="col-12 col-md-7 d-none d-md-block">
-              <h5 data-aos="zoom-in">Latest Release:</h1>
-              <a target="_blank" class="text-dark" href="/releases/{{ releases.last.year }}{{ releases.last.link }}/{{ releases.last.release }}">
-              <small><h5 class="font-weight-light" data-aos="fade-left">{{ releases.last.title }} <i class="fas fa-external-link-alt"></i></h5></a></small>
-              <div data-aos="fade-left"><small class="mb-4" >by {{ releases.last.artists }}</small></div>
-              <small><p class="mb-4 mt-1" data-aos="fade-right">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
+          <div class="col-12 col-md-6 row mt-5 text-right" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+            <div class="col-12 col-md-9 d-none d-md-block">
+              <h5>Latest Release:</h1>
+              <a target="_blank" class="text-white" href="/releases/{{ releases.last.year }}{{ releases.last.link }}/{{ releases.last.release }}">
+              <small><h5 class="font-weight-light">{{ releases.last.title }} <i class="fas fa-external-link-alt"></i></h5></a></small>
+              <div><small class="mb-4" >by {{ releases.last.artists }}</small></div>
+              <small><p class="mb-4 mt-1">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
             </div>
-            <div class="col-12 col-md-5 d-none d-md-block portfolio-block block-intro">
-              <div class="avatar" data-aos="zoom-in" style="background-image:url('https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg'); width:100px; height:100px; border-radius:0px"></div>
+            <div class="col-12 col-md-3 d-none d-md-block portfolio-block block-intro">
+              <div class="avatar" style="background-image:url('https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg'); width:100px; height:100px; border-radius:0px"></div>
             </div>
           </div>
         </div>
