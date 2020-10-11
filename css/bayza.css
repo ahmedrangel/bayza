@@ -25,19 +25,19 @@ h1 {
 }
 
 .text-dark {
-    color: #282828!important;
+    color: #1d1d1d!important;
 }
 
 .btn-outline-dark {
     color: #fff;
-    border-color: #282828!important;
+    border-color: #1d1d1d!important;
     background-color: #000000ab;
 }
 
 .btn-outline-dark:hover {
     color: #fff;
     background-color: #424242ab;
-    border-color: #282828;
+    border-color: #1d1d1d;
 }
 
 .btn-outline-soundcloud, .btn-outline-spotify, .btn-outline-youtube, .btn-outline-releases {
