@@ -12,7 +12,7 @@ image_secure: http://bayzamusic.com/images/releases/2020/no-guarantee.jpg
 spotify: https://open.spotify.com/album/0Q5SIAHGCmJqTOcMCpeh96
 apple: https://music.apple.com/album/no-guarantee-single/1533985778
 soundcloud: https://soundcloud.com/miss-deepshine/bayza-no-guarantee
-youtube: https://youtu.be/ggLypCHsfzw
+youtube: https://youtu.be/YPLPc6xGWK4
 itunes:
 amazon-music: https://music.amazon.com/albums/B08KGYK2C7
 amazon: https://www.amazon.com/No-Guarantee-Bayza/dp/B08KGYK2C7
