@@ -1,0 +1,25 @@
+---
+layout: fanlink
+
+title: No Guarantee
+artists: Bayza
+link: no-guarantee
+date: 2020-10-19 00:00:00
+
+image: http://bayzamusic.com/images/releases/2020/no-guarantee.jpg
+image_secure: http://bayzamusic.com/images/releases/2020/no-guarantee.jpg
+
+spotify: https://open.spotify.com/album/0Q5SIAHGCmJqTOcMCpeh96
+apple: https://music.apple.com/album/no-guarantee-single/1533985778
+soundcloud: 
+youtube: https://youtu.be/ggLypCHsfzw
+itunes:
+amazon-music: https://music.amazon.com/albums/B08KGYK2C7
+amazon: https://www.amazon.com/No-Guarantee-Bayza/dp/B08KGYK2C7
+deezer: https://www.deezer.com/en/album/176788332
+tidal: https://tidal.com/browse/album/156986955
+download:
+tiktok: https://vm.tiktok.com/ZSxQbH7v
+
+dark: false
+---
