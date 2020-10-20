@@ -20,6 +20,7 @@ deezer: https://www.deezer.com/en/album/176788332
 tidal: https://tidal.com/browse/album/156986955
 download:
 tiktok: https://vm.tiktok.com/ZSxQbH7v
+beatport: https://www.beatport.com/release/no-guarantee/3143902
 
 dark: false
 ---
