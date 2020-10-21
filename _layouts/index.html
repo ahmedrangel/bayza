@@ -295,7 +295,7 @@
 {% include scripts.html %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script>
-      function colorChange(){
+      $(document).ready(function() {
         //Be sure to include <img id="coverImage" src="" alt=""/>
         let $myImage = $("#coverimage");
         let colorThief = new ColorThief();
@@ -305,12 +305,6 @@
         
         //Sets color to 4rd color in the palette.
         $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
-      }
-    </script>
-    <script>
-      $(document).ready(function() {
-        //Make sure image is loaded before running.
-        colorChange();
       });
     </script>
     <script>
