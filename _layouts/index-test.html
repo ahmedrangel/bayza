@@ -75,7 +75,7 @@
         let cp = colorThief.getPalette($myImage[0], 5, 10);
         
         //Sets color to 4rd color in the palette.
-        $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
+        $('.release-color').css('color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
 
         $('.release-color0').css('background-color','rgb('+cp[0][0]+','+cp[0][1]+','+cp[0][2]+')');
         $('.release-color1').css('background-color','rgb('+cp[1][0]+','+cp[1][1]+','+cp[1][2]+')');
@@ -83,48 +83,6 @@
         $('.release-color3').css('background-color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
         $('.release-color4').css('background-color','rgb('+cp[4][0]+','+cp[4][1]+','+cp[4][2]+')');
         });
-    </script>
-    <script>
-      $(document).ready(function(){
-        $("#button1").click(function(){
-          $("#spotify_tracks").slideToggle("slow");
-        });
-      });
-
-      function show1(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="hide1()";><h5 class="font-weight-light m-0">Hide Tracks</h5></button>';
-      }
-      function hide1(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="font-weight-light m-0">Tracks</h5></button>';
-      }
-    </script>
-    <script>
-      $(document).ready(function(){
-        $("#button2").click(function(){
-          $("#soundcloud_tracks").slideToggle("slow");
-        });
-      });
-
-      function show2(){
-          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="hide2()";><h5 class="font-weight-light m-0">Hide Tracks</h5></button>';
-      }
-      function hide2(){
-          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="font-weight-light m-0">Tracks</h5></button>';
-      }
-    </script>
-    <script>
-      $(document).ready(function(){
-        $("#button3").click(function(){
-          $("#youtube_videos").slideToggle("slow");
-        });
-      });
-
-      function show3(){
-          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="hide3()";><h5 class="font-weight-light m-0">Hide Uploads</h5></button>';
-      }
-      function hide3(){
-          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="font-weight-light m-0">Uploads</h5></button>';
-      }
     </script>
   </body>
 </html>
