@@ -54,10 +54,6 @@
     <span class="dot release-color2"></span>
     <span class="dot release-color3"></span>
     <span class="dot release-color4"></span>
-    <span class="dot release-color5"></span>
-    <span class="dot release-color6"></span>
-    <span class="dot release-color7"></span>
-    <span class="dot release-color8"></span>
 {% include footer.html %}
 {% include scripts.html %}
     <style>
@@ -76,7 +72,7 @@
         let colorThief = new ColorThief();
         
         //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
-        let cp = colorThief.getPalette($myImage[0], 8, 10);
+        let cp = colorThief.getPalette($myImage[0], 5, 10);
         
         //Sets color to 4rd color in the palette.
         $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
@@ -86,10 +82,6 @@
         $('.release-color2').css('background-color','rgb('+cp[2][0]+','+cp[2][1]+','+cp[2][2]+')');
         $('.release-color3').css('background-color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
         $('.release-color4').css('background-color','rgb('+cp[4][0]+','+cp[4][1]+','+cp[4][2]+')');
-        $('.release-color5').css('background-color','rgb('+cp[5][0]+','+cp[5][1]+','+cp[5][2]+')');
-        $('.release-color6').css('background-color','rgb('+cp[6][0]+','+cp[6][1]+','+cp[6][2]+')');
-        $('.release-color7').css('background-color','rgb('+cp[7][0]+','+cp[7][1]+','+cp[7][2]+')');
-        $('.release-color8').css('background-color','rgb('+cp[8][0]+','+cp[8][1]+','+cp[8][2]+')');
         });
     </script>
     <script>
