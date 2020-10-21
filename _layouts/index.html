@@ -295,17 +295,11 @@
 {% include scripts.html %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script>
-      const colorThief = new ColorThief();
-      const img = document.querySelector('https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg');
-
-      // Make sure image is finished loading
-      if (img.complete) {
-        colorThief.getColor(img);
-      } else {
-        image.addEventListener('load', function() {
-          colorThief.getColor(img);
-        });
-      }
+      var colorThief = new ColorThief();
+        colorSync = colorThief.getColorFromUrl("https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg", function(color){
+        $('.release-color').css('color','rgb('+color[0]+','+color[1]+','+color[2]+')!important')
+        console.log('url',color)
+      });
     </script>
     <script>
       $(document).ready(function(){
