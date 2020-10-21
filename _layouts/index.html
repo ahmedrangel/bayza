@@ -175,12 +175,6 @@
               </div>
             </div>
           </div>{% if forloop.index0 == 9 %}{% break %}{% endif %}{% endfor %}
-          <style>
-            .release-color-covers {
-              border: 6px solid;
-              border-radius: 5%;
-            }
-          </style>
         </div>  
         <a class="btn btn-outline-releases px-4 py-1" href="/releases" data-aos="flip-left">See more</a>
       </div>
@@ -311,18 +305,6 @@
         
         //Sets color to 4rd color in the palette.
         $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
-      });
-
-      $(document).ready(function() {
-        //Be sure to include <img id="coverImage" src="" alt=""/>
-        let $myImage = $("#covers");
-        let colorThief = new ColorThief();
-        
-        //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
-        let cp = colorThief.getPalette($myImage[0], 8, 10);
-        
-        //Sets color to 4rd color in the palette.
-        $('.release-color-covers').css('color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
       });
     </script>
     <script>
