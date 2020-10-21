@@ -296,15 +296,14 @@
     <script>
       function colorChange(){
         //Be sure to include <img id="coverImage" src="" alt=""/>
-        var $myImage = $("#coverimage");
-        var colorThief = new ColorThief();
+        let $myImage = $("#coverimage");
+        let colorThief = new ColorThief();
         
         //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
-        var cp = colorThief.getPalette($myImage[0], 8, 10);
+        let cp = colorThief.getPalette($myImage[0], 8, 10);
         
-        //Sets background to 3rd color in the palette.
+        //Sets color to 4rd color in the palette.
         $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
-        console.log(cp);
       }
     </script>
     <script>
