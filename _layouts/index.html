@@ -123,7 +123,9 @@
               <small><p class="mb-4 mt-1">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
             </div>
             <div class="col-12 col-md-4 d-none d-md-block portfolio-block block-intro mt-2">
-              <div class="avatar mt-1 mr-0" style="background-image:url('https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg'); width:120px; height:120px; border-radius:0px"></div>
+              <div class="avatar mt-1 mr-0" style="border-radius:0px">
+                <img id="coverimage" src="https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg" alt="" width="120px" height="120px">
+              </div>
             </div>
           </div>
         </div>
@@ -295,10 +297,22 @@
 {% include scripts.html %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script>
-      var colorThief = new ColorThief();
-        colorSync = colorThief.getPalette("https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg", function(color){
-        $('.release-color').css('color','rgb('+color[0]+','+color[1]+','+color[2]+')!important')
-        console.log('url',color)
+      function colorChange(){
+        //Be sure to include <img id="coverImage" src="" alt=""/>
+        var $myImage = $("#coverimage");
+        var colorThief = new ColorThief();
+        
+        //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
+        var cp = colorThief.getPalette($myImage[0], 8, 5);
+        
+        //Sets background to 3rd color in the palette.
+        $('.release-color').css('color', 'rgb('+cp[2][0]+','+cp[2][1]+','+cp[2][2]+')!important');
+        console.log(cp);
+      }
+
+      $(document).ready(function() {
+        //Make sure image is loaded before running.
+        colorChange();
       });
     </script>
     <script>
