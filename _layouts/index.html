@@ -167,7 +167,7 @@
             <div class="item">
               <div class="cover">
                 <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
-                  <img data-aos="zoom-in" class="img-fx img-fluid scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                  <img data-aos="zoom-in" id="covers" class="img-fx img-fluid scale-on-hover release-color-covers" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
                   <h5 class="mb-0" style="font-size: 1.25rem;" data-aos="fade-left"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
                 </a>
                 <small><p class="mb-0" data-aos="fade-left">{{ item.artists }}</p></small>
@@ -175,6 +175,10 @@
               </div>
             </div>
           </div>{% if forloop.index0 == 9 %}{% break %}{% endif %}{% endfor %}
+          .release-color-covers {
+            border: 6px solid;
+            border-radius: 5%;
+          }
         </div>  
         <a class="btn btn-outline-releases px-4 py-1" href="/releases" data-aos="flip-left">See more</a>
       </div>
@@ -305,6 +309,18 @@
         
         //Sets color to 4rd color in the palette.
         $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
+      });
+
+      $(document).ready(function() {
+        //Be sure to include <img id="coverImage" src="" alt=""/>
+        let $myImage = $("#covers");
+        let colorThief = new ColorThief();
+        
+        //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
+        let cp = colorThief.getPalette($myImage[0], 8, 10);
+        
+        //Sets color to 4rd color in the palette.
+        $('.release-color-covers').css('background-color','rgb('+cp[3][1]+','+cp[3][1]+','+cp[3][2]+')');
       });
     </script>
     <script>
