@@ -296,7 +296,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script>
       var colorThief = new ColorThief();
-        colorSync = colorThief.getColorFromUrl("https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg", function(color){
+        colorSync = colorThief.getPalette("https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg", function(color){
         $('.release-color').css('color','rgb('+color[0]+','+color[1]+','+color[2]+')!important')
         console.log('url',color)
       });
