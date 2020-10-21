@@ -293,6 +293,20 @@
     </section>
 {% include footer.html %}
 {% include scripts.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script>
+      const colorThief = new ColorThief();
+      const img = document.querySelector('https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg');
+
+      // Make sure image is finished loading
+      if (img.complete) {
+        colorThief.getColor(img);
+      } else {
+        image.addEventListener('load', function() {
+          colorThief.getColor(img);
+        });
+      }
+    </script>
     <script>
       $(document).ready(function(){
         $("#button1").click(function(){
