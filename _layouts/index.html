@@ -300,10 +300,10 @@
         var colorThief = new ColorThief();
         
         //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
-        var cp = colorThief.getPalette($myImage[0], 8, 5);
+        var cp = colorThief.getPalette($myImage[0], 8, 10);
         
         //Sets background to 3rd color in the palette.
-        $('.release-color').css('color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
+        $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
         console.log(cp);
       }
     </script>
