@@ -1,0 +1,138 @@
+{%- assign sorted = site.data.releases | sort: 'date' | reverse -%}
+{%- assign releases = site.data.releases | where: "type", "Releases" -%}
+<html lang="en">
+  <head>
+    <title>Bayza</title>
+    <!-- Metadatos -->
+
+
+    <!-- Recursos -->
+{% include resources.html %}
+
+  </head>
+  <body>
+{% include navbar.html %}
+
+    <section id="dark" class="cabecera text-white py-5">
+      <div class="container pt-4 cabecera-adjust" style="overflow-x: hidden;">
+        <div class="row">
+          <div class="col-12 col-md-6 text-left d-none d-md-block" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+            <h1 class="display-4 mt-3 text-uppercase">Bayza</h1>
+            <h4 class="my-3 font-weight-light">Panamanian music producer</h4>
+            <h5 class="mb-4 font-weight-light"><span>Contact: </span><a class="text-white" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></h5>
+          </div>
+          <div class="col-12 col-md-12 text-center d-block d-md-none" data-aos="zoom-in" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+            <h1 class="display-4 mt-3 text-uppercase">Bayza</h1>
+            <h4 class="my-3 font-weight-light">Panamanian music producer</h4>
+            <small><p class="mb-4"><span>Contact: </span><a class="text-white" href="mailto:info@bayzamusic.com" target="_blank">info@bayzamusic.com</a></p></small>
+          </div>
+          <div class="col-12 col-md-6 row mt-4 text-right px-0" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+            <div class="col-12 col-md-8 d-none d-md-block mt-2 pr-0">
+              <h3>Latest Release:</h3>
+              <a target="_blank" class="release-color" href="/releases/{{ releases.last.year }}{{ releases.last.link }}/{{ releases.last.release }}">
+                <style>
+                  .release-color:hover {
+                    color: #fff!important;
+                  }
+                </style>
+                <h5 class="font-weight-light">{{ releases.last.title }}<i class="ml-1 fas fa-external-link-alt"></i></h5>
+              </a>
+              <div><h5 class="font-weight-light" >by {{ releases.last.artists }}</h5></div>
+              <small><p class="mb-4 mt-1">{{ releases.last.date | date: "%b %-d, %Y" }}</p></small>
+            </div>
+            <div class="col-12 col-md-4 d-none d-md-block portfolio-block block-intro mt-2">
+              <div class="avatar mt-1 mr-0" style="border-radius:0px">
+                <img id="coverimage" src="https://bayzamusic.com/images/releases/{{ releases.last.year }}/{{ releases.last.cover }}.jpg" alt="" width="120px" height="120px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <span class="dot release-color0"></span>
+    <span class="dot release-color1"></span>
+    <span class="dot release-color2"></span>
+    <span class="dot release-color3"></span>
+    <span class="dot release-color4"></span>
+    <span class="dot release-color5"></span>
+    <span class="dot release-color6"></span>
+    <span class="dot release-color7"></span>
+    <span class="dot release-color8"></span>
+{% include footer.html %}
+{% include scripts.html %}
+    <style>
+        .dot {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script>
+        $(document).ready(function() {
+        //Be sure to include <img id="coverImage" src="" alt=""/>
+        let $myImage = $("#coverimage");
+        let colorThief = new ColorThief();
+        
+        //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
+        let cp = colorThief.getPalette($myImage[0], 8, 10);
+        
+        //Sets color to 4rd color in the palette.
+        $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
+
+        $('.release-color0').css('background-color','rgb('+cp[0][0]+','+cp[0][1]+','+cp[0][2]+')');
+        $('.release-color1').css('background-color','rgb('+cp[1][0]+','+cp[1][1]+','+cp[1][2]+')');
+        $('.release-color2').css('background-color','rgb('+cp[2][0]+','+cp[2][1]+','+cp[2][2]+')');
+        $('.release-color3').css('background-color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
+        $('.release-color4').css('background-color','rgb('+cp[4][0]+','+cp[4][1]+','+cp[4][2]+')');
+        $('.release-color5').css('background-color','rgb('+cp[5][0]+','+cp[5][1]+','+cp[5][2]+')');
+        $('.release-color6').css('background-color','rgb('+cp[6][0]+','+cp[6][1]+','+cp[6][2]+')');
+        $('.release-color7').css('background-color','rgb('+cp[7][0]+','+cp[7][1]+','+cp[7][2]+')');
+        $('.release-color8').css('background-color','rgb('+cp[8][0]+','+cp[8][1]+','+cp[8][2]+')');
+        });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#button1").click(function(){
+          $("#spotify_tracks").slideToggle("slow");
+        });
+      });
+
+      function show1(){
+          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="hide1()";><h5 class="font-weight-light m-0">Hide Tracks</h5></button>';
+      }
+      function hide1(){
+          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="font-weight-light m-0">Tracks</h5></button>';
+      }
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#button2").click(function(){
+          $("#soundcloud_tracks").slideToggle("slow");
+        });
+      });
+
+      function show2(){
+          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="hide2()";><h5 class="font-weight-light m-0">Hide Tracks</h5></button>';
+      }
+      function hide2(){
+          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="font-weight-light m-0">Tracks</h5></button>';
+      }
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#button3").click(function(){
+          $("#youtube_videos").slideToggle("slow");
+        });
+      });
+
+      function show3(){
+          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="hide3()";><h5 class="font-weight-light m-0">Hide Uploads</h5></button>';
+      }
+      function hide3(){
+          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="font-weight-light m-0">Uploads</h5></button>';
+      }
+    </script>
+  </body>
+</html>
