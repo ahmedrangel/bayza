@@ -67,18 +67,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script>
         $(document).ready(function() {
-          //Be sure to include <img id="coverImage" src="" alt=""/>
-          let $myImage = $("#coverimage");
-          let colorThief = new ColorThief();
-          if ($myImage.complete) {
-            //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
-            let cp = colorThief.getPalette($myImage[0], 5, 10);
-          }
-          else {
-            image.addEventListener('load', function(){
-              let cp = colorThief.getPalette($myImage[0], 5, 10);
-            });
-          }
+        //Be sure to include <img id="coverImage" src="" alt=""/>
+        let $myImage = $("#coverimage");
+        let colorThief = new ColorThief();
+        
+        //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
+        let cp = colorThief.getPalette($myImage[0], 5, 10);
         
         //Sets color to 4rd color in the palette.
         $('.release-color').css('color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
@@ -88,7 +82,7 @@
         $('.release-color2').css('background-color','rgb('+cp[2][0]+','+cp[2][1]+','+cp[2][2]+')');
         $('.release-color3').css('background-color','rgb('+cp[3][0]+','+cp[3][1]+','+cp[3][2]+')');
         $('.release-color4').css('background-color','rgb('+cp[4][0]+','+cp[4][1]+','+cp[4][2]+')');
-        })  ;
+        });
     </script>
   </body>
 </html>

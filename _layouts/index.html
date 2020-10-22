@@ -299,18 +299,12 @@
         //Be sure to include <img id="coverImage" src="" alt=""/>
         let $myImage = $("#coverimage");
         let colorThief = new ColorThief();
-        if ($myImage.complete) {
-          //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
-          let cp = colorThief.getPalette($myImage[0], 8, 5);
-          //Sets color to 4rd color in the palette.
-          $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
-        }
-        else {
-          $myImage.addEventListener('load', function(){
-            let cp = colorThief.getPalette($myImage[0], 5, 10);
-            $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
-          });
-        }
+        
+        //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
+        let cp = colorThief.getPalette($myImage[0], 8, 5);
+        
+        //Sets color to 4rd color in the palette.
+        $('.release-color').css('color','rgb(0,'+cp[3][1]+','+cp[3][2]+')');
       });
     </script>
     <script>
