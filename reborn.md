@@ -7,7 +7,7 @@ link: reborn
 date: 2020-10-22 00:00:00
 
 image: http://bayzamusic.com/images/releases/2020/reborn.jpg
-image_secure: http://bayzamusic.com/images/releases/2020/reborn.jpg
+image_secure: https://bayzamusic.com/images/releases/2020/reborn.jpg
 
 spotify: https://open.spotify.com/track/3POCFD2UIKRvmySfhQvRgU
 apple: https://music.apple.com/album/reborn-single/1535187248
