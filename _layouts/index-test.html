@@ -70,7 +70,7 @@
           //Be sure to include <img id="coverImage" src="" alt=""/>
           let $myImage = $("#coverimage");
           let colorThief = new ColorThief();
-          if (img.complete) {
+          if ($myImage.complete) {
             //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
             let cp = colorThief.getPalette($myImage[0], 5, 10);
           }
