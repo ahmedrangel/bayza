@@ -7,7 +7,7 @@ link: solace
 date: 2020-08-28 00:00:00
 
 image: http://bayzamusic.com/images/releases/2020/solace.jpg
-image_secure: http://bayzamusic.com/images/releases/2020/solace.jpg
+image_secure: https://bayzamusic.com/images/releases/2020/solace.jpg
 
 spotify: https://open.spotify.com/album/22i8HksJAROoLVOqKzzsMX
 apple: https://music.apple.com/album/solace-single/1527771223

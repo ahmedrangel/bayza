@@ -7,7 +7,7 @@ link: no-guarantee
 date: 2020-10-19 00:00:00
 
 image: http://bayzamusic.com/images/releases/2020/no-guarantee.jpg
-image_secure: http://bayzamusic.com/images/releases/2020/no-guarantee.jpg
+image_secure: https://bayzamusic.com/images/releases/2020/no-guarantee.jpg
 
 spotify: https://open.spotify.com/album/0Q5SIAHGCmJqTOcMCpeh96
 apple: https://music.apple.com/album/no-guarantee-single/1533985778
