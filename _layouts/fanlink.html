@@ -171,6 +171,15 @@
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
                 </div>
+              </a>{% endif %}{% if page.yandex %}
+              <!-- yandex -->
+              <a class="row links text-white" href="{{ page.yandex }}" target="_blank" title="Stream on Yandex Music">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/images/yandex.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">Stream</span>
+                </div>
               </a>{% endif %}{% if page.tidal %}
               <!-- tidal -->
               <a class="row links text-white" href="{{ page.tidal }}" target="_blank" title="Stream on Tidal">
