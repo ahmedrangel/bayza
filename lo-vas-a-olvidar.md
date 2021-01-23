@@ -1,7 +1,7 @@
 ---
 layout: fanlink
 
-title: Lo Vas A Olvidar (Bayza Bootleg)
+title: Lo Vas A Olvidar (Bayza Remix)
 artists: Billie Eilish, ROSALÍA
 link: lo-vas-a-olvidar
 date: 2021-01-22 00:00:00
@@ -18,7 +18,7 @@ amazon-music:
 amazon: 
 deezer: 
 tidal: 
-download: 
+download: https://www.toneden.io/bayza/post/billie-eilish-rosal-a-lo-vas-a-olvidar-bayza-remix
 tiktok: 
 beatport:
 yandex:
