@@ -19,7 +19,7 @@ amazon: https://www.amazon.com/Looking-At-You-Bayza/dp/B08VS82LX5
 deezer: https://www.deezer.com/en/album/204865582
 tidal: https://tidal.com/browse/album/172262273
 download: https://www.toneden.io/bayza/post/looking-at-you
-tiktok: 
+tiktok: https://vm.tiktok.com/ZMeRwyCeb
 beatport: 
 yandex: https://music.yandex.com/album/13746009
 
