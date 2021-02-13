@@ -23,6 +23,7 @@ download: https://www.toneden.io/bayza/post/looking-at-you
 tiktok: https://vm.tiktok.com/ZMeRwyCeb
 beatport: 
 yandex: https://music.yandex.com/album/13746009
+bandcamp: https://bayza.bandcamp.com/track/looking-at-you
 
 dark: false
 ---

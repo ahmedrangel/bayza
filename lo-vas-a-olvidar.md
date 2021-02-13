@@ -22,6 +22,7 @@ download: https://www.toneden.io/bayza/post/billie-eilish-rosal-a-lo-vas-a-olvid
 tiktok: 
 beatport:
 yandex:
+bandcamp: https://bayza.bandcamp.com/track/lo-vas-a-olvidar-bayza-remix
 
 dark: false
 ---

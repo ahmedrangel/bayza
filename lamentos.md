@@ -23,6 +23,7 @@ download: https://www.toneden.io/bayza/post/lamentos
 tiktok: https://vm.tiktok.com/ZSCnUvDA
 beatport:
 yandex: https://music.yandex.com/album/12395537
+bandcamp: https://bayza.bandcamp.com/track/lamentos
 
 dark: false
 ---
