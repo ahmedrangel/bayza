@@ -18,6 +18,7 @@ amazon-music: https://music.amazon.com/albums/B08KYCCYGM
 amazon: https://www.amazon.com/Lamentos-Bayza/dp/B08KYCCYGM
 deezer: https://www.deezer.com/en/album/178573382
 tidal: https://tidal.com/browse/album/158113633
+tidal-buy: https://store.tidal.com/us/album/158113633
 download: https://www.toneden.io/bayza/post/lamentos
 tiktok: https://vm.tiktok.com/ZSCnUvDA
 beatport:

@@ -207,12 +207,12 @@
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/tidal.png" width="100%"/>
                 </div>
-                <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <a class="text-white" href="{{ page.tidal }}" target="_blank" title="Buy on Tidal"><span class="btn btn-outline-light">Buy</span></a>{% if page.tidal-buy %}
-                  <span class="mx-1"></span>
-                  <a class="text-white" href="{{ page.tidal-buy }}" target="_blank" title="Stream on Tidal">
+                <div class="col-6 pr-5 py-4 text-center my-auto">{% if page.tidal-buy %}
+                  <a class="text-white" href="{{ page.tidal-buy }}" target="_blank" title="Buy on Tidal"><span class="btn btn-outline-light">Buy</span></a>
+                  <span class="mx-1"></span>{% endif %}
+                  <a class="text-white" href="{{ page.tidal }}" target="_blank" title="Stream on Tidal">
                     <span class="btn btn-outline-light">Stream</span>
-                  </a>{% endif %}
+                  </a>
                 </div>
               </div>{% endif %}{% if page.tiktok %}
               <!-- tiktok -->
