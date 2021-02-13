@@ -21,7 +21,8 @@ tidal: https://tidal.com/browse/album/158112844
 tidal-buy: https://store.tidal.com/us/album/158112844
 download: https://www.toneden.io/bayza/post/reborn
 tiktok: https://vm.tiktok.com/ZSQNYnMg
-beatport: 
+beatport:
+bandcamp: https://bayza.bandcamp.com/track/reborn
 
 dark: false
 ---
