@@ -21,6 +21,7 @@ tidal: https://tidal.com/browse/album/152057763
 tidal-buy: https://store.tidal.com/us/album/152057763
 download:
 tiktok: https://vm.tiktok.com/ZSuDrpku
+bandcamp: https://bayza.bandcamp.com/track/solace
 
 dark: false
 ---
