@@ -6,7 +6,7 @@ link: fanlinks
 
 image: https://bayzamusic.com/images/logomt.jpg
 image_secure: https://bayzamusic.com/images/logomt.jpg
-background: http://bayzamusic.com/images/bg-fanlinks.jpg
+background: https://bayzamusic.com/images/bg-fanlinks.jpg
 
 dark: false
 ---
