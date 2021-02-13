@@ -208,10 +208,9 @@
                   <img class="mx-auto d-block" src="/images/tidal.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <a class="text-white" href="{{ page.tidal }}" target="_blank" title="Stream on Tidal">
+                  <a class="text-white" href="{{ page.tidal }}" target="_blank" title="Buy on Tidal">
                     <span class="btn btn-outline-light">Buy</span>
-                  </a>
-                  {% if page.tidal-buy %}
+                  </a>{% if page.tidal-buy %}
                   <span class="mx-2"></span>
                   <a class="text-white" href="{{ page.tidal-buy }}" target="_blank" title="Stream on Tidal">
                     <span class="btn btn-outline-light">Stream</span>
