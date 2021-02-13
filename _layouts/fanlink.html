@@ -56,14 +56,14 @@
                 </div>
               </div>{% if page.album %}
               <!-- full album -->
-              <a class="row links text-white" href="/{{ page.album }}" target="_blank" title="Full Album">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/{{ page.album }}.png" width="100%"/>
                 </div>
+                <a class="row links text-white" href="/{{ page.album }}" target="_blank" title="Full Album">
                 <div class="col-6 pr-5 py-4 text-center my-auto">
+                </a>
                   <span class="btn btn-outline-light">View</span>
-                </div>
-              </a>{% endif %}{% if page.ep %}
+                </div>{% endif %}{% if page.ep %}
               <!-- full ep -->
               <a class="row links text-white" href="/{{ page.ep }}" target="_blank" title="Full EP">
                 <div class="col-6 pl-5 py-4">
@@ -83,122 +83,124 @@
                 </div>
               </a>{% endif %}{% if page.spotify %}
               <!-- spotify -->
-              <a class="row links text-white" href="{{ page.spotify }}" target="_blank" title="Stream on Spotify">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/spotify.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
-                </div>
-              </a>{% endif %}{% if page.apple %}
+                  <a class="row links text-white" href="{{ page.spotify }}" target="_blank" title="Stream on Spotify">
+                    <span class="btn btn-outline-light">Stream</span>
+                  </a>
+                </div>{% endif %}{% if page.apple %}
               <!-- apple music -->
-              <a class="row links text-white" href="{{ page.apple }}" target="_blank" title="Stream on Apple Music">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/apple-music.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
-                </div>
-              </a>{% endif %}{% if page.soundcloud %}
+                  <a class="row links text-white" href="{{ page.apple }}" target="_blank" title="Stream on Apple Music">
+                    <span class="btn btn-outline-light">Stream</span>
+                  </a>
+                </div>{% endif %}{% if page.soundcloud %}
               <!-- soundcloud -->
-              <a class="row links text-white" href="{{ page.soundcloud }}" target="_blank" title="Stream on Soundcloud">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/soundcloud.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
-                </div>
-              </a>{% endif %}{% if page.youtube %}
+                  <a class="row links text-white" href="{{ page.soundcloud }}" target="_blank" title="Stream on Soundcloud">
+                    <span class="btn btn-outline-light">Stream</span>
+                  </a>
+                </div>{% endif %}{% if page.youtube %}
               <!-- youtube -->
-              <a class="row links text-white" href="{{ page.youtube }}" target="_blank" title="Play on Youtube">
                 <div class="col-6 pl-5 py-4"> 
                   <img class="mx-auto d-block" src="/images/youtube.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Play</span>
-                </div>
-              </a>{% endif %}{% if page.beatport %}
+                  <a class="row links text-white" href="{{ page.youtube }}" target="_blank" title="Play on Youtube">
+                    <span class="btn btn-outline-light">Play</span>
+                  </a>
+                </div>{% endif %}{% if page.beatport %}
               <!-- beatport -->
-              <a class="row links text-white" href="{{ page.beatport }}" target="_blank" title="Buy on Beatport">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/beatport.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Buy</span>
-                </div>
-              </a>{% endif %}{% if page.itunes %}
+                  <a class="row links text-white" href="{{ page.beatport }}" target="_blank" title="Buy on Beatport">
+                    <span class="btn btn-outline-light">Buy</span>
+                  </a>
+                </div>{% endif %}{% if page.itunes %}
               <!-- itunes -->
-              <a class="row links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/itunes.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Buy</span>
-                </div>
-              </a>{% endif %}{% if page.bandcamp %}
+                  <a class="row links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
+                    <span class="btn btn-outline-light">Buy</span>
+                  </a>
+                </div>{% endif %}{% if page.bandcamp %}
               <!-- bandcamp-->
-              <a class="row links text-white" href="{{ page.bandcamp }}" target="_blank" title="Buy on Bandcamp">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/bandcamp.png" width="100%"/>
                 </div>
-                <div class="col-6 pr-5 py-4 text-center my-auto">
+                <a class="row links text-white" href="{{ page.bandcamp }}" target="_blank" title="Buy on Bandcamp">
                   <span class="btn btn-outline-light">Buy</span>
-                </div>
-              </a>{% endif %}{% if page.deezer %}
+                </a>
+                </div>{% endif %}{% if page.deezer %}
               <!-- deezer -->
-              <a class="row links text-white" href="{{ page.deezer }}" target="_blank" title="Stream on Deezer">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/deezer.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
-                </div>
-              </a>{% endif %}{% if page.amazon-music %}
+                  <a class="row links text-white" href="{{ page.deezer }}" target="_blank" title="Stream on Deezer">
+                    <span class="btn btn-outline-light">Stream</span>
+                  </a>
+                </div>{% endif %}{% if page.amazon-music %}
               <!-- amazon music -->
-              <a class="row links text-white" href="{{ page.amazon-music }}" target="_blank" title="Stream on Amazon Music">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/amazon-music.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
-                </div>
-              </a>{% endif %}{% if page.amazon %}
+                  <a class="row links text-white" href="{{ page.amazon-music }}" target="_blank" title="Stream on Amazon Music">
+                    <span class="btn btn-outline-light">Stream</span>
+                  </a>
+                </div>{% endif %}{% if page.amazon %}
               <!-- amazon -->
-              <a class="row links text-white" href="{{ page.amazon }}" target="_blank" title="Buy on Amazon">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/amazon.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Buy</span>
-                </div>
-              </a>{% endif %}{% if page.yandex %}
+                  <a class="row links text-white" href="{{ page.amazon }}" target="_blank" title="Buy on Amazon">
+                    <span class="btn btn-outline-light">Buy</span></a>
+                </div>{% endif %}{% if page.yandex %}
               <!-- yandex -->
-              <a class="row links text-white" href="{{ page.yandex }}" target="_blank" title="Stream on Yandex Music">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/yandex.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
-                </div>
-              </a>{% endif %}{% if page.tidal %}
+                  <a class="row links text-white" href="{{ page.yandex }}" target="_blank" title="Stream on Yandex Music">
+                    <span class="btn btn-outline-light">Stream</span></a>
+                </div>{% endif %}{% if page.tidal %}
               <!-- tidal -->
-              <a class="row links text-white" href="{{ page.tidal }}" target="_blank" title="Stream on Tidal">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/tidal.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Stream</span>
+                  <a class="row links text-white" href="{{ page.tidal }}" target="_blank" title="Stream on Tidal">
+                    <span class="btn btn-outline-light">Buy</span>
+                  </a>
+                  <span class="mx-2"></span>
+                  <a class="row links text-white" href="{{ page.tidal-buy }}" target="_blank" title="Stream on Tidal">
+                    <span class="btn btn-outline-light">Stream</span>
+                  </a>
                 </div>
-              </a>{% endif %}{% if page.tiktok %}
+              {% endif %}{% if page.tiktok %}
               <!-- tiktok -->
-              <a class="row links text-white" href="{{ page.tiktok }}" target="_blank" title="Use Sound on TikTok">
                 <div class="col-6 pl-5 py-4">
                   <img class="mx-auto d-block" src="/images/tiktok.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light">Use Sound</span>
-                </div>
-              </a>{% endif %}{% if page.download %}
+                  <a class="row links text-white" href="{{ page.tiktok }}" target="_blank" title="Use Sound on TikTok">
+                    <span class="btn btn-outline-light">Use Sound</span>
+                  </a>
+                </div>{% endif %}{% if page.download %}
               <!-- free download -->
               <div class="col-lg-12 mt-3">
                 <a href="{{ page.download }}" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0" target="_blank" title="Free Download on Toneden"><i class="fas fa-download"></i> Free Download</a>
