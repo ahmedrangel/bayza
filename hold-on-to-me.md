@@ -18,6 +18,7 @@ amazon-music: https://music.amazon.com/albums/B08FFMF4L3
 amazon: https://www.amazon.com/Hold-Me-Dimatis-Bayza/dp/B08FFMF4L3
 deezer: https://www.deezer.com/en/album/165690312
 tidal: http://tidal.com/browse/album/151393778
+tidal-buy: https://store.tidal.com/us/album/151393778
 download: https://www.toneden.io/bayza/post/dimatis-bayza-hold-on-to-me
 tiktok: https://vm.tiktok.com/ZSmq7e54
 

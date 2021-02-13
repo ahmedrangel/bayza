@@ -18,6 +18,7 @@ amazon-music: https://music.amazon.com/albums/B08KGYK2C7
 amazon: https://www.amazon.com/No-Guarantee-Bayza/dp/B08KGYK2C7
 deezer: https://www.deezer.com/en/album/176788332
 tidal: https://tidal.com/browse/album/156986955
+tidal-buy: https://store.tidal.com/us/album/156986955
 download:
 tiktok: https://vm.tiktok.com/ZSxQbH7v
 beatport: https://www.beatport.com/release/no-guarantee/3143902

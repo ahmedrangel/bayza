@@ -19,6 +19,7 @@ deezer: https://www.deezer.com/en/album/154007702
 amazon: https://www.amazon.com/Miracle-Bayza/dp/B08B1VJ9YK
 amazon-music: https://music.amazon.com/albums/B08B1VJ9YK
 tidal: https://tidal.com/browse/album/144714352
+tidal-buy: https://store.tidal.com/us/album/144714352
 download: https://www.toneden.io/bayza/post/miracle
 tiktok: https://vm.tiktok.com/JLej2G3
 yandex: https://music.yandex.com/album/11036717

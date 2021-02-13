@@ -19,6 +19,7 @@ deezer: https://www.deezer.com/en/album/147809492
 amazon: https://www.amazon.com/-/es/Bayza/dp/B088HJ2LNZ
 amazon-music: https://music.amazon.com/albums/B088HJ2LNZ
 tidal: https://tidal.com/browse/album/141154997
+tidal-buy: https://store.tidal.com/us/album/141154997
 download:
 tiktok: https://vm.tiktok.com/J8Xxgfb 
 

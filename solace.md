@@ -18,6 +18,7 @@ amazon-music: https://music.amazon.com/albums/B08FXRGBTY
 amazon: https://www.amazon.com/Solace-Bayza/dp/B08FXRGBTY
 deezer: https://www.deezer.com/en/album/167194272
 tidal: https://tidal.com/browse/album/152057763
+tidal-buy: https://store.tidal.com/us/album/152057763
 download:
 tiktok: https://vm.tiktok.com/ZSuDrpku
 
