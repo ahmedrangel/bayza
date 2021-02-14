@@ -637,7 +637,7 @@
   date: 2020-06-05 00:00:00
   type: Releases
   duration: "4:12"
-  fanlink: bayza.ml/everything-i-wanted
+  fanlink: lnk.bayza.ml/everything-i-wanted
 
 - release: alone
   artists: DJ SK & Bayza
@@ -651,7 +651,7 @@
   date: 2020-06-24 00:00:00
   type: Releases
   duration: "4:24"
-  fanlink: bayza.ml/alone
+  fanlink: lnk.bayza.ml/alone
 
 - release: miracle
   artists: Bayza
@@ -665,7 +665,7 @@
   date: 2020-07-10 00:00:00
   type: Releases
   duration: "3:12"
-  fanlink: bayza.ml/miracle
+  fanlink: lnk.bayza.ml/miracle
 
 - release: make-believe
   artists: Eress
@@ -679,7 +679,7 @@
   date: 2020-08-01 00:00:00
   type: Releases
   duration: "4:28"
-  fanlink: bayza.ml/make-believe
+  fanlink: lnk.bayza.ml/make-believe
 
 - release: solace
   artists: Bayza
@@ -693,7 +693,7 @@
   date: 2020-08-28 00:00:00
   type: Releases
   duration: "3:52"
-  fanlink: bayza.ml/solace
+  fanlink: lnk.bayza.ml/solace
 
 - release: fire-drill
   artists: Melanie Martinez
@@ -722,7 +722,7 @@
   date: 2020-09-25 00:00:00
   type: Releases
   duration: "3:27"
-  fanlink: bayza.ml/hold-on
+  fanlink: lnk.bayza.ml/hold-on
 
 - release: no-guarantee
   artists: Bayza
@@ -736,7 +736,7 @@
   date: 2020-10-19 00:00:00
   type: Releases
   duration: "3:38"
-  fanlink: bayza.ml/no-guarantee
+  fanlink: lnk.bayza.ml/no-guarantee
 
 - release: reborn
   artists: Bayza & Dimatis
@@ -750,7 +750,7 @@
   date: 2020-10-22 00:00:00
   type: Releases
   duration: "2:42"
-  fanlink: bayza.ml/reborn
+  fanlink: lnk.bayza.ml/reborn
 
 - release: lamentos
   artists: Bayza
@@ -764,7 +764,7 @@
   date: 2020-10-31 00:00:00
   type: Releases
   duration: "3:36"
-  fanlink: bayza.ml/lamentos
+  fanlink: lnk.bayza.ml/lamentos
 
 
 - release: lo-vas-a-olvidar
@@ -780,7 +780,7 @@
   type: Bootlegs/Remixes
   link: -bootlegs
   duration: "3:28"
-  fanlink: bayza.ml/LVAO
+  fanlink: lnk.bayza.ml/LVAO
 
 - release: looking-at-you
   artists: Bayza
@@ -794,4 +794,4 @@
   date: 2021-02-12 00:00:00
   type: Releases
   duration: "3:18"
-  fanlink: bayza.ml/LookingAtYou
+  fanlink: lnk.bayza.ml/LookingAtYou
