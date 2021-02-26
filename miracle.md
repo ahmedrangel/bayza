@@ -12,7 +12,7 @@ image_secure: https://bayzamusic.com/images/releases/2020/miracle.jpg
 spotify: https://open.spotify.com/album/2Fejxzi2GxOeoCvaF7e3j6
 soundcloud: https://soundcloud.com/bayza/miracle
 youtube: https://youtu.be/-vx3oZ4j4h0
-beatport: 
+beatport: https://www.beatport.com/release/miracle/3304325
 itunes: 
 apple: https://music.apple.com/us/album/miracle-single/1517837338
 deezer: https://www.deezer.com/en/album/154007702
