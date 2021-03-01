@@ -90,7 +90,6 @@ ul.icons li {
 
 .copy-to-clipboard {
   font-size: 1.4rem;
-  padding: 3px 10px;
   position: absolute;
   top: 15px;
   right: 30px;
@@ -99,16 +98,10 @@ ul.icons li {
   opacity: 50%;
 }
 
-.copied-to-clipboard {
-  font-size: 1.4rem;
-  padding: 3px 10px;
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  background: #19191980;
-  border-radius: 5px;
-  opacity: 100%;
+.copy-to-clipboard i {
+  padding: 8px 10px;
 }
+
 
 .copy-to-clipboard:hover {
   opacity: 100%
