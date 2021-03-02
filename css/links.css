@@ -76,6 +76,10 @@ ul.icons li {
   padding: 0 1em 0 0;
 }
 
+ul.icons {
+  padding-inline-start: 1em!important;
+}
+
 .img-select-none {
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
