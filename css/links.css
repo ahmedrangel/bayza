@@ -105,5 +105,5 @@ ul.icons li {
 
 
 .copy-to-clipboard:hover {
-  opacity: 100%
+  opacity: 100%!important;
 }
