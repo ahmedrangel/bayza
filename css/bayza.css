@@ -31,6 +31,10 @@ h1 {
     color: #1d1d1d!important;
 }
 
+.btn {
+    border-radius: 4px!important;
+}
+
 .btn-outline-dark {
     color: #fff;
     border-color: #1d1d1d!important;
