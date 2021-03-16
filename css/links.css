@@ -56,6 +56,7 @@ html {
   border-top: solid;
   border-top-width: 1px;
   border-top-color: #404040;
+  width: 105%;
 }
 
 .socials li a:hover {
