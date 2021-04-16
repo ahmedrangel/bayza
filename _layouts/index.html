@@ -148,21 +148,6 @@
                   <small><p class="mb-4" data-aos="fade-left">DeejaVu x Bayza</p></small>
               </div>
             </div> 
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="item">
-              <div class="cover">
-                <div class="upcoming-container" data-aos="zoom-in">
-                  <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2021/feel-so-lonely.jpg">
-                  <div class="centered">
-                    <h4>Upcoming</h4>
-                    <small><h5>Apr 16, 2021</h5></small>
-                  </div>
-                </div>
-                  <h5 class="mb-0" data-aos="fade-left"><small><p class="mb-0 mt-2">Feel So Lonely</p></small></h5>
-                  <small><p class="mb-4" data-aos="fade-left">Bayza</p></small>
-              </div>
-            </div> 
           </div>{% for item in sorted %}
           <div class="col-6 col-lg-3">
             <div class="item">
@@ -175,7 +160,7 @@
                 <small><p class="mb-4" data-aos="fade-right">{{ item.date | date: "%b %-d, %Y" }}</p></small>
               </div>
             </div>
-          </div>{% if forloop.index0 == 9 %}{% break %}{% endif %}{% endfor %}
+          </div>{% if forloop.index0 == 10 %}{% break %}{% endif %}{% endfor %}
         </div>  
         <a class="btn btn-outline-releases px-4 py-1" href="/releases" data-aos="flip-left">See more</a>
       </div>
