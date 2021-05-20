@@ -134,21 +134,21 @@
       <div class="container text-secondary py-5 text-center" style="overflow-x: hidden;">
         <h3 class="mt-3 text-uppercase text-white" data-aos="fade-right">Latest Music</h3>
         <div class="row my-4 text-left">
-          <!-- <div class="col-6 col-lg-3">
+          <div class="col-6 col-lg-3">
             <div class="item">
               <div class="cover">
                 <div class="upcoming-container" data-aos="zoom-in">
-                  <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2021/feels.jpg">
+                  <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2021/take-me-home.jpg">
                   <div class="centered">
                     <h4>Upcoming</h4>
-                    <small><h5>Apr 23, 2021</h5></small>
+                    <small><h5>Jun 25, 2021</h5></small>
                   </div>
                 </div>
-                  <h5 class="mb-0" data-aos="fade-left"><small><p class="mb-0 mt-2">Feels</p></small></h5>
-                  <small><p class="mb-4" data-aos="fade-left">DeejaVu x Bayza</p></small>
+                  <h5 class="mb-0" data-aos="fade-left"><small><p class="mb-0 mt-2">Take Me Home</p></small></h5>
+                  <small><p class="mb-4" data-aos="fade-left">Bayza</p></small>
               </div>
             </div> 
-          </div>-->{% for item in sorted %} 
+          </div>{% for item in sorted %} 
           <div class="col-6 col-lg-3">
             <div class="item">
               <div class="cover">
@@ -160,7 +160,7 @@
                 <small><p class="mb-4" data-aos="fade-right">{{ item.date | date: "%b %-d, %Y" }}</p></small>
               </div>
             </div>
-          </div>{% if forloop.index0 == 11 %}{% break %}{% endif %}{% endfor %}
+          </div>{% if forloop.index0 == 10 %}{% break %}{% endif %}{% endfor %}
         </div>  
         <a class="btn btn-outline-releases px-4 py-1" href="/releases" data-aos="flip-left">See more</a>
       </div>
