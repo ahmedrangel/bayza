@@ -1,5 +1,5 @@
-site = window.location.href;
-function ts(site)     
-    {     
-        return site.replace(/\/$/, "");
-    }
+var currentUrl = location.href;
+
+if(currentUrl.substr(-1) == '/') {
+    currentUrl = currentUrl.substr(0, currentUrl.length - 1);
+}
