@@ -1,8 +1,5 @@
-app.get('/:page', function(req, res){
-    // Redirect if no slash at the end
-    if (!req.url.endsWith('/')) {
-      res.redirect(301, req.url + '/')
+function ts(site)     
+    site = window.location.href;
+    {     
+        return site.replace(/\/$/, "");
     }
-  
-    // Normal response goes here
-  });
