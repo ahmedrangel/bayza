@@ -389,3 +389,9 @@ b a:hover {
 .navbar-dark .navbar-nav .nav-link {
     color: #a8a8a8;
 }
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff!important;
+    text-decoration: none!important;
+    background-color: #282828!important;
+}
