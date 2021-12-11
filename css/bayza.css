@@ -399,3 +399,5 @@ b a:hover {
 .dropdown-toggle:after { 
     vertical-align: middle;
 }
+
+.dropdown:hover .dropdown-content {display: block;}
