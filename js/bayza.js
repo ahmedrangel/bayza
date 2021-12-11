@@ -1,5 +1,5 @@
+site = window.location.href;
 function ts(site)     
-    site = window.location.href;
     {     
         return site.replace(/\/$/, "");
     }
