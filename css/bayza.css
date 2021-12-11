@@ -401,3 +401,7 @@ b a:hover {
 }
 
 .dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown-menu {
+    top: 85%!important;
+}
