@@ -405,3 +405,9 @@ b a:hover {
 .dropdown-menu {
     top: 85%!important;
 }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1360px!important;
+    }
+}
