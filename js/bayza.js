@@ -1,8 +1,8 @@
-app.use(function(req, res, next) {
-    if (req.path.length > 1 && //$/.test(req.path)) {
-      var query = req.url.slice(req.path.length)
-      res.redirect(301, req.path.slice(0, -1) + query)
-    } else {
-      next()
+app.get('/:page', function(req, res){
+    // Redirect if no slash at the end
+    if (!req.url.endsWith('/')) {
+      res.redirect(301, req.url + '/')
     }
-});
+  
+    // Normal response goes here
+  });
