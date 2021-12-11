@@ -400,4 +400,4 @@ b a:hover {
     vertical-align: middle;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-menu {display: block;}
