@@ -395,3 +395,7 @@ b a:hover {
     text-decoration: none!important;
     background-color: #282828!important;
 }
+
+.dropdown-toggle:after { 
+    vertical-align: middle;
+}
