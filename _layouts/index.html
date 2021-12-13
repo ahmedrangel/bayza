@@ -130,37 +130,38 @@
         </div>
       </div>
     </section>
-    <section id="latest releases" class="bg-darkest">
+    <section id="latest releases" class="bg-dark">
       <div class="container text-secondary py-5 text-center" style="overflow-x: hidden;">
-        <h3 class="mt-3 text-uppercase text-white" data-aos="fade-right">Recent Music</h3>
+        <h3 class="mt-3 text-uppercase text-white">Recent Music</h3>
+        <h5 class="font-weight-light">Check out my latest releases</h5>
         <div class="row my-4 text-left">
           <div class="col-6 col-lg-3">
             <div class="item">
               <div class="cover">
-                <div class="upcoming-container" data-aos="zoom-in">
+                <div class="upcoming-container">
                   <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2022/im-falling.jpg">
                   <div class="centered">
                     <h4>Upcoming</h4>
                     <small><h5>Jan 21, 2022</h5></small>
                   </div>
                 </div>
-                  <h5 class="mb-0" data-aos="fade-left"><small><p class="mb-0 mt-2">I'm Falling</p></small></h5>
-                  <small><p class="mb-4" data-aos="fade-left">Bayza</p></small>
+                  <h5 class="mb-0"><small><p class="mb-0 mt-2">I'm Falling</p></small></h5>
+                  <small><p class="mb-4">Bayza</p></small>
               </div>
             </div> 
           </div>
           <div class="col-6 col-lg-3">
             <div class="item">
               <div class="cover">
-                <div class="upcoming-container" data-aos="zoom-in">
+                <div class="upcoming-container">
                   <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2021/pirhan.jpg">
                   <div class="centered">
                     <h4>Upcoming</h4>
                     <small><h5>Dec 15, 2021</h5></small>
                   </div>
                 </div>
-                  <h5 class="mb-0" data-aos="fade-left"><small><p class="mb-0 mt-2">Pirhan</p></small></h5>
-                  <small><p class="mb-4" data-aos="fade-left">DJ Phellix, Bayza, Sheenubb ft. Sant</p></small>
+                  <h5 class="mb-0"><small><p class="mb-0 mt-2">Pirhan</p></small></h5>
+                  <small><p class="mb-4">DJ Phellix, Bayza, Sheenubb ft. Sant</p></small>
               </div>
             </div> 
           </div>{% for item in sorted %} 
@@ -168,11 +169,11 @@
             <div class="item">
               <div class="cover">
                 <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
-                  <img data-aos="zoom-in" id="covers" class="img-fx img-fluid scale-on-hover release-color-covers" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
-                  <h5 class="mb-0" style="font-size: 1.25rem;" data-aos="fade-left"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
+                  <img id="covers" class="img-fx img-fluid scale-on-hover release-color-covers" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                  <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
                 </a>
-                <small><p class="mb-0" data-aos="fade-left">{{ item.artists }}</p></small>
-                <small><p class="mb-4" data-aos="fade-right">{{ item.date | date: "%b %-d, %Y" }}</p></small>
+                <small><p class="mb-0">{{ item.artists }}</p></small>
+                <small><p class="mb-4">{{ item.date | date: "%b %-d, %Y" }}</p></small>
               </div>
             </div>
           </div>{% if forloop.index0 == 9 %}{% break %}{% endif %}{% endfor %}
@@ -180,72 +181,69 @@
         <a class="btn btn-outline-releases px-4 py-1" href="/releases/all" data-aos="flip-left">See all releases</a>
       </div>
     </section>
-    <section id="music" class="bg-dark text-secondary text-center py-5">
+    <section id="music" class="bg-darkest text-secondary text-center py-5">
       <div class="container" style="overflow-x: hidden;">
-        <h3 class="mt-3 text-uppercase text-white" data-aos="fade-right">Music</h3>
-        <h4 class="font-weight-light" data-aos="fade-left">Follow my music</h4>
+        <h3 class="mt-3 text-uppercase text-white">Listen</h3>
+        <h5 class="font-weight-light">Listen to my music on your favorite platform</h5>
+        <div class="mt-4">
+          <div class="platform-icons spotify_card rounded-circle">
+            <a class="text-white" href="https://open.spotify.com/artist/0UFz5jBFwlNKaq1JwESYnX" target="_blank" title="Spotify">
+              <i class="fab fa-spotify fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="platform-icons soundcloud_card rounded-circle">
+            <a class="text-white" href="https://soundcloud.com/bayza" target="_blank" title="SoundCloud">
+              <i class="fab fa-soundcloud fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="platform-icons youtube_card rounded-circle">
+            <a class="text-white" href="https://youtube.com/c/bayza" target="_blank" title="YouTube">
+              <i class="fab fa-youtube fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="platform-icons soundcloud_card rounded-circle">
+            <a class="text-white" href="https://music.apple.com/us/artist/bayza/882647839?app=itunes&ls=1" target="_blank" title="iTunes Store">
+              <i class="fab fa-itunes-note fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
         <div class="row text-white">
-          <div class="col-lg-4" data-aos="flip-down">
-            <div class="m-3 bg-darkest rounded-lg py-3">
-              <div class="panel pb-2">
-                <a class="text-white" target="_blank" href="https://open.spotify.com/artist/0UFz5jBFwlNKaq1JwESYnX?si=v8o8YvcnTQOEjbBcEQuxKw" title="Bayza's Spotify">
-                  <i class="icon_card fab fa-spotify spotify_card rounded-circle border border-white" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5 class="mt-3 text-uppercase font-weight-light">Spotify</h5>
-              <div>
-                <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0UFz5jBFwlNKaq1JwESYnX&size=detail&theme=dark" width="215" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-              </div>
-              <br/>
-              <div>
-                <span id="button1">
-                <button type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="font-weight-light m-0">Tracks</h5></button>
-                </span>
-              </div>
-              <div id="spotify_tracks" class="mt-2">
-                <iframe src="https://open.spotify.com/embed/playlist/6yUqy1WE8QI779eRuXrIKR" style="width: 95%;" height="390" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-              </div>
+          <div class="col-lg-6">
+            <div class="mt-4">
+              <iframe src="https://open.spotify.com/embed/artist/0UFz5jBFwlNKaq1JwESYnX?utm_source=generator&theme=0" width="95%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="flip-down">
-            <div class="m-3 bg-darkest rounded-lg py-3">
-              <div class="panel pb-2">
-                <a class="text-white" target="_blank" href="https://soundcloud.com/bayza" title="Bayza's SoundCloud">
-                  <i class="icon_card fab fa-soundcloud soundcloud_card rounded-circle border border-white" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h5 class="mt-3 text-uppercase font-weight-light">SoundCloud</h5>
-              <div>
-                <span id="button2">
-                <button type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="font-weight-light m-0">Tracks</h5></button>
-                </span>
-              </div>
-              <div id="soundcloud_tracks" class="mt-2">
-                <iframe width="95%" height="500" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/38787166&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=false"></iframe>
-              </div>
+          <div class="col-lg-6">
+            <div class="mt-4">
+              <iframe width="95%" height="500" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/38787166&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=true&amp;show_teaser=true&amp;visual=false"></iframe>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="flip-down">
-            <div class="m-3 bg-darkest rounded-lg py-3">
-              <div class="panel pb-2">
-                <a class="text-white" target="_blank" href="https://youtube.com/bayza" title="Bayza's YouTube">
-                  <i class="icon_card fab fa-youtube youtube_card rounded-circle border border-white" aria-hidden="true"></i>
-                </a>              
-              </div>
-              <h5 class="mt-3 text-uppercase font-weight-light">YouTube</h5>
-              <div>
-                <div class="g-ytsubscribe" data-channelid="UCl4DogCwQJKLh_dmYbfk9Mg" data-layout="full" data-theme="dark" data-count="default" width="210" height="56">
-                </div>
-              </div>
-              <br/>
-              <div>
-                <span id="button3">
-                <button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="font-weight-light m-0">Uploads</h5></button>
-                </span>
-              </div>
-              <div id="youtube_videos" class="mt-2">
-                <iframe width="300" height="169" src="https://www.youtube.com/embed/videoseries?list=PLd9y5J6QFrDYoM2AGpWi1I0e_YZceDa-V" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+        </div>
+      </div>
+    </section>
+    <section id="yt_videos" class="bg-dark text-secondary text-center py-5">
+      <div class="container" style="overflow-x: hidden;">
+        <h3 class="mt-3 text-uppercase text-white">VIDEOS</h3>
+        <h5 class="font-weight-light">Featured youtube videos</h5>
+        <div class="row text-white">
+          <div class="col-lg-6 mt-4">
+            <div class="video-container">
+              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="video-container">
+              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/BwKO7sfFVAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="video-container">
+              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/eKGxQxm9FUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="video-container">
+              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -292,48 +290,6 @@
         //Sets color to 4rd color in the palette.
         $('.release-color').css('color','rgb('+cp[2][0]+','+cp[2][1]+','+cp[2][2]+')');
       });
-    </script>
-    <script>
-      $(document).ready(function(){
-        $("#button1").click(function(){
-          $("#spotify_tracks").slideToggle("slow");
-        });
-      });
-
-      function show1(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="hide1()";><h5 class="font-weight-light m-0">Hide Tracks</h5></button>';
-      }
-      function hide1(){
-          document.getElementById("button1").innerHTML= '<button  type="button" class="btn btn-outline-spotify px-4 py-1" onClick="show1()";><h5 class="font-weight-light m-0">Tracks</h5></button>';
-      }
-    </script>
-    <script>
-      $(document).ready(function(){
-        $("#button2").click(function(){
-          $("#soundcloud_tracks").slideToggle("slow");
-        });
-      });
-
-      function show2(){
-          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="hide2()";><h5 class="font-weight-light m-0">Hide Tracks</h5></button>';
-      }
-      function hide2(){
-          document.getElementById("button2").innerHTML= '<button  type="button" class="btn btn-outline-soundcloud px-4 py-1" onClick="show2()";><h5 class="font-weight-light m-0">Tracks</h5></button>';
-      }
-    </script>
-    <script>
-      $(document).ready(function(){
-        $("#button3").click(function(){
-          $("#youtube_videos").slideToggle("slow");
-        });
-      });
-
-      function show3(){
-          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="hide3()";><h5 class="font-weight-light m-0">Hide Uploads</h5></button>';
-      }
-      function hide3(){
-          document.getElementById("button3").innerHTML= '<button  type="button" class="btn btn-outline-youtube px-4 py-1" onClick="show3()";><h5 class="font-weight-light m-0">Uploads</h5></button>';
-      }
     </script>
   </body>
 </html>
