@@ -109,6 +109,15 @@ h1 {
 .itunes_card {
     background: #EA4CC0
 }
+
+.apple_card {
+    background: #fc3c44;
+}
+
+.deezer_card {
+    background: #852598;
+}
+
 .font-weight-sc {
     color: #b8b8b8;
 }
