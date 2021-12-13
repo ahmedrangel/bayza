@@ -118,6 +118,19 @@ h1 {
     background: #852598;
 }
 
+.amazon_card {
+    background: #1e222f
+}
+
+.yandex_card {
+    background: #ffcb00;
+    color: #f33!important;
+}
+
+.beatport_card {
+    background: #141414;
+    color: #00ff95!important;
+}
 .font-weight-sc {
     color: #b8b8b8;
 }
