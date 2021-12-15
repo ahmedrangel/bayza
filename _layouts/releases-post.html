@@ -92,6 +92,7 @@
                 <h6 class="mb-2"><span class="tag">{{ release.duration }}</span></h6>{% if release.fanlink %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Fanlink:</span></h5>
                 <h6 class="mb-2"><span><a class="tag" target="_blank" href="https://{{ release.fanlink }}">{{ release.fanlink }}<i class="ml-1 fas fa-external-link-alt"></i></a></span></h6>{% endif %}
+                <div id="platforms" class="mt-2 d-flex flex-wrap justify-content-left"></div>
               </div>
             </div>
           </div>
@@ -99,5 +100,30 @@
       </section>
 {% include footer.html %}
 {% include scripts.html %}
+<script>
+  $.getJSON("/json/fanlinks.json", function(result) {
+    let str = "{{ release.release }}"
+    let release_str = str.replace(/-/g, "");
+    console.log(release_str);
+    $.each(result[release_str][0], function(i, stores){
+      if(stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" && i !== "image_secure" && i !== "tidal" && i !== "tidal-buy" && i !== "amazon-music" && i !== "download"){
+        let icon = "";
+        if (i == "itunes"){
+          icon = "fab fa-itunes-note";
+        }
+        else if (i == "beatport"){
+          icon = "fas fa-headphones";
+        }
+        else{
+          icon = "fab fa-"+i;
+        }
+        $("#platforms").append(
+          "<div class='m-1'><a class='text-white platform-icons "+ i +"_card rounded-circle' href="+ stores +" target='_blank' title='"+ i +"'><i class='"+ icon +" fa-fw' aria-hidden='true'></i></a></div>");
+        console.log(stores);
+      }
+    });
+  });
+
+</script>
   </body>
 </html>

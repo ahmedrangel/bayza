@@ -131,6 +131,15 @@ h1 {
     background: #141414;
     color: #00ff95!important;
 }
+
+.tiktok_card {
+    background: #010101;
+}
+
+.bandcamp_card {
+    background: #1da0c3;
+}
+
 .font-weight-sc {
     color: #b8b8b8;
 }
