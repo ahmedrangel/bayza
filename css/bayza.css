@@ -274,6 +274,10 @@ a img, .img-fx, .img-select-none{
     -ms-user-select: none;
 }
 
+.img-fx {
+    transition: linear .2s;
+}
+
 .img-fx:hover {
     filter: contrast(110%) brightness(105%) drop-shadow(7px 7px 5px #00000088);
 }
