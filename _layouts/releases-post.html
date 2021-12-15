@@ -72,13 +72,14 @@
             	</div>
           	</div>
           </div>
-          <div id="track-info" class="row">
-            <div class="col-12 col-md-8 info text-justify">
-              <h4 class="text-white">Description:</h3>
-                <h6>{{ release.description }}</h6>
+          <div id="track-info" class="row mt-4">
+            <div class="col-12 col-md-4 info text-justify mb-2">
+              <img class="img-fx img-fluid release-color-covers" src="https://bayzamusic.com/images/releases/{{ release.year }}/{{ release.cover }}.jpg" alt="{{ release.artists }} - {{ release.title }}">
             </div>
-            <div class="col-12 col-md-4 meta text-justify">
-              <div class="tags">
+            <div class="col-12 col-md-8 meta text-justify">
+              <div class="tags">{% if release.description %}
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
+                <h6 class="mb-2"><span class="">{{ release.description }}</span></h6>{% endif %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Genre:</span></h5>
                 <h6 class="mb-2"><span class="tag">{{ release.genre }}</span></h6>{% if release.album %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Album:</span></h5>
