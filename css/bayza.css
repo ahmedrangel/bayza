@@ -458,5 +458,5 @@ b a:hover {
 }
 
 .icons-fx:hover {
-    filter: saturate(0.75) contrast(0.95) drop-shadow(3px 3px 2px #00000088);
+    filter: saturate(0.85) contrast(0.95) drop-shadow(3px 3px 2px #00000088);
 }
