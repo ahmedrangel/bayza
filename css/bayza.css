@@ -456,3 +456,7 @@ b a:hover {
     margin: 0px!important;
     font-size: 18px;
 }
+
+.icons-fx {
+    filter: saturate(0.6);
+}
