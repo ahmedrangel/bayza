@@ -133,38 +133,48 @@
         }
         else if (i == "spotify"){
           store_title = "Spotify";
+          icon = "fab fa-"+i;
         }
         else if (i == "apple"){
           store_title = "Apple Music";
+          icon = "fab fa-"+i;
         }
         else if (i == "soundcloud"){
           store_title = "SoundCloud";
+          icon = "fab fa-"+i;
         }
         else if (i == "youtube"){
           store_title = "YouTube";
+          icon = "fab fa-"+i;
         }
         else if (i == "amazon"){
           store_title = "Amazon";
+          icon = "fab fa-"+i;
         }
         else if (i == "deezer"){
           store_title = "Deezer";
+          icon = "fab fa-"+i;
         }
         else if (i == "napster"){
           store_title = "Napster";
+          icon = "fab fa-"+i;
         }
         else if (i == "tiktok"){
           store_title = "TikTok";
+          icon = "fab fa-"+i;
         }
         else if (i == "yandex"){
           store_title = "Yandex Music";
+          icon = "fab fa-"+i;
         }
         else if (i == "bandcamp"){
           store_title = "Bandcamp";
+          icon = "fab fa-"+i;
         }
         else{
           icon = "fab fa-"+i;
         }
-        
+
         $("#platforms").append(
           "<div class='mr-2 mb-2'><a class='icons-fx text-white platform-icons "+ i +"_card rounded-circle' href="+ stores +" target='_blank' title='"+ store_title +"'><i class='"+ icon +" fa-fw' aria-hidden='true'></i></a></div>");
         console.log(stores);
