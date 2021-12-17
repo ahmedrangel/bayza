@@ -124,10 +124,42 @@
       if(stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" && i !== "image_secure" && i !== "tidal" && i !== "tidal-buy" && i !== "amazon-music" && i !== "download"){
         let icon = "";
         if (i == "itunes"){
+          store_title = "iTunes";
           icon = "fab fa-itunes-note";
         }
         else if (i == "beatport"){
+          store_title = "Beatport";
           icon = "fas fa-headphones";
+        }
+        else if (i == "spotify"){
+          store_title = "Spotify";
+        }
+        else if (i == "apple"){
+          store_title = "Apple Music";
+        }
+        else if (i == "soundcloud"){
+          store_title = "SoundCloud";
+        }
+        else if (i == "youtube"){
+          store_title = "YouTube";
+        }
+        else if (i == "amazon"){
+          store_title = "Amazon";
+        }
+        else if (i == "deezer"){
+          store_title = "Deezer";
+        }
+        else if (i == "napster"){
+          store_title = "Napster";
+        }
+        else if (i == "tiktok"){
+          store_title = "TikTok";
+        }
+        else if (i == "yandex"){
+          store_title = "Yandex Music";
+        }
+        else if (i == "bandcamp"){
+          store_title = "Bandcamp";
         }
         else{
           icon = "fab fa-"+i;
