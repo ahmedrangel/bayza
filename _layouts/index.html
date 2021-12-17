@@ -150,6 +150,21 @@
               </div>
             </div> 
           </div>
+          <div class="col-6 col-lg-3">
+            <div class="item">
+              <div class="cover">
+                <div class="upcoming-container">
+                  <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2021/passages.jpg">
+                  <div class="centered">
+                    <h4>Upcoming</h4>
+                    <small><h5>Dec 30, 2021</h5></small>
+                  </div>
+                </div>
+                  <h5 class="mb-0"><small><p class="mb-0 mt-2">Passages EP</p></small></h5>
+                  <small><p class="mb-4">Bayza</p></small>
+              </div>
+            </div> 
+          </div>
           {% for item in sorted %} 
           <div class="col-6 col-lg-3">
             <div class="item">
@@ -164,7 +179,7 @@
                 <small><p class="mb-4">{{ item.date | date: "%b %-d, %Y" }}</p></small>
               </div>
             </div>
-          </div>{% if forloop.index0 == 10 %}{% break %}{% endif %}{% endfor %}
+          </div>{% if forloop.index0 == 9 %}{% break %}{% endif %}{% endfor %}
         </div>  
         <a class="btn btn-outline-releases px-4 py-1" href="/releases/all" data-aos="flip-left">See all releases</a>
       </div>
