@@ -144,7 +144,7 @@ $(function() {
     type_page = "all-bootlegs"
   }
   $("#more_releases").append("<h4 class='m-0 text-white'>More <a class='tag' href='/releases/"+ type_page +"'>"+ release_type +"</a> by Bayza</h4>");
-  console.log(release_type)
+  console.log(release_type);
   $.getJSON("/json/fanlinks.json", function(result) {
     let str = "{{ release.release }}";
     let release_str;
