@@ -134,14 +134,14 @@
 
 $(function() {
   let release_type = "{{ page.type }}";
-  let type_page
+  let type_page;
   if (release_type == "Releases") {
-    release_type = "releases"
-    type_page = "all"
+    release_type = "releases";
+    type_page = "all";
   }
   else {
     release_type = "bootlegs";
-    type_page = "all-bootlegs"
+    type_page = "all-bootlegs";
   }
   $("#more_releases").append("<h4 class='m-0 text-white'>More <a class='tag' href='/releases/"+ type_page +"'>"+ release_type +"</a> by Bayza</h4>");
   console.log(release_type);
