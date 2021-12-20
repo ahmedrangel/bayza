@@ -96,6 +96,23 @@
               </div>
             </div>
           </div>
+          <div id="more_tracks" class="mt-4 row text-left">
+            {% for item in sorted %}{% if item.release != page.release and item.type == page.type %}
+            <div class="col-6 col-lg-3">
+              <div class="item">
+                <div class="cover">
+                  <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
+                    <div class="overflow-hidden">
+                      <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                    </div>
+                    <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
+                  </a>
+                  <small><p class="mb-0">{{ item.artists }}</p></small>
+                  <small><p class="mb-4">{{ item.date | date: "%b %-d, %Y" }}</p></small>
+                </div>
+              </div>
+            </div>{% endif %}{% if forloop.index0 == 5 %}{% break %}{% endif %}{% endfor %}
+          </div>
         </div>
       </section>
 {% include footer.html %}
