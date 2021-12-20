@@ -77,7 +77,7 @@ h1 {
 }
 
 .text-secondary {
-    color: #a8a8a8!important;
+    color: #bbbbbb!important;
 }
 
 .bg-darkest {
@@ -325,10 +325,12 @@ b a:hover {
     margin-right: 85px;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 991px){
     #reproductor, #track-info{
-        margin:0px!important;
-        padding:0px!important;
+        margin-left:0px!important;
+        margin-right:0px!important;
+        padding-left:0px!important;
+        padding-right:0px!important;
     }
 }
 
@@ -337,7 +339,7 @@ b a:hover {
 }
 
 .tag {
-    color: #a8a8a8;
+    color: #bbbbbb;
 }
 .tag:hover {
     color: #fff;

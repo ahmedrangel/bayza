@@ -61,6 +61,13 @@
   </head>
   <body>
 {% include navbar.html %}
+<style>
+  @media (min-width: 1200px) {
+      .container {
+          max-width: 1140px!important;
+      }
+  }
+</style>
     <section id="releases" class="bg-darkest">
         <div class="container text-secondary text-center pt-3 pb-4 px-3">
           <h3 class="mt-5 text-uppercase text-white">{{ release.title }}</h3>
@@ -72,11 +79,11 @@
             	</div>
           	</div>
           </div>
-          <div id="track-info" class="row mt-4">
-            <div class="col-12 col-md-4 info text-justify mb-2">
+          <div id="track-info" class="row mt-4 pb-5">
+            <div class="col-12 col-lg-5 info text-center mb-3">
               <img class="img-fx img-fluid release-color-covers" src="https://bayzamusic.com/images/releases/{{ release.year }}/{{ release.cover }}.jpg" alt="{{ release.artists }} - {{ release.title }}">
             </div>
-            <div class="col-12 col-md-8 meta text-justify">
+            <div class="col-12 col-lg-7 meta text-justify">
               <div class="tags">{% if release.description %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
                 <h6 class="mb-2"><span class="">{{ release.description }}</span></h6>{% endif %}
@@ -96,11 +103,48 @@
               </div>
             </div>
           </div>
+          <div style="border-top: 2px solid #bbbbbb; width: 30%;"></div>
+          <div id="more_tracks" class="pt-4 text-left">
+            <div id="more_releases" class="pb-4"></div>
+            <div class="row">
+              {% assign i = 0 %}
+              {% for item in sorted %}
+              {% if item.release != page.release and item.type == release.type %}
+              <div class="col-6 col-lg-3">
+                <div class="item">
+                  <div class="cover">
+                    <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
+                      <div class="overflow-hidden">
+                        <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                      </div>
+                      <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
+                    </a>
+                    <small><p class="mb-0">{{ item.artists }}</p></small>
+                    <small><p class="mb-4">{{ item.date | date: "%b %-d, %Y" }}</p></small>
+                  </div>
+                </div>
+              </div>{% assign i = i | plus:1 %}{% endif %}{% if i == 8 %}{% break %}{% endif %}{% endfor %}
+            </div>
+          </div>
         </div>
       </section>
 {% include footer.html %}
 {% include scripts.html %}
 <script>
+
+$(function() {
+  let release_type = "{{ page.type }}";
+  let type_page
+  if (release_type == "Releases") {
+    release_type = "releases"
+    type_page = "all"
+  }
+  else {
+    release_type = "bootlegs";
+    type_page = "all-bootlegs"
+  }
+  $("#more_releases").append("<h4 class='m-0 text-white'>More <a class='tag' href='/releases/"+ type_page +"'>"+ release_type +"</a> by Bayza</h4>");
+  console.log(release_type)
   $.getJSON("/json/fanlinks.json", function(result) {
     let str = "{{ release.release }}";
     let release_str;
@@ -181,7 +225,7 @@
       }
     });
   });
-
+});
 </script>
   </body>
 </html>
