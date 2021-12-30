@@ -900,21 +900,6 @@
   duration: "4:55"
   fanlink: lnk.bayza.ml/Pirhan
 
-- release: passages
-  artists: Bayza
-  title: Passages
-  cover: passages
-  album: Passages
-  genre: Deep House
-  year: 2021
-  description: To end the year, I decided to release an original track within an EP that also includes instrumentals of some of my previous bootlegs.
-  label: 
-  video: gqnAPRtTnSs
-  date: 2021-12-30 00:00:06
-  type: Releases
-  duration: "3:00"
-  fanlink: lnk.bayza.ml/Passages
-
 - release: thumbs
   artists: Bayza
   title: Thumbs
@@ -929,3 +914,18 @@
   type: Releases
   duration: "3:23"
   fanlink: lnk.bayza.ml/thumbs
+
+- release: passages
+  artists: Bayza
+  title: Passages
+  cover: passages
+  album: Passages
+  genre: Deep House
+  year: 2021
+  description: To end the year, I decided to release an original track within an EP that also includes instrumentals of some of my previous bootlegs.
+  label: 
+  video: gqnAPRtTnSs
+  date: 2021-12-30 00:00:06
+  type: Releases
+  duration: "3:00"
+  fanlink: lnk.bayza.ml/Passages
