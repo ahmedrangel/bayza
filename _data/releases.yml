@@ -871,7 +871,7 @@
   duration: "2:58"
   fanlink: lnk.bayza.ml/TakeMeHome
 
-- release: thumbs
+- release: thumbs-remix
   artists: Sabrina Carpenter
   title: Thumbs (Bayza Remix)
   cover: thumbs
@@ -884,7 +884,7 @@
   type: Bootlegs/Remixes
   link: -bootlegs
   duration: "3:23"
-  fanlink: lnk.bayza.ml/thumbs
+  fanlink: lnk.bayza.ml/thumbsremix
 
 - release: pirhan
   artists: DJ Phellix, Bayza, Sheenubb ft. Sant
@@ -928,4 +928,4 @@
   date: 2021-12-30 00:00:05
   type: Releases
   duration: "3:23"
-  fanlink: lnk.bayza.ml/Thumbs
+  fanlink: lnk.bayza.ml/thumbs
