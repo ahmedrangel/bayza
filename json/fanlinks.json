@@ -1,4 +1,30 @@
 {
+    "lovasaolvidar": [
+        {
+            "title": "Lo Vas A Olvidar",
+            "artists": "Bayza",
+            "date": "2021-12-30 00:00:04",
+            "image": "http://bayzamusic.com/images/releases/2021/passages.jpg",
+            "image_secure": "https://bayzamusic.com/images/releases/2021/passages.jpg",
+            "spotify": "https://open.spotify.com/track/24oDwzecr6P1M99J75MP3I",
+            "apple": "https://music.apple.com/us/album/passages/1600730723?i=1600730728?app=music&ls=1",
+            "soundcloud": "https://soundcloud.com/bayza/thumbs",
+            "youtube": "https://youtu.be/9u_UwD-WpSE",
+            "itunes": "https://music.apple.com/us/album/passages/1600730723?app=itunes&ls=1",
+            "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N61Z6JW",
+            "amazon": "https://www.amazon.com/dp/B09N61Z6JW",
+            "deezer": "https://www.deezer.com/en/track/1593460581",
+            "napster": "",
+            "tidal": "https://tidal.com/browse/track/209499618",
+            "tidal-buy": "https://store.tidal.com/us/album/209499615",
+            "download": "",
+            "tiktok": "",
+            "beatport": "",
+            "yandex": "https://music.yandex.com/album/19854446/track/96764345",
+            "bandcamp": "",
+            "dark": "false"
+        }    
+    ],
     "thumbs": [
         {
             "title": "Thumbs",
