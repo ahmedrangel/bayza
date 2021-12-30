@@ -1,4 +1,30 @@
 {
+    "passages": [
+        {
+            "title": "Passages",
+            "artists": "Bayza",
+            "date": "2021-12-29 00:00:00",
+            "image": "http://bayzamusic.com/images/releases/2021/passages.jpg",
+            "image_secure": "https://bayzamusic.com/images/releases/2021/passages.jpg",
+            "spotify": "https://open.spotify.com/track/4RS92LczkSL2BQaGbCwuzp",
+            "apple": "https://music.apple.com/us/album/passages/1600730723?i=1600730725?app=music&ls=1",
+            "soundcloud": "https://soundcloud.com/bayza/passages",
+            "youtube": "https://youtu.be/Oj1watCw6UM",
+            "itunes": "https://music.apple.com/us/album/passages/1600730723?i=1600730725?app=itunes&ls=1",
+            "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N644GRK",
+            "amazon": "https://www.amazon.com/dp/B09N644GRK",
+            "deezer": "https://www.deezer.com/en/track/1593460561",
+            "napster": "",
+            "tidal": "https://tidal.com/browse/track/209499616",
+            "tidal-buy": "https://store.tidal.com/us/album/209499615",
+            "download": "",
+            "tiktok": "https://vm.tiktok.com/ZM8cdkf1a",
+            "beatport": "",
+            "yandex": "https://music.yandex.com/album/19854446/track/96764343",
+            "bandcamp": "",
+            "dark": "false"
+        }    
+    ],
     "pirhan": [
         {
             "title": "Pirhan",
