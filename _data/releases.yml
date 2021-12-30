@@ -900,9 +900,24 @@
   duration: "4:55"
   fanlink: lnk.bayza.ml/Pirhan
 
+- release: lovasaolvidar
+  artists: Bayza
+  title: Lo Vas A Olvidar - Instrumental
+  cover: passages
+  album: Passages
+  genre: Deep House
+  year: 2021
+  description: This is the instrumental version of "<a class="text-white" href="https://bayzamusic.com/releases/2021-bootlegs/lo-vas-a-olvidar" target="_blank" title="Billie Eilish, ROSALÍA - Lo Vas A Olvidar (Bayza Bootleg)">Billie Eilish, ROSALÍA - Lo Vas A Olvidar (Bayza Bootleg)</a>"
+  label: 
+  video: VXXsLZm3HVc
+  date: 2021-12-30 00:00:04
+  type: Releases
+  duration: "3:18"
+  fanlink: lnk.bayza.ml/LoVasAOlvidar
+
 - release: thumbs
   artists: Bayza
-  title: Thumbs
+  title: Thumbs - Instrumental
   cover: passages
   album: Passages
   genre: Deep House
