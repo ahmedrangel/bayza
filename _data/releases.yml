@@ -904,6 +904,7 @@
   artists: Bayza
   title: Passages
   cover: passages
+  album: Passages
   genre: Deep House
   year: 2021
   description: To end the year, I decided to release an original track within an EP that also includes instrumentals of some of my previous bootlegs.
@@ -913,3 +914,18 @@
   type: Releases
   duration: "3:00"
   fanlink: lnk.bayza.ml/Passages
+
+- release: thumbs
+  artists: Bayza
+  title: Thumbs
+  cover: passages
+  album: Passages
+  genre: Deep House
+  year: 2021
+  description: This is the instrumental version of "Sabrina Carpenter - Thumbs (Bayza Bootleg)"
+  label: 
+  video: 9u_UwD-WpSE
+  date: 2021-12-30 00:00:06
+  type: Releases
+  duration: "3:23"
+  fanlink: lnk.bayza.ml/Thumbs
