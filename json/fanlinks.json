@@ -1,4 +1,30 @@
 {
+    "myheadmyheart": [
+        {
+            "title": "My Head & My Heart - Instrumental",
+            "artists": "Bayza",
+            "date": "2021-12-30 00:00:03",
+            "image": "http://bayzamusic.com/images/releases/2021/passages.jpg",
+            "image_secure": "https://bayzamusic.com/images/releases/2021/passages.jpg",
+            "spotify": "https://open.spotify.com/track/4EUzTSJRJ82Xj6O4MSMRCe",
+            "apple": "https://music.apple.com/us/album/passages/1600730723?i=1600730729?app=music&ls=1",
+            "soundcloud": "https://soundcloud.com/bayza/my-head-my-heart",
+            "youtube": "https://youtu.be/JaN96BTWzZo",
+            "itunes": "https://music.apple.com/us/album/passages/1600730723?app=itunes&ls=1",
+            "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N681P5P",
+            "amazon": "https://www.amazon.com/dp/B09N681P5P",
+            "deezer": "https://www.deezer.com/en/track/1593460591",
+            "napster": "",
+            "tidal": "https://tidal.com/browse/track/209499619",
+            "tidal-buy": "https://store.tidal.com/us/album/209499615",
+            "download": "",
+            "tiktok": "",
+            "beatport": "",
+            "yandex": "https://music.yandex.com/album/19854446/track/96764346",
+            "bandcamp": "",
+            "dark": "false"
+        }    
+    ],
     "lovasaolvidar": [
         {
             "title": "Lo Vas A Olvidar - Instrumental",
