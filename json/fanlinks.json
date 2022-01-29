@@ -14,6 +14,7 @@
             "amazon-music": "https://music.amazon.com/albums/B09NQBHG3T",
             "amazon": "https://www.amazon.com/dp/B09NQBHG3T",
             "deezer": "https://www.deezer.com/en/album/280910701",
+            "beatport": "https://www.beatport.com/track/im-falling/16068383",
             "yandex": "https://music.yandex.com/album/20065720",
             "anghami": "https://play.anghami.com/song/1038127845",
             "napster": "https://napster.com/artist/bayza/album/im-falling",
@@ -21,7 +22,6 @@
             "tidal-buy": "https://store.tidal.com/us/album/209511422",
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMLdt7P6q",
-            "beatport": "https://www.beatport.com/track/im-falling/16068383",
             "bandcamp": "",
             "dark": "false"
         }     
@@ -273,13 +273,14 @@
             "amazon-music": "https://music.amazon.com/albums/B095SZW2GV",
             "amazon": "https://www.amazon.com/dp/B095SZW2GV",
             "deezer": "https://www.deezer.com/en/album/232620752",
+            "yandex": "https://music.yandex.com/album/15798165",
+            "anghami": "https://play.anghami.com/song/111077051",
             "napster": "https://napster.com/artist/bayza/album/take-me-home-585357215",
             "tidal": "https://tidal.com/browse/album/185398916",
             "tidal-buy": "https://store.tidal.com/us/album/185398916",
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMdfURKan",
             "beatport": "https://www.beatport.com/track/take-me-home/15341109",
-            "yandex": "https://music.yandex.com/album/15798165",
             "bandcamp": "",
             "dark": "false"
         }    
@@ -524,6 +525,7 @@
             "deezer": "https://www.deezer.com/en/album/167194272",
             "tidal": "https://tidal.com/browse/album/152057763",
             "tidal-buy": "https://store.tidal.com/us/album/152057763",
+            "yandex": "https://music.yandex.com/album/11793661",
             "anghami": "https://play.anghami.com/song/83466093",
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZSuDrpku",
