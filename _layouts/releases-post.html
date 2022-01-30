@@ -236,7 +236,7 @@ $(function() {
     $.each(sortedObj, function(i, value){
       $("#platforms").append(
             "<div class='mr-2 mb-2' title='"+ value.store_title +"'><a class='icons-fx text-white platform-icons "+ value.id +"_card rounded-circle' href="+ value.stores +" target='_blank''><i class='"+ value.icon +" fa-fw' aria-hidden='true'></i></a></div>");
-          console.log(stores);
+          console.log(value.stores);
       });
     });
 });
