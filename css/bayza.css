@@ -321,8 +321,8 @@ b a:hover {
 }
 
 #track-info {
-    margin-left: 85px;
-    margin-right: 85px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 @media only screen and (max-width: 991px){
