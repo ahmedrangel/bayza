@@ -456,18 +456,27 @@ b a:hover {
     }
 }
 
-.platform-icons {
-    display: inline-block;
-    padding: 11px 9px;
-    margin: 0px!important;
-    font-size: 20px;
-}
 
 .icons-fx:hover {
     filter: saturate(0.85) contrast(0.95) drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.80));
 }
 
+.platform-icons {
+    display: inline-block;
+    padding: 11.3px 9px;
+    margin: 0px!important;
+    font-size: 23px;
+}
 .icons-fx i.fa-fw {
     text-align: center;
     width: 1.2em;
+} 
+
+@media only screen and (max-width: 991px){
+    .platform-icons {
+        display: inline-block;
+        padding: 11px 9px;
+        margin: 0px!important;
+        font-size: 20px;
+    } 
 }
