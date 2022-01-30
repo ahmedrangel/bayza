@@ -149,6 +149,10 @@ $(function() {
   $.getJSON("/json/fanlinks.json", function(result) {
     let str = "{{ release.release }}";
     let release_str;
+    let store_title;
+    let icon = "";
+    let stores_array = [];
+    let key = 0;
     if (str == "lo-vas-a-olvidar"){
       release_str = "lvao";
     }
@@ -164,12 +168,9 @@ $(function() {
     else {
       release_str = str.replace(/-/g, "");
     }
-
-    var stores_order = ["spotify","apple","soundcloud","youtube","deezer","beatport","itunes","yandex","anghami","amazon","tidal","napster","tiktok","bandcamp"];
     $.each(result[release_str][0], function(i, stores){
       console.log(result[release_str][i]);
       if(stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" && i !== "image_secure" && i !== "tidal" && i !== "tidal-buy" && i !== "amazon-music" && i !== "download" && i !== "anghami"){
-        let icon = "";
         if (i == "itunes"){
           store_title = "iTunes";
           icon = "fab fa-itunes-note";
@@ -221,13 +222,23 @@ $(function() {
         else{
           icon = "fab fa-"+i;
         }
-
-        $("#platforms").append(
-          "<div class='mr-2 mb-2' title='"+ store_title +"'><a class='icons-fx text-white platform-icons "+ i +"_card rounded-circle' href="+ stores +" target='_blank''><i class='"+ icon +" fa-fw' aria-hidden='true'></i></a></div>");
-        console.log(stores);
+        stores_array.push({id:i, store_title: store_title, stores: stores, icon:icon, key:key});
+        key = key + 1
       }
     });
-  });
+    let stores_order = ["spotify","apple","soundcloud","youtube","deezer","beatport","itunes","yandex","anghami","amazon","tidal","napster","tiktok","bandcamp"];
+    const sortedObj = stores_array.sort((a, b) => {
+        return (
+            stores_order.indexOf(a.id) - stores_order.indexOf(b.id)
+        );
+    });
+    console.log(sortedObj);
+    $.each(sortedObj, function(i, stores){
+      $("#platforms").append(
+            "<div class='mr-2 mb-2' title='"+ store_title +"'><a class='icons-fx text-white platform-icons "+ i +"_card rounded-circle' href="+ stores +" target='_blank''><i class='"+ icon +" fa-fw' aria-hidden='true'></i></a></div>");
+          console.log(stores);
+      });
+    });
 });
 </script>
   </body>
