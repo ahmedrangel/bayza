@@ -467,7 +467,7 @@ b a:hover {
     margin: 0px!important;
     font-size: 23px;
 }
-.icons-fx i.fa-fw {
+.icons-fx span.fa-fw {
     text-align: center;
     width: 1.2em;
 } 
