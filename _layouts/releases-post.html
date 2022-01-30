@@ -233,9 +233,9 @@ $(function() {
         );
     });
     console.log(sortedObj);
-    $.each(sortedObj, function(i, stores){
+    $.each(sortedObj, function(i, value){
       $("#platforms").append(
-            "<div class='mr-2 mb-2' title='"+ store_title +"'><a class='icons-fx text-white platform-icons "+ i +"_card rounded-circle' href="+ stores +" target='_blank''><i class='"+ icon +" fa-fw' aria-hidden='true'></i></a></div>");
+            "<div class='mr-2 mb-2' title='"+ value.store_title +"'><a class='icons-fx text-white platform-icons "+ value.id +"_card rounded-circle' href="+ value.stores +" target='_blank''><i class='"+ value.icon +" fa-fw' aria-hidden='true'></i></a></div>");
           console.log(stores);
       });
     });
