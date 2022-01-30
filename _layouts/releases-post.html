@@ -239,7 +239,7 @@ $(function() {
     console.log(sortedObj);
     $.each(sortedObj, function(i, value){
       $("#platforms").append(
-            "<a class='icons-fx text-white platform-icons "+ value.id +"_card rounded-circle' href="+ value.stores +" target='_blank'' title='"+ value.store_title +"'><div class='mr-2 mb-2'><i class='fa-fw "+ value.icon +"' aria-hidden='false' role='img'></i></div></a>");
+            "<div class='mr-2 mb-2'><a class='icons-fx text-white platform-icons "+ value.id +"_card rounded-circle' href="+ value.stores +" target='_blank'' title='"+ value.store_title +"'><i class='fa-fw "+ value.icon +"' aria-hidden='false' role='img'></i></a></div>");
           console.log(value.stores);
       });
     });
