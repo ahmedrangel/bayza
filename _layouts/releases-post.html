@@ -170,7 +170,7 @@ $(function() {
     }
     $.each(result[release_str][0], function(i, stores){
       console.log(result[release_str][i]);
-      if(stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" && i !== "image_secure" && i !== "tidal" && i !== "tidal-buy" && i !== "amazon-music" && i !== "download" && i !== "anghami"){
+      if(stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" && i !== "image_secure" && i !== "tidal" && i !== "amazon-music" && i !== "download" && i !== "anghami"){
         if (i == "itunes"){
           store_title = "iTunes";
           icon = "fab fa-itunes-note";
@@ -219,6 +219,11 @@ $(function() {
           store_title = "Bandcamp";
           icon = "fab fa-"+i;
         }
+        else if (i == "tidal-buy"){
+          store_title = "Tidal";
+          i = tidal;
+          icon = "iconify' data-icon='simple-icons:"+tidal+"'";
+        }
         else{
           icon = "fab fa-"+i;
         }
@@ -235,7 +240,7 @@ $(function() {
     console.log(sortedObj);
     $.each(sortedObj, function(i, value){
       $("#platforms").append(
-            "<div class='mr-2 mb-2' title='"+ value.store_title +"'><a class='icons-fx text-white platform-icons "+ value.id +"_card rounded-circle' href="+ value.stores +" target='_blank''><i class='"+ value.icon +" fa-fw' aria-hidden='true'></i></a></div>");
+            "<div class='mr-2 mb-2' title='"+ value.store_title +"'><a class='icons-fx text-white platform-icons "+ value.id +"_card rounded-circle' href="+ value.stores +" target='_blank''><i class='fa-fw "+ value.icon +"' aria-hidden='true'></i></a></div>");
           console.log(value.stores);
       });
     });
