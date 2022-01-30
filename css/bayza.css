@@ -292,7 +292,7 @@ a img, .img-fx, .img-select-none{
 }
 
 .img-fx:hover {
-    filter: contrast(110%) brightness(105%) drop-shadow(7px 7px 5px #00000088);
+    filter: contrast(110%) brightness(105%) drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.80));
 }
 
 
