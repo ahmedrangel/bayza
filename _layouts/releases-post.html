@@ -248,7 +248,6 @@ $(function() {
     $.each(sortedObj, function(i, value){
       $("#platforms").append(
             "<div class='mr-2 mb-2' title='"+ value.store_title +"'><a class='icons-fx text-white platform-icons "+ value.id +"_card rounded-circle' href="+ value.stores +" target='_blank'><span class='fa-fw "+ value.icon +"' aria-hidden='true'>"+ value.icon_insert +"</span><span class='sr-only'>"+ value.store_title +"</span></a></div>");
-          console.log(value.stores, value.icon, value.icon_insert);
       });
     });
 });
