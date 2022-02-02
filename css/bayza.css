@@ -103,19 +103,31 @@ h1 {
 }
 
 .soundcloud_card {
-    background: #ff7700;
+    background: rgb(255,119,0);
+    background: -moz-linear-gradient(180deg, rgba(255,119,0,1) 0%, rgba(255,52,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,119,0,1) 0%, rgba(255,52,0,1) 100%);
+    background: linear-gradient(180deg, rgba(255,119,0,1) 0%, rgba(255,52,0,1) 100%);
 }
 
 .itunes_card {
-    background: #EA4CC0
+    background: #EA4CC0;
+    background: -moz-linear-gradient(180deg, rgba(234,76,192,1) 0%, rgba(196,72,248,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(234,76,192,1) 0%, rgba(196,72,248,1) 100%);
+    background: linear-gradient(180deg, rgba(234,76,192,1) 0%, rgba(196,72,248,1) 100%);
 }
 
 .apple_card {
-    background: #fc3c44;
+    background: rgb(252,60,68);
+    background: -moz-linear-gradient(0deg, rgba(252,60,68,1) 0%, rgba(249,76,87,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(252,60,68,1) 0%, rgba(249,76,87,1) 100%);
+    background: linear-gradient(0deg, rgba(252,60,68,1) 0%, rgba(249,76,87,1) 100%);
 }
 
 .deezer_card {
-    background: #852598;
+    background: rgb(255,128,0);
+    background: -moz-linear-gradient(90deg, rgba(255,128,0,1) 0%, rgba(253,90,34,1) 25%, rgba(204,25,83,1) 50%, rgba(53,89,166,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,128,0,1) 0%, rgba(253,90,34,1) 25%, rgba(204,25,83,1) 50%, rgba(53,89,166,1) 100%);
+    background: linear-gradient(90deg, rgba(255,128,0,1) 0%, rgba(253,90,34,1) 25%, rgba(204,25,83,1) 50%, rgba(53,89,166,1) 100%);
 }
 
 .amazon_card {
@@ -142,6 +154,13 @@ h1 {
 
 .napster_card {
     background: #111111;
+}
+
+.anghami_card {
+    background: rgb(45,164,224);
+    background: -moz-linear-gradient(180deg, rgba(45,164,224,1) 0%, rgba(155,44,213,1) 50%, rgba(218,61,148,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(45,164,224,1) 0%, rgba(155,44,213,1) 50%, rgba(218,61,148,1) 100%);
+    background: linear-gradient(180deg, rgba(45,164,224,1) 0%, rgba(155,44,213,1) 50%, rgba(218,61,148,1) 100%);
 }
 
 .font-weight-sc {
@@ -463,14 +482,18 @@ b a:hover {
 
 .platform-icons {
     display: inline-block;
-    padding: 11.3px 9px;
+    padding: 10.3px 8px;
     margin: 0px!important;
     font-size: 23px;
 }
-.icons-fx span.fa-fw {
+.icons-fx span.fa-fw, .icons-fx svg.fa-fw {
     text-align: center;
     width: 1.2em;
-} 
+}
+
+.icons-fx.rounded-circle {
+    border-radius: 30%!important;
+}
 
 @media only screen and (max-width: 991px){
     .platform-icons {
