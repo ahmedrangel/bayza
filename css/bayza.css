@@ -117,10 +117,10 @@ h1 {
 }
 
 .apple_card {
-    background: rgb(252,60,68);
-    background: -moz-linear-gradient(0deg, rgba(252,60,68,1) 0%, rgba(249,76,87,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(252,60,68,1) 0%, rgba(249,76,87,1) 100%);
-    background: linear-gradient(0deg, rgba(252,60,68,1) 0%, rgba(249,76,87,1) 100%);
+    background: rgb(251,91,115);
+    background: -moz-linear-gradient(180deg, rgba(251,91,115,1) 0%, rgba(250,36,60,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(251,91,115,1) 0%, rgba(250,36,60,1) 100%);
+    background: linear-gradient(180deg, rgba(251,91,115,1) 0%, rgba(250,36,60,1) 100%);
 }
 
 .deezer_card {
