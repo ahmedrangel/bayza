@@ -503,3 +503,7 @@ b a:hover {
         font-size: 20px;
     } 
 }
+
+.cover div.overflow-hidden, .cover img#covers, #releases div#track-info img {
+    border-radius: 3px
+}
