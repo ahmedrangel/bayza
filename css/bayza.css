@@ -134,6 +134,13 @@ h1 {
     background: #1e222f
 }
 
+.amazon-music_card {
+    background: rgb(67,0,253);
+    background: -moz-linear-gradient(180deg, rgba(67,0,253,1) 0%, rgba(43,32,110,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(67,0,253,1) 0%, rgba(43,32,110,1) 100%);
+    background: linear-gradient(180deg, rgba(67,0,253,1) 0%, rgba(43,32,110,1) 100%);
+}
+
 .yandex_card {
     background: #ffcb00;
     color: #f33!important;
