@@ -353,6 +353,7 @@ b a:hover {
 #track-info {
     margin-left: -15px;
     margin-right: -15px;
+    border-radius: 3px!important;
 }
 
 @media only screen and (max-width: 991px){
@@ -527,4 +528,8 @@ b a:hover {
 
 .cover div.overflow-hidden, .cover img#covers, #releases div#track-info img {
     border-radius: 3px
+}
+
+.video-container iframe {
+    border-radius: 3px;
 }
