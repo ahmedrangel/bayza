@@ -79,11 +79,11 @@
             	</div>
           	</div>
           </div>
-          <div id="track-info" class="row mt-4 mb-4">
-            <div class="col-12 col-lg-5 info text-center mb-3">
+          <div id="track-info" class="row mt-4 mb-4 pt-3 bg-dark">
+            <div class="col-12 col-lg-5 info text-center mb-3 px-3">
               <img class="img-fx img-fluid release-color-covers" src="https://bayzamusic.com/images/releases/{{ release.year }}/{{ release.cover }}.jpg" alt="{{ release.artists }} - {{ release.title }}">
             </div>
-            <div class="col-12 col-lg-7 meta text-justify">
+            <div class="track-info-tags col-12 col-lg-7 meta text-justify px-3">
               <div class="tags">{% if release.description %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
                 <h6 class="mb-2"><span class="">{{ release.description }}</span></h6>{% endif %}
@@ -99,7 +99,7 @@
                 <h6 class="mb-2"><span class="tag">{{ release.duration }}</span></h6>{% if release.fanlink %}
                 <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Fanlink:</span></h5>
                 <h6 class="mb-4"><span><a class="tag" target="_blank" href="https://{{ release.fanlink }}">{{ release.fanlink }}<i class="ml-1 fas fa-external-link-alt"></i></a></span></h6>{% endif %}
-                <div id="platforms" class="mt-2 d-flex flex-wrap justify-content-left"></div>
+                <div id="platforms" class="mt-2 mb-1 d-flex flex-wrap justify-content-left"></div>
               </div>
             </div>
           </div>

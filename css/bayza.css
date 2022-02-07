@@ -512,7 +512,17 @@ b a:hover {
         padding: 11px 9px;
         margin: 0px!important;
         font-size: 20px;
-    } 
+    }
+
+    #platforms {
+        justify-content: center!important;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .track-info-tags {
+        padding-left: 0px!important;
+    }
 }
 
 .cover div.overflow-hidden, .cover img#covers, #releases div#track-info img {
