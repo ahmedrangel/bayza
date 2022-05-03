@@ -1005,21 +1005,6 @@
   duration: "3:32"
   fanlink: lnk.bayza.ml/ImFalling
 
-- release: call-out_instrumental
-  artists: Dimatis, Bayza
-  title: Call Out (Instrumental)
-  cover: call-out
-  album: 
-  genre: Electropop
-  year: 2022
-  description: 
-  label: 
-  video: Jg-W6hRAAxM
-  date: 2022-02-25 00:00:00
-  type: Releases
-  duration: "3:40"
-  fanlink: lnk.bayza.ml/CallOut_Instrumental
-
 - release: call-out
   artists: Dimatis, Bayza
   title: Call Out
