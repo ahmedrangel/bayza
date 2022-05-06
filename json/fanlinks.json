@@ -1,4 +1,32 @@
 {
+    "pieces": [
+        {
+            "title": "Pieces",
+            "artists": "Bayza",
+            "date": "2022-05-06 00:00:00",
+            "image": "http://bayzamusic.com/images/releases/2022/pieces.jpg",
+            "image_secure": "https://bayzamusic.com/images/releases/2022/pieces.jpg",
+            "spotify": "hhttps://open.spotify.com/track/5NLKAwLStRwDM64ccfad9M?si",
+            "apple": "https://music.apple.com/us/album/pieces-single/1619991869?app=music&ls=1",
+            "soundcloud": "https://soundcloud.com/bayza/pieces",
+            "youtube": "https://youtu.be/VTscrLkd20s",
+            "itunes": "https://music.apple.com/us/album/pieces-single/1619991869?app=itunes&ls=1",
+            "amazon-music": "https://music.amazon.com/albums/B09Y9FFYCK",
+            "amazon": "https://www.amazon.com/dp/B09Y9FFYCK",
+            "deezer": "https://www.deezer.com/en/album/312206297",
+            "beatport": "",
+            "yandex": "",
+            "vk": "",
+            "anghami": "https://play.anghami.com/album/1027693271",
+            "napster": "https://napster.com/artist/bayza/album/pieces",
+            "tidal": "https://tidal.com/browse/album/225585088",
+            "tidal-buy": "https://store.tidal.com/us/album/225585088",
+            "download": "",
+            "tiktok": "",
+            "bandcamp": "",
+            "dark": "true"
+        }     
+    ],
     "callout": [
         {
             "title": "Call Out",
