@@ -135,21 +135,21 @@
         <h3 class="mt-3 text-uppercase text-white">Recent Music</h3>
         <h5 class="font-weight-light">Check out my latest releases</h5>
         <div class="row my-4 text-left">
-          <!-- <div class="col-6 col-lg-3">
+          <div class="col-6 col-lg-3">
             <div class="item">
               <div class="cover">
                 <div class="upcoming-container">
-                  <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2022/pieces.jpg">
+                  <img class="img-fluid scale-on-hover upcoming" src="https://bayzamusic.com/images/releases/2022/show-me-what-you-feel.jpg">
                   <div class="centered">
                     <h4>Upcoming</h4>
-                    <small><h5>May 6, 2022</h5></small>
+                    <small><h5>Jun 10, 2022</h5></small>
                   </div>
                 </div>
-                  <h5 class="mb-0"><small><p class="mb-0 mt-2">Pieces</p></small></h5>
-                  <small><p class="mb-4">Bayza</p></small>
+                  <h5 class="mb-0"><small><p class="mb-0 mt-2">Show Me What You Feel</p></small></h5>
+                  <small><p class="mb-4">dbeet x Bayza</p></small>
               </div>
             </div> 
-          </div> -->
+          </div>
           {% for item in sorted %} 
           <div class="col-6 col-lg-3">
             <div class="item">
@@ -164,7 +164,7 @@
                 <small><p class="mb-4">{{ item.date | date: "%b %-d, %Y" }}</p></small>
               </div>
             </div>
-          </div>{% if forloop.index0 == 11 %}{% break %}{% endif %}{% endfor %}
+          </div>{% if forloop.index0 == 10 %}{% break %}{% endif %}{% endfor %}
         </div>  
         <a class="btn btn-outline-releases px-4 py-1" href="/releases/all" data-aos="flip-left">See all releases</a>
       </div>
