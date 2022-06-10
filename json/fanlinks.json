@@ -1,4 +1,32 @@
 {
+    "showme": [
+        {
+            "title": "Show Me What You Feel",
+            "artists": "dbeet, Bayza",
+            "date": "2022-06-10 00:00:00",
+            "image": "http://bayzamusic.com/images/releases/2022/show-me-what-you-feel.jpg",
+            "image_secure": "https://bayzamusic.com/images/releases/2022/show-me-what-you-feel.jpg",
+            "spotify": "https://open.spotify.com/track/3Qh3LiD7QhA9tja21VcbH1?si",
+            "apple": "https://music.apple.com/us/album/show-me-what-you-feel-single/1627403896?app=music&ls=1",
+            "soundcloud": "https://soundcloud.com/bayza/show-me-what-you-feel",
+            "youtube": "https://youtu.be/trdqaqZCVEU",
+            "itunes": "https://music.apple.com/us/album/show-me-what-you-feel-single/1627403896?app=itunes&ls=1",
+            "amazon-music": "https://music.amazon.com/albums/B0B2Z43XCDK",
+            "amazon": "https://www.amazon.com/dp/B0B2Z43XCD",
+            "deezer": "https://www.deezer.com/en/album/324225927",
+            "beatport": "",
+            "yandex": "",
+            "vk": "",
+            "anghami": "https://play.anghami.com/album/1028794041",
+            "napster": "",
+            "tidal": "https://tidal.com/browse/album/232005755",
+            "tidal-buy": "https://store.tidal.com/us/album/232005755",
+            "download": "",
+            "tiktok": "https://vm.tiktok.com/ZMN8aHhwT/",
+            "bandcamp": "",
+            "dark": "false"
+        }     
+    ],
     "pieces": [
         {
             "title": "Pieces",
