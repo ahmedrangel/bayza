@@ -1,4 +1,32 @@
 {
+    "truelovers": [
+        {
+            "title": "True Lovers",
+            "artists": "Bayza",
+            "date": "2022-11-04 00:00:00",
+            "image": "http://bayzamusic.com/images/releases/2022/true-lovers.jpg",
+            "image_secure": "https://bayzamusic.com/images/releases/2022/true-lovers.jpg",
+            "spotify": "https://open.spotify.com/track/6ef1FEoz0Cu3KHbuDSYASG",
+            "apple": "https://music.apple.com/us/album/true-lovers-single/1651614322?app=music&ls=1",
+            "soundcloud": "https://soundcloud.com/markmusic-records/bayza-true-lovers",
+            "youtube": "https://youtu.be/_UNJ54LGdKc",
+            "itunes": "https://music.apple.com/us/album/true-lovers-single/1651614322?app=itunes&ls=1",
+            "amazon-music": "https://music.amazon.com/albums/B0BKLGWWVS",
+            "amazon": "https://www.amazon.com/dp/B0BKLGWWVS",
+            "deezer": "https://www.deezer.com/en/album/370359407",
+            "beatport": "https://www.beatport.com/track/true-lovers/17059785",
+            "yandex": "",
+            "vk": "",
+            "anghami": "https://play.anghami.com/song/1083050886",
+            "napster": "",
+            "tidal": "https://tidal.com/browse/album/256422059",
+            "tidal-buy": "",
+            "download": "",
+            "tiktok": "https://vm.tiktok.com/ZMFUjckkU/",
+            "bandcamp": "",
+            "dark": "false"
+        }
+    ],
     "onyourmind": [
         {
             "title": "On Your Mind",
