@@ -1,8 +1,8 @@
 body {
-    background: #282828
+    background: #212121
 }
 .bg-dark{
-    background: #282828!important
+    background: #212121!important
 }
 
 .nav-item{
@@ -28,7 +28,7 @@ h1 {
 }
 
 .text-dark {
-    color: #1d1d1d!important;
+    color: #121212!important;
 }
 
 .btn {
@@ -37,14 +37,14 @@ h1 {
 
 .btn-outline-dark {
     color: #fff;
-    border-color: #1d1d1d!important;
+    border-color: #121212!important;
     background-color: #000000ab;
 }
 
 .btn-outline-dark:hover {
     color: #fff;
     background-color: #424242ab;
-    border-color: #1d1d1d;
+    border-color: #121212;
 }
 
 .btn-outline-soundcloud, .btn-outline-spotify, .btn-outline-youtube, .btn-outline-releases {
@@ -71,7 +71,7 @@ h1 {
 }
 
 .btn-outline-releases:hover{
-    color: #1d1d1d;
+    color: #121212;
     border-color: #c8c8c8;
     background-color: #c8c8c8;
 }
@@ -81,7 +81,7 @@ h1 {
 }
 
 .bg-darkest {
-    background: #1d1d1d
+    background: #121212
 }
 .panel {
     font-size: 2em;
@@ -465,7 +465,7 @@ b a:hover {
 .dropdown-item.active, .dropdown-item:active {
     color: #fff!important;
     text-decoration: none!important;
-    background-color: #282828!important;
+    background-color: #212121!important;
 }
 
 .dropdown-toggle:after { 
