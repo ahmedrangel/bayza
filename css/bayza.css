@@ -410,6 +410,7 @@ b a:hover {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        background-color: #121212!important;
     }
 }
 
