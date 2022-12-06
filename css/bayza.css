@@ -327,7 +327,7 @@ a img, .img-fx, .img-select-none{
 }
 
 .img-fx:hover {
-    filter: contrast(110%) brightness(105%) drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.80));
+    filter: contrast(102%) brightness(105%) drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.80));
 }
 
 
@@ -433,6 +433,10 @@ b a:hover {
     }
     #navbar img {
         width: 100px
+    }
+
+    #about-desc {
+        font-size: 0.80em;
     }
 }
 
