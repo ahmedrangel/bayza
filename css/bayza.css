@@ -1,5 +1,6 @@
 body {
-    background: #212121
+    background: #212121;
+    font-family: 'Circular Std'!important;
 }
 .bg-dark{
     background: #212121!important
@@ -314,7 +315,7 @@ a img, .img-fx, .img-select-none{
     -ms-user-select: none;
 }
 
-.img-fx {
+.img-fx, #navbar img {
     transition: linear .2s;
 }
 
@@ -404,13 +405,27 @@ b a:hover {
     user-select: none;          /* Likely future */      
 }
 
+#navbar {
+    background: transparent;
+    font-size: 1.3rem;
+}
+
+#navbar img {
+    width: 130px;
+}
 @media only screen and (max-width: 767px){
     .cabecera{
         background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(../images/bayza-background-4.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        background-color: #121212!important;
+    }
+    #navbar {
+        background: #121212;
+        font-size: 1rem;
+    }
+    #navbar img {
+        width: 100px
     }
 }
 

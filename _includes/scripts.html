@@ -28,13 +28,14 @@
     // navbar transparent on scroll
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
             document.getElementById("navbar").style.background = "#121212";
-        }
-        else if (window.innerWidth < 767) {
-            document.getElementById("navbar").style.background = "#121212";
+            document.getElementById("navbar").style.fontSize = "1rem";
+            document.getElementById("navbar").getElementsByTagName("img")[0].style.width = 100;
         }else {
             document.getElementById("navbar").style.background = "transparent";
+            document.getElementById("navbar").style.fontSize = "1.3rem";
+            document.getElementById("navbar").getElementsByTagName("img")[0].style.width = 130;
         }
     }
     </script>
