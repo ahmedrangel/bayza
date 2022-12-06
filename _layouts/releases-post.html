@@ -81,7 +81,7 @@
           </div>
           <div id="track-info" class="row mt-4 mb-4 pt-3 bg-dark">
             <div class="col-12 col-lg-5 info text-center mb-3 px-3">
-              <img class="img-fx img-fluid release-color-covers" src="https://bayzamusic.com/images/releases/{{ release.year }}/{{ release.cover }}.jpg" alt="{{ release.artists }} - {{ release.title }}">
+              <img class="img-fx img-fluid release-color-covers" src="/images/releases/{{ release.year }}/{{ release.cover }}.jpg" alt="{{ release.artists }} - {{ release.title }}">
             </div>
             <div class="track-info-tags col-12 col-lg-7 meta text-justify px-3">
               <div class="tags">{% if release.description %}
@@ -115,7 +115,7 @@
                   <div class="cover">
                     <a href="/releases/{{ item.year }}{{ item.link }}/{{ item.release }}">
                       <div class="overflow-hidden">
-                        <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" src="https://bayzamusic.com/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                        <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" src="/images/releases/{{ item.year }}/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }}">
                       </div>
                       <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
                     </a>
