@@ -420,6 +420,10 @@ b a:hover {
 #navbar img {
     width: 130px;
 }
+
+#about-desc {
+    font-size: 0.95em;
+}
 @media only screen and (max-width: 767px){
     .cabecera{
         background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(../images/bayza-background-4.jpg);
