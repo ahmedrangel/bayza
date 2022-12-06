@@ -1,6 +1,13 @@
+@font-face {
+    font-family: Circular Std;
+    src: url("../fonts/CircularStd-Book.woff") format("opentype");
+}
+
 body {
     background: #212121;
     font-family: 'Circular Std'!important;
+    font-weight: normal;
+    font-style: normal;
 }
 .bg-dark{
     background: #212121!important
@@ -539,10 +546,14 @@ b a:hover {
     }
 }
 
-.cover div.overflow-hidden, .cover img#covers, #releases div#track-info img {
+.cover div.overflow-hidden, img#covers, #releases div#track-info img {
     border-radius: 3px
 }
 
 .video-container iframe {
     border-radius: 3px;
+}
+
+.cabecera img#covers:hover {
+    cursor: pointer;
 }
