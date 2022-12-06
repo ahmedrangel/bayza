@@ -8,35 +8,36 @@
     <script src="https://kit.fontawesome.com/cc91b92ca8.js?1"></script>
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <script>
-      AOS.init();
-    </script>
-    <script>
-      $('body').css('padding-top', 0 + 'px')
-      if ($('.smart-scroll').length > 0) { // check if element exists
-          var last_scroll_top = 0;
-          $(window).on('scroll', function() {
-              scroll_top = $(this).scrollTop();
-              if(scroll_top < last_scroll_top) {
-                  $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-              }
-              else {
-                  $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-              }
-              last_scroll_top = scroll_top;
-          });
-      }
-    // navbar transparent on scroll
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
-            document.getElementById("navbar").style.background = "#121212";
-            document.getElementById("navbar").style.fontSize = "1rem";
-            document.getElementById("navbar").getElementsByTagName("img")[0].style.width = 100;
-        }else {
-            document.getElementById("navbar").style.background = "transparent";
-            document.getElementById("navbar").style.fontSize = "1.3rem";
-            document.getElementById("navbar").getElementsByTagName("img")[0].style.width = 130;
-        }
-    }
+        $(document).ready(function() {
+            AOS.init();
+
+            $('body').css('padding-top', 0 + 'px')
+            if ($('.smart-scroll').length > 0) { // check if element exists
+                var last_scroll_top = 0;
+                $(window).on('scroll', function() {
+                    scroll_top = $(this).scrollTop();
+                    if(scroll_top < last_scroll_top) {
+                        $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+                    }
+                    else {
+                        $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+                    }
+                    last_scroll_top = scroll_top;
+                });
+            }
+            // navbar transparent on scroll
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
+                    document.getElementById("navbar").style.background = "#121212";
+                    document.getElementById("navbar").style.fontSize = "1rem";
+                    document.getElementById("navbar").getElementsByTagName("img")[0].style.width = 100;
+                }else {
+                    document.getElementById("navbar").style.background = "transparent";
+                    document.getElementById("navbar").style.fontSize = "1.3rem";
+                    document.getElementById("navbar").getElementsByTagName("img")[0].style.width = 130;
+                }
+            }
+        });
     </script>
     
