@@ -332,9 +332,6 @@
       const birth = new Date("June 15, 1998 00:00:00");
       const diff = Math.abs(now - birth);
       const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25)); 
-      console.log(now);
-      console.log(birth);
-      console.log('Age: ' + age);
       document.getElementById('age').innerHTML = age;
 
       // underline another element on hover
