@@ -329,22 +329,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script>
       // Age calculator function
-      $(document).ready(function() {
-        const now = new Date();
-        const birth = new Date("June 15, 1998 00:00:00");
-        const diff = Math.abs(now - birth);
-        const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25)); 
-        console.log(now);
-        console.log(birth);
-        document.getElementById('age').innerHTML = age;
-      }); 
+      const now = new Date();
+      const birth = new Date("June 15, 1998 00:00:00");
+      const diff = Math.abs(now - birth);
+      const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25)); 
+      console.log(now);
+      console.log(birth);
+      console.log('Age: ' + age);
+      document.getElementById('age').innerHTML = age;
 
       // underline another element on hover
       function onhoverover(textDecoration) {
-        document.getElementsByClassName('latest-release-title')[0].style.textDecoration = "underline";
+        document.querySelector('.latest-release-title').style.textDecoration = "underline";
       }
       function onhoverout(textDecoration) {
-        document.getElementsByClassName('latest-release-title')[0].style.textDecoration = "none";
+        document.querySelector('.latest-release-title').style.textDecoration = "none";
       }
 
       // open url
