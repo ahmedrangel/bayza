@@ -169,8 +169,8 @@ $(function() {
     else {
       release_str = str.replace(/-/g, "");
     }
-    $.each(result[release_str][0], function(i, stores){
-      console.log(result[release_str][i]);
+    $.each(result[release_str], function(i, stores){
+      console.log(result[release_str]);
       if(stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" && i !== "image_secure" && i !== "tidal-buy" && i !== "amazon-music" && i !== "download"){
         icon = "fab fa-"+i;
         icon_insert = "";
