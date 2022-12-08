@@ -1,4 +1,32 @@
 {
+    "lunchboxfriends": 
+    {
+        "title": "Lunchbox Friends",
+        "artists": "Bayza, Staarz",
+        "date": "2022-12-09 00:00:00",
+        "image": "http://bayzamusic.com/images/releases/2022/lunchbox-friends.jpg",
+        "image_secure": "https://bayzamusic.com/images/releases/2022/lunchbox-friends.jpg",
+        "spotify": "https://open.spotify.com/track/5NTgzi48ph4C6XVIQAbwh0?si",
+        "apple": "https://music.apple.com/us/album/lunchbox-friends-single/1656228833?app=music&ls=1",
+        "soundcloud": "https://soundcloud.com/bayza/lunchbox-friends",
+        "youtube": "https://youtu.be/HRrD3Mj3sEY",
+        "itunes": "https://music.apple.com/us/album/lunchbox-friends-single/1656228833?app=itunes&ls=1",
+        "amazon-music": "https://music.amazon.com/albums/B0BN8M9MMS",
+        "amazon": "https://www.amazon.com/dp/B0BN8M9MMS",
+        "deezer": "",
+        "beatport": "https://www.beatport.com/lunchbox-friends/17160703",
+        "yandex": "https://music.yandex.com/album/24173348",
+        "vk": "",
+        "anghami": "",
+        "napster": "",
+        "tidal": "https://tidal.com/browse/album/262661229",
+        "tidal-buy": "",
+        "download": "",
+        "tiktok": "",
+        "bandcamp": "",
+        "dark": "false"
+    }
+,
     "truelovers": 
         {
             "title": "True Lovers",
@@ -6,7 +34,7 @@
             "date": "2022-11-04 00:00:00",
             "image": "http://bayzamusic.com/images/releases/2022/true-lovers.jpg",
             "image_secure": "https://bayzamusic.com/images/releases/2022/true-lovers.jpg",
-            "spotify": "https://open.spotify.com/track/6ef1FEoz0Cu3KHbuDSYASG",
+            "spotify": "https://open.spotify.com/track/6ef1FEoz0Cu3KHbuDSYASG?si",
             "apple": "https://music.apple.com/us/album/true-lovers-single/1651614322?app=music&ls=1",
             "soundcloud": "https://soundcloud.com/markmusic-records/bayza-true-lovers",
             "youtube": "https://youtu.be/_UNJ54LGdKc",
@@ -34,7 +62,7 @@
             "date": "2022-09-01 00:00:00",
             "image": "http://bayzamusic.com/images/releases/2022/on-your-mind.jpg",
             "image_secure": "https://bayzamusic.com/images/releases/2022/on-your-mind.jpg",
-            "spotify": "https://open.spotify.com/track/23ResGtuGS7PZ8IkJY0tD6",
+            "spotify": "https://open.spotify.com/track/23ResGtuGS7PZ8IkJY0tD6?si",
             "apple": "https://music.apple.com/gb/album/on-your-mind-single/1638166687?app=music&ls=1",
             "soundcloud": "https://soundcloud.com/different-twins-records/dj-phellix-bayza-on-your-mind",
             "youtube": "https://youtu.be/0fdvG4GRRFA",
