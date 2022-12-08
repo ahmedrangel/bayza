@@ -1,5 +1,5 @@
 {
-    "truelovers": [
+    "truelovers": 
         {
             "title": "True Lovers",
             "artists": "Bayza",
@@ -26,8 +26,8 @@
             "bandcamp": "",
             "dark": "false"
         }
-    ],
-    "onyourmind": [
+    ,
+    "onyourmind": 
         {
             "title": "On Your Mind",
             "artists": "DJ Phellix, Bayza",
@@ -54,8 +54,8 @@
             "bandcamp": "",
             "dark": "true"
         }
-    ],
-    "whycantitbe": [
+    ,
+    "whycantitbe": 
         {
             "title": "Why Can't It Be With Me",
             "artists": "AMiR, Bayza",
@@ -82,8 +82,8 @@
             "bandcamp": "",
             "dark": "false"
         }     
-    ],
-    "youngfree": [
+    ,
+    "youngfree": 
         {
             "title": "Young & Free",
             "artists": "DJ Phellix, Bayza",
@@ -110,8 +110,8 @@
             "bandcamp": "",
             "dark": "true"
         }     
-    ],
-    "showme": [
+    ,
+    "showme": 
         {
             "title": "Show Me What You Feel",
             "artists": "dbeet, Bayza",
@@ -138,8 +138,8 @@
             "bandcamp": "",
             "dark": "false"
         }     
-    ],
-    "pieces": [
+    ,
+    "pieces": 
         {
             "title": "Pieces",
             "artists": "Bayza",
@@ -166,8 +166,8 @@
             "bandcamp": "",
             "dark": "true"
         }     
-    ],
-    "callout": [
+    ,
+    "callout": 
         {
             "title": "Call Out",
             "artists": "Dimatis, Bayza",
@@ -194,8 +194,8 @@
             "bandcamp": "",
             "dark": "false"
         }     
-    ],
-    "callout_instrumental": [
+    ,
+    "callout_instrumental": 
         {
             "title": "Call Out (Instrumental)",
             "artists": "Dimatis, Bayza",
@@ -222,8 +222,8 @@
             "bandcamp": "",
             "dark": "false"
         }     
-    ],
-    "imfalling": [
+    ,
+    "imfalling": 
         {
             "title": "I'm Falling",
             "artists": "Bayza",
@@ -250,8 +250,8 @@
             "bandcamp": "",
             "dark": "false"
         }     
-    ],
-    "desertrose": [
+    ,
+    "desertrose": 
         {
             "title": "Desert Rose - Instrumental",
             "artists": "Bayza",
@@ -276,8 +276,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "notmybaby": [
+    ,
+    "notmybaby": 
         {
             "title": "Not My Baby - Instrumental",
             "artists": "Bayza",
@@ -302,8 +302,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "myheadmyheart": [
+    ,
+    "myheadmyheart": 
         {
             "title": "My Head & My Heart - Instrumental",
             "artists": "Bayza",
@@ -328,8 +328,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "lovasaolvidar": [
+    ,
+    "lovasaolvidar": 
         {
             "title": "Lo Vas A Olvidar - Instrumental",
             "artists": "Bayza",
@@ -354,8 +354,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "thumbs": [
+    ,
+    "thumbs": 
         {
             "title": "Thumbs - Instrumental",
             "artists": "Bayza",
@@ -380,8 +380,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "passagesep": [
+    ,
+    "passagesep": 
         {
             "title": "Passages EP",
             "artists": "Bayza",
@@ -406,8 +406,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "passages": [
+    ,
+    "passages": 
         {
             "title": "Passages",
             "artists": "Bayza",
@@ -432,8 +432,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "pirhan": [
+    ,
+    "pirhan": 
         {
             "title": "Pirhan",
             "artists": "DJ Phellix, Bayza, Sheenubb ft. Sant",
@@ -458,8 +458,8 @@
             "bandcamp": "",
             "dark": "true"
         }    
-    ],
-    "thumbsremix": [
+    ,
+    "thumbsremix": 
         {
             "title": "Thumbs (Bayza Remix)",
             "artists": "Sabrina Carpenter",
@@ -482,8 +482,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/thumbs-bayza-remix",
             "dark": "false"
         }
-    ],
-    "takemehome": [
+    ,
+    "takemehome": 
         {
             "title": "Take Me Home",
             "artists": "Bayza",
@@ -509,8 +509,8 @@
             "bandcamp": "",
             "dark": "false"
         }    
-    ],
-    "feels": [
+    ,
+    "feels": 
         {
             "title": "Feels",
             "artists": "DeejaVu X Bayza",
@@ -535,8 +535,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/feels",
             "dark": "false"
         }    
-    ],
-    "feelsolonely": [
+    ,
+    "feelsolonely": 
         {
             "title": "Feel So Lonely",
             "artists": "Bayza",
@@ -561,8 +561,8 @@
             "bandcamp": "",
             "dark": "true"
         }    
-    ],
-    "diamante": [
+    ,
+    "diamante": 
         {
             "title": "Diamante (Bayza Remix)",
             "artists": "Otilia",
@@ -586,8 +586,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/diamante-bayza-remix",
             "dark": "false"
         }    
-    ],
-    "idontknow": [
+    ,
+    "idontknow": 
         {
             "title": "I Don't Know (Bayza Remix)",
             "artists": "Otilia",
@@ -611,8 +611,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/i-dont-know-bayza-remix",
             "dark": "false"
         }    
-    ],
-    "without-you": [
+    ,
+    "without-you": 
         {
             "title": "Without You",
             "artists": "Bayza",
@@ -637,8 +637,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/without-you",
             "dark": "false"
         }    
-    ],
-    "alone": [
+    ,
+    "alone": 
         {
             "title": "Alone",
             "artists": "DJ SK & Bayza",
@@ -660,8 +660,8 @@
             "tiktok": "https://vm.tiktok.com/J8XyVFk",
             "dark": "false"
         }
-    ],
-    "reborn": [
+    ,
+    "reborn": 
         {
             "title": "Reborn",
             "artists": "Bayza & Dimatis",
@@ -684,8 +684,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/reborn",
             "dark": "false"
         }
-    ],
-    "strawberry-shortcake": [
+    ,
+    "strawberry-shortcake": 
         {
             "title": "Strawberry Shortcake (Bayza Remix)",
             "artists": "Melanie Martinez",
@@ -708,8 +708,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/strawberry-shortcake-bayza-remix",
             "dark": "true"
         }
-    ],
-    "still-learning": [
+    ,
+    "still-learning": 
         {
             "title": "Still Learning (Bayza Remix)",
             "artists": "Halsey",
@@ -732,8 +732,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/still-learning-bayza-remix",
             "dark": "false"
         }
-    ],
-    "solace": [
+    ,
+    "solace": 
         {
             "title": "Solace",
             "artists": "Bayza",
@@ -757,8 +757,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/solace",
             "dark": "false"
         }
-    ],
-    "not-my-baby": [
+    ,
+    "not-my-baby": 
         {
             "title": "Not My Baby (Bayza Remix)",
             "artists": "INNA",
@@ -771,8 +771,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/not-my-baby-bayza-remix",
             "dark": "false"
         }
-    ],
-    "no-guarantee": [
+    ,
+    "no-guarantee": 
         {
             "title": "No Guarantee",
             "artists": "Bayza",
@@ -796,8 +796,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/no-guarantee",
             "dark": "false"
         }
-    ],
-    "my-head-my-heart": [
+    ,
+    "my-head-my-heart": 
         {
             "title": "My Head & My Heart (Bayza Remix)",
             "artists": "Ava Max",
@@ -810,8 +810,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/my-head-my-heart-bayza-remix",
             "dark": "false"
         }
-    ],
-    "mirage": [
+    ,
+    "mirage": 
         {
             "title": "Mirage",
             "artists": "Bayza",
@@ -828,8 +828,8 @@
             "download": "https://www.toneden.io/bayza/post/bayza-mirage",
             "dark": "false"
         }
-    ],
-    "miracle": [
+    ,
+    "miracle": 
         {
             "title": "Miracle",
             "artists": "Bayza",
@@ -854,8 +854,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/miracle",
             "dark": "false"
         }
-    ],
-    "make-believe": [
+    ,
+    "make-believe": 
         {
             "title": "Make Believe (Bayza Remix)",
             "artists": "Eress",
@@ -872,8 +872,8 @@
             "tiktok": "https://vm.tiktok.com/ZMJMVFvQA",
             "dark": "false"
         }
-    ],
-    "lvao": [
+    ,
+    "lvao": 
         {
             "title": "Lo Vas A Olvidar (Bayza Remix)",
             "artists": "Billie Eilish, ROSALÍA",
@@ -886,8 +886,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/lo-vas-a-olvidar-bayza-remix",
             "dark": "false"
         }
-    ],
-    "lookingatyou": [
+    ,
+    "lookingatyou": 
         {
             "title": "Looking At You",
             "artists": "Bayza",
@@ -911,8 +911,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/looking-at-you",
             "dark": "false"
         }
-    ],
-    "lamentos": [
+    ,
+    "lamentos": 
         {
             "title": "Lamentos",
             "artists": "Bayza",
@@ -936,8 +936,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/lamentos",
             "dark": "false"
         }
-    ],
-    "hold-on-to-me": [
+    ,
+    "hold-on-to-me": 
         {
             "title": "Hold On To Me",
             "artists": "Dimatis & Bayza",
@@ -958,8 +958,8 @@
             "tiktok": "https://vm.tiktok.com/ZSmq7e54",
             "dark": "false"
         }
-    ],
-    "everything-i-wanted": [
+    ,
+    "everything-i-wanted": 
         {
             "title": "Everything I Wanted",
             "artists": "Bayza",
@@ -982,8 +982,8 @@
             "tiktok": "https://vm.tiktok.com/J8Xxgfb",
             "dark": "false"
         }
-    ],
-    "desert-rose": [
+    ,
+    "desert-rose": 
         {
             "title": "Desert Rose / انت عمري Mashup (Bayza Remix)",
             "artists": "Noel Kharman",
@@ -996,8 +996,8 @@
             "bandcamp": "https://bayza.bandcamp.com/track/desert-rose-mashup-bayza-remix",
             "dark": "false"
         }
-    ],
-    "yousaidgoodbye": [
+    ,
+    "yousaidgoodbye": 
         {
             "title": "You Said Goodbye",
             "artists": "Bayza ft. Giulia Mihai",
@@ -1022,5 +1022,5 @@
             "bandcamp": "https://bayza.bandcamp.com/track/you-said-goodbye",
             "dark": "false"
         }    
-    ]
+    
 }
