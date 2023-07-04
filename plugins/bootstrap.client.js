@@ -1,5 +1,4 @@
 import Collapse from "bootstrap/js/dist/collapse";
-import "bootstrap/js/dist/dropdown";
 
 class Bootstrap {
   toogleCollapse (el) {
