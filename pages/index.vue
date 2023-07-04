@@ -5,30 +5,30 @@ definePageMeta({ layout: "site" });
   <section id="dark" class="cabecera text-white py-5">
     <div class="container pt-4 cabecera-adjust" style="overflow-x: hidden;">
       <div class="row align-items-center">
-        <div class="col-12 col-md-6 text-start d-none d-md-block" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+        <div class="col-12 col-md-6 text-start d-none d-md-block" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <h1 class="display-4 text-uppercase">{{ SITE.name }}</h1>
           <h4 class="my-3 font-weight-light">{{ SITE.description }}</h4>
           <h5 class="mb-0 font-weight-light"><span>Contact: </span><a class="text-white" :href="`mailto:${SITE.email}`" target="_blank">{{ SITE.email }}</a></h5>
         </div>
-        <div class="col-12 col-md-12 text-center d-block d-md-none mt-4 mb-4" data-aos="zoom-in" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+        <div class="col-12 col-md-12 text-center d-block d-md-none mt-4 mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <h1 class="display-4 text-uppercase mb-0">{{ SITE.name }}</h1>
           <h4 class="mt-2 mb-3 font-weight-light">{{ SITE.description }}</h4>
           <small><p class="mb-0"><span>Contact: </span><a class="text-white" :href="`mailto:${SITE.email}`" target="_blank">{{ SITE.email }}</a></p></small>
         </div>
-        <div class="col-12 col-md-6 row text-end px-0 align-items-center" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+        <div class="col-12 col-md-6 row text-end px-0 align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <div class="col-12 col-md-7 d-none d-md-block pe-0 text-secondary">
             <h5>Latest Release:</h5>
-            <a target="_self" class="text-white latest-release-title" :class="{ underline : hover }">
+            <NuxtLink :to="`releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="text-white latest-release-title" :class="{ underline : hover }">
               <h3 class="font-weight-light">{{ lastTrack.title }}</h3>
-            </a>
+            </NuxtLink>
             <div><h5 class="font-weight-light">by {{ lastTrack.artists }}</h5></div>
             <small><p class="mb-0 mt-1">{{ dateFormat(lastTrack.date) }}</p></small>
           </div>
-          <div class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @click="handleClick(`releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`)" @mouseover="hover=true" @mouseout="hover=false">
+          <NuxtLink :to="`releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
             <div class="me-0 text-start px-2">
               <img id="covers" class="mx-auto d-flex w-100" :src="`images/releases/${lastTrack.year}/${lastTrack.cover}.jpg`" alt="" style="max-width:230px;">
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@ definePageMeta({ layout: "site" });
       <h3 class="mt-3 text-uppercase text-white">Recent Music</h3>
       <h5 class="font-weight-light">Check out my latest releases</h5>
       <div class="row my-4 text-start">
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
               <div class="upcoming-container">
@@ -53,7 +53,7 @@ definePageMeta({ layout: "site" });
             </div>
           </div>
         </div>
-        <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3">
+        <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
               <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">
@@ -152,12 +152,12 @@ definePageMeta({ layout: "site" });
         </div> 
       </div>
       <div class="row text-white">
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="mt-4">
             <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0tCEnL?utm_source=generator&theme=0" width="95%" height="500" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="mt-4">
             <iframe width="95%" height="500" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/38787166&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=true&amp;show_teaser=true&amp;visual=false" />
           </div>
@@ -170,22 +170,22 @@ definePageMeta({ layout: "site" });
       <h3 class="mt-3 text-uppercase text-white">VIDEOS</h3>
       <h5 class="font-weight-light">Featured youtube videos</h5>
       <div class="row text-white">
-        <div class="col-lg-6 mt-4">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
         </div>
-        <div class="col-lg-6 mt-4">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
         </div>
-        <div class="col-lg-6 mt-4">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
         </div>
-        <div class="col-lg-6 mt-4">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/BwKO7sfFVAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
@@ -197,7 +197,7 @@ definePageMeta({ layout: "site" });
     <div class="container" style="overflow-x: hidden;">
       <h3 class="mt-3 text-uppercase text-white">About</h3>
       <div id="about-desc" class="row">
-        <div class="col-lg-8 my-3 font-weight-light text-justify">
+        <div class="col-lg-8 my-3 font-weight-light text-justify" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <p>
             Ahmed Rangel, also known as 
             <b><a href="https://open.spotify.com/artist/0UFz5jBFwlNKaq1JwESYnX" target="_blank" title="Bayza Spotify">Bayza</a></b>, is a <span id="age">{{ getAge() }}</span> years old electronic/dance music producer from La Chorrera, Panama <i class="em em-flag-pa" aria-role="presentation" aria-label="Panama Flag" />.
@@ -222,7 +222,7 @@ definePageMeta({ layout: "site" });
             <b><a href="https://www.instagram.com/differenttwinsrecords" target="_blank" title="Storm's Instagram">Different Twins Records</a></b>".
           </p>
         </div>
-        <div class="col-lg-4 text-center"><img id="covers" class="img-fluid shadow" src="/images/bayza-about.jpg"></div>
+        <div class="col-lg-4 text-center"><img id="covers" class="img-fluid shadow" src="/images/bayza-about.jpg" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine"></div>
       </div>
     </div>
   </section>
@@ -330,9 +330,6 @@ export default {
         ]
       };
       return JSON.stringify(schemaOrg);
-    },
-    handleClick (url) {
-      window.location.href = url;
     }
   },
 };

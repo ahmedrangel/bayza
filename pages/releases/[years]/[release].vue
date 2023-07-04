@@ -6,7 +6,7 @@ definePageMeta({ layout: "site" });
     <div class="container text-secondary text-center pt-3 pb-4 px-3">
       <h3 class="mt-5 text-capitalize text-white">{{ release.title }}</h3>
       <h4 class="font-weight-light mb-0">{{ release.artists }}</h4>
-      <div id="reproductor" class="me-5 ms-5 px-5">
+      <div id="reproductor" class="me-5 ms-5 px-5" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div class="text-center py-3">
           <div class="video-container">
             <iframe width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${release.video}`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
@@ -34,7 +34,7 @@ definePageMeta({ layout: "site" });
             <h5 v-if="release.fanlink" class="mb-0"><span class="meta-heading mb-0 text-white">Fanlink:</span></h5>
             <h6 class="mb-2"><span><a class="tag d-inline-flex align-items-center" target="_blank" :href="`https://${release.fanlink}`">{{ release.fanlink }}<Icon class="external-link ms-1 fa-fw" name="ri:external-link-line" /></a></span></h6>
             <div id="platforms" class="mt-2 mb-1 d-flex flex-wrap justify-content-left">
-              <div v-for="(value, index) of obj" :key="index" class="me-2 mb-2" :title="value.store_title"><a :class="`icons-fx text-white platform-icons ${value.id}_card rounded-circle`" :href="value.stores" target="_blank"><Icon v-if="value.id !== 'anghami'" class="fa-fw" :name="value.icon" /><span v-else><span class="fab fa-anghami fa-fw" aria-hidden="true"><img src="/images/anghami-logo.svg"></span></span><span class="visually-hidden">{{ value.store_title }}</span></a></div>
+              <div v-for="(value, index) of obj" :key="index" class="me-2 mb-2" :title="value.store_title" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine"><a :class="`icons-fx text-white platform-icons ${value.id}_card rounded-circle`" :href="value.stores" target="_blank"><Icon v-if="value.id !== 'anghami'" class="fa-fw" :name="value.icon" /><span v-else><span class="fab fa-anghami fa-fw" aria-hidden="true"><img src="/images/anghami-logo.svg"></span></span><span class="visually-hidden">{{ value.store_title }}</span></a></div>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ definePageMeta({ layout: "site" });
           <h4 class="m-0 text-white">More <a class="tag" :href="`/releases/${type(release.type).type_page}`">{{ type(release.type).release_type }}</a> by Bayza</h4>
         </div>
         <div class="row">
-          <div v-for="(item, index) of moreTracks" :key="index" class="col-6 col-lg-3">
+          <div v-for="(item, index) of moreTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
             <div class="item">
               <div class="cover">
                 <NuxtLink :to="`/releases/${item.year}${releaseType(item.link)}/${item.release}`">
