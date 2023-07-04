@@ -46,7 +46,6 @@ jobs:
     
     - name: Build 🏗️
       run: |
-        pnpm style_players
         pnpm generate
 
     - name: Deploy 🚀
