@@ -229,7 +229,7 @@ export default {
             icon = "simple-icons:tidal";
           } else if (i === "anghami") {
             store_title = "Anghami";
-            icon_insert = "<span class=\"fab fa-anghami fa-fw\" aria-hidden=\"true\"><img src=\"images/anghami-logo.svg\"></span>";
+            icon_insert = "<span class=\"fab fa-anghami fa-fw\" aria-hidden=\"true\"><img src=\"/images/anghami-logo.svg\"></span>";
             icon = "";
           } else if (i === "vk") {
             store_title = "VKontakte";
