@@ -1,34 +1,34 @@
 <template>
   <nav id="navbar" class="navbar navbar-expand-md navbar-dark px-4 py-2 fixed-top smart-scroll">
-    <a class="navbar-brand" href="/">
+    <NuxtLink class="navbar-brand" to="/">
       <img src="/images/bayza-logo.svg" width="100">
-    </a>
+    </NuxtLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon" />
     </button>
     <div id="collapsibleNavbar" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <NuxtLink class="nav-link" to="/">Home</NuxtLink>
         </li>
         <li class="nav-item dropdown">
-          <a id="navbardrop" class="nav-link dropdown-toggle" href="/releases" data-bs-toggle="dropdown">Releases</a>
+          <NuxtLink id="navbardrop" class="nav-link dropdown-toggle" to="/releases" data-bs-toggle="dropdown">Releases</NuxtLink>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="/releases/">All</a>
-            <a class="dropdown-item" href="/releases/all-bootlegs">Bootlegs</a>
-            <a class="dropdown-item" href="/releases/2023">2023</a>
-            <a class="dropdown-item" href="/releases/2022">2022</a>
-            <a class="dropdown-item" href="/releases/2021">2021</a>
-            <a class="dropdown-item" href="/releases/2020">2020</a>
-            <a class="dropdown-item" href="/releases/2019">2019</a>
-            <a class="dropdown-item" href="/releases/2018">2018</a>
+            <NuxtLink class="dropdown-item" to="/releases/">All</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/all-bootlegs">Bootlegs</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2023">2023</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2022">2022</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2021">2021</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2020">2020</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2019">2019</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2018">2018</NuxtLink>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/#about">About</a>
+          <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
         </li>       
       </ul>
     </div>  

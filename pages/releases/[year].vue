@@ -10,12 +10,12 @@ definePageMeta({ layout: "site" });
         <div v-for="(tracks, index) of listTracks" :key="index" class="col-6 col-lg-3">
           <div class="item">
             <div class="cover">
-              <a :href="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">
+              <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">
                 <div class="overflow-hidden">
                   <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${ tracks.artists } - ${ tracks.title }`">
                 </div>
                 <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ tracks.title }}</p></small></h5>
-              </a>
+              </NuxtLink>
               <small><p class="mb-0">{{ tracks.artists }}</p></small>
               <small><p class="mb-4">{{ dateFormat(tracks.date) }}</p></small>
             </div>
