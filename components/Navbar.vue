@@ -6,8 +6,8 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon" />
     </button>
-    <div id="collapsibleNavbar" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
+    <div id="collapsibleNavbar" ref="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto" @click="collapseNav()">
         <li class="nav-item">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
         </li>
@@ -41,6 +41,14 @@ export default {
     return {
       path: this.$route.path
     };
+  },
+  methods: {
+    collapseNav () {
+      const nav = this.$refs.nav;
+      if (nav.classList.contains("show")) {
+        this.$nuxt.$bootstrap.toogleCollapse(nav);
+      }
+    }
   },
   mounted () {
     if (document.querySelectorAll(".smart-scroll").length > 0) {
