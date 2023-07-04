@@ -145,7 +145,7 @@ definePageMeta({ layout: "site" });
         <div class="m-1">
           <a class="icons-fx text-white platform-icons anghami_card rounded-circle" :href="SITE.platforms.anghami" target="_blank" title="Anghami">
             <span class="fab fa-anghami fa-fw" aria-hidden="true">
-              <img src="images/anghami-logo.svg">
+              <img src="/images/anghami-logo.svg">
             </span>
             <span class="visually-hidden">Anghami</span>
           </a>
