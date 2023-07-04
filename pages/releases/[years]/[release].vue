@@ -71,7 +71,7 @@ export default {
     return {
       paramYear: this.$route.params.years,
       paramRelease: this.$route.params.release,
-      obj: undefined
+      obj: []
     };
   },
   computed: {
