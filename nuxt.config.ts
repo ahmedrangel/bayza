@@ -29,7 +29,5 @@ export default ({
     }
   },
   
-  modules: [
-    "nuxt-icon"
-  ],
+  modules: [ "nuxt-icon" ],
 });
