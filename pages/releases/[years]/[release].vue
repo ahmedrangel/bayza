@@ -32,7 +32,7 @@ definePageMeta({ layout: "site" });
             <h5 v-if="release.duration" class="mb-0"><span class="meta-heading mb-0 text-white">Duration:</span></h5>
             <h6 class="mb-2"><span class="tag">{{ release.duration }}</span></h6>
             <h5 v-if="release.fanlink" class="mb-0"><span class="meta-heading mb-0 text-white">Fanlink:</span></h5>
-            <h6 class="mb-4"><span><a class="tag d-flex align-items-center" target="_blank" :href="`https://${release.fanlink}`">{{ release.fanlink }}<Icon class="external-link ms-1 fa-fw" name="ri:external-link-line" /></a></span></h6>
+            <h6 class="mb-2"><span><a class="tag d-flex align-items-center" target="_blank" :href="`https://${release.fanlink}`">{{ release.fanlink }}<Icon class="external-link ms-1 fa-fw" name="ri:external-link-line" /></a></span></h6>
             <div id="platforms" class="mt-2 mb-1 d-flex flex-wrap justify-content-left">
               <div v-for="(value, index) of obj" :key="index" class="me-2 mb-2" :title="value.store_title"><a :class="`icons-fx text-white platform-icons ${value.id}_card rounded-circle`" :href="value.stores" target="_blank"><Icon v-if="value.id !== 'anghami'" class="fa-fw" :name="value.icon" /><span v-else><span class="fab fa-anghami fa-fw" aria-hidden="true"><img src="/images/anghami-logo.svg"></span></span><span class="visually-hidden">{{ value.store_title }}</span></a></div>
             </div>
