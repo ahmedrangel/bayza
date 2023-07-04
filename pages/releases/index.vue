@@ -1,0 +1,69 @@
+<script setup>
+definePageMeta({ layout: "site" });
+</script>
+<template>
+  <section id="releases" class="bg-darkest">
+    <div class="container text-secondary text-center py-5">
+      <h3 class="mt-5 text-uppercase text-white">All Releases</h3>
+      <div class="row my-4 text-start">
+        <div v-for="(tracks, index) of allTracks" :key="index" class="col-6 col-lg-3">
+          <div class="item">
+            <div class="cover">
+              <a :href="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">
+                <div class="overflow-hidden">
+                  <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${ tracks.artists } - ${ tracks.title }`">
+                </div>
+                <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ tracks.title }}</p></small></h5>
+              </a>
+              <small><p class="mb-0">{{ tracks.artists }}</p></small>
+              <small><p class="mb-4">{{ dateFormat(tracks.date) }}</p></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+<script>
+export default {
+  name: "AllTracksPage",
+  computed: {
+    allTracks () {
+      return tracks.sort((a, b) => new Date(b.date) - new Date(a.date));
+    },
+  },
+  created () {
+    const url = `${SITE.url}/releases`;
+    const cover = `${SITE.url}/${SITE.cover}`;
+    const logo = `${SITE.url}/${SITE.logo}`;
+    const title = `${SITE.name} Releases`;
+    const description = "Releases";
+    useHead({
+      title: `Releases | ${SITE.name}`,
+      meta: [
+        { name: "keywords", content: "releases, singles, stream, music, dance, EDM" },
+        { name: "description", content: description },
+        // Protocolo Open Graph
+        { property: "og:url", content: url },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: title },
+        { property: "og:site_name", content: SITE.name },
+        { property: "og:image", content: cover },
+        { property: "og:image:width", content: "300" },
+        { property: "og:image:height", content: "300" },
+        { property: "og:image:alt", content: title },
+        { property: "og:description", content: description },
+        // Twitter Card
+        { name: "twitter:card", content: "summary" },
+        { name: "twitter:image", content: logo },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
+        { name: "twitter:site", content: `@${SITE.twitter}` }
+      ],
+      link: [
+        { rel: "canonical", href: url }
+      ]
+    });
+  },
+};
+</script>

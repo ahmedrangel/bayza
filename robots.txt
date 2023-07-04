@@ -1,5 +1,0 @@
-Sitemap: https://bayzamusic.com/sitemap.xml
-
-User-agent: *
-Disallow:
-Crawl-delay: 1
