@@ -6,7 +6,7 @@ definePageMeta({ layout: "site" });
     <div class="container text-secondary text-center py-5">
       <h3 class="mt-5 text-uppercase text-white">All Releases</h3>
       <div class="row my-4 text-start">
-        <div v-for="(tracks, index) of allTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div v-for="(tracks, index) of allTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
               <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">

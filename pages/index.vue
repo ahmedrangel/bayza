@@ -38,7 +38,7 @@ definePageMeta({ layout: "site" });
       <h3 class="mt-3 text-uppercase text-white">Recent Music</h3>
       <h5 class="font-weight-light">Check out my latest releases</h5>
       <div class="row my-4 text-start">
-        <div class="col-6 col-lg-3" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
               <div class="upcoming-container">
@@ -53,7 +53,7 @@ definePageMeta({ layout: "site" });
             </div>
           </div>
         </div>
-        <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
               <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">
@@ -152,12 +152,12 @@ definePageMeta({ layout: "site" });
         </div> 
       </div>
       <div class="row text-white">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-easing="ease-in-sine">
           <div class="mt-4">
             <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0tCEnL?utm_source=generator&theme=0" width="95%" height="500" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
           </div>
         </div>
-        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-lg-6" data-aos="fade-left" data-aos-easing="ease-in-sine">
           <div class="mt-4">
             <iframe width="95%" height="500" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/38787166&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=true&amp;show_teaser=true&amp;visual=false" />
           </div>
@@ -170,22 +170,22 @@ definePageMeta({ layout: "site" });
       <h3 class="mt-3 text-uppercase text-white">VIDEOS</h3>
       <h5 class="font-weight-light">Featured youtube videos</h5>
       <div class="row text-white">
-        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
         </div>
-        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
         </div>
-        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
         </div>
-        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-lg-6 mt-4" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/BwKO7sfFVAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
@@ -197,7 +197,7 @@ definePageMeta({ layout: "site" });
     <div class="container" style="overflow-x: hidden;">
       <h3 class="mt-3 text-uppercase text-white">About</h3>
       <div id="about-desc" class="row">
-        <div class="col-lg-8 my-3 font-weight-light text-justify" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="col-lg-8 my-3 font-weight-light text-justify" data-aos="fade-right" data-aos-easing="ease-in-sine">
           <p>
             Ahmed Rangel, also known as 
             <b><a href="https://open.spotify.com/artist/0UFz5jBFwlNKaq1JwESYnX" target="_blank" title="Bayza Spotify">Bayza</a></b>, is a <span id="age">{{ getAge() }}</span> years old electronic/dance music producer from La Chorrera, Panama <i class="em em-flag-pa" aria-role="presentation" aria-label="Panama Flag" />.
@@ -222,7 +222,7 @@ definePageMeta({ layout: "site" });
             <b><a href="https://www.instagram.com/differenttwinsrecords" target="_blank" title="Storm's Instagram">Different Twins Records</a></b>".
           </p>
         </div>
-        <div class="col-lg-4 text-center"><img id="covers" class="img-fluid shadow" src="/images/bayza-about.jpg" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine"></div>
+        <div class="col-lg-4 text-center"><img id="covers" class="img-fluid shadow" src="/images/bayza-about.jpg" data-aos="fade-left" data-aos-easing="ease-in-sine"></div>
       </div>
     </div>
   </section>
