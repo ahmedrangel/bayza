@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="/">
       <img src="/images/bayza-logo.svg" width="100">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon" />
     </button>
     <div id="collapsibleNavbar" class="collapse navbar-collapse">
@@ -12,7 +12,7 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a id="navbardrop" class="nav-link dropdown-toggle" href="/releases" data-toggle="dropdown">Releases</a>
+          <a id="navbardrop" class="nav-link dropdown-toggle" href="/releases" data-bs-toggle="dropdown">Releases</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="/releases/">All</a>
             <a class="dropdown-item" href="/releases/all-bootlegs">Bootlegs</a>
