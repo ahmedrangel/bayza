@@ -45,10 +45,25 @@ definePageMeta({ layout: "site" });
                 <img class="img-fluid scale-on-hover upcoming" src="/images/releases/2023/now-or-never.jpg">
                 <div class="centered">
                   <h4>Upcoming</h4>
-                  <small><h5>Aug 11, 2023</h5></small>
+                  <small><h5>August 11, 2023</h5></small>
                 </div>
               </div>
               <h5 class="mb-0"><small><p class="mb-0 mt-2">Now Or Never</p></small></h5>
+              <small><p class="mb-4">Bayza</p></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
+          <div class="item">
+            <div class="cover">
+              <div class="upcoming-container">
+                <img class="img-fluid scale-on-hover upcoming" src="/images/releases/2023/breeze.jpg">
+                <div class="centered">
+                  <h4>Upcoming</h4>
+                  <small><h5>July 28, 2023</h5></small>
+                </div>
+              </div>
+              <h5 class="mb-0"><small><p class="mb-0 mt-2">Breeze EP</p></small></h5>
               <small><p class="mb-4">Bayza</p></small>
             </div>
           </div>
@@ -240,7 +255,7 @@ export default {
       return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
     },
     indexTracks () {
-      return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 11);
+      return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 10);
     }
   },
   created () {
