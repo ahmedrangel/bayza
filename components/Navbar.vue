@@ -7,27 +7,27 @@
       <span class="navbar-toggler-icon" />
     </button>
     <div id="collapsibleNavbar" ref="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto" @click="collapseNav()">
-        <li class="nav-item">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" @click="collapseNav()">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
         </li>
         <li class="nav-item dropdown">
-          <NuxtLink id="navbardrop" class="nav-link dropdown-toggle" to="/releases" data-bs-toggle="dropdown">Releases</NuxtLink>
+          <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Releases</span>
           <div class="dropdown-menu">
-            <NuxtLink class="dropdown-item" to="/releases/">All</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/all-bootlegs">Bootlegs</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2023">2023</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2022">2022</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2021">2021</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2020">2020</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2019">2019</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2018">2018</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/" @click="collapseNav()">All</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/all-bootlegs" @click="collapseNav()">Bootlegs</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2023" @click="collapseNav()">2023</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2022" @click="collapseNav()">2022</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2021" @click="collapseNav()">2021</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2020" @click="collapseNav()">2020</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2019" @click="collapseNav()">2019</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/2018" @click="collapseNav()">2018</NuxtLink>
           </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" @click="collapseNav()">
           <a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" @click="collapseNav()">
           <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
         </li>       
       </ul>
