@@ -1,5 +1,33 @@
 
 {
+    "breezeep": 
+    {
+        "title": "Breeze EP",
+        "artists": "Bayza",
+        "date": "2023-07-28 00:00:06",
+        "image": "http://bayzamusic.com/images/releases/2023/breeze.jpg",
+        "image_secure": "https://bayzamusic.com/images/releases/2023/breeze.jpg",
+        "spotify": "https://open.spotify.com/album/6g4LUhrBiE8Ei6NXvo8Lmi?si",
+        "apple": "https://music.apple.com/us/album/breeze-ep/1697983016?app=music&ls=1",
+        "soundcloud": "https://soundcloud.com/bayza/sets/breeze-ep",
+        "youtube": "",
+        "itunes": "https://music.apple.com/us/album/breeze-ep/1697983016?app=itunes&ls=1",
+        "amazon-music": "https://music.amazon.com/albums/B0CC3RZBTX",
+        "amazon": "https://www.amazon.com/dp/B0CC3RZBTX",
+        "deezer": "https://www.deezer.com/en/album/465509215",
+        "beatport": "",
+        "yandex": "https://music.yandex.com/album/26634204?lang=en",
+        "vk": "https://vk.com/music/album/-2000437977_18437977_8bf1e29e96dc1b5977",
+        "anghami": "https://play.anghami.com/album/1041577931",
+        "napster": "",
+        "tidal": "https://tidal.com/browse/album/305333025",
+        "tidal-buy": "",
+        "download": "",
+        "tiktok": "",
+        "bandcamp": "",
+        "dark": "false"
+    }
+,
     "breeze": 
     {
         "title": "Breeze",
