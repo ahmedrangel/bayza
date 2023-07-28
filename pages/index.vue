@@ -42,13 +42,13 @@ definePageMeta({ layout: "site" });
           <div class="item">
             <div class="cover">
               <div class="upcoming-container">
-                <img class="img-fluid scale-on-hover upcoming" src="/images/releases/2023/now-or-never.jpg">
+                <img class="img-fluid scale-on-hover upcoming" src="/images/releases/2023/obsession.jpg">
                 <div class="centered">
                   <h4>Upcoming</h4>
-                  <small><h5>August 11, 2023</h5></small>
+                  <small><h5>September 8, 2023</h5></small>
                 </div>
               </div>
-              <h5 class="mb-0"><small><p class="mb-0 mt-2">Now Or Never</p></small></h5>
+              <h5 class="mb-0"><small><p class="mb-0 mt-2">Obsession</p></small></h5>
               <small><p class="mb-4">Bayza</p></small>
             </div>
           </div>
@@ -57,13 +57,13 @@ definePageMeta({ layout: "site" });
           <div class="item">
             <div class="cover">
               <div class="upcoming-container">
-                <img class="img-fluid scale-on-hover upcoming" src="/images/releases/2023/breeze.jpg">
+                <img class="img-fluid scale-on-hover upcoming" src="/images/releases/2023/now-or-never.jpg">
                 <div class="centered">
                   <h4>Upcoming</h4>
-                  <small><h5>July 28, 2023</h5></small>
+                  <small><h5>August 11, 2023</h5></small>
                 </div>
               </div>
-              <h5 class="mb-0"><small><p class="mb-0 mt-2">Breeze EP</p></small></h5>
+              <h5 class="mb-0"><small><p class="mb-0 mt-2">Now Or Never</p></small></h5>
               <small><p class="mb-4">Bayza</p></small>
             </div>
           </div>
