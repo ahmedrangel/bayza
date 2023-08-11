@@ -1,5 +1,32 @@
 
 {
+    "nowornever": 
+    {
+        "title": "Now Or Never",
+        "artists": "Bayza",
+        "date": "2023-08-11 00:00:00",
+        "image": "http://bayzamusic.com/images/releases/2023/now-or-never.jpg",
+        "image_secure": "https://bayzamusic.com/images/releases/2023/now-or-never.jpg",
+        "spotify": "https://open.spotify.com/track/0gvM4YHMsYTeDGL8AJH3bN?si",
+        "apple": "https://music.apple.com/us/album/now-or-never-single/1698143831?app=music&ls=1",
+        "soundcloud": "",
+        "youtube": "https://www.youtube.com/watch?v=CS-AQefwkRk",
+        "itunes": "https://music.apple.com/us/album/now-or-never-single/1698143831?app=itunes&ls=1",
+        "amazon-music": "https://music.amazon.com/albums/B0CC6B8KLR",
+        "amazon": "https://www.amazon.com/dp/B0CC6B8KLR",
+        "deezer": "https://www.deezer.com/en/album/465827855",
+        "beatport": "https://www.beatport.com/track/now-or-never/17952075",
+        "yandex": "https://music.yandex.com/album/26657703?lang=en",
+        "vk": "https://vk.com/audio-2001428828_121428828",
+        "anghami": "https://play.anghami.com/song/1118122446",
+        "napster": "",
+        "tidal": "https://tidal.com/browse/album/305471645",
+        "tidal-buy": "",
+        "download": "",
+        "tiktok": "https://vm.tiktok.com/ZM23JEjLf/",
+        "bandcamp": "",
+        "dark": "false"
+    },
     "breezeep": 
     {
         "title": "Breeze EP",
