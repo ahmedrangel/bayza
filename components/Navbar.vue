@@ -29,9 +29,9 @@
         </li>
         <li class="nav-item" @click="collapseNav()">
           <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
-        </li>       
+        </li>
       </ul>
-    </div>  
+    </div>
   </nav>
 </template>
 <script>
@@ -41,14 +41,6 @@ export default {
     return {
       path: this.$route.path
     };
-  },
-  methods: {
-    collapseNav () {
-      const nav = this.$refs.nav;
-      if (nav.classList.contains("show")) {
-        this.$nuxt.$bootstrap.toogleCollapse(nav);
-      }
-    }
   },
   mounted () {
     if (document.querySelectorAll(".smart-scroll").length > 0) {
@@ -77,6 +69,14 @@ export default {
       }
     };
     window.onscroll = () => {scrollFunction();};
+  },
+  methods: {
+    collapseNav () {
+      const nav = this.$refs.nav;
+      if (nav.classList.contains("show")) {
+        this.$nuxt.$bootstrap.toogleCollapse(nav);
+      }
+    }
   }
 };
 </script>

@@ -67,7 +67,7 @@ definePageMeta({ layout: "site" });
             </div>
           </div>
         </div>
-      </div>  
+      </div>
       <NuxtLink class="btn btn-outline-releases px-4 py-1" to="/releases/" data-aos="flip-left">See all releases</NuxtLink>
     </div>
   </section>
@@ -129,7 +129,7 @@ definePageMeta({ layout: "site" });
             <Icon class="fa-fw" name="simple-icons:tidal" />
             <span class="visually-hidden">Tidal</span>
           </a>
-        </div> 
+        </div>
         <div class="m-1">
           <a class="icons-fx text-white platform-icons yandex_card rounded-circle" :href="SITE.platforms.yandex" target="_blank" title="Yandex Music">
             <Icon class="fa-fw" name="fa6-brands:yandex" />
@@ -149,7 +149,7 @@ definePageMeta({ layout: "site" });
             </span>
             <span class="visually-hidden">Anghami</span>
           </a>
-        </div> 
+        </div>
       </div>
       <div class="row text-white">
         <div class="col-lg-6" data-aos="fade-right" data-aos-easing="ease-in-sine">
@@ -199,26 +199,26 @@ definePageMeta({ layout: "site" });
       <div id="about-desc" class="row">
         <div class="col-lg-8 my-3 font-weight-light text-justify" data-aos="fade-right" data-aos-easing="ease-in-sine">
           <p>
-            Ahmed Rangel, also known as 
+            Ahmed Rangel, also known as
             <b><a href="https://open.spotify.com/artist/0UFz5jBFwlNKaq1JwESYnX" target="_blank" title="Bayza Spotify">Bayza</a></b>, is a <span id="age">{{ getAge() }}</span> years old electronic/dance music producer from La Chorrera, Panama <i class="em em-flag-pa" aria-role="presentation" aria-label="Panama Flag" />.
           </p>
           <p>
             His very first steps with music comes  in 2014 releasing a big room house music during many years. It was until 2017 when he transitioned his style to melbourne bounce. In 2019 he finds himself in deep house style which fits him perfectly. He started making remixes of famous pop songs, then in September 2019 he self-released his first album named Genuine. In 2020 Bayza mainly focused on producing deep house with slap house influence and you should looking forward for his coming tunes.
           </p>
           <p>
-            In 2021 Bayza is hitting his very first 1M plays on Spotify with his <b><a href="/releases/2020/everythingiwanted" target="_blank" title="Everything I Wanted | Bayza">Everything I Wanted</a></b>'s cover. 
+            In 2021 Bayza is hitting his very first 1M plays on Spotify with his <b><a href="/releases/2020/everythingiwanted" target="_blank" title="Everything I Wanted | Bayza">Everything I Wanted</a></b>'s cover.
           </p>
           <p>
             He has currently signed tracks with Records Labels such as
-            "<b><a href="https://instagram.com/bounceunited" target="_blank" title="Bounce United's Instagram">Bounce United</a></b>, 
-            <b><a href="https://www.youtube.com/channel/UCoo_WkQMj2h-WFi7nBQjtyw" target="_blank" title="Miss DeepShine's YouTube Channel">DeepShine Records</a></b>, 
-            <b><a href="https://instagram.com/palmtherapysounds" target="_blank" title="Palm Therapy Sounds's Instagram">Palm Therapy Sounds</a></b>, 
-            <b><a href="https://instagram.com/onesevenmusic" target="_blank" title="One Seven Music's Instagram">One Seven Music</a></b>, 
-            <b><a href="https://instagram.com/frqncy_official" target="_blank" title="FRQNCY's Instagram">FRQNCY</a></b>, 
-            <b><a href="https://instagram.com/thenightdrive_nd" target="_blank" title="The Night Drive's Instagram">The Night Drive</a></b>, 
-            <b>Melodicity Recordings</b>, 
-            <b><a href="https://www.instagram.com/miamibeats" target="_blank" title="Miami Beats's Instagram">Miami Beats</a></b>, 
-            <b><a href="https://www.instagram.com/stormmusicgroup" target="_blank" title="Storm's Instagram">Storm Music Group</a></b>, 
+            "<b><a href="https://instagram.com/bounceunited" target="_blank" title="Bounce United's Instagram">Bounce United</a></b>,
+            <b><a href="https://www.youtube.com/channel/UCoo_WkQMj2h-WFi7nBQjtyw" target="_blank" title="Miss DeepShine's YouTube Channel">DeepShine Records</a></b>,
+            <b><a href="https://instagram.com/palmtherapysounds" target="_blank" title="Palm Therapy Sounds's Instagram">Palm Therapy Sounds</a></b>,
+            <b><a href="https://instagram.com/onesevenmusic" target="_blank" title="One Seven Music's Instagram">One Seven Music</a></b>,
+            <b><a href="https://instagram.com/frqncy_official" target="_blank" title="FRQNCY's Instagram">FRQNCY</a></b>,
+            <b><a href="https://instagram.com/thenightdrive_nd" target="_blank" title="The Night Drive's Instagram">The Night Drive</a></b>,
+            <b>Melodicity Recordings</b>,
+            <b><a href="https://www.instagram.com/miamibeats" target="_blank" title="Miami Beats's Instagram">Miami Beats</a></b>,
+            <b><a href="https://www.instagram.com/stormmusicgroup" target="_blank" title="Storm's Instagram">Storm Music Group</a></b>,
             <b><a href="https://www.instagram.com/differenttwinsrecords" target="_blank" title="Storm's Instagram">Different Twins Records</a></b>".
           </p>
         </div>

@@ -14,6 +14,6 @@ export const getAge = () => {
   const now = new Date();
   const birth = new Date("June 15, 1998 00:00:00");
   const diff = Math.abs(now - birth);
-  const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25)); 
+  const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
   return age;
 };

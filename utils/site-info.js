@@ -51,7 +51,7 @@ const SITE = {
   merch: "https://merch.streamelements.com/bayza",
   fanlinks: "https://lnk.bayzamusic.com"
 };
-  
+
 SITE.url = `${SITE.protocol}://${SITE.domain}`;
-  
+
 export { SITE };

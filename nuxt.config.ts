@@ -1,4 +1,4 @@
-export default ({     
+export default ({
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/bayza.css",
@@ -28,6 +28,6 @@ export default ({
       ]
     }
   },
-  
+
   modules: [ "nuxt-icon" ],
 });
