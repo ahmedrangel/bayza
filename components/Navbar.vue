@@ -1,12 +1,12 @@
 <template>
-  <nav id="navbar" class="navbar navbar-expand-md navbar-dark px-4 py-2 fixed-top smart-scroll">
+  <nav id="navbar" ref="nav" class="navbar navbar-expand-md navbar-dark px-4 py-2 fixed-top smart-scroll">
     <NuxtLink class="navbar-brand" to="/">
-      <img src="/images/bayza-logo.svg" width="100">
+      <img ref="logoNav" src="/images/bayza-logo.svg" width="100">
     </NuxtLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon" />
     </button>
-    <div id="collapsibleNavbar" ref="nav" class="collapse navbar-collapse">
+    <div id="collapsibleNavbar" ref="collapsibleNav" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" @click="collapseNav()">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
@@ -39,42 +39,43 @@ export default {
   name: "NavbarComponent",
   data () {
     return {
-      path: this.$route.path
+      path: this.$route.path,
+      nav: "",
     };
   },
   mounted () {
-    if (document.querySelectorAll(".smart-scroll").length > 0) {
+    this.nav = this.$refs.nav;
+    if (this.nav) {
       let last_scroll_top = 0;
-      window.addEventListener("scroll", function() {
+      window.addEventListener("scroll", () => {
         const scroll_top = window.pageYOffset || document.documentElement.scrollTop;
         if (scroll_top < last_scroll_top) {
-          document.querySelector(".smart-scroll").classList.remove("scrolled-down");
-          document.querySelector(".smart-scroll").classList.add("scrolled-up");
+          this.nav.classList.remove("scrolled-down");
+          this.nav.classList.add("scrolled-up");
         } else {
-          document.querySelector(".smart-scroll").classList.remove("scrolled-up");
-          document.querySelector(".smart-scroll").classList.add("scrolled-down");
+          this.nav.classList.remove("scrolled-up");
+          this.nav.classList.add("scrolled-down");
         }
         last_scroll_top = scroll_top;
       });
     }
     const scrollFunction = () => {
       if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
-        document.querySelector("#navbar").style.background = "#121212";
-        document.querySelector("#navbar").style.fontSize = "1rem";
-        document.querySelector("#navbar img").style.width = 100;
-      }else {
-        document.querySelector("#navbar").style.background = "transparent";
-        document.querySelector("#navbar").style.fontSize = "1.3rem";
-        document.querySelector("#navbar img").style.width = 130;
+        this.nav.style.background = "#121212";
+        this.nav.style.fontSize = "1rem";
+        this.$refs.logoNav.style.width = 100;
+      } else {
+        this.nav.style.background = "transparent";
+        this.nav.style.fontSize = "1.3rem";
+        this.$refs.logoNav.style.width = 130;
       }
     };
     window.onscroll = () => {scrollFunction();};
   },
   methods: {
     collapseNav () {
-      const nav = this.$refs.nav;
-      if (nav.classList.contains("show")) {
-        this.$nuxt.$bootstrap.toogleCollapse(nav);
+      if (this.$refs.collapsibleNav.classList.contains("show")) {
+        this.$nuxt.$bootstrap.toogleCollapse(this.$refs.collapsibleNav);
       }
     }
   }
