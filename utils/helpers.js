@@ -6,8 +6,7 @@ export const dateFormat = (datestring) => {
 };
 
 export const releaseType = (type) => {
-  const link = !type ? "" : type;
-  return link;
+  return !type ? "" : type;
 };
 
 export const getAge = () => {
