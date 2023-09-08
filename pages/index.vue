@@ -38,6 +38,7 @@ definePageMeta({ layout: "site" });
       <h3 class="mt-3 text-uppercase text-white">Recent Music</h3>
       <h5 class="font-weight-light">Check out my latest releases</h5>
       <div class="row my-4 text-start">
+        <!--
         <div class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
@@ -52,7 +53,7 @@ definePageMeta({ layout: "site" });
               <small><p class="mb-4">Bayza</p></small>
             </div>
           </div>
-        </div>
+        </div>-->
         <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
