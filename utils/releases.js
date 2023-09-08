@@ -1346,5 +1346,21 @@ export const tracks = [
     "date": "2023-08-11 00:00:00",
     "release": "now-or-never",
     "genre": "Deep House"
+  },
+  {
+    "album": "",
+    "fanlink": "lnk.bayzamusic.com/Obsession",
+    "description": null,
+    "title": "Obsession",
+    "type": "Releases",
+    "artists": "Bayza",
+    "cover": "obsession",
+    "label": "DeepShine Records",
+    "duration": "2:45",
+    "video": "KNmD8d2bnp0",
+    "year": 2023,
+    "date": "2023-09-8 00:00:00",
+    "release": "obsession",
+    "genre": "Deep House"
   }
 ];
