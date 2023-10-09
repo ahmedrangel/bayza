@@ -12,13 +12,13 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18",
-    "nuxt": "^3.7.1"
+    "nuxt": "^3.7.4"
   },
   "dependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "aos": "^2.3.4",
-    "bootstrap": "^5.3.1",
-    "eslint": "^8.48.0",
+    "bootstrap": "^5.3.2",
+    "eslint": "^8.51.0",
     "nuxt-icon": "^0.5.0"
   }
 }
