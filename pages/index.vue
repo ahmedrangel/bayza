@@ -241,7 +241,7 @@ export default {
       return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
     },
     indexTracks () {
-      return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 11);
+      return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12);
     }
   },
   created () {
