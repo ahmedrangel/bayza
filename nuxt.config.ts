@@ -30,4 +30,12 @@ export default ({
   },
 
   modules: [ "nuxt-icon" ],
+
+  features: {
+    inlineStyles: false,
+  },
+
+  experimental: {
+    viewTransition: true
+  }
 });
