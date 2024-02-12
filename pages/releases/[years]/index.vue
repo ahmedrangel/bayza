@@ -1,24 +1,42 @@
 <script setup>
 definePageMeta({ layout: "site" });
 
+const { params } = useRoute();
+const { years } = params;
+
+const listTracks = computed(() => {
+  return isBootleg(years);
+});
+
+if (!listTracks.value[0]) {
+  throw createError({
+    statusCode: 404,
+    message: "Tracks not found",
+    fatal: true
+  });
+}
+
+const title = `${SITE.name} ${listTracks.value[0].year} ${listTracks.value[0].type}`;
+const description = `${listTracks.value[0].year} ${listTracks.value[0].type}`;
+
 useSeoMeta({
-  title: `Releases | ${SITE.name}`,
-  description: "Releases",
-  keywords: "releases, singles, stream, music, dance, EDM",
+  title: `${years} | ${SITE.name}`,
+  description: description,
+  keywords: `releases, ${listTracks.value[0].year}, ${listTracks.value[0].type}, singles, stream, music, dance, EDM`,
   // OG
-  ogUrl: `${SITE.url}/releases`,
+  ogUrl: `${SITE.url}/releases/${years}`,
   ogType: "website",
-  ogTitle: `${SITE.name} Releases`,
+  ogTitle: title,
   ogSieName: SITE.name,
-  ogDescription: "Releases",
+  ogDescription: description,
   ogImage: `${SITE.url}/${SITE.cover}`,
   ogImageWidth: 300,
   ogImageHeight: 300,
-  ogImageAlt: `${SITE.name} Releases`,
+  ogImageAlt: title,
   // Twitter
   twitterCard: "summary",
-  twitterTitle: `${SITE.name} Releases`,
-  twitterDescription: "Releases",
+  twitterTitle: title,
+  twitterDescription: description,
   twitterImage: `${SITE.url}/${SITE.logo}`,
   twitterSite: `@${SITE.twitter}`
 });
@@ -26,18 +44,14 @@ useSeoMeta({
 useHead({
   link: [{ rel: "canonical", href: SITE.url }]
 });
-
-const allTracks = computed(() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date));
-});
 </script>
-
 <template>
   <section id="releases" class="bg-darkest">
     <div class="container text-secondary text-center py-5">
-      <h3 class="mt-5 text-uppercase text-white">All Releases</h3>
+      <h3 class="mt-5 text-uppercase text-white">Releases</h3>
+      <h4 class="font-weight-light">{{ years }}</h4>
       <div class="row my-4 text-start">
-        <div v-for="(tracks, index) of allTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
+        <div v-for="(tracks, index) of listTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <div class="item">
             <div class="cover">
               <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">

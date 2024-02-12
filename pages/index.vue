@@ -1,5 +1,89 @@
 <script setup>
 definePageMeta({ layout: "site" });
+
+const hover = ref(false);
+
+const schemaOrg = {
+  "@context": "http://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: SITE.name,
+      url: SITE.url,
+      image: `${SITE.url}/${SITE.logo}`
+    },
+    {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+      logo: `${SITE.url}/${SITE.logo}`,
+      image: `${SITE.url}/${SITE.cover}`,
+      description: SITE.meta_description
+    },
+    {
+      "@type": ["Person", "MusicGroup"],
+      "@id": SITE.socials.musicbrainz,
+      name: SITE.name,
+      alternateName: SITE.person.fullname,
+      url: SITE.url,
+      image: `${SITE.url}/${SITE.cover}`,
+      description: SITE.meta_description,
+      birthDate: SITE.person.birthdate,
+      birthPlace: {
+        "@type": "AdministrativeArea",
+        "@id": SITE.person.province.id,
+        name: SITE.person.province.name,
+        containedIn: {
+          "@type": "Country",
+          "@id": SITE.person.country.id,
+          name: SITE.person.country.name
+        }
+      },
+      sameAs: [
+        SITE.socials.youtube,
+        SITE.socials.soundcloud,
+        SITE.socials.facebook,
+        SITE.socials.twitter,
+        SITE.socials.instagram
+      ]
+    }
+  ]
+};
+
+useSeoMeta({
+  title: SITE.name,
+  description: SITE.description,
+  keywords: SITE.keywords,
+  // OG
+  ogUrl: SITE.url,
+  ogType: "website",
+  ogTitle: SITE.name,
+  ogSieName: SITE.name,
+  ogDescription: SITE.description,
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: 300,
+  ogImageHeight: 300,
+  ogImageAlt: SITE.name,
+  // Twitter
+  twitterCard: "summary",
+  twitterTitle: SITE.name,
+  twitterDescription: SITE.description,
+  twitterImage: `${SITE.url}/${SITE.logo}`,
+  twitterSite: `@${SITE.twitter}`
+});
+
+useHead({
+  script: [{ type: "application/ld+json", children: JSON.stringify(schemaOrg) }],
+  link: [{ rel: "canonical", href: SITE.url }]
+});
+
+const lastTrack = computed(() => {
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
+});
+
+const indexTracks = computed (() => {
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12);
+});
 </script>
 <template>
   <section id="dark" class="cabecera text-white py-5">
@@ -228,110 +312,3 @@ definePageMeta({ layout: "site" });
     </div>
   </section>
 </template>
-<script>
-export default {
-  name: "IndexPage",
-  data() {
-    return {
-      hover: false
-    };
-  },
-  computed: {
-    lastTrack () {
-      return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
-    },
-    indexTracks () {
-      return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12);
-    }
-  },
-  created () {
-    const url = SITE.url;
-    const cover = `${SITE.url}/${SITE.cover}`;
-    const logo = `${SITE.url}/${SITE.logo}`;
-    const title = SITE.name;
-    const description = SITE.meta_description;
-    useHead({
-      title: title,
-      meta: [
-        { name: "keywords", content: "bayza, dj, producer, panama, music, EDM, dance, musician, artist, ahmed" },
-        { name: "description", content: description },
-        // Protocolo Open Graph
-        { property: "og:url", content: url },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: title },
-        { property: "og:site_name", content: SITE.name },
-        { property: "og:image", content: cover },
-        { property: "og:image:width", content: "300" },
-        { property: "og:image:height", content: "300" },
-        { property: "og:image:alt", content: title },
-        { property: "og:description", content: description },
-        // Twitter Card
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:image", content: logo },
-        { name: "twitter:title", content: title },
-        { name: "twitter:description", content: description },
-        { name: "twitter:site", content: `@${SITE.twitter}` }
-      ],
-      script: [
-        { type: "application/ld+json", children: this.SEO }
-      ],
-      link: [
-        { rel: "canonical", href: url }
-      ]
-    });
-  },
-  methods: {
-    SEO() {
-      const schemaOrg = {
-        "@context": "http://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            name: SITE.name,
-            url: SITE.url,
-            image: `${SITE.url}/${SITE.logo}`
-          },
-          {
-            "@type": "Organization",
-            name: SITE.name,
-            url: SITE.url,
-            logo: `${SITE.url}/${SITE.logo}`,
-            image: `${SITE.url}/${SITE.cover}`,
-            description: SITE.meta_description
-          },
-          {
-            "@type": ["Person", "MusicGroup"],
-            "@id": SITE.socials.musicbrainz,
-            name: SITE.name,
-            alternateName: SITE.person.fullname,
-            url: SITE.url,
-            image: `${SITE.url}/${SITE.cover}`,
-            description: SITE.meta_description,
-            birthDate: SITE.person.birthdate,
-            birthPlace:
-            {
-              "@type": "AdministrativeArea",
-              "@id": SITE.person.province.id,
-              name: SITE.person.province.name,
-              containedIn:
-                {
-                  "@type": "Country",
-                  "@id": SITE.person.country.id,
-                  name: SITE.person.country.name
-                }
-            },
-            sameAs: [
-              SITE.socials.youtube,
-              SITE.socials.soundcloud,
-              SITE.socials.facebook,
-              SITE.socials.twitter,
-              SITE.socials.instagram
-            ]
-          }
-        ]
-      };
-      return JSON.stringify(schemaOrg);
-    }
-  },
-};
-</script>

@@ -10,6 +10,7 @@
     "lint": "eslint --ext .ts,.js,.vue --fix --ignore-path .gitignore ."
   },
   "devDependencies": {
+    "@nuxtjs/sitemap": "^5.1.0",
     "@types/node": "^20.11.17",
     "nuxt": "^3.10.1"
   },

@@ -1,10 +1,11 @@
-export default ({
+import { SITE } from "./utils/site-info.js";
+
+export default defineNuxtConfig({
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/bayza.css",
     "aos/dist/aos.css"
   ],
-
   app: {
     rootId: "app",
     buildAssetDir: "/_app",
@@ -28,13 +29,34 @@ export default ({
       ]
     }
   },
-
-  modules: [ "nuxt-icon" ],
-
+  modules: [
+    "nuxt-icon",
+    "@nuxtjs/sitemap"
+  ],
   features: {
     inlineStyles: false,
   },
-
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/sitemap.xml"]
+    }
+  },
+  site: {
+    url: SITE.url,
+  },
+  sitemap: {
+    discoverImages: false,
+    xslColumns: [
+      { label: "URL", width: "65%" },
+      { label: "Priority", select: "sitemap:priority", width: "12.5%" },
+      { label: "Last Modified", select: "sitemap:lastmod", width: "35%" }
+    ]
+  },
+  routeRules: {
+    "/": { sitemap: { priority: 1 } },
+    "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } }
+  },
   experimental: {
     viewTransition: true
   }
