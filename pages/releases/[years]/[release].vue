@@ -6,7 +6,7 @@ const { years, release } = params;
 
 const releaseTrack = computed(() => {
   return tracks.filter((elem) => {
-    return elem.release == release;
+    return elem.release === release;
   })[0];
 });
 
@@ -15,29 +15,29 @@ const moreTracks = computed(() => {
 });
 
 const url = `${SITE.url}/releases/${years}/${release}`;
-const imageUrl = `${SITE.url}/images/releases/${years}/${releaseTrack.cover}.jpg`;
-const title = `${releaseTrack.artists} - ${releaseTrack.title}`;
-const description = releaseTrack.description != null ? releaseTrack.description : releaseTrack.title;
+const imageUrl = `${SITE.url}/images/releases/${years}/${releaseTrack.value.cover}.jpg`;
+const title = `${releaseTrack.value.artists} - ${releaseTrack.value.title}`;
+const description = releaseTrack.value.description != null ? releaseTrack.value.description : releaseTrack.value.title;
 
 const schemaOrg = {
   "@context": "http://schema.org",
   "@type": "MusicRecording",
-  name: releaseTrack.title,
+  name: releaseTrack.value.title,
   url: url,
   image: imageUrl,
-  genre: releaseTrack.genre,
-  duration: releaseTrack.duration,
-  datePublished: new Date(releaseTrack.date),
+  genre: releaseTrack.value.genre,
+  duration: releaseTrack.value.duration,
+  datePublished: new Date(releaseTrack.value.date),
   byArtist: [{
     "@type": "MusicGroup",
-    "name": releaseTrack.artists
+    "name": releaseTrack.value.artists
   }]
 };
 
 useSeoMeta({
   title: `${years} | ${SITE.name}`,
   description: description,
-  keywords: `release, ${releaseTrack.title}, ${releaseTrack.genre}, ${releaseTrack.year}, play, stream, download, fanlink, music, EDM`,
+  keywords: `release, ${releaseTrack.value.title}, ${releaseTrack.value.genre}, ${releaseTrack.value.year}, play, stream, download, fanlink, music, EDM`,
   // OG
   ogUrl: `${SITE.url}/releases/${years}/${release}`,
   ogType: "website",
