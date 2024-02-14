@@ -239,7 +239,7 @@ const indexTracks = computed (() => {
       <div class="row text-white">
         <div class="col-lg-6" data-aos="fade-right">
           <div class="mt-4">
-            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0tCEnL?utm_source=generator&theme=0" width="95%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy" />
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0tCEnL?utm_source=generator&theme=0" width="95%" height="500" frameBorder="0" allow="autoplay; clipboard-write; fullscreen; picture-in-picture;" loading="lazy" />
           </div>
         </div>
         <div class="col-lg-6" data-aos="fade-left">
@@ -257,22 +257,22 @@ const indexTracks = computed (() => {
       <div class="row text-white">
         <div class="col-lg-6 mt-4" data-aos="fade-in">
           <div class="video-container">
-            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
           </div>
         </div>
         <div class="col-lg-6 mt-4" data-aos="fade-in">
           <div class="video-container">
-            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
           </div>
         </div>
         <div class="col-lg-6 mt-4" data-aos="fade-in">
           <div class="video-container">
-            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
           </div>
         </div>
         <div class="col-lg-6 mt-4" data-aos="fade-in">
           <div class="video-container">
-            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/BwKO7sfFVAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+            <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/BwKO7sfFVAA" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
           </div>
         </div>
       </div>

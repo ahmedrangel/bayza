@@ -72,7 +72,7 @@ const obj = platforms(release);
       <div id="reproductor" class="me-5 ms-5 px-5" data-aos="fade-in">
         <div class="text-center py-3">
           <div class="video-container">
-            <iframe width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${releaseTrack.video}`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen />
+            <iframe width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${releaseTrack.video}`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; fullscreen;" />
           </div>
         </div>
       </div>
