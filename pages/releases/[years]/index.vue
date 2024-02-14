@@ -51,7 +51,7 @@ useHead({
       <h3 class="mt-5 text-uppercase text-white">Releases</h3>
       <h4 class="font-weight-light">{{ years }}</h4>
       <div class="row my-4 text-start">
-        <div v-for="(tracks, index) of listTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in" data-aos-easing="ease-in-sine">
+        <div v-for="(tracks, index) of listTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in">
           <div class="item">
             <div class="cover">
               <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">

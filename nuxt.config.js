@@ -31,7 +31,8 @@ export default defineNuxtConfig({
   },
   modules: [
     "nuxt-icon",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "nuxt-aos"
   ],
   features: {
     inlineStyles: false,
@@ -59,5 +60,10 @@ export default defineNuxtConfig({
   },
   experimental: {
     viewTransition: true
+  },
+  aos: {
+    once: true,
+    easing: "ease-in-sine",
+    duration: 500
   }
 });

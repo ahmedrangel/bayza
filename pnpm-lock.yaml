@@ -8,15 +8,15 @@ dependencies:
   '@nuxt/eslint-config':
     specifier: ^0.2.0
     version: 0.2.0(eslint@8.56.0)
-  aos:
-    specifier: ^2.3.4
-    version: 2.3.4
   bootstrap:
     specifier: ^5.3.2
     version: 5.3.2(@popperjs/core@2.11.8)
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
+  nuxt-aos:
+    specifier: ^1.2.3
+    version: 1.2.3(nuxt@3.10.1)(vite@5.0.12)
   nuxt-icon:
     specifier: ^0.6.8
     version: 0.6.8(nuxt@3.10.1)(vite@5.0.12)(vue@3.4.18)
@@ -3247,8 +3247,8 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  /aos@2.3.4:
-    resolution: {integrity: sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==}
+  /aos@3.0.0-beta.6:
+    resolution: {integrity: sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw==, tarball: https://registry.npmjs.org/aos/-/aos-3.0.0-beta.6.tgz}
     dependencies:
       classlist-polyfill: 1.2.0
       lodash.debounce: 4.0.8
@@ -5674,6 +5674,20 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
+
+  /nuxt-aos@1.2.3(nuxt@3.10.1)(vite@5.0.12):
+    resolution: {integrity: sha512-DhpqoH7n7IcTK5Qp4YGOTWH5CU/Mpp4D+qVZc2zu8h/pQQf3Dk70GrKLUDtqyo4ucQnkemxhg+YYxXYDi11w7g==, tarball: https://registry.npmjs.org/nuxt-aos/-/nuxt-aos-1.2.3.tgz}
+    dependencies:
+      '@nuxt/devtools-kit': 1.0.8(nuxt@3.10.1)(vite@5.0.12)
+      '@nuxt/kit': 3.10.1
+      aos: 3.0.0-beta.6
+      defu: 6.1.4
+    transitivePeerDependencies:
+      - nuxt
+      - rollup
+      - supports-color
+      - vite
+    dev: false
 
   /nuxt-icon@0.6.8(nuxt@3.10.1)(vite@5.0.12)(vue@3.4.18):
     resolution: {integrity: sha512-6eWlNOb6Uvp63uXFdhcmsB1JlubDv76Pot/VwmIu0yJxDYhwytbnv3WAjw2khl2l7W/65V4eMGIEeX9C5Ahxng==, tarball: https://registry.npmjs.org/nuxt-icon/-/nuxt-icon-0.6.8.tgz}
