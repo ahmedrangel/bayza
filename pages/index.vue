@@ -103,15 +103,15 @@ const indexTracks = computed (() => {
           <div class="col-12 col-md-6 row text-end px-0 align-items-center" data-aos="fade-left">
             <div class="col-12 col-md-7 d-none d-md-block pe-0 text-secondary">
               <h5>Latest Release:</h5>
-              <NuxtLink :to="`releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="text-white latest-release-title" :class="{ underline : hover }">
+              <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="text-white latest-release-title" :class="{ underline : hover }">
                 <h3 class="font-weight-light">{{ lastTrack.title }}</h3>
               </NuxtLink>
               <div><h5 class="font-weight-light">by {{ lastTrack.artists }}</h5></div>
               <small><p class="mb-0 mt-1">{{ dateFormat(lastTrack.date) }}</p></small>
             </div>
-            <NuxtLink :to="`releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
+            <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
               <div class="me-0 text-start px-2">
-                <img id="covers" class="mx-auto d-flex w-100" :src="`images/releases/${lastTrack.year}/${lastTrack.cover}.jpg`" alt="" style="max-width:230px;">
+                <img id="covers" class="mx-auto d-flex w-100" :src="`/images/releases/${lastTrack.year}/${lastTrack.cover}.jpg`" alt="" style="max-width:230px;">
               </div>
             </NuxtLink>
           </div>
