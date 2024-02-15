@@ -84,7 +84,8 @@ const obj = platforms(release);
           <div class="track-info-tags col-12 col-lg-7 meta text-justify px-3">
             <div class="tags">
               <h5 v-if="releaseTrack.description" class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
-              <h6 class="mb-2"><span class="">{{ releaseTrack.description }}</span></h6>
+              <!-- eslint-disable-next-line vue/no-v-html-->
+              <h6 class="mb-2"><span v-html="releaseTrack.description" /></h6>
               <h5 v-if="releaseTrack.genre" class="mb-0"><span class="meta-heading mb-0 text-white">Genre:</span></h5>
               <h6 class="mb-2"><span class="tag">{{ releaseTrack.genre }}</span></h6>
               <h5 v-if="releaseTrack.album" class="mb-0"><span class="meta-heading mb-0 text-white">Album:</span></h5>
