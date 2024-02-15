@@ -3,8 +3,7 @@ import { SITE } from "./utils/site-info.js";
 export default defineNuxtConfig({
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
-    "~/assets/css/bayza.css",
-    "aos/dist/aos.css"
+    "~/assets/css/bayza.css"
   ],
   app: {
     rootId: "app",
