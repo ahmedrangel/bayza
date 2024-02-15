@@ -6,6 +6,8 @@ export default defineNuxtConfig({
     "~/assets/css/bayza.css"
   ],
   app: {
+    pageTransition: { name: "fade", mode: "out-in" },
+    layoutTransition: { name: "fade", mode: "out-in" },
     rootId: "app",
     buildAssetDir: "/_app",
     head: {
@@ -56,9 +58,6 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { sitemap: { priority: 1 } },
     "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } }
-  },
-  experimental: {
-    viewTransition: true
   },
   aos: {
     once: true,
