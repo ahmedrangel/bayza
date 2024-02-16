@@ -1,3 +1,47 @@
+<script setup>
+const nav = ref("nav");
+const logoNav = ref("logoNav");
+const collapsibleNav = ref("CollapsibleNav");
+const { $bootstrap } = useNuxtApp();
+
+const collapseNav = () => {
+  if (collapsibleNav.value.classList.contains("show")) {
+    $bootstrap.toogleCollapse(collapsibleNav.value);
+  }
+};
+
+const onScroll = () => {
+  if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
+    nav.value.style.background = "#121212";
+    nav.value.style.fontSize = "1rem";
+    logoNav.value.style.width = 100;
+  } else {
+    nav.value.style.background = "transparent";
+    nav.value.style.fontSize = "1.3rem";
+    logoNav.value.style.width = 130;
+  }
+};
+
+let last_scroll_top = 0;
+
+const scrollHandler = () => {
+  const scroll_top = window.pageYOffset || document.documentElement.scrollTop;
+  if (scroll_top < last_scroll_top) {
+    nav.value.classList.remove("scrolled-down");
+    nav.value.classList.add("scrolled-up");
+  } else {
+    nav.value.classList.remove("scrolled-up");
+    nav.value.classList.add("scrolled-down");
+  }
+  last_scroll_top = scroll_top;
+};
+
+onMounted(() => {
+  if (nav.value) window.addEventListener("scroll", scrollHandler);
+  window.onscroll = () => onScroll();
+});
+</script>
+
 <template>
   <nav id="navbar" ref="nav" class="navbar navbar-expand-md navbar-dark px-4 py-2 fixed-top smart-scroll">
     <NuxtLink class="navbar-brand" to="/">
@@ -35,50 +79,3 @@
     </div>
   </nav>
 </template>
-<script>
-export default {
-  name: "NavbarComponent",
-  data () {
-    return {
-      path: this.$route.path,
-      nav: "",
-    };
-  },
-  mounted () {
-    this.nav = this.$refs.nav;
-    if (this.nav) {
-      let last_scroll_top = 0;
-      window.addEventListener("scroll", () => {
-        const scroll_top = window.pageYOffset || document.documentElement.scrollTop;
-        if (scroll_top < last_scroll_top) {
-          this.nav.classList.remove("scrolled-down");
-          this.nav.classList.add("scrolled-up");
-        } else {
-          this.nav.classList.remove("scrolled-up");
-          this.nav.classList.add("scrolled-down");
-        }
-        last_scroll_top = scroll_top;
-      });
-    }
-    const scrollFunction = () => {
-      if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
-        this.nav.style.background = "#121212";
-        this.nav.style.fontSize = "1rem";
-        this.$refs.logoNav.style.width = 100;
-      } else {
-        this.nav.style.background = "transparent";
-        this.nav.style.fontSize = "1.3rem";
-        this.$refs.logoNav.style.width = 130;
-      }
-    };
-    window.onscroll = () => {scrollFunction();};
-  },
-  methods: {
-    collapseNav () {
-      if (this.$refs.collapsibleNav.classList.contains("show")) {
-        this.$nuxt.$bootstrap.toogleCollapse(this.$refs.collapsibleNav);
-      }
-    }
-  }
-};
-</script>
