@@ -1,9 +1,9 @@
 <template>
-  <Navbar />
+  <CompNavbar />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
-  <Footer />
+  <CompFooter />
 </template>
 
 <style>
