@@ -12,7 +12,7 @@ const data = fanlinks();
         <div class="row g-2">
           <div v-for="(key, i) in data" :key="i" class="col-6 col-md-4 col-lg-3">
             <div class="card overflow-hidden my-3 p-0 bg-dark border-0 text-white">
-              <img class="img-fluid" :src="key.image">
+              <img class="img-fluid" :src="key.image_secure">
               <div class="p-2 p-lg-3 text-center">
                 <h5>{{ key.title }}</h5>
                 <h6 class="mb-0">{{ key.artists }}</h6>
