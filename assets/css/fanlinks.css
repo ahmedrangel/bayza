@@ -1,0 +1,21 @@
+.bg-fanlinks {
+  background-image: url('/images/bg-fanlinks.jpg');
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(20px);
+}
+
+#fanlinks .btn {
+  border-radius: 0px!important;
+}
+
+#fanlinks .btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+}
+
+#fanlinks .btn-primary:hover {
+  background-color: #2e59d9;
+}

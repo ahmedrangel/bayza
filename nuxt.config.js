@@ -3,7 +3,8 @@ import { SITE } from "./utils/site-info.js";
 export default defineNuxtConfig({
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
-    "~/assets/css/bayza.css"
+    "~/assets/css/bayza.css",
+    "~/assets/css/fanlinks.css"
   ],
   app: {
     pageTransition: { name: "fade", mode: "out-in" },

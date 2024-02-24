@@ -1,5 +1,22 @@
 import data from "~/public/data/fanlinks.json";
 
+export const fanlinks = () => {
+  for (const key in data) {
+    if (Object.hasOwnProperty.call(data, key)) {
+      data[key].date = new Date(data[key].date);
+    }
+  }
+
+  const sortedKeys = Object.keys(data).sort((a, b) => data[b].date - data[a].date);
+  const sortedReleases = {};
+
+  for (const key of sortedKeys) {
+    sortedReleases[key] = data[key];
+  }
+
+  return sortedReleases;
+};
+
 export const platforms = (release) => {
   const str = release;
   let release_str;

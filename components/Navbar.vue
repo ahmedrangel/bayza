@@ -70,7 +70,7 @@ onMounted(() => {
           </div>
         </li>
         <li class="nav-item" @click="collapseNav()">
-          <a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a>
+          <NuxtLink class="nav-link" to="/fanlinks">Fanlinks</NuxtLink>
         </li>
         <li class="nav-item" @click="collapseNav()">
           <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
