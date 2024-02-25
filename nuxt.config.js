@@ -9,8 +9,6 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "fade", mode: "out-in" },
     layoutTransition: { name: "fade", mode: "out-in" },
-    rootId: "app",
-    buildAssetDir: "/_app",
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
