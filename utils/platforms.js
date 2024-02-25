@@ -1,6 +1,4 @@
-import data from "~/public/data/fanlinks.json";
-
-export const fanlinks = () => {
+export const fanlinks = (data) => {
   for (const key in data) {
     if (Object.hasOwnProperty.call(data, key)) {
       data[key].date = new Date(data[key].date);
@@ -17,14 +15,8 @@ export const fanlinks = () => {
   return sortedReleases;
 };
 
-export const platforms = (release) => {
-  const str = release;
+export const fixSlug = (str) => {
   let release_str;
-  let store_title;
-  let icon = "";
-  let icon_insert = "";
-  const stores_array = [];
-  let key = 0;
   if (str == "lo-vas-a-olvidar") {
     release_str = "lvao";
   } else if (str == "everythingiwanted") {
@@ -36,8 +28,17 @@ export const platforms = (release) => {
   } else {
     release_str = str.replace(/-/g, "");
   }
-  if (!data[release_str]) return [];
-  Object.entries(data[release_str]).forEach(([i, stores]) => {
+  return release_str;
+}
+
+export const platforms = (data, release) => {
+  let store_title;
+  let icon = "";
+  let icon_insert = "";
+  const stores_array = [];
+  let key = 0;
+  if (!data) return [];
+  Object.entries(data).forEach(([i, stores]) => {
     if (stores !== "" && i !== "dark" && i !== "title" && i !== "artists" && i !== "date" && i !== "image" &&
       i !== "image_secure" && i !== "tidal-buy" && i !== "amazon-music" && i !== "download") {
       icon = "" + i;

@@ -1,8 +1,8 @@
 <script setup>
 definePageMeta({ layout: "site" });
-
 const { params } = useRoute();
 const { years, release } = params;
+const { data: results } = await useFetch("/api/fanlinks/" + fixSlug(release));
 
 const releaseTrack = computed(() => {
   return tracks.filter((elem) => {
@@ -61,7 +61,7 @@ useHead({
   link: [{ rel: "canonical", href: SITE.url }]
 });
 
-const obj = platforms(release);
+const obj = platforms(results.value, fixSlug(release));
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 <script setup>
 definePageMeta({ layout: "site" });
-
-const data = fanlinks();
+const { data: results } = await useFetch("/api/fanlinks");
+const data = fanlinks(results.value);
 </script>
 
 <template>
