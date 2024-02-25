@@ -25,7 +25,7 @@
         "download": "",
         "tiktok": "https://www.tiktok.com/music/Obsession-7265380182788950017",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     },
     "nowornever": 
     {
@@ -52,7 +52,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZM23JEjLf/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     },
     "breezeep": 
     {
@@ -79,7 +79,7 @@
         "download": "",
         "tiktok": "",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "breeze": 
@@ -107,7 +107,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZM2sMykq7/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "immortallove": 
@@ -135,7 +135,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZM2sMjhU5/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "eclipse": 
@@ -163,7 +163,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZM2sMAh8W/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "zenith": 
@@ -191,7 +191,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZM2sMfvXF/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "fiesta": 
@@ -219,7 +219,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZM2sM6V8A/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "awakening": 
@@ -247,7 +247,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZM2sMedV6/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "lightcomesup": 
@@ -275,7 +275,7 @@
         "download": "",
         "tiktok": "",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "madhouse": 
@@ -303,7 +303,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZMYaBDVVL/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "lunchboxfriends": 
@@ -331,7 +331,7 @@
         "download": "",
         "tiktok": "https://vm.tiktok.com/ZMFbtcG6P/",
         "bandcamp": "",
-        "dark": "false"
+        "dark": false
     }
 ,
     "truelovers": 
@@ -359,7 +359,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMFUjckkU/",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }
     ,
     "onyourmind": 
@@ -387,7 +387,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMN34omnp/",
             "bandcamp": "",
-            "dark": "true"
+            "dark": true
         }
     ,
     "whycantitbe": 
@@ -415,7 +415,7 @@
             "download": "",
             "tiktok": "",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }     
     ,
     "youngfree": 
@@ -443,7 +443,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMNUstycp/",
             "bandcamp": "",
-            "dark": "true"
+            "dark": true
         }     
     ,
     "showme": 
@@ -471,7 +471,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMN8aHhwT/",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }     
     ,
     "pieces": 
@@ -499,7 +499,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMLWYV8Lb/",
             "bandcamp": "",
-            "dark": "true"
+            "dark": true
         }     
     ,
     "callout": 
@@ -527,7 +527,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMLBhQ3tW",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }     
     ,
     "callout_instrumental": 
@@ -555,7 +555,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMLBhCxMa",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }     
     ,
     "imfalling": 
@@ -583,7 +583,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZMLdt7P6q",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }     
     ,
     "desertrose": 
@@ -609,7 +609,7 @@
             "tiktok": "",
             "yandex": "https://music.yandex.com/album/19854446/track/96764348",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "notmybaby": 
@@ -635,7 +635,7 @@
             "tiktok": "",
             "yandex": "https://music.yandex.com/album/19854446/track/96764347",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "myheadmyheart": 
@@ -661,7 +661,7 @@
             "beatport": "https://www.beatport.com/track/my-head-my-heart/16170771",
             "yandex": "https://music.yandex.com/album/19854446/track/96764346",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "lovasaolvidar": 
@@ -687,7 +687,7 @@
             "beatport": "https://www.beatport.com/track/lo-vas-a-olvidar/16170768",
             "yandex": "https://music.yandex.com/album/19854446/track/96764345",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "thumbs": 
@@ -713,7 +713,7 @@
             "beatport": "https://www.beatport.com/track/thumbs/16170766",
             "yandex": "https://music.yandex.com/album/19854446/track/96764344",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "passagesep": 
@@ -739,7 +739,7 @@
             "beatport": "https://www.beatport.com/release/passages/3634124",
             "yandex": "https://music.yandex.com/album/19854446",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "passages": 
@@ -765,7 +765,7 @@
             "beatport": "https://www.beatport.com/track/passages/16170765",
             "yandex": "https://music.yandex.com/album/19854446/track/96764343",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "pirhan": 
@@ -791,7 +791,7 @@
             "beatport": "https://www.beatport.com/track/pirhan/16031083",
             "yandex": "",
             "bandcamp": "",
-            "dark": "true"
+            "dark": true
         }    
     ,
     "thumbsremix": 
@@ -815,7 +815,7 @@
             "beatport": "",
             "yandex": "",
             "bandcamp": "https://bayza.bandcamp.com/track/thumbs-bayza-remix",
-            "dark": "false"
+            "dark": false
         }
     ,
     "takemehome": 
@@ -842,7 +842,7 @@
             "tiktok": "https://vm.tiktok.com/ZMdfURKan",
             "beatport": "https://www.beatport.com/track/take-me-home/15341109",
             "bandcamp": "",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "feels": 
@@ -868,7 +868,7 @@
             "beatport": "",
             "yandex": "https://music.yandex.com/album/14788954",
             "bandcamp": "https://bayza.bandcamp.com/track/feels",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "feelsolonely": 
@@ -894,7 +894,7 @@
             "beatport": "",
             "yandex": "https://music.yandex.com/album/14636288",
             "bandcamp": "",
-            "dark": "true"
+            "dark": true
         }    
     ,
     "diamante": 
@@ -919,7 +919,7 @@
             "beatport": "https://www.beatport.com/track/diamante/15075125",
             "yandex": "https://music.yandex.com/album/14463629/track/79531770",
             "bandcamp": "https://bayza.bandcamp.com/track/diamante-bayza-remix",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "idontknow": 
@@ -944,7 +944,7 @@
             "beatport": "https://www.beatport.com/track/i-dont-know/15075129",
             "yandex": "https://music.yandex.com/album/14463629/track/79531772",
             "bandcamp": "https://bayza.bandcamp.com/track/i-dont-know-bayza-remix",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "without-you": 
@@ -970,7 +970,7 @@
             "beatport": "https://www.beatport.com/track/without-you/14942522",
             "yandex": "https://music.yandex.com/album/13955690",
             "bandcamp": "https://bayza.bandcamp.com/track/without-you",
-            "dark": "false"
+            "dark": false
         }    
     ,
     "alone": 
@@ -993,7 +993,7 @@
             "tidal-buy": "https://store.tidal.com/us/album/142790472",
             "download": "",
             "tiktok": "https://vm.tiktok.com/J8XyVFk",
-            "dark": "false"
+            "dark": false
         }
     ,
     "reborn": 
@@ -1017,7 +1017,7 @@
             "tiktok": "https://vm.tiktok.com/ZSQNYnMg",
             "beatport": "",
             "bandcamp": "https://bayza.bandcamp.com/track/reborn",
-            "dark": "false"
+            "dark": false
         }
     ,
     "strawberry-shortcake": 
@@ -1041,7 +1041,7 @@
             "beatport": "",
             "yandex": "",
             "bandcamp": "https://bayza.bandcamp.com/track/strawberry-shortcake-bayza-remix",
-            "dark": "true"
+            "dark": true
         }
     ,
     "still-learning": 
@@ -1065,7 +1065,7 @@
             "beatport": "",
             "yandex": "",
             "bandcamp": "https://bayza.bandcamp.com/track/still-learning-bayza-remix",
-            "dark": "false"
+            "dark": false
         }
     ,
     "solace": 
@@ -1090,7 +1090,7 @@
             "download": "",
             "tiktok": "https://vm.tiktok.com/ZSuDrpku",
             "bandcamp": "https://bayza.bandcamp.com/track/solace",
-            "dark": "false"
+            "dark": false
         }
     ,
     "not-my-baby": 
@@ -1104,7 +1104,7 @@
             "youtube": "https://youtu.be/tio93a68b3Q",
             "download": "https://www.toneden.io/bayza/post/inna-not-my-baby-bayza-bootleg",
             "bandcamp": "https://bayza.bandcamp.com/track/not-my-baby-bayza-remix",
-            "dark": "false"
+            "dark": false
         }
     ,
     "no-guarantee": 
@@ -1129,7 +1129,7 @@
             "beatport": "https://www.beatport.com/release/no-guarantee/3143902",
             "yandex": "https://music.yandex.com/album/12300457",
             "bandcamp": "https://bayza.bandcamp.com/track/no-guarantee",
-            "dark": "false"
+            "dark": false
         }
     ,
     "my-head-my-heart": 
@@ -1143,7 +1143,7 @@
             "youtube": "https://youtu.be/eKGxQxm9FUA",
             "download": "https://www.toneden.io/bayza/post/ava-max-my-head-my-heart-bayza-remix",
             "bandcamp": "https://bayza.bandcamp.com/track/my-head-my-heart-bayza-remix",
-            "dark": "false"
+            "dark": false
         }
     ,
     "mirage": 
@@ -1161,7 +1161,7 @@
             "deezer": "https://www.deezer.com/en/album/112510672",
             "amazon": "https://www.amazon.com/Mirage-Bayza/dp/B07YCMB3WZ/?tag=ton08-20",
             "download": "https://www.toneden.io/bayza/post/bayza-mirage",
-            "dark": "false"
+            "dark": false
         }
     ,
     "miracle": 
@@ -1187,7 +1187,7 @@
             "tiktok": "https://vm.tiktok.com/JLej2G3",
             "yandex": "https://music.yandex.com/album/11036717",
             "bandcamp": "https://bayza.bandcamp.com/track/miracle",
-            "dark": "false"
+            "dark": false
         }
     ,
     "make-believe": 
@@ -1205,7 +1205,7 @@
             "amazon": "https://www.amazon.com/dp/B08D5X9L9P/",
             "amazon-music": "https://music.amazon.com/albums/B08D6J76TQ?trackAsin=B08D5X9L9P",
             "tiktok": "https://vm.tiktok.com/ZMJMVFvQA",
-            "dark": "false"
+            "dark": false
         }
     ,
     "lvao": 
@@ -1219,7 +1219,7 @@
             "youtube": "https://youtu.be/RilJRFTno6M",
             "download": "https://www.toneden.io/bayza/post/billie-eilish-rosal-a-lo-vas-a-olvidar-bayza-remix",
             "bandcamp": "https://bayza.bandcamp.com/track/lo-vas-a-olvidar-bayza-remix",
-            "dark": "false"
+            "dark": false
         }
     ,
     "lookingatyou": 
@@ -1244,7 +1244,7 @@
             "beatport": "",
             "yandex": "https://music.yandex.com/album/13746009",
             "bandcamp": "https://bayza.bandcamp.com/track/looking-at-you",
-            "dark": "false"
+            "dark": false
         }
     ,
     "lamentos": 
@@ -1269,7 +1269,7 @@
             "beatport": "https://www.beatport.com/track/lamentos/15125257",
             "yandex": "https://music.yandex.com/album/12395537",
             "bandcamp": "https://bayza.bandcamp.com/track/lamentos",
-            "dark": "false"
+            "dark": false
         }
     ,
     "hold-on-to-me": 
@@ -1291,7 +1291,7 @@
             "tidal-buy": "https://store.tidal.com/us/album/151393778",
             "download": "https://www.toneden.io/bayza/post/dimatis-bayza-hold-on-to-me",
             "tiktok": "https://vm.tiktok.com/ZSmq7e54",
-            "dark": "false"
+            "dark": false
         }
     ,
     "everything-i-wanted": 
@@ -1315,7 +1315,7 @@
             "tidal-buy": "https://store.tidal.com/us/album/141154997",
             "download":"",
             "tiktok": "https://vm.tiktok.com/J8Xxgfb",
-            "dark": "false"
+            "dark": false
         }
     ,
     "desert-rose": 
@@ -1329,7 +1329,7 @@
             "youtube": "https://youtu.be/ONzjgxLeIw4",
             "download": "https://www.toneden.io/bayza/post/noel-kharman-desert-rose-mashup-bayza-remix",
             "bandcamp": "https://bayza.bandcamp.com/track/desert-rose-mashup-bayza-remix",
-            "dark": "false"
+            "dark": false
         }
     ,
     "yousaidgoodbye": 
@@ -1355,7 +1355,7 @@
             "beatport": "https://www.beatport.com/track/you-said-goodbye-feat-giulia-mihai/15023484",
             "yandex": "https://music.yandex.com/album/14306777",
             "bandcamp": "https://bayza.bandcamp.com/track/you-said-goodbye",
-            "dark": "false"
+            "dark": false
         }    
     
 }
