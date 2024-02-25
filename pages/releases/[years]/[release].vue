@@ -61,7 +61,7 @@ useHead({
   link: [{ rel: "canonical", href: SITE.url }]
 });
 
-const obj = platforms(results.value, fixSlug(release));
+const obj = platforms(results.value);
 </script>
 
 <template>

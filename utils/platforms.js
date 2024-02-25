@@ -29,9 +29,9 @@ export const fixSlug = (str) => {
     release_str = str.replace(/-/g, "");
   }
   return release_str;
-}
+};
 
-export const platforms = (data, release) => {
+export const platforms = (data) => {
   let store_title;
   let icon = "";
   let icon_insert = "";
