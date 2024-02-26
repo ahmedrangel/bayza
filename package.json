@@ -18,7 +18,7 @@
     "@nuxt/eslint-config": "^0.2.0",
     "bootstrap": "^5.3.3",
     "eslint": "^8.57.0",
-    "nuxt-aos": "^1.2.3",
+    "nuxt-aos": "^1.2.4",
     "nuxt-icon": "^0.6.8"
   }
 }

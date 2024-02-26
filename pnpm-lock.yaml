@@ -15,8 +15,8 @@ dependencies:
     specifier: ^8.57.0
     version: 8.57.0
   nuxt-aos:
-    specifier: ^1.2.3
-    version: 1.2.3(nuxt@3.10.3)(vite@5.1.4)
+    specifier: ^1.2.4
+    version: 1.2.4(nuxt@3.10.3)(vite@5.1.4)
   nuxt-icon:
     specifier: ^0.6.8
     version: 0.6.8(nuxt@3.10.3)(vite@5.1.4)(vue@3.4.19)
@@ -5083,8 +5083,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /nuxt-aos@1.2.3(nuxt@3.10.3)(vite@5.1.4):
-    resolution: {integrity: sha512-DhpqoH7n7IcTK5Qp4YGOTWH5CU/Mpp4D+qVZc2zu8h/pQQf3Dk70GrKLUDtqyo4ucQnkemxhg+YYxXYDi11w7g==, tarball: https://registry.npmjs.org/nuxt-aos/-/nuxt-aos-1.2.3.tgz}
+  /nuxt-aos@1.2.4(nuxt@3.10.3)(vite@5.1.4):
+    resolution: {integrity: sha512-xiGn3rVvsev7f12I3889TU3qOFUZAeiT0HtgGxA4RNb6hajQaMwxcHg9OX0Bn6dLcuHk+TgFAVtR+eDY9g0EdA==, tarball: https://registry.npmjs.org/nuxt-aos/-/nuxt-aos-1.2.4.tgz}
     dependencies:
       '@nuxt/devtools-kit': 1.0.8(nuxt@3.10.3)(vite@5.1.4)
       '@nuxt/kit': 3.10.3
