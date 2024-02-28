@@ -2,6 +2,32 @@
 definePageMeta({ layout: "site" });
 const { data: results } = await useFetch("/api/fanlinks");
 const data = fanlinks(results.value);
+
+useSeoMeta({
+  title: "Fanlinks | " + SITE.name,
+  description: "Bayza Fanlinks",
+  keywords: SITE.keywords + ", fanlinks",
+  // OG
+  ogUrl: SITE.url + "/fanlinks",
+  ogType: "website",
+  ogTitle: "Fanlinks | " + SITE.name,
+  ogSieName: SITE.name,
+  ogDescription: "Bayza Fanlinks",
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: 300,
+  ogImageHeight: 300,
+  ogImageAlt: SITE.name,
+  // Twitter
+  twitterCard: "summary",
+  twitterTitle: "Fanlinks | " + SITE.name,
+  twitterDescription: "Bayza Fanlinks",
+  twitterImage: `${SITE.url}/${SITE.logo}`,
+  twitterSite: `@${SITE.twitter}`
+});
+
+useHead({
+  link: [{ rel: "canonical", href: SITE.url }]
+});
 </script>
 
 <template>
