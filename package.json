@@ -10,8 +10,8 @@
     "lint": "eslint --ext .ts,.js,.vue --fix --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@nuxtjs/sitemap": "^5.1.0",
-    "@types/node": "^20.11.20",
+    "@nuxtjs/sitemap": "^5.1.2",
+    "@types/node": "^20.11.25",
     "nuxt": "^3.10.3"
   },
   "dependencies": {
@@ -19,6 +19,6 @@
     "bootstrap": "^5.3.3",
     "eslint": "^8.57.0",
     "nuxt-aos": "^1.2.4",
-    "nuxt-icon": "^0.6.8"
+    "nuxt-icon": "^0.6.9"
   }
 }
