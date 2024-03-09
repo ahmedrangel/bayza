@@ -26,7 +26,7 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: "canonical", href: SITE.url }]
+  link: [{ rel: "canonical", href: SITE.url + "/fanlinks" }]
 });
 </script>
 

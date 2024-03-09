@@ -58,7 +58,7 @@ onMounted(() => {
         <li class="nav-item dropdown">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Releases</span>
           <div class="dropdown-menu">
-            <NuxtLink class="dropdown-item" to="/releases/" @click="collapseNav()">All</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases" @click="collapseNav()">All</NuxtLink>
             <NuxtLink class="dropdown-item" to="/releases/all-bootlegs" @click="collapseNav()">Bootlegs</NuxtLink>
             <!--<NuxtLink class="dropdown-item" to="/releases/2024" @click="collapseNav()">2024</NuxtLink>-->
             <NuxtLink class="dropdown-item" to="/releases/2023" @click="collapseNav()">2023</NuxtLink>

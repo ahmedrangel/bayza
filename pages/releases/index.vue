@@ -24,7 +24,7 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: "canonical", href: SITE.url }]
+  link: [{ rel: "canonical", href: SITE.url + "/releases" }]
 });
 
 const allTracks = computed(() => {

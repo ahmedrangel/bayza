@@ -42,7 +42,7 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: "canonical", href: SITE.url }]
+  link: [{ rel: "canonical", href: `${SITE.url}/releases/${years}` }]
 });
 </script>
 <template>

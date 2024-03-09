@@ -58,7 +58,7 @@ useSeoMeta({
 
 useHead({
   script: [{ type: "application/ld+json", children: JSON.stringify(schemaOrg) }],
-  link: [{ rel: "canonical", href: SITE.url }]
+  link: [{ rel: "canonical", href: `${SITE.url}/releases/${years}/${release}` }]
 });
 
 const obj = platforms(results.value);
