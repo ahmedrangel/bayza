@@ -1,6 +1,9 @@
+const protocol = "https";
+const domain = "bayzamusic.com";
+
 const SITE = {
   name: "Bayza",
-  domain: "bayzamusic.com",
+  domain: domain,
   person: {
     fullname: "Ahmed Rangel",
     birthdate: "1998-06-15",
@@ -13,7 +16,7 @@ const SITE = {
       name: "Panamá"
     }
   },
-  protocol: "https",
+  protocol: protocol,
   meta_description: "Bayza is a Panamanian musician and producer.",
   description: "Panamanian musician and producer",
   keywords: "bayza, website, dj, producer, panama, music, EDM, dance, musician, artist, ahmed",
@@ -49,9 +52,8 @@ const SITE = {
     bandcamp: "https://bayza.bandcamp.com/"
   },
   merch: "https://merch.streamelements.com/bayza",
-  fanlinks: "https://lnk.bayzamusic.com"
+  fanlinks: "https://lnk.bayzamusic.com",
+  url: `${protocol}://${domain}`
 };
-
-SITE.url = `${SITE.protocol}://${SITE.domain}`;
 
 export { SITE };

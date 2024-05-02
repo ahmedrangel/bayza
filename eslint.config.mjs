@@ -1,27 +1,16 @@
-{
-  "env": {
-    "browser": true,
-    "node": true,
-    "es2021": true,
-    "jest": true
-  },
-  "extends": [
-    "@nuxt/eslint-config"
+import withNuxt from "./.nuxt/eslint.config.mjs";
+
+export default withNuxt([{
+  files: ["**/*.vue", "**/*.js", "**/*.ts"],
+  ignores: [
+    "node_modules/**/*",
+    ".nuxt/**/*",
+    "dist/**/*",
+    ".output/**/*"
   ],
-  "overrides": [{
-    "files": ["*.vue", "*.js", "*.ts"],
-    "rules": {
-      "no-undef": "off"
-    }
-  }],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": ["vue"],
-  "rules": {
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "windows"],
+  rules: {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", process.platform === "win32" ? "windows" : "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "camelcase": "off",
@@ -32,6 +21,9 @@
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "no-multi-spaces": "error",
     "space-before-blocks": "error",
+    "no-trailing-spaces": "error",
+    "nuxt/prefer-import-meta": "error",
+    // "@typescript-eslint/consistent-type-imports": "error",
     "vue/first-attribute-linebreak": ["error", {
       "singleline": "ignore", "multiline": "ignore"
     }],
@@ -40,6 +32,7 @@
     }],
     "vue/singleline-html-element-content-newline": ["off"],
     "vue/no-multiple-template-root": ["off"],
-    "no-trailing-spaces": "error"
+    "vue/html-closing-bracket-spacing": ["error", { "selfClosingTag": "always" }],
+    "@typescript-eslint/no-explicit-any": ["off"]
   }
-}
+}]);
