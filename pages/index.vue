@@ -77,12 +77,23 @@ useHead({
   link: [{ rel: "canonical", href: SITE.url }]
 });
 
+
 const lastTrack = computed(() => {
   return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
 });
 
+const upcoming = [
+  {
+    title: "Redemption",
+    cover: "redemption",
+    artists: "Bayza",
+    year: 2024,
+    date: "2024-05-17 00:00:00"
+  }
+];
+
 const indexTracks = computed (() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12);
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12 - upcoming.length);
 });
 </script>
 <template>
@@ -119,7 +130,7 @@ const indexTracks = computed (() => {
       </div>
     </section>
     <section id="latest releases" class="bg-darkest">
-      <div class="container text-secondary py-5 text-center" style="overflow-x: hidden;">
+      <div v-for="(u, i) of upcoming" :key="i" class="container text-secondary py-5 text-center" style="overflow-x: hidden;">
         <h3 class="mt-3 text-uppercase text-white">Recent Music</h3>
         <h5 class="font-weight-light">Check out my latest releases</h5>
         <div class="row my-4 text-start">
@@ -127,14 +138,14 @@ const indexTracks = computed (() => {
           <div class="item">
             <div class="cover">
               <div class="upcoming-container">
-                <img class="img-fluid scale-on-hover upcoming" src="/images/releases/2024/redemption.jpg">
+                <img class="img-fluid scale-on-hover upcoming" :src="`/images/releases/${u.year}/${u.cover}.jpg`">
                 <div class="centered">
                   <h4>Upcoming</h4>
-                  <small><h5>May 17, 2024</h5></small>
+                  <small><h5>{{ dateFormat(u.date) }}</h5></small>
                 </div>
               </div>
-              <h5 class="mb-0"><small><p class="mb-0 mt-2">Redemption</p></small></h5>
-              <small><p class="mb-4">Bayza</p></small>
+              <h5 class="mb-0"><small><p class="mb-0 mt-2">{{ u.title }}</p></small></h5>
+              <small><p class="mb-4">{{ u.artists }}</p></small>
             </div>
           </div>
         </div>
