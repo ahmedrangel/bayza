@@ -1362,5 +1362,21 @@ export const tracks = [
     "date": "2023-09-8 00:00:00",
     "release": "obsession",
     "genre": "Deep House"
+  },
+  {
+    "album": "",
+    "fanlink": "lnk.bayzamusic.com/Redemption",
+    "description": null,
+    "title": "Redemption",
+    "type": "Releases",
+    "artists": "Bayza",
+    "cover": "redemption",
+    "label": "",
+    "duration": "2:48",
+    "video": "bk_08D0S2fI",
+    "year": 2024,
+    "date": "2024-05-17 00:00:00",
+    "release": "redemption",
+    "genre": "Dance"
   }
 ];
