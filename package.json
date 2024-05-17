@@ -10,14 +10,14 @@
     "lint": "eslint --fix ."
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.3.10",
-    "@nuxtjs/sitemap": "^5.1.4",
-    "@types/node": "^20.12.8",
+    "@nuxt/eslint": "^0.3.12",
+    "@nuxtjs/sitemap": "^5.1.5",
+    "@types/node": "^20.12.12",
     "nuxt": "^3.11.2"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "eslint": "^9.1.1",
+    "eslint": "^9.2.0",
     "nuxt-aos": "^1.2.4",
     "nuxt-icon": "^0.6.10"
   }
