@@ -1,5 +1,32 @@
 
 {
+    "redemption": 
+    {
+        "title": "Redemption",
+        "artists": "Bayza",
+        "date": "2024-05-17 00:00:00",
+        "image": "http://bayzamusic.com/images/releases/2024/redemption.jpg",
+        "image_secure": "https://bayzamusic.com/images/releases/2024/redemption.jpg",
+        "spotify": "https://open.spotify.com/track/67pgxQVCfkKlb6MF4XZwgt?si",
+        "apple": "",
+        "soundcloud": "https://soundcloud.com/bayza/redemption",
+        "youtube": "https://www.youtube.com/watch?v=bk_08D0S2fI",
+        "itunes": "",
+        "amazon-music": "",
+        "amazon": "",
+        "deezer": "",
+        "beatport": "",
+        "yandex": "",
+        "vk": "",
+        "anghami": "",
+        "napster": "",
+        "tidal": "",
+        "tidal-buy": "",
+        "download": "",
+        "tiktok": "",
+        "bandcamp": "",
+        "dark": false
+    },
     "obsession": 
     {
         "title": "Obsession",
