@@ -136,21 +136,21 @@ const indexTracks = computed (() => {
         <h3 class="mt-3 text-uppercase text-white">Recent Music</h3>
         <h5 class="font-weight-light">Check out my latest releases</h5>
         <div class="row my-4 text-start">
-        <div v-for="(u, i) of upcoming" :key="i" class="col-6 col-lg-3" data-aos="fade-in">
-          <div class="item">
-            <div class="cover">
-              <div class="upcoming-container">
-                <img class="img-fluid scale-on-hover upcoming" :src="`/images/releases/${u.year}/${u.cover}.jpg`">
-                <div class="centered">
-                  <h4>Upcoming</h4>
-                  <small><h5>{{ dateFormat(u.date) }}</h5></small>
+          <div v-for="(u, i) of upcoming" :key="i" class="col-6 col-lg-3" data-aos="fade-in">
+            <div class="item">
+              <div class="cover">
+                <div class="upcoming-container">
+                  <img class="img-fluid scale-on-hover upcoming" :src="`/images/releases/${u.year}/${u.cover}.jpg`">
+                  <div class="centered">
+                    <h4>Upcoming</h4>
+                    <small><h5>{{ dateFormat(u.date) }}</h5></small>
+                  </div>
                 </div>
+                <h5 class="mb-0"><small><p class="mb-0 mt-2">{{ u.title }}</p></small></h5>
+                <small><p class="mb-4">{{ u.artists }}</p></small>
               </div>
-              <h5 class="mb-0"><small><p class="mb-0 mt-2">{{ u.title }}</p></small></h5>
-              <small><p class="mb-4">{{ u.artists }}</p></small>
             </div>
           </div>
-        </div>
           <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in">
             <div class="item">
               <div class="cover">

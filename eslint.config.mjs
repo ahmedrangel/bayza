@@ -33,6 +33,7 @@ export default withNuxt([{
     "vue/singleline-html-element-content-newline": ["off"],
     "vue/no-multiple-template-root": ["off"],
     "vue/html-closing-bracket-spacing": ["error", { "selfClosingTag": "always" }],
-    "@typescript-eslint/no-explicit-any": ["off"]
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "vue/html-indent": ["error", 2]
   }
 }]);
