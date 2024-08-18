@@ -65,6 +65,7 @@ export default defineNuxtConfig({
     url: SITE.url
   },
   sitemap: {
+    sources: ["/api/__sitemap"],
     xslColumns: [
       { label: "URL", width: "65%" },
       { label: "Priority", select: "sitemap:priority", width: "12.5%" },
