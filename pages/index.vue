@@ -1,6 +1,5 @@
 <script setup>
 definePageMeta({ layout: "site" });
-
 const hover = ref(false);
 
 const schemaOrg = {
@@ -8,38 +7,38 @@ const schemaOrg = {
   "@graph": [
     {
       "@type": "WebSite",
-      name: SITE.name,
-      url: SITE.url,
-      image: `${SITE.url}/${SITE.logo}`
+      "name": SITE.name,
+      "url": SITE.url,
+      "image": `${SITE.url}/${SITE.logo}`
     },
     {
       "@type": "Organization",
-      name: SITE.name,
-      url: SITE.url,
-      logo: `${SITE.url}/${SITE.logo}`,
-      image: `${SITE.url}/${SITE.cover}`,
-      description: SITE.meta_description
+      "name": SITE.name,
+      "url": SITE.url,
+      "logo": `${SITE.url}/${SITE.logo}`,
+      "image": `${SITE.url}/${SITE.cover}`,
+      "description": SITE.meta_description
     },
     {
       "@type": ["Person", "MusicGroup"],
       "@id": SITE.socials.musicbrainz,
-      name: SITE.name,
-      alternateName: SITE.person.fullname,
-      url: SITE.url,
-      image: `${SITE.url}/${SITE.cover}`,
-      description: SITE.meta_description,
-      birthDate: SITE.person.birthdate,
-      birthPlace: {
+      "name": SITE.name,
+      "alternateName": SITE.person.fullname,
+      "url": SITE.url,
+      "image": `${SITE.url}/${SITE.cover}`,
+      "description": SITE.meta_description,
+      "birthDate": SITE.person.birthdate,
+      "birthPlace": {
         "@type": "AdministrativeArea",
         "@id": SITE.person.province.id,
-        name: SITE.person.province.name,
-        containedIn: {
+        "name": SITE.person.province.name,
+        "containedIn": {
           "@type": "Country",
           "@id": SITE.person.country.id,
-          name: SITE.person.country.name
+          "name": SITE.person.country.name
         }
       },
-      sameAs: [
+      "sameAs": [
         SITE.socials.youtube,
         SITE.socials.soundcloud,
         SITE.socials.facebook,
@@ -77,7 +76,6 @@ useHead({
   link: [{ rel: "canonical", href: SITE.url }]
 });
 
-
 const lastTrack = computed(() => {
   return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
 });
@@ -97,7 +95,15 @@ const upcoming = [
 const indexTracks = computed (() => {
   return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12 - upcoming.length);
 });
+
+const featuredVideos = [
+  "https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY",
+  "https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY",
+  "https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0",
+  "https://www.youtube-nocookie.com/embed/BwKO7sfFVAA"
+]
 </script>
+
 <template>
   <main>
     <section id="dark" class="cabecera text-white py-5">
@@ -116,13 +122,13 @@ const indexTracks = computed (() => {
           <div class="col-12 col-md-6 row text-end px-0 align-items-center" data-aos="fade-left">
             <div class="col-12 col-md-7 d-none d-md-block pe-0 text-secondary">
               <h5>Latest Release:</h5>
-              <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="text-white latest-release-title" :class="{ underline : hover }">
+              <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.id}`" class="text-white latest-release-title" :class="{ underline: hover }">
                 <h3 class="font-weight-light">{{ lastTrack.title }}</h3>
               </NuxtLink>
               <div><h5 class="font-weight-light">by {{ lastTrack.artists }}</h5></div>
               <small><p class="mb-0 mt-1">{{ dateFormat(lastTrack.date) }}</p></small>
             </div>
-            <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.release}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
+            <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.id}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
               <div class="me-0 text-start px-2">
                 <img id="covers" class="mx-auto d-flex w-100" :src="`/images/releases/${lastTrack.year}/${lastTrack.cover}.jpg`" alt="" style="max-width:230px;">
               </div>
@@ -154,9 +160,9 @@ const indexTracks = computed (() => {
           <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in">
             <div class="item">
               <div class="cover">
-                <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">
+                <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.id}`">
                   <div class="overflow-hidden">
-                    <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${ tracks.artists } - ${ tracks.title }`">
+                    <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${tracks.artists} - ${tracks.title}`">
                   </div>
                   <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ tracks.title }}</p></small></h5>
                 </NuxtLink>
@@ -174,80 +180,14 @@ const indexTracks = computed (() => {
         <h3 class="mt-3 text-uppercase text-white">Listen</h3>
         <h5 class="font-weight-light">Stream/Buy my music on your favorite platform</h5>
         <div class="mt-4 d-flex flex-wrap justify-content-center">
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons spotify_card rounded-circle" :href="SITE.platforms.spotify" target="_blank" title="Spotify">
-              <Icon class="fa-fw" name="simple-icons:spotify" />
-              <span class="visually-hidden">Spotify</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons soundcloud_card rounded-circle" :href="SITE.platforms.soundcloud" target="_blank" title="SoundCloud">
-              <Icon class="fa-fw" name="simple-icons:soundcloud" />
-              <span class="visually-hidden">SoundCloud</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons youtube_card rounded-circle" :href="SITE.platforms.youtube" target="_blank" title="YouTube">
-              <Icon class="fa-fw" name="simple-icons:youtube" />
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons itunes_card rounded-circle" :href="SITE.platforms.itunes" target="_blank" title="iTunes Store">
-              <Icon class="fa-fw" name="ic:sharp-star-rate" />
-              <span class="visually-hidden">iTunes Store</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons apple_card rounded-circle" :href="SITE.platforms.apple" target="_blank" title="Apple Music">
-              <Icon class="fa-fw" name="simple-icons:apple" />
-              <span class="visually-hidden">Apple Music</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons beatport_card rounded-circle" :href="SITE.platforms.beatport" target="_blank" title="Beatport">
-              <Icon class="fa-fw" name="simple-icons:beatport" />
-              <span class="visually-hidden">Beatport</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons deezer_card rounded-circle" :href="SITE.platforms.deezer" target="_blank" title="Deezer">
-              <Icon class="fa-fw" name="simple-icons:deezer" />
-              <span class="visually-hidden">Deezer</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons amazon-music_card rounded-circle" :href="SITE.platforms.amazon" target="_blank" title="Amazon Music">
-              <Icon class="fa-fw" name="simple-icons:amazon" />
-              <span class="visually-hidden">Amazon Music</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons tidal_card rounded-circle" :href="SITE.platforms.tidal" target="_blank" title="Tidal">
-              <Icon class="fa-fw" name="simple-icons:tidal" />
-              <span class="visually-hidden">Tidal</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons yandex_card rounded-circle" :href="SITE.platforms.yandex" target="_blank" title="Yandex Music">
-              <Icon class="fa-fw" name="fa6-brands:yandex" />
-              <span class="visually-hidden">Yandex Music</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons vk_card rounded-circle" :href="SITE.platforms.vk" target="_blank" title="VKontakte">
-              <Icon class="fa-fw" name="simple-icons:vk" />
-              <span class="visually-hidden">VKontakte</span>
-            </a>
-          </div>
-          <div class="m-1">
-            <a class="icons-fx text-white platform-icons anghami_card rounded-circle" :href="SITE.platforms.anghami" target="_blank" title="Anghami">
-              <span class="fab fa-anghami fa-fw" aria-hidden="true">
-                <img src="/images/anghami-logo.svg">
-              </span>
-              <span class="visually-hidden">Anghami</span>
-            </a>
-          </div>
+          <template v-for="(platform, i) of SITE.platforms" :key="i">
+            <div v-if="platform.url" class="m-1">
+              <a class="icons-hover text-white platform-icons rounded-3 d-flex justify-content-center align-items-center" :href="platform.url" target="_blank" :title="platform.title" :style="{ background: platform.background, color: platform.color + '!important' }">
+                <Icon v-if="platform.icon" :name="platform.icon" style="font-size: 25px" />
+                <img v-else :src="platform.logo" style="height: 25px;">
+              </a>
+            </div>
+          </template>
         </div>
         <div class="row text-white">
           <div class="col-lg-6" data-aos="fade-right">
@@ -268,24 +208,9 @@ const indexTracks = computed (() => {
         <h3 class="mt-3 text-uppercase text-white">VIDEOS</h3>
         <h5 class="font-weight-light">Featured youtube videos</h5>
         <div class="row text-white">
-          <div class="col-lg-6 mt-4" data-aos="fade-in">
-            <div class="video-container">
-              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
-            </div>
-          </div>
-          <div class="col-lg-6 mt-4" data-aos="fade-in">
-            <div class="video-container">
-              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
-            </div>
-          </div>
-          <div class="col-lg-6 mt-4" data-aos="fade-in">
-            <div class="video-container">
-              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
-            </div>
-          </div>
-          <div class="col-lg-6 mt-4" data-aos="fade-in">
-            <div class="video-container">
-              <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/BwKO7sfFVAA" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen;" />
+          <div v-for="(v, i) of featuredVideos" :key="i" class="col-lg-6 mt-4" data-aos="fade-in">
+            <div class="ratio ratio-16x9">
+              <iframe class="rounded" width="1280" height="720" :src="v" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen />
             </div>
           </div>
         </div>

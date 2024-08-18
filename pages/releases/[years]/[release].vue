@@ -2,11 +2,10 @@
 definePageMeta({ layout: "site" });
 const { params } = useRoute();
 const { years, release } = params;
-const { data: results } = await useFetch("/api/fanlinks/" + fixSlug(release));
 
 const releaseTrack = computed(() => {
   return tracks.filter((elem) => {
-    return elem.release === release;
+    return elem.id === release;
   })[0];
 });
 
@@ -22,13 +21,13 @@ const description = releaseTrack.value.description != null ? releaseTrack.value.
 const schemaOrg = {
   "@context": "http://schema.org",
   "@type": "MusicRecording",
-  name: releaseTrack.value.title,
-  url: url,
-  image: imageUrl,
-  genre: releaseTrack.value.genre,
-  duration: releaseTrack.value.duration,
-  datePublished: new Date(releaseTrack.value.date),
-  byArtist: [{
+  "name": releaseTrack.value.title,
+  "url": url,
+  "image": imageUrl,
+  "genre": releaseTrack.value.genre,
+  "duration": releaseTrack.value.duration,
+  "datePublished": new Date(releaseTrack.value.date),
+  "byArtist": [{
     "@type": "MusicGroup",
     "name": releaseTrack.value.artists
   }]
@@ -61,7 +60,12 @@ useHead({
   link: [{ rel: "canonical", href: `${SITE.url}/releases/${years}/${release}` }]
 });
 
-const obj = platforms(results.value);
+const platformOrder = ["spotify", "apple", "soundcloud", "youtube", "deezer", "beatport", "itunes", "yandex", "vk", "anghami", "amazon-music", "tidal", "tiktok", "bandcamp"];
+const fanlinkKeys = releaseTrack.value?.fanlinks ? (Object.keys(releaseTrack.value.fanlinks)).sort((a, b) => platformOrder.indexOf(a) - platformOrder.indexOf(b)) : null;
+
+const platformMatch = (name) => {
+  return SITE.platforms.find(el => el.id === name);
+};
 </script>
 
 <template>
@@ -72,8 +76,8 @@ const obj = platforms(results.value);
         <h4 class="font-weight-light mb-0">{{ releaseTrack.artists }}</h4>
         <div id="reproductor" class="me-5 ms-5 px-5" data-aos="fade-in">
           <div class="text-center py-3">
-            <div class="video-container">
-              <iframe width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${releaseTrack.video}`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; fullscreen;" />
+            <div class="ratio ratio-16x9">
+              <iframe class="rounded" width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${releaseTrack.video}`" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen />
             </div>
           </div>
         </div>
@@ -83,30 +87,43 @@ const obj = platforms(results.value);
           </div>
           <div class="track-info-tags col-12 col-lg-7 meta text-justify px-3">
             <div class="tags">
-              <h5 v-if="releaseTrack.description" class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
-              <!-- eslint-disable-next-line vue/no-v-html-->
-              <h6 class="mb-2"><span v-html="releaseTrack.description" /></h6>
-              <h5 v-if="releaseTrack.genre" class="mb-0"><span class="meta-heading mb-0 text-white">Genre:</span></h5>
-              <h6 class="mb-2"><span class="tag">{{ releaseTrack.genre }}</span></h6>
-              <h5 v-if="releaseTrack.album" class="mb-0"><span class="meta-heading mb-0 text-white">Album:</span></h5>
-              <h6 class="mb-2"><span class="tag">{{ releaseTrack.album }}</span></h6>
-              <h5 v-if="releaseTrack.label" class="mb-0"><span class="meta-heading mb-0 text-white">Label:</span></h5>
-              <h6 class="mb-2"><span class="tag">{{ releaseTrack.label }}</span></h6>
-              <h5 v-if="releaseTrack.date" class="mb-0"><span class="meta-heading mb-0 text-white">Release date:</span></h5>
-              <h6 class="mb-2"><span class="tag">{{ dateFormat(releaseTrack.date) }}</span></h6>
-              <h5 v-if="releaseTrack.duration" class="mb-0"><span class="meta-heading mb-0 text-white">Duration:</span></h5>
-              <h6 class="mb-2"><span class="tag">{{ releaseTrack.duration }}</span></h6>
-              <h5 v-if="releaseTrack.fanlink" class="mb-0"><span class="meta-heading mb-0 text-white">Fanlink:</span></h5>
-              <h6 class="mb-2"><span><a class="tag d-inline-flex align-items-center" target="_blank" :href="`https://${releaseTrack.fanlink}`">{{ releaseTrack.fanlink }}<Icon class="external-link ms-1 fa-fw" name="ri:external-link-line" /></a></span></h6>
-              <div id="platforms" class="mt-2 mb-1 d-flex flex-wrap justify-content-left">
-                <div v-for="(value, index) of obj" :key="index" class="me-2 mb-2" :title="value.store_title" data-aos="fade-up">
-                  <a :class="`icons-fx text-white platform-icons ${value.id}_card rounded-circle`" :href="value.stores" target="_blank">
-                    <Icon v-if="value.id !== 'anghami'" class="fa-fw" :name="value.icon" />
-                    <span v-else><span class="fab fa-anghami fa-fw" aria-hidden="true">
-                      <img src="/images/anghami-logo.svg"></span></span><span class="visually-hidden">{{ value.store_title }}
-                    </span>
-                  </a>
-                </div>
+              <span v-if="releaseTrack.description">
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Description:</span></h5>
+                <!-- eslint-disable-next-line vue/no-v-html -->
+                <h6 class="mb-2"><span v-html="releaseTrack.description" /></h6>
+              </span>
+              <span v-if="releaseTrack.genre">
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Genre:</span></h5>
+                <h6 class="mb-2"><span class="tag">{{ releaseTrack.genre }}</span></h6>
+              </span>
+              <span v-if="releaseTrack.album">
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Album:</span></h5>
+                <h6 class="mb-2"><span class="tag">{{ releaseTrack.album }}</span></h6>
+              </span>
+              <span v-if="releaseTrack.label">
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Label:</span></h5>
+                <h6 class="mb-2"><span class="tag">{{ releaseTrack.label }}</span></h6>
+              </span>
+              <span v-if="releaseTrack.date">
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Release date:</span></h5>
+                <h6 class="mb-2"><span class="tag">{{ dateFormat(releaseTrack.date) }}</span></h6>
+              </span>
+              <span v-if="releaseTrack.duration">
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Duration:</span></h5>
+                <h6 class="mb-2"><span class="tag">{{ releaseTrack.duration }}</span></h6>
+              </span>
+              <span v-if="releaseTrack.fanlink">
+                <h5 class="mb-0"><span class="meta-heading mb-0 text-white">Fanlink:</span></h5>
+                <h6 class="mb-2"><span><a class="tag d-inline-flex align-items-center" target="_blank" :href="`https://${releaseTrack.fanlink}`">{{ releaseTrack.fanlink }}<Icon class="external-link ms-1 fa-fw" name="ri:external-link-line" /></a></span></h6>
+              </span><div id="platforms" class="mt-2 mb-1 d-flex flex-wrap justify-content-left">
+                <template v-for="(platform, i) of fanlinkKeys" :key="i">
+                  <div v-if="releaseTrack?.fanlinks[platform] && platformMatch(platform)" class="m-1" data-aos="fade-up">
+                    <a class="icons-hover text-white platform-icons rounded-3 d-flex justify-content-center align-items-center" :href="releaseTrack.fanlinks[platform]" target="_blank" :title="platformMatch(platform).title" :style="{ background: platformMatch(platform).background, color: platformMatch(platform).color + '!important' }">
+                      <Icon v-if="platformMatch(platform).icon" :name="platformMatch(platform).icon" style="font-size: 25px" />
+                      <img v-else :src="platformMatch(platform).logo" style="height: 25px;">
+                    </a>
+                  </div>
+                </template>
               </div>
             </div>
           </div>
@@ -120,7 +137,7 @@ const obj = platforms(results.value);
             <div v-for="(item, index) of moreTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in">
               <div class="item">
                 <div class="cover">
-                  <NuxtLink :to="`/releases/${item.year}${releaseType(item.link)}/${item.release}`">
+                  <NuxtLink :to="`/releases/${item.year}${releaseType(item.link)}/${item.id}`">
                     <div class="overflow-hidden">
                       <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${item.year}/${item.cover}.jpg`" :alt="`${item.artists} - ${item.title}`">
                     </div>

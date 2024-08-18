@@ -1,10 +1,12 @@
-import { SITE } from "./utils/site-info.js";
+import { SITE } from "../utils/site-info.js";
 
 export default defineNuxtConfig({
+  compatibilityDate: "2024-08-18",
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/bayza.css",
-    "~/assets/css/fanlinks.css"
+    "~/assets/css/fanlinks.css",
+    "~/assets/css/transitions.css"
   ],
   app: {
     pageTransition: { name: "fade", mode: "out-in" },
@@ -18,37 +20,50 @@ export default defineNuxtConfig({
       meta: [
         { name: "robots", content: "index, follow" }
       ],
-      link : [
+      link: [
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
         { rel: "icon", type: "image/png", sizes: "512x512", href: "/android-chrome-512x512.png" },
         { rel: "icon", type: "image/png", sizes: "192x192", href: "/android-chrome-192x192.png" },
         { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
         { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
         { rel: "manifest", href: "/site.webmanifest" },
-        { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#181818" },
+        { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#181818" }
       ]
     }
   },
   modules: [
-    "nuxt-icon",
+    "@nuxt/icon",
     "@nuxtjs/sitemap",
     "nuxt-aos",
     "@nuxt/eslint"
   ],
+  icon: { mode: "svg", serverBundle: "remote" },
   features: {
-    inlineStyles: false,
+    inlineStyles: false
+  },
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
   },
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: ["/sitemap.xml"]
+    },
+    cloudflare: {
+      pages: {
+        routes: {
+          exclude: ["/images/*", "/font/*"]
+        }
+      }
     }
   },
   site: {
-    url: SITE.url,
+    url: SITE.url
   },
   sitemap: {
-    discoverImages: false,
     xslColumns: [
       { label: "URL", width: "65%" },
       { label: "Priority", select: "sitemap:priority", width: "12.5%" },
@@ -57,7 +72,8 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/": { sitemap: { priority: 1 } },
-    "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } }
+    "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } },
+    "/api/_nuxt_icon/**": { cache: { maxAge: 1.577e+7 } }
   },
   aos: {
     once: true,

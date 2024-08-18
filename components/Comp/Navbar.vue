@@ -15,7 +15,8 @@ const onScroll = () => {
     nav.value.style.background = "#121212";
     nav.value.style.fontSize = "1rem";
     logoNav.value.style.width = 100;
-  } else {
+  }
+  else {
     nav.value.style.background = "transparent";
     nav.value.style.fontSize = "1.3rem";
     logoNav.value.style.width = 130;
@@ -29,7 +30,8 @@ const scrollHandler = () => {
   if (scroll_top < last_scroll_top) {
     nav.value.classList.remove("scrolled-down");
     nav.value.classList.add("scrolled-up");
-  } else {
+  }
+  else {
     nav.value.classList.remove("scrolled-up");
     nav.value.classList.add("scrolled-down");
   }

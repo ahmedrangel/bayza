@@ -1,3 +1,30 @@
+<script setup>
+const streamMusic = SITE.platforms.filter(el => ["spotify", "soundcloud", "youtube", "apple"].includes(el.id));
+const buyMusic = SITE.platforms.filter(el => ["itunes", "beatport", "amazon-music", "bandcamp"].includes(el.id));
+const contact = SITE.platforms.filter(el => ["spotify", "soundcloud", "youtube"].includes(el.id));
+const socials = [
+  {
+    id: "instagram",
+    url: SITE.socials.instagram,
+    icon: "simple-icons:instagram"
+  },
+  {
+    id: "facebook",
+    url: SITE.socials.facebook,
+    icon: "simple-icons:facebook"
+  },
+  {
+    id: "twitter",
+    url: SITE.socials.twitter,
+    icon: "simple-icons:x"
+  }
+];
+
+for (const s of socials) {
+  contact.push(s);
+}
+</script>
+
 <template>
   <footer id="contact" class="page-footer bg-darkest text-white text-left font-weight-light">
     <div class="container py-4">
@@ -5,49 +32,24 @@
         <div class="col-md-4">
           <h4>Stream Music</h4>
           <ul class="alt">
-            <li><a target="_blank" :href="SITE.platforms.spotify">Spotify</a></li>
-            <li><a target="_blank" :href="SITE.platforms.soundcloud">SoundCloud</a></li>
-            <li><a target="_blank" :href="SITE.platforms.youtube">YouTube</a></li>
-            <li><a target="_blank" :href="SITE.platforms.apple">Apple Music</a></li>
+            <li v-for="(stream, i) of streamMusic" :key="i">
+              <a target="_blank" :href="stream.url">{{ stream.title }}</a>
+            </li>
           </ul>
         </div>
         <div class="col-md-4">
           <h4>Buy Music</h4>
           <ul class="alt">
-            <li>
-              <a target="_blank" :href="SITE.platforms.itunes">iTunes</a>
-            </li>
-            <li>
-              <a target="_blank" :href="SITE.platforms.beatport">Beatport</a>
-            </li>
-            <li>
-              <a target="_blank" :href="SITE.platforms.amazon">Amazon</a>
-            </li>
-            <li>
-              <a target="_blank" :href="SITE.platforms.bandcamp">Bandcamp</a>
+            <li v-for="(buy, i) of buyMusic" :key="i">
+              <a target="_blank" :href="buy.url">{{ buy.title }}</a>
             </li>
           </ul>
         </div>
         <div class="col-md-4">
           <h4>Contact</h4>
           <ul class="icons mb-0">
-            <li class="spotify">
-              <a :href="SITE.platforms.spotify" target="_blank"><Icon class="" name="simple-icons:spotify" /></a>
-            </li>
-            <li class="soundcloud">
-              <a :href="SITE.platforms.soundcloud" target="_blank"><Icon class="" name="simple-icons:soundcloud" /></a>
-            </li>
-            <li class="youtube">
-              <a :href="SITE.platforms.youtube" target="_blank"><Icon class="" name="simple-icons:youtube" /></a>
-            </li>
-            <li class="instagram">
-              <a :href="SITE.socials.instagram" target="_blank"><Icon class="" name="simple-icons:instagram" /></a>
-            </li>
-            <li class="facebook">
-              <a :href="SITE.socials.facebook" target="_blank"><Icon class="" name="simple-icons:facebook" /></a>
-            </li>
-            <li class="twitter">
-              <a :href="SITE.socials.twitter" target="_blank"><Icon class="" name="simple-icons:twitter" /></a>
+            <li v-for="(c, i) of contact" :key="i" :class="c.id">
+              <a :href="c.url" target="_blank"><Icon class="" :name="c.icon" /></a>
             </li>
           </ul>
           <ul class="contact">
@@ -63,8 +65,3 @@
     </div>
   </footer>
 </template>
-<script>
-export default {
-  name: "FooterComponent"
-};
-</script>

@@ -45,6 +45,7 @@ useHead({
   link: [{ rel: "canonical", href: `${SITE.url}/releases/${years}` }]
 });
 </script>
+
 <template>
   <main>
     <section id="releases" class="bg-darkest">
@@ -55,9 +56,9 @@ useHead({
           <div v-for="(tracks, index) of listTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in">
             <div class="item">
               <div class="cover">
-                <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.release}`">
+                <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.id}`">
                   <div class="overflow-hidden">
-                    <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${ tracks.artists } - ${ tracks.title }`">
+                    <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${tracks.artists} - ${tracks.title}`">
                   </div>
                   <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ tracks.title }}</p></small></h5>
                 </NuxtLink>

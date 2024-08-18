@@ -1,7 +1,10 @@
 <script setup>
 definePageMeta({ layout: "site" });
-const { data: results } = await useFetch("/api/fanlinks");
-const data = fanlinks(results.value);
+
+const trackWithFanlinks = tracks.filter(el => el.fanlinks);
+const data = computed (() => {
+  return trackWithFanlinks.sort((a, b) => new Date(b.date) - new Date(a.date));
+});
 
 useSeoMeta({
   title: "Fanlinks | " + SITE.name,
@@ -38,12 +41,12 @@ useHead({
         <div class="row g-2">
           <div v-for="(key, i) in data" :key="i" class="col-6 col-md-4 col-lg-3">
             <div class="card overflow-hidden my-3 p-0 bg-dark border-0 text-white">
-              <img class="img-fluid" :src="key.image_secure">
+              <img class="img-fluid" :src="key.image">
               <div class="p-2 p-lg-3 text-center">
                 <h5>{{ key.title }}</h5>
                 <h6 class="mb-0">{{ key.artists }}</h6>
               </div>
-              <a type="button" target="_blank" class="btn btn-primary btn-lg text-white text-decoration-none" :href="`${SITE.fanlinks}/${i}`">
+              <a type="button" target="_blank" class="btn btn-primary btn-lg text-white text-decoration-none" :href="`${SITE.fanlinks}/${key.fanlinkId || key.id.replace(/-/g, '')}`">
                 View
               </a>
             </div>

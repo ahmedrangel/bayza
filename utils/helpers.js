@@ -23,7 +23,8 @@ export const isBootleg = (year) => {
     return tracks.filter((elem) => {
       return elem.year == year;
     }).sort((a, b) => new Date(b.date) - new Date(a.date));
-  } else if (year === "all-bootlegs") {
+  }
+  else if (year === "all-bootlegs") {
     return tracks.filter((elem) => {
       return elem.link === type;
     }).sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -47,7 +48,7 @@ export const isReleaseBootleg = (year) => {
 
 export const releasePageType = (type) => {
   if (type == "Releases") {
-    return {release_type: "releases", type_page: ""};
+    return { release_type: "releases", type_page: "" };
   }
-  return {release_type: "bootlegs", type_page: "all-bootlegs"};
+  return { release_type: "bootlegs", type_page: "all-bootlegs" };
 };
