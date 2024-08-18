@@ -1,6 +1,7 @@
-import { SITE } from "../utils/site-info.js";
+import { SITE } from "../app/utils/site-info.js";
 
 export default defineNuxtConfig({
+  future: { compatibilityVersion: 4 },
   compatibilityDate: "2024-08-18",
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
