@@ -101,7 +101,7 @@ const featuredVideos = [
   "https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY",
   "https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0",
   "https://www.youtube-nocookie.com/embed/BwKO7sfFVAA"
-]
+];
 </script>
 
 <template>

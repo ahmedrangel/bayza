@@ -60,14 +60,14 @@ export const tracks = [
     id: "mirage",
     genre: "Psytrance",
     fanlinks: {
-      "spotify": "https://open.spotify.com/album/5OnkXwEMSeFykIYCWHNpnm?si",
-      "soundcloud": "https://soundcloud.com/bayza/bayza-mirage",
-      "youtube": "https://youtu.be/PgVybJcDXTA",
-      "itunes": "https://music.apple.com/us/album/mirage-single/1481307126?app=itunes&ls=1",
-      "apple": "https://music.apple.com/us/album/mirage-single/1481307126?app=music&ls=1",
-      "deezer": "https://www.deezer.com/en/album/112510672",
-      "amazon": "https://www.amazon.com/Mirage-Bayza/dp/B07YCMB3WZ/?tag=ton08-20",
-      "download": "https://www.toneden.io/bayza/post/bayza-mirage",
+      spotify: "https://open.spotify.com/album/5OnkXwEMSeFykIYCWHNpnm?si",
+      soundcloud: "https://soundcloud.com/bayza/bayza-mirage",
+      youtube: "https://youtu.be/PgVybJcDXTA",
+      itunes: "https://music.apple.com/us/album/mirage-single/1481307126?app=itunes&ls=1",
+      apple: "https://music.apple.com/us/album/mirage-single/1481307126?app=music&ls=1",
+      deezer: "https://www.deezer.com/en/album/112510672",
+      amazon: "https://www.amazon.com/Mirage-Bayza/dp/B07YCMB3WZ/?tag=ton08-20",
+      download: "https://www.toneden.io/bayza/post/bayza-mirage"
     },
     dark: false
   },
@@ -356,10 +356,10 @@ export const tracks = [
     genre: "Deep House",
     link: "-bootlegs",
     fanlinks: {
-      "soundcloud": "https://soundcloud.com/bayza-bootlegs/still-learning-bayza-bootleg",
-      "youtube": "https://youtu.be/AY-P_38wdfM",
-      "download": "https://www.toneden.io/bayza/post/halsey-still-learning-bayza-bootleg",
-      "bandcamp": "https://bayza.bandcamp.com/track/still-learning-bayza-remix",
+      soundcloud: "https://soundcloud.com/bayza-bootlegs/still-learning-bayza-bootleg",
+      youtube: "https://youtu.be/AY-P_38wdfM",
+      download: "https://www.toneden.io/bayza/post/halsey-still-learning-bayza-bootleg",
+      bandcamp: "https://bayza.bandcamp.com/track/still-learning-bayza-remix"
     },
     dark: false
   },
@@ -381,10 +381,10 @@ export const tracks = [
     genre: "Deep House",
     link: "-bootlegs",
     fanlinks: {
-      "soundcloud": "https://soundcloud.com/bayza-bootlegs/strawberry-shortcake-bayza-bootleg",
-      "youtube": "https://youtu.be/xQHVa1Z6CjI",
-      "download": "https://www.toneden.io/bayza/post/melanie-martinez-strawberry-shortcake-bayza-bootleg",
-      "bandcamp": "https://bayza.bandcamp.com/track/strawberry-shortcake-bayza-remix",
+      soundcloud: "https://soundcloud.com/bayza-bootlegs/strawberry-shortcake-bayza-bootleg",
+      youtube: "https://youtu.be/xQHVa1Z6CjI",
+      download: "https://www.toneden.io/bayza/post/melanie-martinez-strawberry-shortcake-bayza-bootleg",
+      bandcamp: "https://bayza.bandcamp.com/track/strawberry-shortcake-bayza-remix"
     },
     dark: true
   },
@@ -675,10 +675,10 @@ export const tracks = [
     genre: "Deep House",
     link: "-bootlegs",
     fanlinks: {
-      "soundcloud": "https://soundcloud.com/bayza-bootlegs/not-my-baby-bayza-bootleg",
-      "youtube": "https://youtu.be/tio93a68b3Q",
-      "download": "https://www.toneden.io/bayza/post/inna-not-my-baby-bayza-bootleg",
-      "bandcamp": "https://bayza.bandcamp.com/track/not-my-baby-bayza-remix",
+      soundcloud: "https://soundcloud.com/bayza-bootlegs/not-my-baby-bayza-bootleg",
+      youtube: "https://youtu.be/tio93a68b3Q",
+      download: "https://www.toneden.io/bayza/post/inna-not-my-baby-bayza-bootleg",
+      bandcamp: "https://bayza.bandcamp.com/track/not-my-baby-bayza-remix"
     },
     dark: false
   },
@@ -700,10 +700,10 @@ export const tracks = [
     genre: "Deep House",
     link: "-bootlegs",
     fanlinks: {
-      "soundcloud": "https://soundcloud.com/bayza-bootlegs/desert-rose-enta-omri-mashup-bayza-remix",
-      "youtube": "https://youtu.be/ONzjgxLeIw4",
-      "download": "https://www.toneden.io/bayza/post/noel-kharman-desert-rose-mashup-bayza-remix",
-      "bandcamp": "https://bayza.bandcamp.com/track/desert-rose-mashup-bayza-remix",
+      soundcloud: "https://soundcloud.com/bayza-bootlegs/desert-rose-enta-omri-mashup-bayza-remix",
+      youtube: "https://youtu.be/ONzjgxLeIw4",
+      download: "https://www.toneden.io/bayza/post/noel-kharman-desert-rose-mashup-bayza-remix",
+      bandcamp: "https://bayza.bandcamp.com/track/desert-rose-mashup-bayza-remix"
     },
     dark: false
   },
@@ -735,8 +735,8 @@ export const tracks = [
       "amazon": "https://www.amazon.com/-/es/Bayza/dp/B088HJ2LNZ",
       "amazon-music": "https://music.amazon.com/albums/B088HJ2LNZ",
       "tidal": "https://tidal.com/browse/album/141154997",
-      "download":"",
-      "tiktok": "https://vm.tiktok.com/J8Xxgfb",
+      "download": "",
+      "tiktok": "https://vm.tiktok.com/J8Xxgfb"
     },
     dark: false
   },
@@ -767,7 +767,7 @@ export const tracks = [
       "amazon-music": "https://music.amazon.com/albums/B089597J6Q",
       "tidal": "https://tidal.com/browse/album/142790472",
       "download": null,
-      "tiktok": "https://vm.tiktok.com/J8XyVFk",
+      "tiktok": "https://vm.tiktok.com/J8XyVFk"
     },
     dark: false
   },
@@ -800,7 +800,7 @@ export const tracks = [
       "download": "https://www.toneden.io/bayza/post/miracle",
       "tiktok": "https://vm.tiktok.com/JLej2G3",
       "yandex": "https://music.yandex.com/album/11036717",
-      "bandcamp": "https://bayza.bandcamp.com/track/miracle",
+      "bandcamp": "https://bayza.bandcamp.com/track/miracle"
     },
     dark: false
   },
@@ -828,7 +828,7 @@ export const tracks = [
       "deezer": "https://www.deezer.com/en/track/1022970892",
       "amazon": "https://www.amazon.com/dp/B08D5X9L9P/",
       "amazon-music": "https://music.amazon.com/albums/B08D6J76TQ?trackAsin=B08D5X9L9P",
-      "tiktok": "https://vm.tiktok.com/ZMJMVFvQA",
+      "tiktok": "https://vm.tiktok.com/ZMJMVFvQA"
     },
     dark: false
   },
@@ -861,7 +861,7 @@ export const tracks = [
       "anghami": "https://play.anghami.com/song/83466093",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZSuDrpku",
-      "bandcamp": "https://bayza.bandcamp.com/track/solace",
+      "bandcamp": "https://bayza.bandcamp.com/track/solace"
     },
     dark: false
   },
@@ -882,8 +882,8 @@ export const tracks = [
     genre: "Deep House",
     link: "-bootlegs",
     fanlinks: {
-      "youtube": "https://youtu.be/kYNUcObW_H0",
-      "soundcloud": "https://soundcloud.com/bayza-bootlegs/fire-drill-bayza-bootleg"
+      youtube: "https://youtu.be/kYNUcObW_H0",
+      soundcloud: "https://soundcloud.com/bayza-bootlegs/fire-drill-bayza-bootleg"
     },
     dark: false
   },
@@ -914,7 +914,7 @@ export const tracks = [
       "deezer": "https://www.deezer.com/en/album/165690312",
       "tidal": "http://tidal.com/browse/album/151393778",
       "download": "https://www.toneden.io/bayza/post/dimatis-bayza-hold-on-to-me",
-      "tiktok": "https://vm.tiktok.com/ZSmq7e54",
+      "tiktok": "https://vm.tiktok.com/ZSmq7e54"
     },
     dark: false
   },
@@ -944,11 +944,11 @@ export const tracks = [
       "amazon": "https://www.amazon.com/No-Guarantee-Bayza/dp/B08KGYK2C7",
       "deezer": "https://www.deezer.com/en/album/176788332",
       "tidal": "https://tidal.com/browse/album/156986955",
-      "download":"",
+      "download": "",
       "tiktok": "https://vm.tiktok.com/ZSxQbH7v",
       "beatport": "https://www.beatport.com/release/no-guarantee/3143902",
       "yandex": "https://music.yandex.com/album/12300457",
-      "bandcamp": "https://bayza.bandcamp.com/track/no-guarantee",
+      "bandcamp": "https://bayza.bandcamp.com/track/no-guarantee"
     },
     dark: false
   },
@@ -980,7 +980,7 @@ export const tracks = [
       "download": "https://www.toneden.io/bayza/post/reborn",
       "tiktok": "https://vm.tiktok.com/ZSQNYnMg",
       "beatport": null,
-      "bandcamp": "https://bayza.bandcamp.com/track/reborn",
+      "bandcamp": "https://bayza.bandcamp.com/track/reborn"
     },
     dark: false
   },
@@ -1013,7 +1013,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZSCnUvDA",
       "beatport": "https://www.beatport.com/track/lamentos/15125257",
       "yandex": "https://music.yandex.com/album/12395537",
-      "bandcamp": "https://bayza.bandcamp.com/track/lamentos",
+      "bandcamp": "https://bayza.bandcamp.com/track/lamentos"
     },
     dark: false
   },
@@ -1035,10 +1035,10 @@ export const tracks = [
     genre: "Deep House",
     link: "-bootlegs",
     fanlinks: {
-      "soundcloud": "https://soundcloud.com/bayza-bootlegs/lo-vas-a-olvidar-bayza-remix",
-      "youtube": "https://youtu.be/RilJRFTno6M",
-      "download": "https://www.toneden.io/bayza/post/billie-eilish-rosal-a-lo-vas-a-olvidar-bayza-remix",
-      "bandcamp": "https://bayza.bandcamp.com/track/lo-vas-a-olvidar-bayza-remix",
+      soundcloud: "https://soundcloud.com/bayza-bootlegs/lo-vas-a-olvidar-bayza-remix",
+      youtube: "https://youtu.be/RilJRFTno6M",
+      download: "https://www.toneden.io/bayza/post/billie-eilish-rosal-a-lo-vas-a-olvidar-bayza-remix",
+      bandcamp: "https://bayza.bandcamp.com/track/lo-vas-a-olvidar-bayza-remix"
     },
     dark: false
   },
@@ -1071,7 +1071,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZMeRwyCeb",
       "beatport": null,
       "yandex": "https://music.yandex.com/album/13746009",
-      "bandcamp": "https://bayza.bandcamp.com/track/looking-at-you",
+      "bandcamp": "https://bayza.bandcamp.com/track/looking-at-you"
     },
     dark: false
   },
@@ -1093,10 +1093,10 @@ export const tracks = [
     genre: "Deep House",
     link: "-bootlegs",
     fanlinks: {
-      "soundcloud": "https://soundcloud.com/bayza-bootlegs/my-head-my-heart-bayza-remix",
-      "youtube": "https://youtu.be/eKGxQxm9FUA",
-      "download": "https://www.toneden.io/bayza/post/ava-max-my-head-my-heart-bayza-remix",
-      "bandcamp": "https://bayza.bandcamp.com/track/my-head-my-heart-bayza-remix",
+      soundcloud: "https://soundcloud.com/bayza-bootlegs/my-head-my-heart-bayza-remix",
+      youtube: "https://youtu.be/eKGxQxm9FUA",
+      download: "https://www.toneden.io/bayza/post/ava-max-my-head-my-heart-bayza-remix",
+      bandcamp: "https://bayza.bandcamp.com/track/my-head-my-heart-bayza-remix"
     },
     dark: false
   },
@@ -1130,7 +1130,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZMermEXNJ",
       "beatport": "https://www.beatport.com/track/without-you/14942522",
       "yandex": "https://music.yandex.com/album/13955690",
-      "bandcamp": "https://bayza.bandcamp.com/track/without-you",
+      "bandcamp": "https://bayza.bandcamp.com/track/without-you"
     },
     dark: false
   },
@@ -1164,7 +1164,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZMey7V76P/",
       "beatport": "https://www.beatport.com/track/you-said-goodbye-feat-giulia-mihai/15023484",
       "yandex": "https://music.yandex.com/album/14306777",
-      "bandcamp": "https://bayza.bandcamp.com/track/you-said-goodbye",
+      "bandcamp": "https://bayza.bandcamp.com/track/you-said-goodbye"
     },
     dark: false
   },
@@ -1197,7 +1197,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZMef9mkYr",
       "beatport": "https://www.beatport.com/track/diamante/15075125",
       "yandex": "https://music.yandex.com/album/14463629/track/79531770",
-      "bandcamp": "https://bayza.bandcamp.com/track/diamante-bayza-remix",
+      "bandcamp": "https://bayza.bandcamp.com/track/diamante-bayza-remix"
     },
     dark: false
   },
@@ -1230,7 +1230,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZMefdCFar",
       "beatport": "https://www.beatport.com/track/i-dont-know/15075129",
       "yandex": "https://music.yandex.com/album/14463629/track/79531772",
-      "bandcamp": "https://bayza.bandcamp.com/track/i-dont-know-bayza-remix",
+      "bandcamp": "https://bayza.bandcamp.com/track/i-dont-know-bayza-remix"
     },
     dark: false
   },
@@ -1263,7 +1263,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZMeHNh8sb",
       "beatport": null,
       "yandex": "https://music.yandex.com/album/14636288",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: true
   },
@@ -1296,7 +1296,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZMexphPbu",
       "beatport": null,
       "yandex": "https://music.yandex.com/album/14788954",
-      "bandcamp": "https://bayza.bandcamp.com/track/feels",
+      "bandcamp": "https://bayza.bandcamp.com/track/feels"
     },
     dark: false
   },
@@ -1330,7 +1330,7 @@ export const tracks = [
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMdfURKan",
       "beatport": "https://www.beatport.com/track/take-me-home/15341109",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1364,7 +1364,7 @@ export const tracks = [
       "tiktok": null,
       "beatport": null,
       "yandex": null,
-      "bandcamp": "https://bayza.bandcamp.com/track/thumbs-bayza-remix",
+      "bandcamp": "https://bayza.bandcamp.com/track/thumbs-bayza-remix"
     },
     dark: false
   },
@@ -1397,7 +1397,7 @@ export const tracks = [
       "tiktok": "https://vm.tiktok.com/ZM8cdkf1a",
       "beatport": "https://www.beatport.com/track/pirhan/16031083",
       "yandex": null,
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: true
   },
@@ -1431,7 +1431,7 @@ export const tracks = [
       "download": null,
       "tiktok": null,
       "yandex": "https://music.yandex.com/album/19854446/track/96764348",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1465,7 +1465,7 @@ export const tracks = [
       "download": null,
       "tiktok": null,
       "yandex": "https://music.yandex.com/album/19854446/track/96764347",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1499,7 +1499,7 @@ export const tracks = [
       "tiktok": null,
       "beatport": "https://www.beatport.com/track/my-head-my-heart/16170771",
       "yandex": "https://music.yandex.com/album/19854446/track/96764346",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1533,7 +1533,7 @@ export const tracks = [
       "tiktok": null,
       "beatport": "https://www.beatport.com/track/lo-vas-a-olvidar/16170768",
       "yandex": "https://music.yandex.com/album/19854446/track/96764345",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1567,7 +1567,7 @@ export const tracks = [
       "tiktok": null,
       "beatport": "https://www.beatport.com/track/thumbs/16170766",
       "yandex": "https://music.yandex.com/album/19854446/track/96764344",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1601,7 +1601,7 @@ export const tracks = [
       "tiktok": null,
       "beatport": "https://www.beatport.com/track/passages/16170765",
       "yandex": "https://music.yandex.com/album/19854446/track/96764343",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1637,7 +1637,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/209511422",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMLdt7P6q",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1673,7 +1673,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/215313561",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMLBhQ3tW",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1699,7 +1699,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/track/215313572",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMLBhCxMa",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1735,7 +1735,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/225585088",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMLWYV8Lb/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: true
   },
@@ -1771,7 +1771,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/232005755",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMN8aHhwT/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1807,7 +1807,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/235798699",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMNUstycp/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: true
   },
@@ -1843,7 +1843,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/237512259",
       "download": null,
       "tiktok": null,
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1879,7 +1879,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/244466774",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMN34omnp/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: true
   },
@@ -1915,7 +1915,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/256422059",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMFUjckkU/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1951,7 +1951,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/262661229",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMFbtcG6P/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -1987,7 +1987,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/271627779",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZMYaBDVVL/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -2023,7 +2023,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/album/292450765",
       "download": null,
       "tiktok": null,
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -2059,7 +2059,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/track/305333031",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZM2sMedV6/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -2095,7 +2095,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/track/305333030",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZM2sM6V8A/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -2131,7 +2131,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/track/305333029",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZM2sMfvXF/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -2167,7 +2167,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/track/305333028",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZM2sMAh8W/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -2203,7 +2203,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/track/305333027",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZM2sMjhU5/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
@@ -2239,7 +2239,7 @@ export const tracks = [
       "tidal": "https://tidal.com/browse/track/305333026",
       "download": null,
       "tiktok": "https://vm.tiktok.com/ZM2sMykq7/",
-      "bandcamp": null,
+      "bandcamp": null
     },
     dark: false
   },
