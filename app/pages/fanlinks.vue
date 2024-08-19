@@ -2,7 +2,7 @@
 definePageMeta({ layout: "site" });
 
 const trackWithFanlinks = tracks.filter(el => el.fanlinks);
-const data = trackWithFanlinks.sort((a, b) => new Date(b.date) - new Date(a.date));
+const data = trackWithFanlinks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now());
 
 useSeoMeta({
   title: "Fanlinks | " + SITE.name,

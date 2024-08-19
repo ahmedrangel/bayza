@@ -3,7 +3,7 @@ import { tracks } from "~/utils/releases";
 
 export default defineEventHandler(() => {
   const routeRules = [] as Record<string, any>;
-  for (const t of tracks) {
+  for (const t of tracks.filter(el => Number(new Date(el.date)) <= Number(Date.now()))) {
     if (!t.year || !t.id) continue;
     const rules = [`/releases/${t.year}${releaseType(t.link)}/${t.id}`];
     for (const r of rules) {

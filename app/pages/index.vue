@@ -80,20 +80,12 @@ const lastTrack = computed(() => {
   return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
 });
 
-const upcoming = [
-  /*
-  {
-    title: "Redemption",
-    cover: "redemption",
-    artists: "Bayza",
-    year: 2024,
-    date: "2024-05-17 00:00:00"
-  }
-  */
-];
+const upcoming = computed(() => {
+  return tracks.filter(el => new Date(el.date) > Date.now());
+});
 
 const indexTracks = computed (() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12 - upcoming.length);
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12 - upcoming.value.length).filter(el => new Date(el.date) <= Date.now());
 });
 
 const featuredVideos = [

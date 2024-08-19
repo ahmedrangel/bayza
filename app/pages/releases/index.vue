@@ -28,7 +28,7 @@ useHead({
 });
 
 const allTracks = computed(() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date));
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now());
 });
 </script>
 

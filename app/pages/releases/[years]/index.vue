@@ -5,7 +5,7 @@ const { params } = useRoute();
 const { years } = params;
 
 const listTracks = computed(() => {
-  return isBootleg(years);
+  return isBootleg(years).filter(el => new Date(el.date) <= Date.now());
 });
 
 if (!listTracks.value[0]) {
