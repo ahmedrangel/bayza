@@ -77,7 +77,7 @@ useHead({
 });
 
 const lastTrack = computed(() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now())[0];
 });
 
 const upcoming = computed(() => {
