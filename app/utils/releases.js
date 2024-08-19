@@ -1,6 +1,25 @@
 export const tracks = [
   {
     album: null,
+    artists: "Bayza, Dimatis",
+    cover: "sojourn",
+    dark: false,
+    date: "2024-08-30 00:00:00",
+    description: null,
+    duration: "3:21",
+    fanlink: "lnk.bayzamusic.com/Sojourn",
+    fanlinks: {},
+    genre: "Chill",
+    id: "sojourn",
+    image: "/images/releases/2024/sojourn.jpg",
+    label: null,
+    title: "Sojourn",
+    type: "Releases",
+    video: null,
+    year: 2024
+  },
+  {
+    album: null,
     artists: "Bayza",
     cover: "redemption",
     dark: false,
