@@ -10,7 +10,7 @@ const releaseTrack = computed(() => {
 });
 
 const moreTracks = computed(() => {
-  return isReleaseBootleg(years).slice(0, 8);
+  return isReleaseBootleg(years).filter(el => new Date(el.date) <= Date.now()).slice(0, 8);
 });
 
 const url = `${SITE.url}/releases/${years}/${release}`;

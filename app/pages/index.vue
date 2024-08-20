@@ -85,7 +85,7 @@ const upcoming = computed(() => {
 });
 
 const indexTracks = computed (() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 12 - upcoming.value.length).filter(el => new Date(el.date) <= Date.now());
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now()).slice(0, 12 - upcoming.value.length);
 });
 
 const featuredVideos = [
