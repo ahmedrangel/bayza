@@ -41,7 +41,7 @@ useSeoMeta({
   ogUrl: `${SITE.url}/releases/${years}/${release}`,
   ogType: "website",
   ogTitle: title,
-  ogSieName: SITE.name,
+  ogSiteName: SITE.name,
   ogDescription: description,
   ogImage: imageUrl,
   ogImageWidth: 500,
