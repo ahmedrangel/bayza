@@ -36,7 +36,8 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxtjs/sitemap",
     "nuxt-aos",
-    "@nuxt/eslint"
+    "@nuxt/eslint",
+    "@nuxt/scripts"
   ],
   icon: { mode: "svg", serverBundle: "remote" },
   features: {

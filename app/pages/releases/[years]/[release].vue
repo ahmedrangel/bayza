@@ -74,12 +74,8 @@ const platformMatch = (name) => {
       <div class="container text-secondary text-center pt-3 pb-4 px-3">
         <h3 class="mt-5 text-capitalize text-white">{{ releaseTrack.title }}</h3>
         <h4 class="font-weight-light mb-0">{{ releaseTrack.artists }}</h4>
-        <div v-if="releaseTrack.video" id="reproductor" class="me-5 ms-5 px-5" data-aos="fade-in">
-          <div class="text-center py-3">
-            <div class="ratio ratio-16x9">
-              <iframe class="rounded" width="1280" height="720" :src="`https://www.youtube-nocookie.com/embed/${releaseTrack.video}`" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen />
-            </div>
-          </div>
+        <div v-if="releaseTrack.video" id="reproductor" class="mx-5 px-5 pt-3" data-aos="fade-in">
+          <VideoContainer :video-id="releaseTrack.video" />
         </div>
         <div id="track-info" class="row mt-4 mb-4 pt-3 bg-dark">
           <div class="col-12 col-lg-5 info text-center mb-3 px-3">

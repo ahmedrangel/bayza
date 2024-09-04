@@ -89,10 +89,10 @@ const indexTracks = computed (() => {
 });
 
 const featuredVideos = [
-  "https://www.youtube-nocookie.com/embed/nQ0A1WWxuFY",
-  "https://www.youtube-nocookie.com/embed/HRrD3Mj3sEY",
-  "https://www.youtube-nocookie.com/embed/-vx3oZ4j4h0",
-  "https://www.youtube-nocookie.com/embed/BwKO7sfFVAA"
+  "nQ0A1WWxuFY",
+  "HRrD3Mj3sEY",
+  "-vx3oZ4j4h0",
+  "BwKO7sfFVAA"
 ];
 </script>
 
@@ -201,9 +201,7 @@ const featuredVideos = [
         <h5 class="font-weight-light">Featured youtube videos</h5>
         <div class="row text-white">
           <div v-for="(v, i) of featuredVideos" :key="i" class="col-lg-6 mt-4" data-aos="fade-in">
-            <div class="ratio ratio-16x9">
-              <iframe class="rounded" width="1280" height="720" :src="v" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen />
-            </div>
+            <VideoContainer :video-id="v" />
           </div>
         </div>
       </div>
