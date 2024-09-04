@@ -24,7 +24,7 @@ export const tracks = [
       "tiktok": null,
       "vk": null,
       "yandex": null,
-      "youtube": null
+      "youtube": "https://www.youtube.com/watch?v=Rq0tw63-JjU"
     },
     genre: "Chill",
     id: "sojourn",
@@ -32,7 +32,7 @@ export const tracks = [
     label: null,
     title: "Sojourn",
     type: "Releases",
-    video: null,
+    video: "Rq0tw63-JjU",
     year: 2024
   },
   {
