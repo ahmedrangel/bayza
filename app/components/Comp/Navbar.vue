@@ -34,6 +34,20 @@ onMounted(() => {
   if (nav.value) window.addEventListener("scroll", scrollHandler);
   window.onscroll = () => onScroll();
 });
+
+const releasesYearsDropDown = [];
+const yearMax = Math.max(...tracks.filter(el => el.year).map(el => el.year));
+const yearMin = Math.min(...tracks.filter(el => el.year).map(el => el.year));
+
+for (let y = yearMax; y >= yearMin; y--) {
+  releasesYearsDropDown.push({ title: y, href: `/releases/${y}` });
+}
+
+const releasesDropDown = [
+  { title: "All", href: "/releases" },
+  { title: "Bootlegs", href: "/releases/bootlegs" },
+  ...releasesYearsDropDown
+];
 </script>
 
 <template>
@@ -52,15 +66,9 @@ onMounted(() => {
         <li class="nav-item dropdown">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Releases</span>
           <div class="dropdown-menu">
-            <NuxtLink class="dropdown-item" to="/releases" @click="collapseNav()">All</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/bootlegs" @click="collapseNav()">Bootlegs</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2024" @click="collapseNav()">2024</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2023" @click="collapseNav()">2023</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2022" @click="collapseNav()">2022</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2021" @click="collapseNav()">2021</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2020" @click="collapseNav()">2020</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2019" @click="collapseNav()">2019</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/2018" @click="collapseNav()">2018</NuxtLink>
+            <template v-for="(r, i) of releasesDropDown" :key="i">
+              <NuxtLink class="dropdown-item" :to="r.href" @click="collapseNav()">{{ r.title }}</NuxtLink>
+            </template>
           </div>
         </li>
         <li class="nav-item" @click="collapseNav()">
