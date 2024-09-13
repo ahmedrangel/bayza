@@ -31,7 +31,7 @@ export const tracks = [
     image: "/images/releases/2024/sojourn.jpg",
     label: null,
     title: "Sojourn",
-    type: "Releases",
+    type: "release",
     video: "Rq0tw63-JjU",
     year: 2024
   },
@@ -67,7 +67,7 @@ export const tracks = [
     image: "/images/releases/2024/redemption.jpg",
     label: null,
     title: "Redemption",
-    type: "Releases",
+    type: "release",
     video: "bk_08D0S2fI",
     year: 2024
   },
@@ -103,7 +103,7 @@ export const tracks = [
     image: "/images/releases/2023/obsession.jpg",
     label: "DeepShine Records",
     title: "Obsession",
-    type: "Releases",
+    type: "release",
     video: "KNmD8d2bnp0",
     year: 2023
   },
@@ -139,7 +139,7 @@ export const tracks = [
     image: "/images/releases/2023/now-or-never.jpg",
     label: "DeepShine Records",
     title: "Now Or Never",
-    type: "Releases",
+    type: "release",
     video: "CS-AQefwkRk",
     year: 2023
   },
@@ -175,7 +175,7 @@ export const tracks = [
     image: "/images/releases/2023/breeze.jpg",
     label: null,
     title: "Breeze",
-    type: "Releases",
+    type: "release",
     video: "vIVwrWVBA2E",
     year: 2023
   },
@@ -211,7 +211,7 @@ export const tracks = [
     image: "/images/releases/2023/breeze.jpg",
     label: null,
     title: "Immortal Love",
-    type: "Releases",
+    type: "release",
     video: "16xwnEkR8tA",
     year: 2023
   },
@@ -247,7 +247,7 @@ export const tracks = [
     image: "/images/releases/2023/breeze.jpg",
     label: null,
     title: "Eclipse",
-    type: "Releases",
+    type: "release",
     video: "LGAtjLR89dU",
     year: 2023
   },
@@ -283,7 +283,7 @@ export const tracks = [
     image: "/images/releases/2023/breeze.jpg",
     label: null,
     title: "Zenith",
-    type: "Releases",
+    type: "release",
     video: "h6rcysVZIBI",
     year: 2023
   },
@@ -319,7 +319,7 @@ export const tracks = [
     image: "/images/releases/2023/breeze.jpg",
     label: null,
     title: "Fiesta",
-    type: "Releases",
+    type: "release",
     video: "uXM19g7wyFk",
     year: 2023
   },
@@ -355,7 +355,7 @@ export const tracks = [
     image: "/images/releases/2023/breeze.jpg",
     label: null,
     title: "Awakening",
-    type: "Releases",
+    type: "release",
     video: "tSEUdjq4dzs",
     year: 2023
   },
@@ -391,7 +391,7 @@ export const tracks = [
     image: "/images/releases/2023/light-comes-up.jpg",
     label: "Twins Girls Records",
     title: "Light Comes Up",
-    type: "Releases",
+    type: "release",
     video: "uesHdgS0o04",
     year: 2023
   },
@@ -427,7 +427,7 @@ export const tracks = [
     image: "/images/releases/2023/madhouse.jpg",
     label: "The Night Drive",
     title: "Madhouse",
-    type: "Releases",
+    type: "release",
     video: "Hj_kBReLOQA",
     year: 2023
   },
@@ -463,7 +463,7 @@ export const tracks = [
     image: "/images/releases/2022/lunchbox-friends.jpg",
     label: "Gangster City",
     title: "Lunchbox Friends",
-    type: "Releases",
+    type: "release",
     video: "HRrD3Mj3sEY",
     year: 2022
   },
@@ -499,7 +499,7 @@ export const tracks = [
     image: "/images/releases/2022/true-lovers.jpg",
     label: "Mark Music Records",
     title: "True Lovers",
-    type: "Releases",
+    type: "release",
     video: "_UNJ54LGdKc",
     year: 2022
   },
@@ -535,7 +535,7 @@ export const tracks = [
     image: "/images/releases/2022/on-your-mind.jpg",
     label: "Different Twins/Twin Girls Records",
     title: "On Your Mind",
-    type: "Releases",
+    type: "release",
     video: "0fdvG4GRRFA",
     year: 2022
   },
@@ -571,7 +571,7 @@ export const tracks = [
     image: "/images/releases/2022/why-cant-it-be.jpg",
     label: "Storm Music Group",
     title: "Why Can't It Be With Me",
-    type: "Releases",
+    type: "release",
     video: "BRRXzu2Q1-g",
     year: 2022
   },
@@ -607,7 +607,7 @@ export const tracks = [
     image: "/images/releases/2022/young-free.jpg",
     label: "Miami Beats",
     title: "Young & Free",
-    type: "Releases",
+    type: "release",
     video: "-vVutcvq5I4",
     year: 2022
   },
@@ -643,7 +643,7 @@ export const tracks = [
     image: "/images/releases/2022/show-me-what-you-feel.jpg",
     label: "Melodicity Records",
     title: "Show Me What You Feel",
-    type: "Releases",
+    type: "release",
     video: "trdqaqZCVEU",
     year: 2022
   },
@@ -679,7 +679,7 @@ export const tracks = [
     image: "/images/releases/2022/pieces.jpg",
     label: null,
     title: "Pieces",
-    type: "Releases",
+    type: "release",
     video: "VTscrLkd20s",
     year: 2022
   },
@@ -715,7 +715,7 @@ export const tracks = [
     image: "/images/releases/2022/call-out.jpg",
     label: null,
     title: "Call Out",
-    type: "Releases",
+    type: "release",
     video: "vlU7crlYW4I",
     year: 2022
   },
@@ -777,7 +777,7 @@ export const tracks = [
     image: "/images/releases/2022/im-falling.jpg",
     label: "DeepShine Records",
     title: "I'm Falling",
-    type: "Releases",
+    type: "release",
     video: "EZodqty3HLA",
     year: 2022
   },
@@ -811,7 +811,7 @@ export const tracks = [
     image: "/images/releases/2021/passages.jpg",
     label: null,
     title: "Passages",
-    type: "Releases",
+    type: "release",
     video: "gqnAPRtTnSs",
     year: 2021
   },
@@ -845,7 +845,7 @@ export const tracks = [
     image: "/images/releases/2021/passages.jpg",
     label: null,
     title: "Thumbs - Instrumental",
-    type: "Releases",
+    type: "release",
     video: "9u_UwD-WpSE",
     year: 2021
   },
@@ -879,7 +879,7 @@ export const tracks = [
     image: "/images/releases/2021/passages.jpg",
     label: null,
     title: "Lo Vas A Olvidar - Instrumental",
-    type: "Releases",
+    type: "release",
     video: "VXXsLZm3HVc",
     year: 2021
   },
@@ -913,7 +913,7 @@ export const tracks = [
     image: "/images/releases/2021/passages.jpg",
     label: null,
     title: "My Head & My Heart - Instrumental",
-    type: "Releases",
+    type: "release",
     video: "JaN96BTWzZo",
     year: 2021
   },
@@ -947,7 +947,7 @@ export const tracks = [
     image: "/images/releases/2021/passages.jpg",
     label: null,
     title: "Not My Baby - Instrumental",
-    type: "Releases",
+    type: "release",
     video: "KIP1Wa8lEsk",
     year: 2021
   },
@@ -981,7 +981,7 @@ export const tracks = [
     image: "/images/releases/2021/passages.jpg",
     label: null,
     title: "Desert Rose - Instrumental",
-    type: "Releases",
+    type: "release",
     video: "h1aLkuT0ctI",
     year: 2021
   },
@@ -1014,7 +1014,7 @@ export const tracks = [
     image: "/images/releases/2021/pirhan.jpg",
     label: "Ario Records",
     title: "Pirhan",
-    type: "Releases",
+    type: "release",
     video: "_HNN88li9kI",
     year: 2021
   },
@@ -1046,9 +1046,8 @@ export const tracks = [
     id: "thumbs-remix",
     image: "/images/releases/2021/thumbs.jpg",
     label: null,
-    link: "-bootlegs",
     title: "Thumbs (Bayza Remix)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "SPlamGgkl00",
     year: 2021
   },
@@ -1082,7 +1081,7 @@ export const tracks = [
     image: "/images/releases/2021/take-me-home.jpg",
     label: "The Night Drive",
     title: "Take Me Home",
-    type: "Releases",
+    type: "release",
     video: "BwKO7sfFVAA",
     year: 2021
   },
@@ -1115,7 +1114,7 @@ export const tracks = [
     image: "/images/releases/2021/feels.jpg",
     label: null,
     title: "Feels",
-    type: "Releases",
+    type: "release",
     video: "hWhQJKLyyss",
     year: 2021
   },
@@ -1148,7 +1147,7 @@ export const tracks = [
     image: "/images/releases/2021/feel-so-lonely.jpg",
     label: "FRQNCY",
     title: "Feel So Lonely",
-    type: "Releases",
+    type: "release",
     video: "q-UK_m9rq3Q",
     year: 2021
   },
@@ -1182,7 +1181,7 @@ export const tracks = [
     image: "/images/releases/2021/you-said-goodbye.jpg",
     label: "DeepShine Records",
     title: "You Said Goodbye",
-    type: "Releases",
+    type: "release",
     video: "5Pt9qzAqVxA",
     year: 2021
   },
@@ -1215,7 +1214,7 @@ export const tracks = [
     image: "/images/releases/2021/otilia-remix.jpg",
     label: "JHaps Records",
     title: "Diamante (Bayza Remix)",
-    type: "Releases",
+    type: "release",
     video: "xjR_d8Aw8QY",
     year: 2021
   },
@@ -1248,7 +1247,7 @@ export const tracks = [
     image: "/images/releases/2021/otilia-remix.jpg",
     label: "JHaps Records",
     title: "I Don't Know (Bayza Remix)",
-    type: "Releases",
+    type: "release",
     video: "gfxe7vJYbKo",
     year: 2021
   },
@@ -1282,7 +1281,7 @@ export const tracks = [
     image: "/images/releases/2021/without-you.jpg",
     label: null,
     title: "Without You",
-    type: "Releases",
+    type: "release",
     video: "Ncxok5G7yOA",
     year: 2021
   },
@@ -1305,9 +1304,8 @@ export const tracks = [
     id: "my-head-my-heart",
     image: "/images/releases/2021/my-head-my-heart.jpg",
     label: null,
-    link: "-bootlegs",
     title: "My Head & My Heart (Bayza Remix)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "eKGxQxm9FUA",
     year: 2021
   },
@@ -1340,7 +1338,7 @@ export const tracks = [
     image: "/images/releases/2021/looking-at-you.jpg",
     label: null,
     title: "Looking At You",
-    type: "Releases",
+    type: "release",
     video: "Yd5LZuOyCpg",
     year: 2021
   },
@@ -1363,9 +1361,8 @@ export const tracks = [
     id: "lo-vas-a-olvidar",
     image: "/images/releases/2021/lo-vas-a-olvidar.jpg",
     label: null,
-    link: "-bootlegs",
     title: "Lo Vas A Olvidar (Bayza Remix)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "RilJRFTno6M",
     year: 2021
   },
@@ -1398,7 +1395,7 @@ export const tracks = [
     image: "/images/releases/2020/lamentos.jpg",
     label: null,
     title: "Lamentos",
-    type: "Releases",
+    type: "release",
     video: "nQ0A1WWxuFY",
     year: 2020
   },
@@ -1430,7 +1427,7 @@ export const tracks = [
     image: "/images/releases/2020/reborn.jpg",
     label: null,
     title: "Reborn",
-    type: "Releases",
+    type: "release",
     video: "Uqm00tl0nKQ",
     year: 2020
   },
@@ -1464,7 +1461,7 @@ export const tracks = [
     image: "/images/releases/2020/no-guarantee.jpg",
     label: "DeepShine Records",
     title: "No Guarantee",
-    type: "Releases",
+    type: "release",
     video: "YPLPc6xGWK4",
     year: 2020
   },
@@ -1495,7 +1492,7 @@ export const tracks = [
     image: "/images/releases/2020/hold-on-to-me.jpg",
     label: null,
     title: "Hold On To Me",
-    type: "Releases",
+    type: "release",
     video: "N2sZKeX_xGI",
     year: 2020
   },
@@ -1515,9 +1512,8 @@ export const tracks = [
     id: "fire-drill",
     image: "/images/releases/2020/fire-drill.jpg",
     label: null,
-    link: "-bootlegs",
     title: "Fire Drill (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "kYNUcObW_H0",
     year: 2020
   },
@@ -1550,7 +1546,7 @@ export const tracks = [
     image: "/images/releases/2020/solace.jpg",
     label: "PalmTherapySounds",
     title: "Solace",
-    type: "Releases",
+    type: "release",
     video: "oYqe05-Aha0",
     year: 2020
   },
@@ -1578,7 +1574,7 @@ export const tracks = [
     image: "/images/releases/2020/make-believe-remix.jpg",
     label: null,
     title: "Make Believe (Bayza Remix)",
-    type: "Releases",
+    type: "release",
     video: "MjaLp6MNm4g",
     year: 2020
   },
@@ -1611,7 +1607,7 @@ export const tracks = [
     image: "/images/releases/2020/miracle.jpg",
     label: null,
     title: "Miracle",
-    type: "Releases",
+    type: "release",
     video: "-vx3oZ4j4h0",
     year: 2020
   },
@@ -1642,7 +1638,7 @@ export const tracks = [
     image: "/images/releases/2020/alone.jpg",
     label: "DeepShine Records",
     title: "Alone",
-    type: "Releases",
+    type: "release",
     video: "FKTMZBDzgD8",
     year: 2020
   },
@@ -1675,7 +1671,7 @@ export const tracks = [
     image: "/images/releases/2020/everythingiwanted.jpg",
     label: "One Seven Music / FRQNCY",
     title: "Everything I Wanted",
-    type: "Releases",
+    type: "release",
     video: "IX2VJo9E_Sw",
     year: 2020
   },
@@ -1698,9 +1694,8 @@ export const tracks = [
     id: "desert-rose-enta-omri",
     image: "/images/releases/2020/noel-remix.jpg",
     label: null,
-    link: "-bootlegs",
     title: "Desert Rose / انت عمري Mashup (Bayza Remix)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "ONzjgxLeIw4",
     year: 2020
   },
@@ -1723,9 +1718,8 @@ export const tracks = [
     id: "not-my-baby",
     image: "/images/releases/2020/inna-remix.jpg",
     label: null,
-    link: "-bootlegs",
     title: "Not My Baby (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "tio93a68b3Q",
     year: 2020
   },
@@ -1740,7 +1734,7 @@ export const tracks = [
     id: "desires",
     label: "DeepShine Records",
     title: "Desires",
-    type: "Releases",
+    type: "release",
     video: "9y9Ja8OCfe4",
     year: 2020
   },
@@ -1755,7 +1749,7 @@ export const tracks = [
     id: "exaltation",
     label: "DeepShine Records",
     title: "Exaltation",
-    type: "Releases",
+    type: "release",
     video: "yV5G9v3DooE",
     year: 2020
   },
@@ -1778,9 +1772,8 @@ export const tracks = [
     id: "still-learning",
     image: "/images/releases/2020/halsey-remix.jpg",
     label: null,
-    link: "-bootlegs",
     title: "Still Learning (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "AY-P_38wdfM",
     year: 2020
   },
@@ -1795,7 +1788,7 @@ export const tracks = [
     id: "serenity",
     label: null,
     title: "Serenity",
-    type: "Releases",
+    type: "release",
     video: "OMfdAwpKIsc",
     year: 2020
   },
@@ -1818,9 +1811,8 @@ export const tracks = [
     id: "strawberry-shortcake",
     image: "/images/releases/2020/melanie-martinez-remix.jpg",
     label: null,
-    link: "-bootlegs",
     title: "Strawberry Shortcake (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "xQHVa1Z6CjI",
     year: 2020
   },
@@ -1835,7 +1827,7 @@ export const tracks = [
     id: "blossom",
     label: "DeepShine Records",
     title: "Blossom",
-    type: "Releases",
+    type: "release",
     video: "oNvLKifFX20",
     year: 2019
   },
@@ -1850,7 +1842,7 @@ export const tracks = [
     id: "astral",
     label: "PalmTherapySounds Records",
     title: "Astral",
-    type: "Releases",
+    type: "release",
     video: "japf2Vj4Ohw",
     year: 2019
   },
@@ -1877,7 +1869,7 @@ export const tracks = [
     image: "/images/releases/2019/mirage.jpg",
     label: "Bounce United",
     title: "Mirage",
-    type: "Releases",
+    type: "release",
     video: "PgVybJcDXTA",
     year: 2019
   },
@@ -1890,9 +1882,8 @@ export const tracks = [
     genre: "Deep House",
     id: "look-at-her-now",
     label: null,
-    link: "-bootlegs",
     title: "Look At Her Now (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "qnGaaOWdnVk",
     year: 2019
   },
@@ -1905,9 +1896,8 @@ export const tracks = [
     genre: "Deep House",
     id: "why-do-you-love-me",
     label: null,
-    link: "-bootlegs",
     title: "Why Do You Love Me (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "kKDNhycASXw",
     year: 2019
   },
@@ -1923,7 +1913,7 @@ export const tracks = [
     id: "genuine",
     label: null,
     title: "Genuine",
-    type: "Releases",
+    type: "release",
     video: "CjtFVqtpBVI",
     year: 2019
   },
@@ -1939,7 +1929,7 @@ export const tracks = [
     id: "delirio",
     label: null,
     title: "Delirio",
-    type: "Releases",
+    type: "release",
     video: "fc2jg7iYBdw",
     year: 2019
   },
@@ -1955,7 +1945,7 @@ export const tracks = [
     id: "romance",
     label: null,
     title: "Romance",
-    type: "Releases",
+    type: "release",
     video: "uZ3JR7YBLPM",
     year: 2019
   },
@@ -1971,7 +1961,7 @@ export const tracks = [
     id: "prisma",
     label: null,
     title: "Prisma",
-    type: "Releases",
+    type: "release",
     video: "dZi-BEdfM8M",
     year: 2019
   },
@@ -1987,7 +1977,7 @@ export const tracks = [
     id: "love",
     label: null,
     title: "Love",
-    type: "Releases",
+    type: "release",
     video: "ufP4BtJzNxY",
     year: 2019
   },
@@ -2003,7 +1993,7 @@ export const tracks = [
     id: "nada",
     label: null,
     title: "Nada",
-    type: "Releases",
+    type: "release",
     video: "Np8ToFBCmS8",
     year: 2019
   },
@@ -2019,7 +2009,7 @@ export const tracks = [
     id: "fell",
     label: null,
     title: "Fell",
-    type: "Releases",
+    type: "release",
     video: "1_5Gmo63J3o",
     year: 2019
   },
@@ -2035,7 +2025,7 @@ export const tracks = [
     id: "crescent",
     label: null,
     title: "Crescent",
-    type: "Releases",
+    type: "release",
     video: "GCum26Y36j0",
     year: 2019
   },
@@ -2051,7 +2041,7 @@ export const tracks = [
     id: "praise",
     label: null,
     title: "Praise",
-    type: "Releases",
+    type: "release",
     video: "fErm4Re2Nkw",
     year: 2019
   },
@@ -2067,7 +2057,7 @@ export const tracks = [
     id: "dive",
     label: null,
     title: "Dive",
-    type: "Releases",
+    type: "release",
     video: "0XBB7YWvHYw",
     year: 2019
   },
@@ -2083,7 +2073,7 @@ export const tracks = [
     id: "arousal",
     label: null,
     title: "Arousal",
-    type: "Releases",
+    type: "release",
     video: "HFu3uiyun7Y",
     year: 2019
   },
@@ -2099,7 +2089,7 @@ export const tracks = [
     id: "over-you",
     label: null,
     title: "Over You",
-    type: "Releases",
+    type: "release",
     video: "qOc0mwJ8KrA",
     year: 2019
   },
@@ -2115,7 +2105,7 @@ export const tracks = [
     id: "zephyr",
     label: null,
     title: "Zephyr",
-    type: "Releases",
+    type: "release",
     video: "grVCfUkqjLs",
     year: 2019
   },
@@ -2128,9 +2118,8 @@ export const tracks = [
     genre: "Deep House",
     id: "senorita",
     label: null,
-    link: "-bootlegs",
     title: "Señorita (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "siGFaPVbS3A",
     year: 2019
   },
@@ -2145,7 +2134,7 @@ export const tracks = [
     id: "majestic",
     label: "Nelation",
     title: "Majestic",
-    type: "Releases",
+    type: "release",
     video: "Tfphg1sn1jQ",
     year: 2019
   },
@@ -2158,9 +2147,8 @@ export const tracks = [
     genre: "Deep House",
     id: "i-fell-in-love-with-the-devil",
     label: null,
-    link: "-bootlegs",
     title: "I Fell In Love With The Devil (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "BWc4wJ7_1dA",
     year: 2019
   },
@@ -2173,9 +2161,8 @@ export const tracks = [
     genre: "Deep House",
     id: "no-pasa-nada",
     label: null,
-    link: "-bootlegs",
     title: "No Pasa Nada (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "_qiQqMCPhj8",
     year: 2019
   },
@@ -2188,9 +2175,8 @@ export const tracks = [
     genre: "Deep House",
     id: "left-me-yet",
     label: null,
-    link: "-bootlegs",
     title: "Left Me Yet (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "HlBlfV3bvYI",
     year: 2019
   },
@@ -2203,9 +2189,8 @@ export const tracks = [
     genre: "Deep House",
     id: "mad-love",
     label: null,
-    link: "-bootlegs",
     title: "Mad Love (Bayza Bootleg)",
-    type: "Bootlegs/Remixes",
+    type: "bootleg",
     video: "h5k9VCF-WDA",
     year: 2019
   },
@@ -2219,7 +2204,7 @@ export const tracks = [
     id: "oasis-remix",
     label: "FREE WAV",
     title: "Oasis (Bayza Remix)",
-    type: "Releases",
+    type: "release",
     video: "uDlypkh80z0",
     year: 2019
   },
@@ -2234,7 +2219,7 @@ export const tracks = [
     id: "remorse",
     label: "Nelation",
     title: "Remorse",
-    type: "Releases",
+    type: "release",
     video: "w83ephnGcf0",
     year: 2019
   },
@@ -2249,7 +2234,7 @@ export const tracks = [
     id: "wisdom",
     label: "Nelation",
     title: "Wisdom",
-    type: "Releases",
+    type: "release",
     video: "lyZyYVHYYC4",
     year: 2019
   },
@@ -2264,7 +2249,7 @@ export const tracks = [
     id: "not-the-end",
     label: null,
     title: "Not The End",
-    type: "Releases",
+    type: "release",
     video: "8t4YBIYjIJQ",
     year: 2018
   },
@@ -2279,7 +2264,7 @@ export const tracks = [
     id: "tavern",
     label: "Nelation",
     title: "Tavern",
-    type: "Releases",
+    type: "release",
     video: "XM8pl7a9qjc",
     year: 2018
   },
@@ -2294,7 +2279,7 @@ export const tracks = [
     id: "delight",
     label: "Nelation",
     title: "Delight",
-    type: "Releases",
+    type: "release",
     video: "vPfMCIzlH-Q",
     year: 2018
   },
@@ -2309,7 +2294,7 @@ export const tracks = [
     id: "abyss",
     label: "Nelation",
     title: "Abyss",
-    type: "Releases",
+    type: "release",
     video: "Bnqo9sTgrNA",
     year: 2018
   },
@@ -2324,7 +2309,7 @@ export const tracks = [
     id: "timeline-remix",
     label: null,
     title: "Timeline (Bayza Remix)",
-    type: "Releases",
+    type: "release",
     video: "gueXauiEUkM",
     year: 2018
   },
@@ -2339,7 +2324,7 @@ export const tracks = [
     id: "aether",
     label: "Nelation",
     title: "Aether",
-    type: "Releases",
+    type: "release",
     video: "ihtWiAPXhYY",
     year: 2018
   },
@@ -2354,7 +2339,7 @@ export const tracks = [
     id: "endurance",
     label: "Nelation",
     title: "Endurance",
-    type: "Releases",
+    type: "release",
     video: "ZzcCuoYjC6Q",
     year: 2018
   },
@@ -2369,7 +2354,7 @@ export const tracks = [
     id: "convergence",
     label: "Nelation",
     title: "Convergence",
-    type: "Releases",
+    type: "release",
     video: "QYLnqujS8Uk",
     year: 2018
   },
@@ -2383,7 +2368,7 @@ export const tracks = [
     id: "unchained",
     label: null,
     title: "Unchained",
-    type: "Releases",
+    type: "release",
     video: "89-GLf29wiw",
     year: 2018
   }

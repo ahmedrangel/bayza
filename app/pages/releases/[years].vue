@@ -1,11 +1,12 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
 
 const { params } = useRoute();
 const { years } = params;
 
 const listTracks = computed(() => {
-  return isBootleg(years).filter(el => new Date(el.date) <= Date.now());
+  if (years === "bootlegs") return tracks.filter(el => el.type === "bootleg");
+  return tracks.filter(el => el.year === Number(years));
 });
 
 if (!listTracks.value[0]) {
@@ -22,12 +23,11 @@ const description = `${listTracks.value[0].year} ${listTracks.value[0].type}`;
 useSeoMeta({
   title: `${years} | ${SITE.name}`,
   description: description,
-  keywords: `releases, ${listTracks.value[0].year}, ${listTracks.value[0].type}, singles, stream, music, dance, EDM`,
   // OG
   ogUrl: `${SITE.url}/releases/${years}`,
   ogType: "website",
   ogTitle: title,
-  ogSieName: SITE.name,
+  ogSiteName: SITE.name,
   ogDescription: description,
   ogImage: `${SITE.url}/${SITE.cover}`,
   ogImageWidth: 300,
@@ -56,7 +56,7 @@ useHead({
           <div v-for="(tracks, index) of listTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in">
             <div class="item">
               <div class="cover">
-                <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.id}`">
+                <NuxtLink :to="`/track/${tracks.id}`">
                   <div class="overflow-hidden">
                     <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${tracks.artists} - ${tracks.title}`">
                   </div>

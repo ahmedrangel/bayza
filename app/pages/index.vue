@@ -114,13 +114,13 @@ const featuredVideos = [
           <div class="col-12 col-md-6 row text-end px-0 align-items-center" data-aos="fade-left">
             <div class="col-12 col-md-7 d-none d-md-block pe-0 text-secondary">
               <h5>Latest Release:</h5>
-              <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.id}`" class="text-white latest-release-title" :class="{ underline: hover }">
+              <NuxtLink :to="`/track/${lastTrack.id}`" class="text-white latest-release-title" :class="{ underline: hover }">
                 <h3 class="font-weight-light">{{ lastTrack.title }}</h3>
               </NuxtLink>
               <div><h5 class="font-weight-light">by {{ lastTrack.artists }}</h5></div>
               <small><p class="mb-0 mt-1">{{ dateFormat(lastTrack.date) }}</p></small>
             </div>
-            <NuxtLink :to="`/releases/${lastTrack.year}${releaseType(lastTrack.link)}/${lastTrack.id}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
+            <NuxtLink :to="`/track/${lastTrack.id}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
               <div class="me-0 text-start px-2">
                 <img id="covers" class="mx-auto d-flex w-100" :src="`/images/releases/${lastTrack.year}/${lastTrack.cover}.jpg`" alt="" style="max-width:230px;">
               </div>
@@ -152,7 +152,7 @@ const featuredVideos = [
           <div v-for="(tracks, index) of indexTracks" :key="index" class="col-6 col-lg-3" data-aos="fade-in">
             <div class="item">
               <div class="cover">
-                <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.id}`">
+                <NuxtLink :to="`/track/${tracks.id}`">
                   <div class="overflow-hidden">
                     <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${tracks.artists} - ${tracks.title}`">
                   </div>
@@ -164,7 +164,7 @@ const featuredVideos = [
             </div>
           </div>
         </div>
-        <NuxtLink class="btn btn-outline-releases px-4 py-1" to="/releases/" data-aos="flip-left">See all releases</NuxtLink>
+        <NuxtLink class="btn btn-outline-releases px-4 py-1" to="/releases" data-aos="flip-left">See all releases</NuxtLink>
       </div>
     </section>
     <section id="music" class="bg-dark text-secondary text-center py-5">

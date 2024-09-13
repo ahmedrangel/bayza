@@ -251,11 +251,11 @@ b a:hover, b NuxtLink:hover {
 }
 
 .scrolled-down{
-    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    transform: translateY(-100%);
 }
 
 .scrolled-up{
-    transform:translateY(0); transition: all 0.3s ease-in-out;
+    transform: translateY(0);
 }
 
 #track-info {
@@ -316,8 +316,7 @@ b a:hover, b NuxtLink:hover {
 }
 
 #navbar {
-    background: transparent;
-    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
 }
 
 #navbar img {

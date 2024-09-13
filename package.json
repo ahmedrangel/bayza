@@ -10,7 +10,7 @@
     "lint": "eslint --fix --config .config/eslint.mjs"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.5.6",
+    "@nuxt/eslint": "^0.5.7",
     "@nuxt/scripts": "^0.8.5",
     "@nuxtjs/sitemap": "^5.3.5",
     "@types/node": "^22.5.4",

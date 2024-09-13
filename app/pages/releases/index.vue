@@ -4,7 +4,6 @@ definePageMeta({ layout: "site" });
 useSeoMeta({
   title: `Releases | ${SITE.name}`,
   description: "Releases",
-  keywords: "releases, singles, stream, music, dance, EDM",
   // OG
   ogUrl: `${SITE.url}/releases`,
   ogType: "website",
@@ -28,7 +27,7 @@ useHead({
 });
 
 const allTracks = computed(() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now());
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now() && el.id);
 });
 </script>
 
@@ -38,11 +37,11 @@ const allTracks = computed(() => {
       <div class="container text-secondary text-center py-5">
         <h3 class="mt-5 text-uppercase text-white">All Releases</h3>
         <div class="row my-4 text-start">
-          <template v-for="(tracks, index) of allTracks" :key="index">
-            <div v-if="tracks.id" class="col-6 col-lg-3" data-aos="fade-in">
+          <template v-for="(tracks, i) of allTracks" :key="i">
+            <div class="col-6 col-lg-3" data-aos="fade-in">
               <div class="item">
                 <div class="cover">
-                  <NuxtLink :to="`/releases/${tracks.year}${releaseType(tracks.link)}/${tracks.id}`">
+                  <NuxtLink :to="`/track/${tracks.id}`">
                     <div class="overflow-hidden">
                       <img id="covers" class="img-fx img-fluid release-color-covers scale-on-hover" :src="`/images/releases/${tracks.year}/${tracks.cover}.jpg`" :alt="`${tracks.artists} - ${tracks.title}`">
                     </div>

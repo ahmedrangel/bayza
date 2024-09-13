@@ -3,6 +3,7 @@ const nav = ref("nav");
 const logoNav = ref("logoNav");
 const collapsibleNav = ref("CollapsibleNav");
 const { $bootstrap } = useNuxtApp();
+const scrolledDown = ref(false);
 
 const collapseNav = () => {
   if (collapsibleNav.value.classList.contains("show")) {
@@ -11,16 +12,7 @@ const collapseNav = () => {
 };
 
 const onScroll = () => {
-  if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
-    nav.value.style.background = "#121212";
-    nav.value.style.fontSize = "1rem";
-    logoNav.value.style.width = 100;
-  }
-  else {
-    nav.value.style.background = "transparent";
-    nav.value.style.fontSize = "1.3rem";
-    logoNav.value.style.width = 130;
-  }
+  scrolledDown.value = (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10 || window.width < 767);
 };
 
 let last_scroll_top = 0;
@@ -45,7 +37,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav id="navbar" ref="nav" class="navbar navbar-expand-md navbar-dark px-4 py-2 fixed-top smart-scroll">
+  <nav id="navbar" ref="nav" class="navbar navbar-expand-md navbar-dark px-4 py-2 fixed-top smart-scroll" :class="scrolledDown ? 'bg-darkest h6' : 'bg-transparent h5'">
     <NuxtLink class="navbar-brand" to="/">
       <img ref="logoNav" src="/images/bayza-logo.svg" width="100">
     </NuxtLink>
@@ -61,7 +53,7 @@ onMounted(() => {
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Releases</span>
           <div class="dropdown-menu">
             <NuxtLink class="dropdown-item" to="/releases" @click="collapseNav()">All</NuxtLink>
-            <NuxtLink class="dropdown-item" to="/releases/all-bootlegs" @click="collapseNav()">Bootlegs</NuxtLink>
+            <NuxtLink class="dropdown-item" to="/releases/bootlegs" @click="collapseNav()">Bootlegs</NuxtLink>
             <NuxtLink class="dropdown-item" to="/releases/2024" @click="collapseNav()">2024</NuxtLink>
             <NuxtLink class="dropdown-item" to="/releases/2023" @click="collapseNav()">2023</NuxtLink>
             <NuxtLink class="dropdown-item" to="/releases/2022" @click="collapseNav()">2022</NuxtLink>
