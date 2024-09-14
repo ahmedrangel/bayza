@@ -26,8 +26,33 @@ useHead({
   link: [{ rel: "canonical", href: SITE.url + "/releases" }]
 });
 
-const allTracks = computed(() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now() && el.id);
+const pagination = ref(0);
+const perPage = 12;
+const lastRow = ref("lastRow");
+const allTracks = ref([]);
+
+const getTracks = (page) => {
+  const startIndex = (page) * perPage;
+  const endIndex = startIndex + perPage;
+  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now() && el.id).slice(startIndex, endIndex);
+};
+
+allTracks.value.push(...getTracks(pagination.value));
+
+const scrollHandler = () => {
+  if (onScreen(lastRow.value[0]) && getTracks(pagination.value + 1).length) {
+    pagination.value++;
+    const newTracks = getTracks(pagination.value);
+    allTracks.value.push(...newTracks);
+  }
+};
+
+onMounted(() => {
+  addEventListener("scroll", scrollHandler);
+});
+
+onBeforeUnmount(() => {
+  removeEventListener("scroll", scrollHandler);
 });
 </script>
 
@@ -52,6 +77,7 @@ const allTracks = computed(() => {
                 </div>
               </div>
             </div>
+            <span v-if="i === allTracks.length - 1" ref="lastRow" class="m-0 p-0" />
           </template>
         </div>
       </div>
