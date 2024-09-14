@@ -1,7 +1,12 @@
-<script setup>
+<script setup lang="ts">
 const streamMusic = SITE.platforms.filter(el => ["spotify", "soundcloud", "youtube", "apple"].includes(el.id));
 const buyMusic = SITE.platforms.filter(el => ["itunes", "beatport", "amazon-music", "bandcamp"].includes(el.id));
-const contact = SITE.platforms.filter(el => ["spotify", "soundcloud", "youtube"].includes(el.id));
+const contact: {
+  id?: string;
+  url?: string;
+  icon?: string;
+}[] = [];
+contact.push(...SITE.platforms.filter(el => ["spotify", "soundcloud", "youtube"].includes(el.id)));
 const socials = [
   {
     id: "instagram",
@@ -19,10 +24,7 @@ const socials = [
     icon: "simple-icons:x"
   }
 ];
-
-for (const s of socials) {
-  contact.push(s);
-}
+contact.push(...socials);
 </script>
 
 <template>
@@ -49,7 +51,7 @@ for (const s of socials) {
           <h4>Contact</h4>
           <ul class="icons mb-0">
             <li v-for="(c, i) of contact" :key="i" :class="c.id">
-              <a :href="c.url" target="_blank"><Icon class="" :name="c.icon" /></a>
+              <a :href="c.url" target="_blank"><Icon v-if="c.icon" :name="c.icon" /></a>
             </li>
           </ul>
           <ul class="contact">

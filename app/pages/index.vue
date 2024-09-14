@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
 const hover = ref(false);
 
@@ -57,7 +57,7 @@ useSeoMeta({
   ogUrl: SITE.url,
   ogType: "website",
   ogTitle: SITE.name,
-  ogSieName: SITE.name,
+  ogSiteName: SITE.name,
   ogDescription: SITE.description,
   ogImage: `${SITE.url}/${SITE.cover}`,
   ogImageWidth: 300,
@@ -77,15 +77,15 @@ useHead({
 });
 
 const lastTrack = computed(() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now())[0];
+  return tracks.sort((a, b) => Number(new Date(b.date as string)) - Number(new Date(a.date as string))).filter(el => Number(new Date(el.date as string)) <= Date.now())[0] as Tracks;
 });
 
 const upcoming = computed(() => {
-  return tracks.filter(el => new Date(el.date) > Date.now());
+  return tracks.filter(el => Number(new Date(el.date as string)) > Date.now());
 });
 
 const indexTracks = computed (() => {
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now()).slice(0, 12 - upcoming.value.length);
+  return tracks.sort((a, b) => Number(new Date(b.date as string)) - Number(new Date(a.date as string))).filter(el => Number(new Date(el.date as string)) <= Date.now()).slice(0, 12 - upcoming.value.length);
 });
 
 const featuredVideos = [
@@ -118,7 +118,7 @@ const featuredVideos = [
                 <h3 class="font-weight-light">{{ lastTrack.title }}</h3>
               </NuxtLink>
               <div><h5 class="font-weight-light">by {{ lastTrack.artists }}</h5></div>
-              <small><p class="mb-0 mt-1">{{ dateFormat(lastTrack.date) }}</p></small>
+              <small v-if="lastTrack.date"><p class="mb-0 mt-1">{{ dateFormat(lastTrack.date) }}</p></small>
             </div>
             <NuxtLink :to="`/track/${lastTrack.id}`" class="col-12 col-md-5 d-none d-md-block p-0 latest-release-cover" @mouseover="hover=true" @mouseout="hover=false">
               <div class="me-0 text-start px-2">
@@ -141,7 +141,7 @@ const featuredVideos = [
                   <img class="img-fluid scale-on-hover upcoming" :src="`/images/releases/${u.year}/${u.cover}.jpg`">
                   <div class="centered">
                     <h4>Upcoming</h4>
-                    <small><h5>{{ dateFormat(u.date) }}</h5></small>
+                    <small v-if="u.date"><h5>{{ dateFormat(u.date) }}</h5></small>
                   </div>
                 </div>
                 <h5 class="mb-0"><small><p class="mb-0 mt-2">{{ u.title }}</p></small></h5>
@@ -159,7 +159,7 @@ const featuredVideos = [
                   <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ tracks.title }}</p></small></h5>
                 </NuxtLink>
                 <small><p class="mb-0">{{ tracks.artists }}</p></small>
-                <small><p class="mb-4">{{ dateFormat(tracks.date) }}</p></small>
+                <small v-if="tracks.date"><p class="mb-4">{{ dateFormat(tracks.date) }}</p></small>
               </div>
             </div>
           </div>

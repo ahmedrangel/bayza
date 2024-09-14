@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
 
 const trackWithFanlinks = tracks.filter(el => el.fanlinks);
-const data = trackWithFanlinks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now());
+const data = trackWithFanlinks.sort((a, b) => Number(new Date(b.date as string)) - Number(new Date(a.date as string))).filter(el => Number(new Date(el.date as string)) <= Date.now());
 
 useSeoMeta({
   title: "Fanlinks | " + SITE.name,
@@ -12,7 +12,7 @@ useSeoMeta({
   ogUrl: SITE.url + "/fanlinks",
   ogType: "website",
   ogTitle: "Fanlinks | " + SITE.name,
-  ogSieName: SITE.name,
+  ogSiteName: SITE.name,
   ogDescription: "Bayza Fanlinks",
   ogImage: `${SITE.url}/${SITE.cover}`,
   ogImageWidth: 300,
@@ -36,15 +36,15 @@ useHead({
     <section id="fanlinks" class="overflow-hidden">
       <div class="bg-fanlinks h-100 position-fixed start-0 end-0" />
       <div class="container py-5 px-2">
-        <div class="row g-2">
+        <div class="row g-4">
           <div v-for="(key, i) in data" :key="i" class="col-6 col-md-4 col-lg-3">
-            <div class="card overflow-hidden my-3 p-0 bg-dark border-0 text-white">
+            <div class="card overflow-hidden bg-dark border-0 text-white h-100 justify-content-between">
               <img class="img-fluid" :src="key.image">
               <div class="p-2 p-lg-3 text-center">
                 <h5>{{ key.title }}</h5>
                 <h6 class="mb-0">{{ key.artists }}</h6>
               </div>
-              <a type="button" target="_blank" class="btn btn-primary btn-lg text-white text-decoration-none" :href="`${SITE.fanlinks}/${key.fanlinkId || key.id.replace(/-/g, '')}`">
+              <a type="button" target="_blank" class="btn btn-primary btn-lg text-white text-decoration-none" :href="`${SITE.fanlinks}/${key.fanlinkId || key.id!.replace(/-/g, '')}`">
                 View
               </a>
             </div>

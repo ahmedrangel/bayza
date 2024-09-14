@@ -1,4 +1,4 @@
-import { SITE } from "../app/utils/site-info.js";
+import { SITE } from "../app/utils/site-info";
 
 export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },

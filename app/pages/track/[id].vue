@@ -18,7 +18,7 @@ if (!track) {
 }
 
 const moreTracks = computed(() => {
-  return isReleaseBootleg(track.type).filter(el => Number(new Date(el.date)) <= Date.now() && el.id !== id && el.id).slice(0, 8);
+  return isReleaseBootleg(track.type!).filter(el => Number(new Date(el.date as string)) <= Date.now() && el.id !== id && el.id).slice(0, 8);
 });
 
 const url = `${SITE.url}/track/${id}`;
@@ -34,7 +34,7 @@ const schemaOrg = {
   "image": imageUrl,
   "genre": track.genre,
   "duration": track.duration,
-  "datePublished": new Date(track.date),
+  "datePublished": new Date(track.date as string),
   "byArtist": [{
     "@type": "MusicGroup",
     "name": track.artists
@@ -134,7 +134,7 @@ const platformMatch = (name: string) => {
         <div style="border-top: 2px solid #bbbbbb; width: 30%;" />
         <div id="more_tracks" class="pt-4 text-start">
           <div id="more_releases" class="pb-4">
-            <h4 class="m-0 text-white">More <a class="tag" :href="`/releases/${releasePageType(track.type).type_page}`">{{ releasePageType(track.type).release_type }}</a> by Bayza</h4>
+            <h4 class="m-0 text-white">More <a class="tag" :href="`/releases/${releasePageType(track.type!).type_page}`">{{ releasePageType(track.type!).release_type }}</a> by Bayza</h4>
           </div>
           <div class="row">
             <div v-for="(item, i) of moreTracks" :key="i" class="col-6 col-lg-3" data-aos="fade-in">
@@ -147,7 +147,7 @@ const platformMatch = (name: string) => {
                     <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ item.title }}</p></small></h5>
                   </NuxtLink>
                   <small><p class="mb-0">{{ item.artists }}</p></small>
-                  <small><p class="mb-4">{{ dateFormat(item.date) }}</p></small>
+                  <small v-if="item.date"><p class="mb-4">{{ dateFormat(item.date) }}</p></small>
                 </div>
               </div>
             </div>

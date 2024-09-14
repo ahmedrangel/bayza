@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
 
 useSeoMeta({
@@ -8,7 +8,7 @@ useSeoMeta({
   ogUrl: `${SITE.url}/releases`,
   ogType: "website",
   ogTitle: `${SITE.name} Releases`,
-  ogSieName: SITE.name,
+  ogSiteName: SITE.name,
   ogDescription: "Releases",
   ogImage: `${SITE.url}/${SITE.cover}`,
   ogImageWidth: 300,
@@ -28,19 +28,19 @@ useHead({
 
 const pagination = ref(0);
 const perPage = 12;
-const lastRow = ref("lastRow");
-const allTracks = ref([]);
+const lastRow = ref<HTMLElement[]>();
+const allTracks = ref<Tracks[]>([]);
 
-const getTracks = (page) => {
+const getTracks = (page: number) => {
   const startIndex = (page) * perPage;
   const endIndex = startIndex + perPage;
-  return tracks.sort((a, b) => new Date(b.date) - new Date(a.date)).filter(el => new Date(el.date) <= Date.now() && el.id).slice(startIndex, endIndex);
+  return tracks.sort((a, b) => Number(new Date(b.date as string)) - Number(new Date(a.date as string))).filter(el => Number(new Date(el.date as string)) <= Date.now() && el.id).slice(startIndex, endIndex);
 };
 
 allTracks.value.push(...getTracks(pagination.value));
 
 const scrollHandler = () => {
-  if (onScreen(lastRow.value[0]) && getTracks(pagination.value + 1).length) {
+  if (onScreen(lastRow.value![0]!) && getTracks(pagination.value + 1).length) {
     pagination.value++;
     const newTracks = getTracks(pagination.value);
     allTracks.value.push(...newTracks);
@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
                     <h5 class="mb-0" style="font-size: 1.25rem;"><small><p class="mb-0 mt-2">{{ tracks.title }}</p></small></h5>
                   </NuxtLink>
                   <small><p class="mb-0">{{ tracks.artists }}</p></small>
-                  <small><p class="mb-4">{{ dateFormat(tracks.date) }}</p></small>
+                  <small v-if="tracks.date"><p class="mb-4">{{ dateFormat(tracks.date) }}</p></small>
                 </div>
               </div>
             </div>

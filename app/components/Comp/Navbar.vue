@@ -1,18 +1,18 @@
-<script setup>
-const nav = ref("nav");
-const logoNav = ref("logoNav");
-const collapsibleNav = ref("CollapsibleNav");
+<script setup lang="ts">
+const nav = ref<HTMLElement>();
+const logoNav = ref<HTMLElement>();
+const collapsibleNav = ref<HTMLElement>();
 const { $bootstrap } = useNuxtApp();
 const scrolledDown = ref(false);
 
 const collapseNav = () => {
-  if (collapsibleNav.value.classList.contains("show")) {
+  if (collapsibleNav.value!.classList.contains("show")) {
     $bootstrap.toogleCollapse(collapsibleNav.value);
   }
 };
 
 const onScroll = () => {
-  scrolledDown.value = (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10 || window.width < 767);
+  scrolledDown.value = (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10 || window.innerWidth < 767);
 };
 
 let last_scroll_top = 0;
@@ -20,12 +20,12 @@ let last_scroll_top = 0;
 const scrollHandler = () => {
   const scroll_top = window.pageYOffset || document.documentElement.scrollTop;
   if (scroll_top < last_scroll_top) {
-    nav.value.classList.remove("scrolled-down");
-    nav.value.classList.add("scrolled-up");
+    nav.value!.classList.remove("scrolled-down");
+    nav.value!.classList.add("scrolled-up");
   }
   else {
-    nav.value.classList.remove("scrolled-up");
-    nav.value.classList.add("scrolled-down");
+    nav.value!.classList.remove("scrolled-up");
+    nav.value!.classList.add("scrolled-down");
   }
   last_scroll_top = scroll_top;
 };
@@ -36,8 +36,8 @@ onMounted(() => {
 });
 
 const releasesYearsDropDown = [];
-const yearMax = Math.max(...tracks.filter(el => el.year).map(el => el.year));
-const yearMin = Math.min(...tracks.filter(el => el.year).map(el => el.year));
+const yearMax = Math.max(...tracks.filter(el => el.year as number).map(el => el.year as number));
+const yearMin = Math.min(...tracks.filter(el => el.year as number).map(el => el.year as number));
 
 for (let y = yearMax; y >= yearMin; y--) {
   releasesYearsDropDown.push({ title: y, href: `/releases/${y}` });
