@@ -12,14 +12,14 @@
   "devDependencies": {
     "@nuxt/eslint": "^0.5.7",
     "@nuxt/scripts": "^0.9.2",
-    "@nuxtjs/sitemap": "^6.0.1",
+    "@nuxtjs/sitemap": "^6.1.0",
     "@types/node": "^22.5.5",
     "nuxt": "^3.13.2"
   },
   "dependencies": {
     "@nuxt/icon": "^1.5.1",
     "bootstrap": "^5.3.3",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.0",
     "nuxt-aos": "^1.2.5"
   }
 }
