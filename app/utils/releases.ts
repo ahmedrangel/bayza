@@ -7,7 +7,7 @@ export const tracks: Tracks[] = [
     date: "2024-08-30 00:00:00",
     description: undefined,
     duration: "3:21",
-    fanlink: "lnk.bayzamusic.com/Sojourn",
+    fanlink: "lnk.bayza.music/Sojourn",
     fanlinks: {
       "amazon": undefined,
       "amazon-music": undefined,
@@ -43,7 +43,7 @@ export const tracks: Tracks[] = [
     date: "2024-05-17 00:00:00",
     description: undefined,
     duration: "2:48",
-    fanlink: "lnk.bayzamusic.com/Redemption",
+    fanlink: "lnk.bayza.music/Redemption",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0D37GQGL8",
       "amazon-music": "https://music.amazon.com/albums/B0D37GQGL8",
@@ -79,7 +79,7 @@ export const tracks: Tracks[] = [
     date: "2023-09-8 00:00:00",
     description: undefined,
     duration: "2:45",
-    fanlink: "lnk.bayzamusic.com/Obsession",
+    fanlink: "lnk.bayza.music/Obsession",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CF5S8YT2",
       "amazon-music": "https://music.amazon.com/albums/B0CF5S8YT2",
@@ -115,7 +115,7 @@ export const tracks: Tracks[] = [
     date: "2023-08-11 00:00:00",
     description: undefined,
     duration: "2:36",
-    fanlink: "lnk.bayzamusic.com/NowOrNever",
+    fanlink: "lnk.bayza.music/NowOrNever",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CC6B8KLR",
       "amazon-music": "https://music.amazon.com/albums/B0CC6B8KLR",
@@ -151,7 +151,7 @@ export const tracks: Tracks[] = [
     date: "2023-07-28 00:00:05",
     description: undefined,
     duration: "2:53",
-    fanlink: "lnk.bayzamusic.com/Breeze",
+    fanlink: "lnk.bayza.music/Breeze",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CC3RZBTX",
       "amazon-music": "https://music.amazon.com/albums/B0CC3RZBTX",
@@ -187,7 +187,7 @@ export const tracks: Tracks[] = [
     date: "2023-07-28 00:00:04",
     description: undefined,
     duration: "3:16",
-    fanlink: "lnk.bayzamusic.com/ImmortalLove",
+    fanlink: "lnk.bayza.music/ImmortalLove",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CC3RZBTX",
       "amazon-music": "https://music.amazon.com/albums/B0CC3RZBTX",
@@ -223,7 +223,7 @@ export const tracks: Tracks[] = [
     date: "2023-07-28 00:00:03",
     description: undefined,
     duration: "3:00",
-    fanlink: "lnk.bayzamusic.com/Eclipse",
+    fanlink: "lnk.bayza.music/Eclipse",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CC3RZBTX",
       "amazon-music": "https://music.amazon.com/albums/B0CC3RZBTX",
@@ -259,7 +259,7 @@ export const tracks: Tracks[] = [
     date: "2023-07-28 00:00:02",
     description: undefined,
     duration: "2:13",
-    fanlink: "lnk.bayzamusic.com/Zenith",
+    fanlink: "lnk.bayza.music/Zenith",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CC3RZBTX",
       "amazon-music": "https://music.amazon.com/albums/B0CC3RZBTX",
@@ -295,7 +295,7 @@ export const tracks: Tracks[] = [
     date: "2023-07-28 00:00:01",
     description: undefined,
     duration: "3:42",
-    fanlink: "lnk.bayzamusic.com/Fiesta",
+    fanlink: "lnk.bayza.music/Fiesta",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CC3RZBTX",
       "amazon-music": "https://music.amazon.com/albums/B0CC3RZBTX",
@@ -331,7 +331,7 @@ export const tracks: Tracks[] = [
     date: "2023-07-28 00:00:00",
     description: undefined,
     duration: "2:33",
-    fanlink: "lnk.bayzamusic.com/Awakening",
+    fanlink: "lnk.bayza.music/Awakening",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0CC3RZBTX",
       "amazon-music": "https://music.amazon.com/albums/B0CC3RZBTX",
@@ -367,7 +367,7 @@ export const tracks: Tracks[] = [
     date: "2023-05-11 00:00:00",
     description: undefined,
     duration: "2:49",
-    fanlink: "lnk.bayzamusic.com/LightComesUp",
+    fanlink: "lnk.bayza.music/LightComesUp",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0C2F5KKGZ",
       "amazon-music": "https://music.amazon.com/albums/B0C2F5KKGZ",
@@ -403,7 +403,7 @@ export const tracks: Tracks[] = [
     date: "2023-03-10 00:00:00",
     description: undefined,
     duration: "2:34",
-    fanlink: "lnk.bayzamusic.com/Madhouse",
+    fanlink: "lnk.bayza.music/Madhouse",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0BSFWXRDP",
       "amazon-music": "https://music.amazon.com/albums/B0BSFWXRDP",
@@ -439,7 +439,7 @@ export const tracks: Tracks[] = [
     date: "2022-12-09 00:00:00",
     description: undefined,
     duration: "2:53",
-    fanlink: "lnk.bayzamusic.com/LunchboxFriends",
+    fanlink: "lnk.bayza.music/LunchboxFriends",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0D27MNDNH",
       "amazon-music": "https://music.amazon.com/albums/B0D27MNDNH",
@@ -475,7 +475,7 @@ export const tracks: Tracks[] = [
     date: "2022-11-04 00:00:00",
     description: undefined,
     duration: "3:01",
-    fanlink: "lnk.bayzamusic.com/TrueLovers",
+    fanlink: "lnk.bayza.music/TrueLovers",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0BKLGWWVS",
       "amazon-music": "https://music.amazon.com/albums/B0BKLGWWVS",
@@ -511,7 +511,7 @@ export const tracks: Tracks[] = [
     date: "2022-09-01 00:00:00",
     description: undefined,
     duration: "2:34",
-    fanlink: "lnk.bayzamusic.com/OnYourMind",
+    fanlink: "lnk.bayza.music/OnYourMind",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0B8QJHZ5K",
       "amazon-music": "https://music.amazon.com/albums/B0B8QJHZ5K",
@@ -547,7 +547,7 @@ export const tracks: Tracks[] = [
     date: "2022-08-05 00:00:00",
     description: undefined,
     duration: "2:58",
-    fanlink: "lnk.bayzamusic.com/WhyCantItBe",
+    fanlink: "lnk.bayza.music/WhyCantItBe",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0B6D4357K",
       "amazon-music": "https://music.amazon.com/albums/B0B6D4357K",
@@ -583,7 +583,7 @@ export const tracks: Tracks[] = [
     date: "2022-07-08 00:00:00",
     description: undefined,
     duration: "3:23",
-    fanlink: "lnk.bayzamusic.com/YoungFree",
+    fanlink: "lnk.bayza.music/YoungFree",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0B3N6FCWX",
       "amazon-music": "https://music.amazon.com/albums/B0B3N6FCWX",
@@ -619,7 +619,7 @@ export const tracks: Tracks[] = [
     date: "2022-06-10 00:00:00",
     description: undefined,
     duration: "2:44",
-    fanlink: "lnk.bayzamusic.com/ShowMe",
+    fanlink: "lnk.bayza.music/ShowMe",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0B2Z43XCD",
       "amazon-music": "https://music.amazon.com/albums/B0B2Z43XCDK",
@@ -655,7 +655,7 @@ export const tracks: Tracks[] = [
     date: "2022-05-06 00:00:00",
     description: undefined,
     duration: "3:03",
-    fanlink: "lnk.bayzamusic.com/Pieces",
+    fanlink: "lnk.bayza.music/Pieces",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09Y9FFYCK",
       "amazon-music": "https://music.amazon.com/albums/B09Y9FFYCK",
@@ -691,7 +691,7 @@ export const tracks: Tracks[] = [
     date: "2022-02-25 00:00:01",
     description: undefined,
     duration: "3:40",
-    fanlink: "lnk.bayzamusic.com/CallOut",
+    fanlink: "lnk.bayza.music/CallOut",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09RSX8Q4V",
       "amazon-music": "https://music.amazon.com/albums/B09RSPHPFT",
@@ -753,7 +753,7 @@ export const tracks: Tracks[] = [
     date: "2022-01-21 00:00:00",
     description: undefined,
     duration: "3:32",
-    fanlink: "lnk.bayzamusic.com/ImFalling",
+    fanlink: "lnk.bayza.music/ImFalling",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09NQBHG3T",
       "amazon-music": "https://music.amazon.com/albums/B09NQBHG3T",
@@ -789,7 +789,7 @@ export const tracks: Tracks[] = [
     date: "2021-12-30 00:00:06",
     description: "To end the year, I decided to release an original track within an EP that also includes instrumentals of some of my previous bootlegs.",
     duration: "3:00",
-    fanlink: "lnk.bayzamusic.com/Passages",
+    fanlink: "lnk.bayza.music/Passages",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09N644GRK",
       "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N644GRK",
@@ -821,9 +821,9 @@ export const tracks: Tracks[] = [
     cover: "passages",
     dark: false,
     date: "2021-12-30 00:00:05",
-    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayzamusic.com/releases/2021/thumbs\" target=\"_blank\" title=\"Sabrina Carpenter - Thumbs (Bayza Bootleg)\">Sabrina Carpenter - Thumbs (Bayza Bootleg)</a>\"",
+    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayza.music/releases/2021/thumbs\" target=\"_blank\" title=\"Sabrina Carpenter - Thumbs (Bayza Bootleg)\">Sabrina Carpenter - Thumbs (Bayza Bootleg)</a>\"",
     duration: "3:23",
-    fanlink: "lnk.bayzamusic.com/thumbs",
+    fanlink: "lnk.bayza.music/thumbs",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09N68K4GX",
       "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N68K4GX",
@@ -855,9 +855,9 @@ export const tracks: Tracks[] = [
     cover: "passages",
     dark: false,
     date: "2021-12-30 00:00:04",
-    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayzamusic.com/releases/2021-bootlegs/lo-vas-a-olvidar\" target=\"_blank\" title=\"Billie Eilish, ROSALÍA - Lo Vas A Olvidar (Bayza Bootleg)\">Billie Eilish, ROSALÍA - Lo Vas A Olvidar (Bayza Bootleg)</a>\"",
+    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayza.music/releases/2021-bootlegs/lo-vas-a-olvidar\" target=\"_blank\" title=\"Billie Eilish, ROSALÍA - Lo Vas A Olvidar (Bayza Bootleg)\">Billie Eilish, ROSALÍA - Lo Vas A Olvidar (Bayza Bootleg)</a>\"",
     duration: "3:18",
-    fanlink: "lnk.bayzamusic.com/LoVasAOlvidar",
+    fanlink: "lnk.bayza.music/LoVasAOlvidar",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09N61Z6JW",
       "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N61Z6JW",
@@ -889,9 +889,9 @@ export const tracks: Tracks[] = [
     cover: "passages",
     dark: false,
     date: "2021-12-30 00:00:03",
-    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayzamusic.com/releases/2021-bootlegs/my-head-my-heart\" target=\"_blank\" title=\"Ava Max - My Head & My Heart (Bayza Bootleg)\">Ava Max - My Head & My Heart (Bayza Bootleg)</a>\"",
+    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayza.music/releases/2021-bootlegs/my-head-my-heart\" target=\"_blank\" title=\"Ava Max - My Head & My Heart (Bayza Bootleg)\">Ava Max - My Head & My Heart (Bayza Bootleg)</a>\"",
     duration: "3:31",
-    fanlink: "lnk.bayzamusic.com/MyHeadMyHeart",
+    fanlink: "lnk.bayza.music/MyHeadMyHeart",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09N681P5P",
       "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N681P5P",
@@ -923,9 +923,9 @@ export const tracks: Tracks[] = [
     cover: "passages",
     dark: false,
     date: "2021-12-30 00:00:02",
-    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayzamusic.com/releases/2020-bootlegs/not-my-baby\" target=\"_blank\" title=\"INNA - Not My Baby (Bayza Bootleg)\">INNA - Not My Baby (Bayza Bootleg)</a>\"",
+    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayza.music/releases/2020-bootlegs/not-my-baby\" target=\"_blank\" title=\"INNA - Not My Baby (Bayza Bootleg)\">INNA - Not My Baby (Bayza Bootleg)</a>\"",
     duration: "3:19",
-    fanlink: "lnk.bayzamusic.com/NotMyBaby",
+    fanlink: "lnk.bayza.music/NotMyBaby",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09N6K71BB",
       "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N6K71BB",
@@ -957,9 +957,9 @@ export const tracks: Tracks[] = [
     cover: "passages",
     dark: false,
     date: "2021-12-30 00:00:01",
-    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayzamusic.com/releases/2020-bootlegs/desert-rose-enta-omri\" target=\"_blank\" title=\"Noel Kharman - Desert Rose / انت عمري Mashup (Bayza Remix)\">Noel Kharman - Desert Rose / انت عمري Mashup (Bayza Remix)</a>\"",
+    description: "This is the instrumental version of \"<a class=\"text-white\" href=\"https://bayza.music/releases/2020-bootlegs/desert-rose-enta-omri\" target=\"_blank\" title=\"Noel Kharman - Desert Rose / انت عمري Mashup (Bayza Remix)\">Noel Kharman - Desert Rose / انت عمري Mashup (Bayza Remix)</a>\"",
     duration: "3:49",
-    fanlink: "lnk.bayzamusic.com/DesertRose",
+    fanlink: "lnk.bayza.music/DesertRose",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09N639BK2",
       "amazon-music": "https://music.amazon.com/albums/B09N6DDN5X?trackAsin=B09N639BK2",
@@ -992,7 +992,7 @@ export const tracks: Tracks[] = [
     date: "2021-12-15 00:00:00",
     description: undefined,
     duration: "4:55",
-    fanlink: "lnk.bayzamusic.com/Pirhan",
+    fanlink: "lnk.bayza.music/Pirhan",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B09N9DDY9C",
       "amazon-music": "https://music.amazon.com/albums/B09N9DDY9C",
@@ -1025,7 +1025,7 @@ export const tracks: Tracks[] = [
     date: "2021-12-02 00:00:00",
     description: "Hi guys, I hope you like this track, someone asked me to remix Thumbs by Sabrina Carpenter, I liked the original song when I first listened to it so I decided to finish this remix. I've also uploaded an <a class=\"text-white\" href=\"https://www.youtube.com/watch?v=9u_UwD-WpSE\" target=\"_blank\" title=\"Bayza - Thumbs | Instrumental Version\">Instrumental Version</a></b> for those who want to listen without the vocals.",
     duration: "3:23",
-    fanlink: "lnk.bayzamusic.com/ThumbsRemix",
+    fanlink: "lnk.bayza.music/ThumbsRemix",
     fanlinks: {
       "amazon": undefined,
       "amazon-music": undefined,
@@ -1058,7 +1058,7 @@ export const tracks: Tracks[] = [
     date: "2021-06-25 00:00:00",
     description: "Bayza brings \"Take Me Home\" under the German label \"The Night Drive\". The inspiration for this track was to try to transmit nighty vibes that are suited perfectly for car driving or club parties because of its modern house music style.",
     duration: "2:58",
-    fanlink: "lnk.bayzamusic.com/TakeMeHome",
+    fanlink: "lnk.bayza.music/TakeMeHome",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B095SZW2GV",
       "amazon-music": "https://music.amazon.com/albums/B095SZW2GV",
@@ -1092,7 +1092,7 @@ export const tracks: Tracks[] = [
     date: "2021-04-23 00:00:00",
     description: "Fresh chill house track in collaboration with Finnish producer \"DeejaVu\".",
     duration: "2:46",
-    fanlink: "lnk.bayzamusic.com/Feels",
+    fanlink: "lnk.bayza.music/Feels",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B0923VPXQW",
       "amazon-music": "https://music.amazon.com/albums/B0923VPXQW",
@@ -1125,7 +1125,7 @@ export const tracks: Tracks[] = [
     date: "2021-04-16 00:00:00",
     description: "Fresh dance/house tune \"Feel So Lonely\" is OUT!",
     duration: "2:48",
-    fanlink: "lnk.bayzamusic.com/FeelSoLonely",
+    fanlink: "lnk.bayza.music/FeelSoLonely",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B091G2BYZS",
       "amazon-music": "https://music.amazon.com/albums/B091G2BYZS",
@@ -1158,7 +1158,7 @@ export const tracks: Tracks[] = [
     date: "2021-03-31 00:00:02",
     description: "This time I worked with a Romanian singer named \"Giulia Mihai\". She wrote the lyrics and provided her voice for this song. The song is kinda sad/melancholic with lyrics in English and Spanish language.",
     duration: "3:19",
-    fanlink: "lnk.bayzamusic.com/YouSaidGoodbye",
+    fanlink: "lnk.bayza.music/YouSaidGoodbye",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B08YFL84C3/",
       "amazon-music": "https://music.amazon.com/albums/B08YFL84C3",
@@ -1191,7 +1191,7 @@ export const tracks: Tracks[] = [
     date: "2021-03-31 00:00:01",
     description: undefined,
     duration: "3:02",
-    fanlink: "lnk.bayzamusic.com/Diamante",
+    fanlink: "lnk.bayza.music/Diamante",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B08ZMM4PTN",
       "amazon-music": "https://music.amazon.com/albums/B08ZMLXDV4?trackAsin=B08ZMM4PTN",
@@ -1224,7 +1224,7 @@ export const tracks: Tracks[] = [
     date: "2021-03-31 00:00:00",
     description: undefined,
     duration: "2:43",
-    fanlink: "lnk.bayzamusic.com/IDontKnow",
+    fanlink: "lnk.bayza.music/IDontKnow",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B08ZMLG3TW",
       "amazon-music": "https://music.amazon.com/albums/B08ZMLXDV4?trackAsin=B08ZMLG3TW",
@@ -1257,7 +1257,7 @@ export const tracks: Tracks[] = [
     date: "2021-03-08 00:00:00",
     description: "Releasing some chill deep house with DeepShine Records!",
     duration: "2:47",
-    fanlink: "lnk.bayzamusic.com/without-you",
+    fanlink: "lnk.bayza.music/without-you",
     fanlinkId: "without-you",
     fanlinks: {
       "amazon": "https://www.amazon.com/Without-You-Bayza/dp/B08WWQ76R7",
@@ -1291,7 +1291,7 @@ export const tracks: Tracks[] = [
     date: "2021-02-16 00:00:00",
     description: "Ava Max - My Head & My Heart (Bayza Remix)",
     duration: "3:33",
-    fanlink: "lnk.bayzamusic.com/my-head-my-heart",
+    fanlink: "lnk.bayza.music/my-head-my-heart",
     fanlinkId: "my-head-my-heart",
     fanlinks: {
       bandcamp: "https://bayza.bandcamp.com/track/my-head-my-heart-bayza-remix",
@@ -1315,7 +1315,7 @@ export const tracks: Tracks[] = [
     date: "2021-02-12 00:00:00",
     description: "Starting 2021 with some deep and slappy stuff!",
     duration: "3:18",
-    fanlink: "lnk.bayzamusic.com/LookingAtYou",
+    fanlink: "lnk.bayza.music/LookingAtYou",
     fanlinks: {
       "amazon": "https://www.amazon.com/Looking-At-You-Bayza/dp/B08VS82LX5",
       "amazon-music": "https://music.amazon.com/albums/B08VS82LX5",
@@ -1348,7 +1348,7 @@ export const tracks: Tracks[] = [
     date: "2021-01-22 00:00:00",
     description: "I loved Billie Eilish and ROSALÍA collaboration. I was amazed to hear Billie singing in my language (spanish). Since first time listening to it I felt that I had to remix it with my deep vibe.",
     duration: "3:28",
-    fanlink: "lnk.bayzamusic.com/LVAO",
+    fanlink: "lnk.bayza.music/LVAO",
     fanlinkId: "LVAO",
     fanlinks: {
       bandcamp: "https://bayza.bandcamp.com/track/lo-vas-a-olvidar-bayza-remix",
@@ -1372,7 +1372,7 @@ export const tracks: Tracks[] = [
     date: "2020-10-31 00:00:00",
     description: "I had the idea to create a dark, mysterious, and somewhat scary Halloween-themed track for October 31. And here it is, hope you like it!",
     duration: "3:36",
-    fanlink: "lnk.bayzamusic.com/lamentos",
+    fanlink: "lnk.bayza.music/lamentos",
     fanlinks: {
       "amazon": "https://www.amazon.com/Lamentos-Bayza/dp/B08KYCCYGM",
       "amazon-music": "https://music.amazon.com/albums/B08KYCCYGM",
@@ -1405,7 +1405,7 @@ export const tracks: Tracks[] = [
     date: "2020-10-22 00:00:00",
     description: "We made this track for a gaming community here in Panama. It's like a Trap style, hope you enjoy!.",
     duration: "2:42",
-    fanlink: "lnk.bayzamusic.com/reborn",
+    fanlink: "lnk.bayza.music/reborn",
     fanlinks: {
       "amazon": "https://www.amazon.com/No-Guarantee-Bayza/dp/B08KY8ZJV7",
       "amazon-music": "https://music.amazon.com/albums/B08KY8ZJV7",
@@ -1437,7 +1437,7 @@ export const tracks: Tracks[] = [
     date: "2020-10-19 00:00:00",
     description: "There is just no guarantee, for you and me...",
     duration: "3:38",
-    fanlink: "lnk.bayzamusic.com/no-guarantee",
+    fanlink: "lnk.bayza.music/no-guarantee",
     fanlinkId: "no-guarantee",
     fanlinks: {
       "amazon": "https://www.amazon.com/No-Guarantee-Bayza/dp/B08KGYK2C7",
@@ -1471,7 +1471,7 @@ export const tracks: Tracks[] = [
     date: "2020-09-25 00:00:00",
     description: "This track is different from my usual style because it is a collaboration with my twin brother Dimatis, he is a Melodic Dubstep producer. We don't collaborate so often, but when we do, we create styles that are different from both of us. This time we try some Future Bass with vocals. Hope you like it!",
     duration: "3:27",
-    fanlink: "lnk.bayzamusic.com/hold-on-to-me",
+    fanlink: "lnk.bayza.music/hold-on-to-me",
     fanlinkId: "hold-on-to-me",
     fanlinks: {
       "amazon": "https://www.amazon.com/Hold-Me-Dimatis-Bayza/dp/B08FFMF4L3",
@@ -1502,7 +1502,7 @@ export const tracks: Tracks[] = [
     date: "2020-09-18 00:00:00",
     description: "There was some people of Melanie Martinez's community that came to my 'Strawberry Shortcake' Remix and they gave positive comments and wanted me to make more of Melanie. I present this time a remix for 'Fire Drill' Hope you like it.",
     duration: "4:25",
-    fanlink: "lnk.bayzamusic.com/FireDrill",
+    fanlink: "lnk.bayza.music/FireDrill",
     fanlinks: {
       soundcloud: "https://soundcloud.com/bayza-bootlegs/fire-drill-bayza-bootleg",
       youtube: "https://youtu.be/kYNUcObW_H0"
@@ -1523,7 +1523,7 @@ export const tracks: Tracks[] = [
     date: "2020-08-28 00:00:00",
     description: "Bayza is back on PalmTherapySounds with his track \"Solace\".",
     duration: "3:52",
-    fanlink: "lnk.bayzamusic.com/solace",
+    fanlink: "lnk.bayza.music/solace",
     fanlinks: {
       "amazon": "https://www.amazon.com/Solace-Bayza/dp/B08FXRGBTY",
       "amazon-music": "https://music.amazon.com/albums/B08FXRGBTY",
@@ -1556,7 +1556,7 @@ export const tracks: Tracks[] = [
     date: "2020-08-01 00:00:00",
     description: "I was participating in a remix competition for \"Eress - Make Believe\" and I won the first place. :)",
     duration: "4:28",
-    fanlink: "lnk.bayzamusic.com/make-believe",
+    fanlink: "lnk.bayza.music/make-believe",
     fanlinkId: "make-believe",
     fanlinks: {
       "amazon": "https://www.amazon.com/dp/B08D5X9L9P/",
@@ -1584,7 +1584,7 @@ export const tracks: Tracks[] = [
     date: "2020-07-10 00:00:00",
     description: "A Miracle is an effect or extraordinary event not explicable by natural, scientific law. It also characterizes any beneficial event that is statistically improbable, and some coincidences can bee seen as miracles.",
     duration: "3:12",
-    fanlink: "lnk.bayzamusic.com/miracle",
+    fanlink: "lnk.bayza.music/miracle",
     fanlinks: {
       "amazon": "https://www.amazon.com/Miracle-Bayza/dp/B08B1VJ9YK",
       "amazon-music": "https://music.amazon.com/albums/B08B1VJ9YK",
@@ -1617,7 +1617,7 @@ export const tracks: Tracks[] = [
     date: "2020-06-24 00:00:00",
     description: "My fourth release under DeepShine Records. This time in collaboration with Moroccan producer DJ SK.",
     duration: "4:24",
-    fanlink: "lnk.bayzamusic.com/alone",
+    fanlink: "lnk.bayza.music/alone",
     fanlinks: {
       "amazon": "https://www.amazon.com/Alone-DJ-SK-MA-Bayza/dp/B089597J6Q",
       "amazon-music": "https://music.amazon.com/albums/B089597J6Q",
@@ -1648,7 +1648,7 @@ export const tracks: Tracks[] = [
     date: "2020-06-05 00:00:00",
     description: "This is an official cover version of the Billie Eilish's hit. Vocals by: Anna Vaverková. Released under One Seven Music in conjunction with FRQNCY.",
     duration: "4:12",
-    fanlink: "lnk.bayzamusic.com/everything-i-wanted",
+    fanlink: "lnk.bayza.music/everything-i-wanted",
     fanlinkId: "everything-i-wanted",
     fanlinks: {
       "amazon": "https://www.amazon.com/-/es/Bayza/dp/B088HJ2LNZ",
@@ -1681,7 +1681,7 @@ export const tracks: Tracks[] = [
     date: "2020-05-02 00:00:00",
     description: "This is a remix for a singer from Lebanon named 'Noel Kharman' who makes Mashups of songs in different languages for youtube. I love his videos and I decided to put my touch on his new mashup 'Desert Roses / انت عمري'.",
     duration: "4:29",
-    fanlink: "lnk.bayzamusic.com/desert-rose",
+    fanlink: "lnk.bayza.music/desert-rose",
     fanlinkId: "desert-rose",
     fanlinks: {
       bandcamp: "https://bayza.bandcamp.com/track/desert-rose-mashup-bayza-remix",
@@ -1705,7 +1705,7 @@ export const tracks: Tracks[] = [
     date: "2020-04-22 00:00:00",
     description: "This is a remix for a singer from Romania named 'INNA'. The first time I heard the original song and her voice I loved it and thought it would be nice to remix it.",
     duration: "3:23",
-    fanlink: "lnk.bayzamusic.com/not-my-baby",
+    fanlink: "lnk.bayza.music/not-my-baby",
     fanlinkId: "not-my-baby",
     fanlinks: {
       bandcamp: "https://bayza.bandcamp.com/track/not-my-baby-bayza-remix",
@@ -1759,7 +1759,7 @@ export const tracks: Tracks[] = [
     date: "2020-02-04 00:00:00",
     description: "Halsey - Still Learning (Bayza Bootleg)",
     duration: "3:55",
-    fanlink: "lnk.bayzamusic.com/still-learning",
+    fanlink: "lnk.bayza.music/still-learning",
     fanlinkId: "still-learning",
     fanlinks: {
       bandcamp: "https://bayza.bandcamp.com/track/still-learning-bayza-remix",
@@ -1798,7 +1798,7 @@ export const tracks: Tracks[] = [
     date: "2020-01-01 00:00:00",
     description: "Melanie Martinez - Strawberry Shortcake (Bayza Bootleg)",
     duration: "3:15",
-    fanlink: "lnk.bayzamusic.com/strawberry-shortcake",
+    fanlink: "lnk.bayza.music/strawberry-shortcake",
     fanlinkId: "strawberry-shortcake",
     fanlinks: {
       bandcamp: "https://bayza.bandcamp.com/track/strawberry-shortcake-bayza-remix",
@@ -1836,7 +1836,7 @@ export const tracks: Tracks[] = [
     date: "2019-12-11 00:00:00",
     description: "This is my first release under the label 'PalmTherapySounds Records'.",
     duration: "4:20",
-    fanlink: "lnk.bayzamusic.com/astral",
+    fanlink: "lnk.bayza.music/astral",
     genre: "Deep House",
     id: "astral",
     label: "PalmTherapySounds Records",
@@ -1852,7 +1852,7 @@ export const tracks: Tracks[] = [
     date: "2019-10-25 00:00:00",
     description: "Trying some Psytrance.",
     duration: "4:03",
-    fanlink: "lnk.bayzamusic.com/mirage",
+    fanlink: "lnk.bayza.music/mirage",
     fanlinks: {
       amazon: "https://www.amazon.com/Mirage-Bayza/dp/B07YCMB3WZ/?tag=ton08-20",
       apple: "https://music.apple.com/us/album/mirage-single/1481307126?app=music&ls=1",

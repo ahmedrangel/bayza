@@ -1,5 +1,5 @@
 const protocol = "https";
-const domain = "bayzamusic.com";
+const domain = "bayza.music";
 
 const SITE = {
   name: "Bayza",
@@ -138,7 +138,7 @@ const SITE = {
     }
   ],
   merch: "https://merch.streamelements.com/bayza",
-  fanlinks: "https://lnk.bayzamusic.com",
+  fanlinks: "https://lnk.bayza.music",
   url: `${protocol}://${domain}`
 };
 
