@@ -10,16 +10,19 @@
     "lint": "eslint --fix --config .config/eslint.mjs"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.5.7",
-    "@nuxt/scripts": "^0.9.4",
-    "@nuxtjs/sitemap": "^6.1.1",
-    "@types/node": "^22.7.3",
+    "@iconify-json/brandico": "^1.2.1",
+    "@iconify-json/ri": "^1.2.2",
+    "@iconify-json/simple-icons": "^1.2.10",
+    "@nuxt/eslint": "^0.6.1",
+    "@nuxt/scripts": "^0.9.5",
+    "@nuxtjs/sitemap": "^6.1.2",
+    "@types/node": "^22.8.2",
     "nuxt": "^3.13.2"
   },
   "dependencies": {
-    "@nuxt/icon": "^1.5.2",
+    "@nuxt/icon": "^1.6.1",
     "bootstrap": "^5.3.3",
-    "eslint": "^9.11.1",
+    "eslint": "^9.13.0",
     "nuxt-aos": "^1.2.5"
   }
 }

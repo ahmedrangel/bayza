@@ -39,7 +39,13 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxt/scripts"
   ],
-  icon: { mode: "svg", serverBundle: "remote" },
+  icon: {
+    mode: "svg",
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 2048
+    }
+  },
   features: {
     inlineStyles: false
   },
